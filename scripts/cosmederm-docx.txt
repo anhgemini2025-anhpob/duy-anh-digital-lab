@@ -1,0 +1,100 @@
+﻿
+
+
+w14:paraId="45BAB81F" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">COSMEDERM AI ACADEMY
+
+w14:paraId="27365049" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">HỌC – THỰC HÀNH – TRA CỨU – ỨNG DỤNG KHOA HỌC DA LIỄU & MỸ PHẨM
+
+w14:paraId="69B2BDE2" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">🎬 MỞ ĐẦU – HOOK
+
+w14:paraId="092B7E3E" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Học da liễu và công thức mỹ phẩm quá nhiều kiến thức?Nhưng khi gặp một ca thực tế, bạn có biết phải bắt đầu từ đâu?
+
+w14:paraId="6496BCA8" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">CosmeDerm AI Academy biến kiến thức Da liễu – Mỹ phẩm – R&D thành một trải nghiệm trực quan, tương tác và có thể thực hành ngay trên điện thoại.
+
+w14:paraId="05D0525A" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">
+
+w14:paraId="23F3E797" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">01 | HỌC THEO ĐÚNG TRÌNH ĐỘ
+
+w14:paraId="5F085BBA" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Mới bắt đầu, sinh viên Y Dược hay chuyên gia R&D?
+
+w14:paraId="5EB3E089" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Hệ thống tự động phân luồng lộ trình phù hợp.
+
+w14:paraId="35B9CC2D" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Không học lan man – học đúng thứ mình cần.
+
+w14:paraId="33DA9D1C" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">02 | PHÒNG LAB CÔNG THỨC ẢO
+
+w14:paraId="64CA0EF1" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Muốn thử một công thức mỹ phẩm?
+
+w14:paraId="36AC103D" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Tự phối pha dầu, pha nước, chất nhũ hóa và hoạt chất ngay trên màn hình.
+
+w14:paraId="01F7C217" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Hệ thống tự tính tỷ lệ và cảnh báo nguy cơ.
+
+w14:paraId="18DD9C3D" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Thử công thức trước – hiểu công thức sâu hơn.
+
+w14:paraId="08BF8644" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">03 | TRA CỨU THÀNH PHẦN & ĐỘ AN TOÀN
+
+w14:paraId="368E885D" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Chỉ cần nhập tên INCI.
+
+w14:paraId="15123154" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Thông tin về chức năng, mức độ an toàn và giới hạn sử dụng được hiển thị nhanh chóng.
+
+w14:paraId="75FB1950" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Không còn mất hàng giờ để tìm từng thành phần.
+
+w14:paraId="3D06FBF0" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">04 | CÂY PHÁC ĐỒ THẨM MỸ
+
+w14:paraId="4FFBF2FD" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Từ tình trạng da và mức độ lão hóa, hệ thống giúp người học hình dung logic lựa chọn hoạt chất và phương pháp can thiệp.
+
+w14:paraId="0FA5B4B9" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Từ kiến thức → đến tư duy xử lý một ca thực tế.
+
+w14:paraId="6312C465" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">05 | CHẨN ĐOÁN TÓC & DA ĐẦU
+
+w14:paraId="62053074" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Không chỉ có làn da.
+
+w14:paraId="7C20C334" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Hệ thống mở rộng sang tóc và da đầu, giúp phân biệt các tình trạng thường gặp và hiểu cách chăm sóc phù hợp.
+
+w14:paraId="0FEDA5C5" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Một nền tảng – kiến thức toàn diện hơn.
+
+w14:paraId="2AFD1E0E" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">06 | HỌC QUA TÌNH HUỐNG & TRÒ CHƠI
+
+w14:paraId="4B76CE5C" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Học bằng cách chọn đáp án, xử lý tình huống và lật thẻ ghi nhớ.
+
+w14:paraId="27D78002" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Kiến thức khô khan trở thành những thử thách ngắn, nhanh và dễ nhớ.
+
+w14:paraId="11568560" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Học để nhớ – nhớ để phản xạ.
+
+w14:paraId="3F4773A4" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">07 | SƠ ĐỒ TƯ DUY & MÔ HÌNH 3D
+
+w14:paraId="332C2429" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Hàng rào bảo vệ da, cấu trúc tóc hay cơ chế hấp thu…
+
+w14:paraId="3F73FA9B" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Được trực quan hóa bằng sơ đồ và mô hình tương tác.
+
+w14:paraId="5F61F19C" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Điều khó hiểu trở nên dễ nhìn – dễ hiểu – dễ nhớ.
+
+w14:paraId="4B7EDDB0" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">08 | THƯ VIỆN TRI THỨC
+
+w14:paraId="5D0B97FB" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Một kho kiến thức chuyên sâu về da liễu, mỹ phẩm, công thức và quy định được hệ thống hóa để tra cứu nhanh.
+
+w14:paraId="20D2595E" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Thay vì hàng nghìn trang sách – tìm đúng kiến thức chỉ trong vài thao tác.
+
+w14:paraId="40BB352E" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">09 | THIẾT KẾ TỐI ƯU CHO ĐIỆN THOẠI
+
+w14:paraId="68F3EADE" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Không cần ngồi trước máy tính.
+
+w14:paraId="70863996" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Học, tra cứu, kiểm tra thành phần hay thực hành công thức ngay trên điện thoại, mọi lúc và mọi nơi.
+
+w14:paraId="685C21C1" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">10 | TRẢI NGHIỆM HIỆN ĐẠI, TRỰC QUAN
+
+w14:paraId="3187E977" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Giao diện lấy cảm hứng từ môi trường y khoa và phòng R&D hiện đại, thao tác mượt mà và trực quan.
+
+w14:paraId="461459D7" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Công nghệ không làm kiến thức phức tạp hơn – mà giúp kiến thức dễ tiếp cận hơn.
+
+w14:paraId="15C75E41" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">
+
+w14:paraId="370B0F91" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">CosmeDerm AI Academy không chỉ giúp bạn học về da và mỹ phẩm.
+
+w14:paraId="3E60F6CE" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Nó giúp bạn tra cứu nhanh hơn, hiểu sâu hơn, thực hành nhiều hơn và hình thành tư duy xử lý vấn đề.
+
+w14:paraId="28E92177" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">Từ kiến thức → thực hành → phản xạ → ứng dụng.
+
+w14:paraId="12B5A9E6" w14:textId="77777777" w:rsidR="00EF793D" w:rsidRPr="00EF793D" w:rsidRDefault="00EF793D" w:rsidP="00EF793D">CosmeDerm AI AcademyHỌC KHOA HỌC. THỰC HÀNH THÔNG MINH. TẠO RA GIÁ TRỊ.
+
+w14:paraId="5D636C4D" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF793D" w:rsidRDefault="00EF5627" w:rsidP="00EF793D"/>

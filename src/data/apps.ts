@@ -694,36 +694,105 @@ export const APPS_DATA: AppItem[] = [
     url: "https://cosmederm-ai.vercel.app/",
     category: "AI • Đào tạo & R&D Mỹ phẩm",
     categoryId: "ai-education",
-    description: "Học viện số hóa ứng dụng AI hỗ trợ nghiên cứu da liễu thẩm mỹ & xây dựng công thức mỹ phẩm chuyên sâu.",
-    tags: ["AI Formulation", "Cosmetic Science", "Dermatology", "R&D Library"],
-    coverImage: '/apps/cosmederm-ai-academy/real-cover.jpg',
-    placeholderImage: '/apps/cosmederm-ai-academy/real-cover.jpg',
-    illustrationImage: '/apps/cosmederm-ai-academy/illustration-banner.jpg',
+    description: "Học viện số hóa ứng dụng AI hỗ trợ nghiên cứu da liễu thẩm mỹ & xây dựng công thức mỹ phẩm chuyên sâu: phòng Lab công thức ảo, tra cứu an toàn thành phần INCI, cây phác đồ điều trị, chẩn đoán tóc & da đầu và mô hình 3D tương tác.",
+    tags: ["AI Formulation", "Cosmetic Science", "Dermatology", "R&D Library", "Virtual Lab", "INCI Safety", "3D Models"],
+    coverImage: '/apps/cosmederm-ai-academy/cover.jpg',
+    placeholderImage: '/apps/cosmederm-ai-academy/cover.jpg',
+    illustrationImage: '/apps/cosmederm-ai-academy/cover.jpg',
     detailImages: [
-      '/apps/cosmederm-ai-academy/real-cover.jpg',
-      '/apps/cosmederm-ai-academy/real-screen-2.jpg',
-      '/apps/cosmederm-ai-academy/real-screen-3.jpg',
-      '/apps/cosmederm-ai-academy/illustration-banner.jpg'
+      '/apps/cosmederm-ai-academy/feature_01_hoc_thuc_hanh_tra_cuu_da_lieu_my_pham.jpg',
+      '/apps/cosmederm-ai-academy/feature_02_hoc_theo_dung_trinh_do.jpg',
+      '/apps/cosmederm-ai-academy/feature_03_phong_lab_cong_thuc_ao.jpg',
+      '/apps/cosmederm-ai-academy/feature_04_tra_cuu_thanh_phan_do_an_toan.jpg',
+      '/apps/cosmederm-ai-academy/feature_05_cay_phac_do_tham_my.jpg',
+      '/apps/cosmederm-ai-academy/feature_06_chan_doan_toc_da_dau.jpg',
+      '/apps/cosmederm-ai-academy/feature_07_hoc_qua_tinh_huong_tro_choi.jpg',
+      '/apps/cosmederm-ai-academy/feature_08_so_do_tu_duy_mo_hinh_3d.jpg',
+      '/apps/cosmederm-ai-academy/feature_09_thu_vien_tri_thuc.jpg',
+      '/apps/cosmederm-ai-academy/feature_10_thiet_ke_toi_uu_cho_dien_thoai.jpg',
+      '/apps/cosmederm-ai-academy/feature_11_trai_nghiem_hien_dai_truc_quan.jpg',
+      '/apps/cosmederm-ai-academy/feature_12_loi_ket_hoc_khoa_hoc_thuc_hanh_thong_minh.jpg'
     ],
     imageAlt: "CosmeDerm AI Academy learning and formulation dashboard",
-    featured: false,
-    videoDuration: "1:15",
-    videoTagline: "Trải nghiệm học viện R&D mỹ phẩm tích hợp AI thông minh",
+    featured: true,
+    videoDuration: "3:30",
+    videoTagline: "Học – Thực Hành – Tra Cứu – Ứng Dụng Khoa Học Da Liễu & Mỹ Phẩm",
     videoScenes: [
-      { time: "0:00", title: "Tổng quan Học viện R&D Mỹ phẩm", description: "Hệ thống tri thức số hóa chuyên sâu hỗ trợ nghiên cứu da liễu và xây dựng công thức mỹ phẩm chuẩn quốc tế." },
-      { time: "0:15", title: "Safety Checker & Tra cứu An toàn CIR", description: "Tra cứu an toàn thành phần mỹ phẩm chuẩn CIR Hoa Kỳ, tính điểm rủi ro kích ứng và kiểm tra tương thích hoạt chất." },
-      { time: "0:30", title: "Virtual Lab & Mô phỏng Công thức", description: "Phòng lab ảo thử nghiệm phối trộn công thức, mô phỏng độ ổn định nhũ tương, tương thích pH và phác đồ điều chế hoàn chỉnh." },
-      { time: "0:45", title: "Routine Builder & Phác đồ Khoa học", description: "Xây dựng routine trị liệu cá nhân hóa theo từng tình trạng da, tối ưu thứ tự thoa layer và ngăn ngừa xung đột hoạt chất." },
-      { time: "1:00", title: "Lời bình & Tính năng bất ngờ khi thử nghiệm", description: "Lời bình thực tế: Hệ thống học viện mỹ phẩm số hóa cực kỳ bài bản và chuyên sâu. Điểm bất ngờ khi thử nghiệm là Virtual Lab phát hiện ngay xung đột khi kết hợp hoạt chất và cảnh báo chênh lệch pH. Hãy khám phá và bạn sẽ phát hiện thêm nhiều chức năng khác như thư viện 10 đầu sách kinh điển, báo cáo xu hướng hoạt chất và 11 minigame kiến thức!" }
+      {
+        time: "0:00",
+        title: "COSMEDERM AI ACADEMY: Khoa Học Da Liễu & Công Thức Mỹ Phẩm",
+        description: "Học da liễu và công thức mỹ phẩm quá nhiều kiến thức? Nhưng khi gặp một ca thực tế, bạn có biết phải bắt đầu từ đâu? CosmeDerm AI Academy biến kiến thức Da liễu – Mỹ phẩm – R&D thành một trải nghiệm trực quan, tương tác và có thể thực hành ngay trên điện thoại."
+      },
+      {
+        time: "0:20",
+        title: "01 | Học Theo Đúng Trình Độ",
+        description: "Mới bắt đầu, sinh viên Y Dược hay chuyên gia R&D? Hệ thống tự động phân luồng lộ trình phù hợp. Không học lan man – học đúng thứ mình cần."
+      },
+      {
+        time: "0:35",
+        title: "02 | Phòng Lab Công Thức Ảo",
+        description: "Muốn thử một công thức mỹ phẩm? Tự phối pha dầu, pha nước, chất nhũ hóa và hoạt chất ngay trên màn hình. Hệ thống tự tính tỷ lệ và cảnh báo nguy cơ. Thử công thức trước – hiểu công thức sâu hơn."
+      },
+      {
+        time: "0:55",
+        title: "03 | Tra Cứu Thành Phần & Độ An Toàn",
+        description: "Chỉ cần nhập tên INCI. Thông tin về chức năng, mức độ an toàn và giới hạn sử dụng được hiển thị nhanh chóng. Không còn mất hàng giờ để tìm từng thành phần."
+      },
+      {
+        time: "1:10",
+        title: "04 | Cây Phác Đồ Thẩm Mỹ",
+        description: "Từ tình trạng da và mức độ lão hóa, hệ thống giúp người học hình dung logic lựa chọn hoạt chất và phương pháp can thiệp. Từ kiến thức → đến tư duy xử lý một ca thực tế."
+      },
+      {
+        time: "1:25",
+        title: "05 | Chẩn Đoán Tóc & Da Đầu",
+        description: "Không chỉ có làn da. Hệ thống mở rộng sang tóc và da đầu, giúp phân biệt các tình trạng thường gặp và hiểu cách chăm sóc phù hợp. Một nền tảng – kiến thức toàn diện hơn."
+      },
+      {
+        time: "1:40",
+        title: "06 | Học Qua Tình Huống & Trò Chơi",
+        description: "Học bằng cách chọn đáp án, xử lý tình huống và lật thẻ ghi nhớ. Kiến thức khô khan trở thành những thử thách ngắn, nhanh và dễ nhớ. Học để nhớ – nhớ để phản xạ."
+      },
+      {
+        time: "1:55",
+        title: "07 | Sơ Đồ Tư Duy & Mô Hình 3D",
+        description: "Hàng rào bảo vệ da, cấu trúc tóc hay cơ chế hấp thu… Được trực quan hóa bằng sơ đồ và mô hình tương tác. Điều khó hiểu trở nên dễ nhìn – dễ hiểu – dễ nhớ."
+      },
+      {
+        time: "2:10",
+        title: "08 | Thư Viện Tri Thức",
+        description: "Một kho kiến thức chuyên sâu về da liễu, mỹ phẩm, công thức và quy định được hệ thống hóa để tra cứu nhanh. Thay vì hàng nghìn trang sách – tìm đúng kiến thức chỉ trong vài thao tác."
+      },
+      {
+        time: "2:25",
+        title: "09 | Thiết Kế Tối Ưu Cho Điện Thoại",
+        description: "Không cần ngồi trước máy tính. Học, tra cứu, kiểm tra thành phần hay thực hành công thức ngay trên điện thoại, mọi lúc và mọi nơi."
+      },
+      {
+        time: "2:40",
+        title: "10 | Trải Nghiệm Hiện Đại, Trực Quan",
+        description: "Giao diện lấy cảm hứng từ môi trường y khoa và phòng R&D hiện đại, thao tác mượt mà và trực quan. Công nghệ không làm kiến thức phức tạp hơn – mà giúp kiến thức dễ tiếp cận hơn."
+      },
+      {
+        time: "3:00",
+        title: "Lời Kết: Học Khoa Học – Thực Hành Thông Minh – Tạo Ra Giá Trị",
+        description: "CosmeDerm AI Academy không chỉ giúp bạn học về da và mỹ phẩm. Nó giúp bạn tra cứu nhanh hơn, hiểu sâu hơn, thực hành nhiều hơn và hình thành tư duy xử lý vấn đề. Từ kiến thức → thực hành → phản xạ → ứng dụng. CosmeDerm AI Academy: Học khoa học. Thực hành thông minh. Tạo ra giá trị."
+      }
     ],
-    audience: "Dược sĩ R&D, Formulator, Bác sĩ da liễu, Chuyên viên phát triển sản phẩm làm đẹp.",
-    problem: "Tài liệu khoa học mỹ phẩm bị phân tán, tính toán tương thích hoạt chất phức tạp và thiếu trợ lý AI chuyên ngành.",
-    solution: "Tích hợp AI phân tích công thức, tra cứu thành phần từ 10 đầu sách kinh điển và hỗ trợ phác đồ điều chế tối ưu an toàn.",
+    audience: "Dược sĩ R&D, Formulator, Bác sĩ da liễu, Sinh viên Y Dược, Chuyên viên phát triển sản phẩm làm đẹp.",
+    problem: "Tài liệu khoa học mỹ phẩm bị phân tán, tính toán tương thích hoạt chất phức tạp và thiếu công cụ thực hành chẩn đoán trực quan.",
+    solution: "Học viện số hóa với phòng Lab công thức ảo, tra cứu INCI an toàn, cây phác đồ chuẩn y khoa và mô hình 3D tương tác.",
     keyFeatures: [
-      "Virtual Lab: Phòng lab tạo công thức ảo và mô phỏng độ ổn định nhũ tương",
-      "Safety Checker: Tra cứu mức độ an toàn thành phần mỹ phẩm theo chuẩn CIR",
-      "Routine Builder: Xây dựng routine và phác đồ chăm sóc da khoa học cá nhân hóa",
-      "Thư viện lõi 10 đầu sách kinh điển và lộ trình học tập 3 tiến trình chuyên sâu"
+      "Học theo đúng trình độ: Hệ thống tự động phân luồng lộ trình cá nhân hóa cho người mới bắt đầu, sinh viên Y Dược hay chuyên gia R&D.",
+      "Phòng Lab công thức ảo: Tự phối pha dầu, pha nước, chất nhũ hóa và hoạt chất trên màn hình; tự tính tỷ lệ và cảnh báo nguy cơ bất ổn định.",
+      "Tra cứu thành phần & Độ an toàn INCI: Tra cứu siêu tốc thông tin chức năng, cơ chế, mức độ an toàn và giới hạn nồng độ cho phép.",
+      "Cây phác đồ thẩm mỹ: Định hình tư duy logic chuẩn y khoa để lựa chọn hoạt chất và phương pháp can thiệp theo từng tình trạng da và mức độ lão hóa.",
+      "Chẩn đoán tóc & Da đầu: Mở rộng sang bệnh học tóc và da đầu, phân biệt chính xác viêm da tiết bã, rụng tóc, gàu nấm và phác đồ điều trị.",
+      "Học qua tình huống & Trò chơi: Ứng dụng minigame thực chiến, câu hỏi tình huống lâm sàng và thẻ ghi nhớ Flashcard rèn phản xạ xử lý nhanh.",
+      "Sơ đồ tư duy & Mô hình 3D: Trực quan hóa cấu trúc hàng rào bảo vệ da, nang tóc và cơ chế hấp thu qua lớp sừng bằng mô hình tương tác 3D.",
+      "Thư viện tri thức chuyên sâu: Kho tàng tài liệu chuẩn mực về da liễu, công nghệ bào chế và quy chuẩn pháp lý mỹ phẩm dễ dàng tra cứu.",
+      "Thiết kế tối ưu cho điện thoại: Linh hoạt học tập, tra cứu INCI và thực hành công thức mọi lúc mọi nơi trên thiết bị di động.",
+      "Trải nghiệm hiện đại & Trực quan: Giao diện chuẩn phòng Lab y khoa tiên tiến, mang tri thức khoa học đến gần hơn với người thực hành."
     ],
     theme: {
       from: "#4f46e5",
