@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="childGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="50%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <linearGradient id="warmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#091E2D" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#10B981" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Container -->
+  <rect x="8" y="8" width="104" height="104" rx="26" fill="url(#bgGrad)" stroke="#1E3A5F" stroke-width="1.5" />
+  
+  <!-- Subtle Aura Ring -->
+  <circle cx="60" cy="54" r="36" fill="url(#childGrad)" opacity="0.12" />
+
+  <!-- Shield / Heart of Mindful Parenting -->
+  <path d="M60 76 C60 76 40 63 40 48 C40 40 46 34 53 34 C57 34 60 37 60 37 C60 37 63 34 67 34 C74 34 80 40 80 48 C80 63 60 76 60 76 Z" 
+        fill="url(#childGrad)" opacity="0.25" />
+
+  <!-- Open Book Symbol (Academic & Knowledge Graph) -->
+  <path d="M60 66 C53 62 42 62 36 65 L36 49 C42 46 53 46 60 50 C67 46 78 46 84 49 L84 65 C78 62 67 62 60 66 Z" 
+        fill="#FFFFFF" filter="url(#softGlow)" />
+  <line x1="60" y1="50" x2="60" y2="66" stroke="#0E7490" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Tree of Growth / Brain Sparks (Tri thức & Tâm hồn) -->
+  <circle cx="60" cy="38" r="9" fill="url(#warmGrad)" />
+  <!-- Graduation cap or leaf atop -->
+  <path d="M52 38 L60 32 L68 38 L60 44 Z" fill="#FBBF24" />
+  <circle cx="60" cy="32" r="2.2" fill="#FDE047" />
+
+  <!-- Golden Stars & Sparkles -->
+  <path d="M34 32 L36 28 L38 32 L42 34 L38 36 L36 40 L34 36 L30 34 Z" fill="#FDE047" opacity="0.95" />
+  <path d="M82 60 L83.5 57 L85 60 L88 61.5 L85 63 L83.5 66 L82 63 L79 61.5 Z" fill="#FDE047" opacity="0.85" />
+
+  <!-- Bottom Label -->
+  <text x="60" y="99" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="900" fill="#38BDF8" text-anchor="middle" letter-spacing="1.2">TRẺ 6-11T</text>
+</svg>

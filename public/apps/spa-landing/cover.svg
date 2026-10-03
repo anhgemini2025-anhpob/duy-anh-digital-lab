@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="100%" height="100%">
+  <defs>
+    <!-- Crisp Bright Background Gradient -->
+    <linearGradient id="bg_spa-landing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="40%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+
+    <!-- Vibrant Header Accent -->
+    <linearGradient id="brandGrad_spa-landing" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#4c0519" />
+    </linearGradient>
+
+    <filter id="softShadow_spa-landing" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#0f172a" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1600" height="1000" fill="url(#bg_spa-landing)" />
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="1400" cy="180" r="320" fill="#e11d48" opacity="0.12" />
+  <circle cx="150" cy="850" r="280" fill="#e11d48" opacity="0.08" />
+
+  <!-- Main Browser Mockup Container -->
+  <g transform="translate(80, 50)" filter="url(#softShadow_spa-landing)">
+    <!-- Window Outer Frame -->
+    <rect width="1440" height="900" rx="20" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+
+    <!-- Chrome Browser Header Bar -->
+    <rect width="1440" height="60" rx="20" fill="#f8fafc" />
+    <rect y="40" width="1440" height="20" fill="#f8fafc" />
+    <line x1="0" y1="60" x2="1440" y2="60" stroke="#e2e8f0" stroke-width="1.5" />
+
+    <!-- Traffic Light Controls -->
+    <circle cx="36" cy="30" r="7" fill="#ef4444" />
+    <circle cx="60" cy="30" r="7" fill="#f59e0b" />
+    <circle cx="84" cy="30" r="7" fill="#10b981" />
+
+    <!-- Address Bar with Padlock -->
+    <rect x="220" y="14" width="1000" height="32" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <g transform="translate(236, 21)">
+      <!-- Padlock Icon -->
+      <path d="M4 6V4a3 3 0 0 1 6 0v2m-7 0h8a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1z" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <text x="260" y="35" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600">
+      https://linhda-skinlap.pages.dev
+    </text>
+    <rect x="1100" y="19" width="105" height="22" rx="11" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1" />
+    <text x="1152" y="34" fill="#059669" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle">
+      ✓ SSL SECURE
+    </text>
+
+    <!-- App Header Inside Window -->
+    <g transform="translate(0, 60)">
+      <!-- App Top Nav -->
+      <rect width="1440" height="68" fill="#ffffff" />
+      <line x1="0" y1="68" x2="1440" y2="68" stroke="#f1f5f9" stroke-width="1.5" />
+
+      <!-- Brand Logo & Title -->
+      <rect x="40" y="14" width="40" height="40" rx="10" fill="#e11d48" />
+      <text x="60" y="39" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="18" font-weight="800" text-anchor="middle">
+        S
+      </text>
+
+      <text x="96" y="38" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="800">
+        Spa Service Landing Page
+      </text>
+      <rect x="96" y="44" width="180" height="4" rx="2" fill="#e11d48" />
+
+      <!-- Live Category Badge -->
+      <rect x="1160" y="18" width="240" height="32" rx="8" fill="#ffe4e6" />
+      <text x="1280" y="39" fill="#e11d48" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="800" letter-spacing="0.5" text-anchor="middle">
+        DỊCH VỤ & TRẢI NGHIỆM KHÁCH HÀNG
+      </text>
+    </g>
+
+    <!-- Main Workspace Content -->
+    <g transform="translate(40, 150)">
+      
+      <!-- Top 3 Metrics Stats Banner -->
+      <g>
+        
+          <g transform="translate(0, 0)">
+            <rect width="435" height="110" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" />
+            <text x="24" y="38" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="600">Tỷ Lệ Chuyển Đổi</text>
+            <text x="24" y="80" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="32" font-weight="800">14.8%</text>
+            <rect x="300" y="24" width="110" height="26" rx="13" fill="#ffe4e6" />
+            <text x="355" y="41" fill="#e11d48" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle">+5.2% Ads</text>
+          </g>
+          <g transform="translate(465, 0)">
+            <rect width="435" height="110" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" />
+            <text x="24" y="38" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="600">Gói Dịch Vụ Nổi Bật</text>
+            <text x="24" y="80" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="32" font-weight="800">6 Liệu Trình</text>
+            <rect x="300" y="24" width="110" height="26" rx="13" fill="#ffe4e6" />
+            <text x="355" y="41" fill="#e11d48" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Y khoa</text>
+          </g>
+          <g transform="translate(930, 0)">
+            <rect width="435" height="110" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" />
+            <text x="24" y="38" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="600">Đánh Giá 5 Sao</text>
+            <text x="24" y="80" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="32" font-weight="800">99.4%</text>
+            <rect x="300" y="24" width="110" height="26" rx="13" fill="#ffe4e6" />
+            <text x="355" y="41" fill="#e11d48" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Khách hàng hài lòng</text>
+          </g>
+      </g>
+
+      <!-- Main Interactive Work Panel -->
+      <g transform="translate(0, 135)">
+        <rect width="1360" height="480" rx="18" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+        
+        <!-- Panel Header -->
+        <rect width="1360" height="54" rx="18" fill="#f8fafc" />
+        <rect y="36" width="1360" height="18" fill="#f8fafc" />
+        <line x1="0" y1="54" x2="1360" y2="54" stroke="#e2e8f0" stroke-width="1" />
+
+        <text x="28" y="34" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="16" font-weight="700">
+          Trang Đích Sang Trọng Chăm Sóc & Trẻ Hóa Da Linh Đa Skinlab
+        </text>
+
+        <!-- Simulated Active UI Content -->
+        <g transform="translate(28, 80)">
+          <!-- 4 Feature Cards -->
+          
+            <g transform="translate(0, 0)">
+              <rect width="630" height="150" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2" />
+              <!-- Status Dot & Number -->
+              <circle cx="36" cy="40" r="16" fill="#e11d48" />
+              <text x="36" y="46" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="800" text-anchor="middle">01</text>
+              
+              <!-- Text -->
+              <text x="68" y="46" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="16" font-weight="700">Tính Năng Chuyên Sâu #1</text>
+              <text x="36" y="90" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="500">Thiết kế y khoa thẩm mỹ cao cấp, hình ảnh phác đồ chuẩn y kh</text>
+              <text x="36" y="114" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="400">oa</text>
+              
+              <!-- Interactive progress bar -->
+              <rect x="460" y="32" width="140" height="8" rx="4" fill="#e2e8f0" />
+              <rect x="460" y="32" width="80" height="8" rx="4" fill="#e11d48" />
+            </g>
+            <g transform="translate(660, 0)">
+              <rect width="630" height="150" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2" />
+              <!-- Status Dot & Number -->
+              <circle cx="36" cy="40" r="16" fill="#e11d48" />
+              <text x="36" y="46" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="800" text-anchor="middle">02</text>
+              
+              <!-- Text -->
+              <text x="68" y="46" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="16" font-weight="700">Tính Năng Chuyên Sâu #2</text>
+              <text x="36" y="90" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="500">Tích hợp form đặt lịch tư vấn và bảng giá dịch vụ minh bạch</text>
+              <text x="36" y="114" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="400">Dữ liệu được chuẩn hóa và tự động hóa theo thời gian thực.</text>
+              
+              <!-- Interactive progress bar -->
+              <rect x="460" y="32" width="140" height="8" rx="4" fill="#e2e8f0" />
+              <rect x="460" y="32" width="100" height="8" rx="4" fill="#e11d48" />
+            </g>
+            <g transform="translate(0, 180)">
+              <rect width="630" height="150" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2" />
+              <!-- Status Dot & Number -->
+              <circle cx="36" cy="40" r="16" fill="#e11d48" />
+              <text x="36" y="46" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="800" text-anchor="middle">03</text>
+              
+              <!-- Text -->
+              <text x="68" y="46" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="16" font-weight="700">Tính Năng Chuyên Sâu #3</text>
+              <text x="36" y="90" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="500">Trình diễn công nghệ máy móc chuẩn FDA và chứng chỉ bác sĩ</text>
+              <text x="36" y="114" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="400">Dữ liệu được chuẩn hóa và tự động hóa theo thời gian thực.</text>
+              
+              <!-- Interactive progress bar -->
+              <rect x="460" y="32" width="140" height="8" rx="4" fill="#e2e8f0" />
+              <rect x="460" y="32" width="120" height="8" rx="4" fill="#e11d48" />
+            </g>
+            <g transform="translate(660, 180)">
+              <rect width="630" height="150" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2" />
+              <!-- Status Dot & Number -->
+              <circle cx="36" cy="40" r="16" fill="#e11d48" />
+              <text x="36" y="46" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="800" text-anchor="middle">04</text>
+              
+              <!-- Text -->
+              <text x="68" y="46" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="16" font-weight="700">Tính Năng Chuyên Sâu #4</text>
+              <text x="36" y="90" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="500">Tối ưu tốc độ tải trang dưới 1 giây trên điện thoại thông mi</text>
+              <text x="36" y="114" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="400">nh</text>
+              
+              <!-- Interactive progress bar -->
+              <rect x="460" y="32" width="140" height="8" rx="4" fill="#e2e8f0" />
+              <rect x="460" y="32" width="140" height="8" rx="4" fill="#e11d48" />
+            </g>
+        </g>
+      </g>
+
+      <!-- Bottom Interactive Watermark & Production Badge -->
+      <g transform="translate(480, 640)">
+        <rect width="400" height="44" rx="22" fill="#0f172a" />
+        <circle cx="28" cy="22" r="8" fill="#10b981" />
+        <text x="215" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+          DUY ANH DIGITAL LAB • PRODUCTION LIVE
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,155 @@
+[
+  {
+    "id": "bjc-sales-training",
+    "name": "BJC Sales Training",
+    "category": "BÁN HÀNG & ĐÀO TẠO",
+    "sourceUrl": "https://bjc-sales-training.pages.dev/",
+    "cover": "/apps/bjc-sales-training/cover.svg",
+    "placeholder": "/apps/bjc-sales-training/cover-placeholder.svg",
+    "featured": false
+  },
+  {
+    "id": "customer-visit",
+    "name": "Customer Visit Management",
+    "category": "QUẢN LÝ & HOẠT ĐỘNG SALES",
+    "sourceUrl": "https://customer-visit.anhpob.workers.dev",
+    "cover": "/apps/customer-visit/cover.svg",
+    "placeholder": "/apps/customer-visit/cover-placeholder.svg",
+    "featured": false
+  },
+  {
+    "id": "lipoid-advisor",
+    "name": "Lipoid R&D Advisor",
+    "category": "R&D & NGUYÊN LIỆU MỸ PHẨM",
+    "sourceUrl": "https://lipoid-advisor.pages.dev",
+    "cover": "/apps/lipoid-advisor/cover.svg",
+    "placeholder": "/apps/lipoid-advisor/cover-placeholder.svg",
+    "featured": false
+  },
+  {
+    "id": "clinic-spa",
+    "name": "Clinic Spa Management",
+    "category": "VẬN HÀNH & QUẢN TRỊ DỊCH VỤ",
+    "sourceUrl": "https://linh-da-skinlab.pages.dev",
+    "cover": "/apps/clinic-spa/cover.svg",
+    "placeholder": "/apps/clinic-spa/cover-placeholder.svg",
+    "featured": false
+  },
+  {
+    "id": "spa-landing",
+    "name": "Spa Service Landing Page",
+    "category": "DỊCH VỤ & CHĂM SÓC KHÁCH HÀNG",
+    "sourceUrl": "https://linhda-skinlap.pages.dev",
+    "cover": "/apps/spa-landing/cover.svg",
+    "placeholder": "/apps/spa-landing/cover-placeholder.svg",
+    "featured": false
+  },
+  {
+    "id": "bjc-sales-pitch",
+    "name": "Sales Pitch & Sales Battle Card",
+    "category": "CÔNG CỤ BÁN HÀNG B2B",
+    "sourceUrl": "https://bjc-sales-pitch.pages.dev",
+    "cover": "/apps/bjc-sales-pitch/cover.svg",
+    "placeholder": "/apps/bjc-sales-pitch/cover-placeholder.svg",
+    "featured": false
+  },
+  {
+    "id": "badminton-management",
+    "name": "Badminton Group Management",
+    "category": "THỂ THAO & CỘNG ĐỒNG",
+    "sourceUrl": "https://splendid-panda-ef075e.netlify.app",
+    "cover": "/apps/badminton-management/cover.svg",
+    "placeholder": "/apps/badminton-management/cover-placeholder.svg",
+    "featured": false
+  },
+  {
+    "id": "tro-ly-vi-ngon",
+    "name": "Trợ Lý Vị Ngon",
+    "category": "AI & CÔNG NGHỆ ẨM THỰC",
+    "sourceUrl": "https://trolyvingon.vercel.app/",
+    "cover": "/apps/tro-ly-vi-ngon/cover.svg",
+    "placeholder": "/apps/tro-ly-vi-ngon/cover-placeholder.svg",
+    "featured": false
+  },
+  {
+    "id": "vet-aqua-erp",
+    "name": "Vet & Aqua ERP Lite",
+    "category": "ERP & NÔNG NGHIỆP THỦY SẢN",
+    "sourceUrl": "https://vet-aqua-erp-lite.vercel.app",
+    "cover": "/apps/vet-aqua-erp/cover.svg",
+    "placeholder": "/apps/vet-aqua-erp/cover-placeholder.svg",
+    "featured": false
+  },
+  {
+    "id": "yeast-extract-test",
+    "name": "Yeast Extract Knowledge Test",
+    "category": "ĐÀO TẠO & ĐÁNH GIÁ NĂNG LỰC",
+    "sourceUrl": "https://cool-tulumba-fa58d6.netlify.app/",
+    "cover": "/apps/yeast-extract-test/cover.svg",
+    "placeholder": "/apps/yeast-extract-test/cover-placeholder.svg",
+    "featured": false
+  },
+  {
+    "id": "vanderbilt-advisor",
+    "name": "Vanderbilt R&D Advisor",
+    "category": "R&D & HÓA CHẤT CHUYÊN DỤNG",
+    "sourceUrl": "https://vanderbilt-advisor.anh-gemini2025.workers.dev/",
+    "cover": "/apps/vanderbilt-advisor/cover.svg",
+    "placeholder": "/apps/vanderbilt-advisor/cover-placeholder.svg",
+    "featured": false
+  },
+  {
+    "id": "algaktiv-advisor",
+    "name": "Algaktiv R&D Advisor",
+    "category": "R&D & CÔNG NGHỆ TẢO BIỂN",
+    "sourceUrl": "https://algaktiv-advisor.pages.dev/",
+    "cover": "/apps/algaktiv-advisor/cover.svg",
+    "placeholder": "/apps/algaktiv-advisor/cover-placeholder.svg",
+    "featured": false
+  },
+  {
+    "id": "lanxess-cosmetic-advisor",
+    "name": "LANXESS Cosmetic Advisor",
+    "category": "R&D & HỆ BẢO QUẢN MỸ PHẨM",
+    "sourceUrl": "https://lanxess-cosmetic-advisor.pages.dev/",
+    "cover": "/apps/lanxess-cosmetic-advisor/cover.svg",
+    "placeholder": "/apps/lanxess-cosmetic-advisor/cover-placeholder.svg",
+    "featured": false
+  },
+  {
+    "id": "cosmederm-ai-academy",
+    "name": "CosmeDerm AI Academy",
+    "category": "AI • ĐÀO TẠO & R&D MỸ PHẨM",
+    "sourceUrl": "https://cosmederm-ai.vercel.app/",
+    "cover": "/apps/cosmederm-ai-academy/cover.svg",
+    "placeholder": "/apps/cosmederm-ai-academy/cover-placeholder.svg",
+    "featured": true
+  },
+  {
+    "id": "foodtech-hub",
+    "name": "Vietnam Food Tech Hub",
+    "category": "CÔNG NGHỆ THỰC PHẨM & R&D",
+    "sourceUrl": "https://foodtechhub.vercel.app/",
+    "cover": "/apps/foodtech-hub/cover.svg",
+    "placeholder": "/apps/foodtech-hub/cover-placeholder.svg",
+    "featured": true
+  },
+  {
+    "id": "htx-rau-cu",
+    "name": "HTX Rau Củ Quả",
+    "category": "NÔNG NGHIỆP SỐ & HỢP TÁC XÃ",
+    "sourceUrl": "https://htxraucuqua.vercel.app",
+    "cover": "/apps/htx-rau-cu/cover.svg",
+    "placeholder": "/apps/htx-rau-cu/cover-placeholder.svg",
+    "featured": false
+  },
+  {
+    "id": "uth-scm-navigator",
+    "name": "UTH SCM Navigator",
+    "category": "EDTECH & CHUỖI CUNG ỨNG LOGISTICS",
+    "sourceUrl": "https://uhtscm.vercel.app/",
+    "cover": "/apps/uth-scm-navigator/cover.svg",
+    "placeholder": "/apps/uth-scm-navigator/cover-placeholder.svg",
+    "featured": true
+  }
+]

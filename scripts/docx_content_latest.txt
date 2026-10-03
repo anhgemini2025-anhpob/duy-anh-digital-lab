@@ -1,0 +1,15 @@
+﻿KỊCH BẢN LỒNG TIẾNG :
+10 TÍNH NĂNG CỐT LỖI CỦA APP: NUÔI DƯỠNG BÉ 0 – 60 THÁNG
+Ứng dụng "Cha Mẹ 0–60" được thiết kế với 10 tính năng cốt lõi nhằm đồng hành cùng gia đình Việt Nam trong việc chăm sóc và theo dõi sự phát triển của trẻ từ 0 đến 60 tháng tuổi:
+Màn hình trung tâm "Hôm nay" & Ghi chép nhanh (Home Dashboard & Smart Logging): Giải đáp câu hỏi "Hôm nay con cần gì" bằng cách hiển thị 3 việc quan trọng trong ngày, trạng thái sinh hoạt (ăn, ngủ, vệ sinh) và công cụ ghi nhận nhanh 1 chạm hoặc nhập bằng giọng nói.
+Theo dõi tăng trưởng thể chất (Growth Engine): Quản lý các chỉ số cân nặng, chiều cao, vòng đầu theo chuẩn tăng trưởng, minh họa xu hướng phát triển trực quan và đưa ra lời khuyên trung lập mà không tự ý chẩn đoán.
+Trung tâm mốc phát triển (Development Center): Theo dõi sự tiến bộ của bé qua 5 lĩnh vực (Giao tiếp, Vận động thô, Vận động tinh, Nhận thức, Cá nhân – Xã hội) kèm các lưu ý quan sát nhẹ nhàng, giúp cha mẹ bớt lo âu.
+Gợi ý dinh dưỡng & Quản lý thực đơn (Nutrition & Meal Planner): Hỗ trợ nhiều phương pháp ăn dặm (Truyền thống, BLW, Kiểu Nhật), cá nhân hóa theo độ tuổi/dị ứng, kết hợp tính năng "Tủ lạnh nhà mình có gì" để tự động gợi ý món ăn phù hợp với nguyên liệu sẵn có.
+Nút khẩn cấp SOS ngoại tuyến (Offline Emergency SOS): Nút floating SOS luôn hiển thị để truy cập tức thì các hướng dẫn xử lý sơ cứu khẩn cấp (hóc dị vật, sốt/co giật, bỏng, chấn thương...), đảm bảo hoạt động bình thường ngay cả khi không có kết nối internet.
+Lịch tiêm chủng & Nhắc lịch thông minh (Vaccination & Smart Reminders): Quản lý lịch tiêm (Chương trình Mở rộng & Tiêm dịch vụ), đồng thời cài đặt nhắc lịch uống thuốc, khám bệnh, đánh răng và các sinh hoạt hằng ngày.
+Ví hồ sơ gia đình kỹ thuật số (Digital Family Vault & Document Scanner): Quét, lưu trữ và bảo mật các giấy tờ quan trọng của bé (BHYT, phiếu tiêm, đơn thuốc), hỗ trợ xuất file PDF 1 chạm để mang đi khám bệnh hoặc nhập học.
+Trợ lý AI đồng hành cùng cha mẹ (AI Parenting Companion): Trả lời các thắc mắc chăm sóc con, hỗ trợ chuẩn bị câu hỏi cho bác sĩ, giải thích thông tin y tế dễ hiểu và luôn dẫn nguồn minh bạch.
+Bộ tạo hoạt động "Chơi cùng con 10 phút" (Activity Generator): Gợi ý các trò chơi tương tác phát triển theo độ tuổi (0–60 tháng) dựa trên quỹ thời gian rảnh và vật dụng đơn giản có sẵn trong nhà.
+Dòng thời gian & Nhật ký gia đình (Smart Family Timeline & Journal): Tổng hợp dữ liệu sức khỏe, mốc phát triển, tiêm chủng cùng hình ảnh và khoảnh khắc đáng nhớ thành một dòng thời gian dài hạn xuyên suốt quá trình khôn lớn của trẻ
+Từ một giấc ngủ, một bữa ăn, một bước chân đầu tiên… đến những khoảnh khắc rất nhỏ mà sau này nhìn lại, cha mẹ sẽ thấy vô cùng đáng nhớ.
+Cùng con lớn lên từng ngày – và cùng nhau lưu giữ hành trình 0–60 tháng thật trọn vẹn.

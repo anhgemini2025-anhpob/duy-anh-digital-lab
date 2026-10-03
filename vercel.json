@@ -1,0 +1,15 @@
+{
+  "framework": "vite",
+  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/apps/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    }
+  ]
+}

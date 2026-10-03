@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="100%" height="100%">
+  <rect width="1600" height="1000" fill="#f8fafc" />
+  <rect x="80" y="80" width="1440" height="840" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+  <text x="800" y="500" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#0f766e" text-anchor="middle">Màn hình Bán hàng POS &amp; Xuất Hóa đơn điện tử VietQR</text>
+</svg>

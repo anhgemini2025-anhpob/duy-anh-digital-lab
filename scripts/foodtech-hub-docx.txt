@@ -1,0 +1,132 @@
+﻿
+
+
+w14:paraId="6F1179C4" w14:textId="01C813C5" w:rsidR="009C2ED1" w:rsidRDefault="009C2ED1" w:rsidP="009C2ED1">KỊCH BẢN LỒNG TIẾNG 
+
+w14:paraId="048953BD" w14:textId="77777777" w:rsidR="00805CCA" w:rsidRDefault="00805CCA" w:rsidP="009C2ED1"/>
+
+w14:paraId="49863B98" w14:textId="5AFA7E7F" w:rsidR="009C2ED1" w:rsidRDefault="009C2ED1" w:rsidP="009C2ED1">10 TÍNH NĂNG NỔI BẬT CỦA ỨNG DỤNG VIET NAM FOODTECH HUB 
+
+w14:paraId="76CD800F" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">VIETNAM FOODTECH HUB
+
+w14:paraId="44B6C712" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">TRUNG TÂM TRI THỨC VÀ CÔNG CỤ THỰC CHIẾN CHO NGÀNH CÔNG NGHỆ THỰC PHẨM
+
+w14:paraId="1AA904EA" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Trong sản xuất thực phẩm, một sự cố nhỏ có thể làm chậm cả dây chuyền — nhưng tìm đúng nguyên nhân, đúng giải pháp và đúng tài liệu lại không hề đơn giản.
+
+w14:paraId="612E49B7" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Vietnam FoodTech Hub được xây dựng để đưa kiến thức chuyên ngành, công cụ R&D, xử lý sự cố, pháp lý và đào tạo vào một nền tảng duy nhất.
+
+w14:paraId="47CEE0F9" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Không chỉ để tra cứu — mà để giải quyết công việc nhanh hơn và ra quyết định tốt hơn.
+
+w14:paraId="66999515" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">
+
+w14:paraId="2CF944A9" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">01 | CHẨN ĐOÁN NGUYÊN NHÂN SỰ CỐ
+
+w14:paraId="71CBCECC" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Sản phẩm đổi màu? Tách lớp? Lắng? Mất cấu trúc? Hay không đạt chỉ tiêu?
+
+w14:paraId="32C96C49" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Chỉ cần tìm kiếm vấn đề, hệ thống hỗ trợ truy nguyên nhân gốc và các yếu tố có thể gây ra sự cố.
+
+w14:paraId="744BEFE1" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Từ triệu chứng → nguyên nhân → hướng xử lý.
+
+w14:paraId="203E6FE5" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">
+
+w14:paraId="16576010" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">02 | HƯỚNG DẪN KHẮC PHỤC SỰ CỐ NHÀ MÁY
+
+w14:paraId="310CFE4F" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Không dừng ở việc “biết nguyên nhân”.
+
+w14:paraId="5A84F4E3" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Hệ thống đưa ra các hướng kiểm tra và phương án khắc phục để kỹ thuật viên có thể tham khảo ngay trên dây chuyền.
+
+w14:paraId="39B3A0A7" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Biết vấn đề ở đâu – biết cần kiểm tra gì – biết nên xử lý từ đâu.
+
+w14:paraId="3B26E7A2" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">
+
+w14:paraId="5E90F7D5" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">03 | BẢNG THỰC CHIẾN XỬ LÝ SỰ CỐ
+
+w14:paraId="7A80993E" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Kiến thức hóa sinh được chuyển thành bảng hành động trực quan.
+
+w14:paraId="3283CAD2" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Khi sự cố xảy ra, người dùng có thể nhanh chóng xác định hiện tượng – nguyên nhân – kiểm tra – hành động.
+
+w14:paraId="0508B854" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Biến kiến thức thành phản xạ xử lý thực tế.
+
+w14:paraId="3A94206B" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">
+
+w14:paraId="5FAC81A9" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">04 | HỆ THỐNG HÓA KIẾN THỨC THEO NGÀNH HÀNG
+
+w14:paraId="77F71399" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Không phải mỗi ngành hàng đều có cùng một vấn đề.
+
+w14:paraId="5CB7C14D" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Vietnam FoodTech Hub phân loại kiến thức và giải pháp theo từng nhóm sản phẩm, giúp người dùng đi thẳng đến đúng lĩnh vực mình đang làm.
+
+w14:paraId="107F9665" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Ít tìm kiếm hơn – đúng thông tin hơn.
+
+w14:paraId="09B957FE" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">
+
+w14:paraId="267160B3" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">05 | TRA CỨU HỒ SƠ PHÁP LÝ XUẤT KHẨU
+
+w14:paraId="66977A0F" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Xuất khẩu không chỉ cần sản phẩm tốt, mà còn cần đúng quy định và đủ hồ sơ.
+
+w14:paraId="5C3272C8" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Hệ thống hỗ trợ tra cứu các yêu cầu pháp lý, hồ sơ và thông tin liên quan đến xuất khẩu thực phẩm.
+
+w14:paraId="166A3AA0" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Giảm thời gian tìm tài liệu – hỗ trợ chuẩn bị hồ sơ đúng hướng.
+
+w14:paraId="0457C90C" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">
+
+w14:paraId="36C87853" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">06 | TRA CỨU MÃ PHỤ GIA E-NUMBER
+
+w14:paraId="43BCCD03" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Cần kiểm tra một chất phụ gia?
+
+w14:paraId="3D11C328" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Nhập tên hoặc mã E-Number để nhanh chóng tra cứu thông tin liên quan.
+
+w14:paraId="6D78B1EA" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Tìm nhanh – kiểm tra nhanh – hỗ trợ ra quyết định nhanh.
+
+w14:paraId="4A4E5CC9" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">
+
+w14:paraId="3B4A71BF" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">07 | MÁY TÍNH CÔNG THỨC R&D
+
+w14:paraId="31FA875A" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Từ tỷ lệ nguyên liệu đến quy mô mẻ sản xuất, hệ thống hỗ trợ tính toán và quy đổi công thức cho quá trình nghiên cứu phát triển.
+
+w14:paraId="73274ECD" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Bớt tính thủ công – giảm sai số – thử nghiệm nhanh hơn.
+
+w14:paraId="4606F6C6" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">
+
+w14:paraId="1435DDC7" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">08 | TÍNH TOÁN THÔNG SỐ NHIỆT F₀ – D – Z
+
+w14:paraId="7189D895" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Thanh trùng hay tiệt trùng cần kiểm soát chính xác các thông số nhiệt.
+
+w14:paraId="5046BC4C" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Công cụ hỗ trợ tính toán F₀, D và Z để phục vụ đánh giá quá trình xử lý nhiệt.
+
+w14:paraId="44B2864D" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Từ dữ liệu nhiệt → có cơ sở để đánh giá quy trình.
+
+w14:paraId="0FD717E2" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">
+
+w14:paraId="49BBFFC2" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">09 | KIỂM TRA THÀNH PHẦN VÀ NỘI DUNG NHÃN
+
+w14:paraId="4C4F9A54" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Trước khi sản phẩm ra thị trường, hãy kiểm tra lại thông tin trên nhãn.
+
+w14:paraId="24E07517" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Công cụ hỗ trợ rà soát thành phần và các thông tin liên quan đến yêu cầu ghi nhãn.
+
+w14:paraId="51F8AE66" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Thêm một lớp kiểm tra trước khi sản phẩm đến tay người tiêu dùng.
+
+w14:paraId="4C475DFD" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">
+
+w14:paraId="68ED9211" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">10 | FLASHCARD VÀ TRÒ CHƠI RÈN PHẢN XẠ
+
+w14:paraId="7D098A3C" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Đào tạo chuyên môn không nhất thiết phải khô khan.
+
+w14:paraId="72092DDC" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Hệ thống sử dụng thẻ ghi nhớ lặp lại ngắt quãng và trò chơi tương tác để giúp người học ghi nhớ kiến thức và rèn phản xạ xử lý tình huống.
+
+w14:paraId="653139BF" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Học nhanh hơn – nhớ lâu hơn – phản ứng tốt hơn khi vào thực tế.
+
+w14:paraId="2C8132B9" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">
+
+w14:paraId="7383B0FB" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">LỜI KẾT
+
+w14:paraId="1E297BDB" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Vietnam FoodTech Hub không chỉ là một thư viện kiến thức.
+
+w14:paraId="38813EFA" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Đây là bộ công cụ thực chiến dành cho người làm R&D, sản xuất, QA/QC, kỹ thuật và quản lý ngành thực phẩm.
+
+w14:paraId="5159BC0F" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Từ một sự cố trên dây chuyền → một nguyên nhân → một giải pháp → một công thức → một hồ sơ pháp lý → một quyết định nhanh hơn.
+
+w14:paraId="7A9070F9" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627">Vietnam FoodTech Hub – Biến kiến thức công nghệ thực phẩm thành công cụ để hành động.
+
+w14:paraId="14668AE3" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="00EF5627" w:rsidRDefault="00EF5627" w:rsidP="00EF5627"/>
+
+w14:paraId="5D636C4D" w14:textId="77777777" w:rsidR="00EF5627" w:rsidRPr="009C2ED1" w:rsidRDefault="00EF5627" w:rsidP="009C2ED1">

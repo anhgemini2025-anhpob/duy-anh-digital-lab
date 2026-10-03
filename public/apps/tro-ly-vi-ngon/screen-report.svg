@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+    <filter id="softShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#0f172a" flood-opacity="0.10" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bgGrad)" />
+  <circle cx="1450" cy="180" r="300" fill="#f97316" opacity="0.10" />
+
+  <!-- Browser Frame Window -->
+  <g transform="translate(60, 40)" filter="url(#softShadow)">
+    <rect width="1480" height="920" rx="20" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+    
+    <!-- Header Bar -->
+    <rect width="1480" height="60" rx="20" fill="#f8fafc" />
+    <rect y="40" width="1480" height="20" fill="#f8fafc" />
+    <line x1="0" y1="60" x2="1480" y2="60" stroke="#e2e8f0" stroke-width="1.5" />
+
+    <circle cx="36" cy="30" r="7" fill="#ef4444" />
+    <circle cx="60" cy="30" r="7" fill="#f59e0b" />
+    <circle cx="84" cy="30" r="7" fill="#10b981" />
+
+    <rect x="220" y="14" width="1040" height="32" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <text x="250" y="35" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600">
+      https://trolyvingon.vercel.app/ • [PHÂN ĐOẠN 3: BÁO CÁO &amp; HIỆU QUẢ THỰC TẾ]
+    </text>
+
+    <!-- App Inner Content -->
+    <g transform="translate(0, 60)">
+      <!-- Top Title Bar -->
+      <g transform="translate(50, 30)">
+        <text x="0" y="30" fill="#0f172a" font-family="sans-serif" font-size="24" font-weight="900">
+          📊 Ma Trận Thực Đơn BCG & Phân Tích Lợi Nhuận Món Ăn
+        </text>
+        <text x="0" y="55" fill="#64748b" font-family="sans-serif" font-size="14" font-weight="500">
+          Tổng hợp kết quả phân tích số liệu, chỉ số KPI vận hành và tài liệu bàn giao chuyên nghiệp từ ứng dụng
+        </text>
+
+        <!-- 4 Key Metric Cards -->
+        <g transform="translate(0, 80)">
+          <!-- Card 1 -->
+          <g transform="translate(0, 0)">
+            <rect width="320" height="120" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" />
+            <text x="24" y="50" fill="#ea580c" font-family="sans-serif" font-size="32" font-weight="900">28-32%</text>
+            <text x="24" y="85" fill="#64748b" font-family="sans-serif" font-size="13" font-weight="600">Food Cost chuẩn nhà hàng</text>
+          </g>
+
+          <!-- Card 2 -->
+          <g transform="translate(350, 0)">
+            <rect width="320" height="120" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" />
+            <text x="24" y="50" fill="#059669" font-family="sans-serif" font-size="32" font-weight="900">+15%</text>
+            <text x="24" y="85" fill="#64748b" font-family="sans-serif" font-size="13" font-weight="600">Doanh thu món bán chạy (Star)</text>
+          </g>
+
+          <!-- Card 3 -->
+          <g transform="translate(700, 0)">
+            <rect width="320" height="120" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" />
+            <text x="24" y="50" fill="#d97706" font-family="sans-serif" font-size="32" font-weight="900">500+ Món</text>
+            <text x="24" y="85" fill="#64748b" font-family="sans-serif" font-size="13" font-weight="600">Thư viện công thức chuẩn hóa</text>
+          </g>
+
+          <!-- Card 4 -->
+          <g transform="translate(1050, 0)">
+            <rect width="330" height="120" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" />
+            <text x="24" y="50" fill="#7c3aed" font-family="sans-serif" font-size="30" font-weight="900">Kiểm soát</text>
+            <text x="24" y="85" fill="#64748b" font-family="sans-serif" font-size="13" font-weight="600">Hao hụt nguyên liệu < 3%</text>
+          </g>
+        </g>
+
+        <!-- Big Analytics Chart & Certificate Box -->
+        <g transform="translate(0, 230)">
+          <!-- Left Chart Container -->
+          <g transform="translate(0, 0)">
+            <rect width="880" height="470" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+            <rect width="880" height="45" rx="16" fill="#f8fafc" />
+            <rect y="30" width="880" height="15" fill="#f8fafc" />
+            <line x1="0" y1="45" x2="880" y2="45" stroke="#e2e8f0" stroke-width="1" />
+            <text x="24" y="28" fill="#0f172a" font-family="sans-serif" font-size="14" font-weight="800">
+              BIỂU ĐỒ XU HƯỚNG HIỆU QUẢ THEO THỜI GIAN (Q1 - Q4)
+            </text>
+
+            <!-- Chart visual -->
+            <g transform="translate(60, 90)">
+              <!-- Y Axis Lines -->
+              <line x1="0" y1="0" x2="760" y2="0" stroke="#f1f5f9" stroke-width="1.5" />
+              <line x1="0" y1="70" x2="760" y2="70" stroke="#f1f5f9" stroke-width="1.5" />
+              <line x1="0" y1="140" x2="760" y2="140" stroke="#f1f5f9" stroke-width="1.5" />
+              <line x1="0" y1="210" x2="760" y2="210" stroke="#f1f5f9" stroke-width="1.5" />
+              <line x1="0" y1="280" x2="760" y2="280" stroke="#cbd5e1" stroke-width="2" />
+
+              <text x="-40" y="5" fill="#94a3b8" font-family="monospace" font-size="11">100%</text>
+              <text x="-40" y="75" fill="#94a3b8" font-family="monospace" font-size="11">75%</text>
+              <text x="-40" y="145" fill="#94a3b8" font-family="monospace" font-size="11">50%</text>
+              <text x="-40" y="215" fill="#94a3b8" font-family="monospace" font-size="11">25%</text>
+              <text x="-40" y="285" fill="#94a3b8" font-family="monospace" font-size="11">0%</text>
+
+              <!-- Filled curve area -->
+              <path d="M 0,220 Q 180,160 380,90 T 760,20 L 760,280 L 0,280 Z" fill="#ea580c" opacity="0.12" />
+              <path d="M 0,220 Q 180,160 380,90 T 760,20" fill="none" stroke="#ea580c" stroke-width="4" stroke-linecap="round" />
+
+              <!-- Points -->
+              <circle cx="0" cy="220" r="6" fill="#ea580c" />
+              <circle cx="200" cy="150" r="6" fill="#ea580c" />
+              <circle cx="400" cy="85" r="6" fill="#ea580c" />
+              <circle cx="600" cy="45" r="6" fill="#ea580c" />
+              <circle cx="760" cy="20" r="7" fill="#f97316" stroke="#ffffff" stroke-width="3" />
+
+              <!-- X Labels -->
+              <text x="0" y="315" fill="#64748b" font-family="sans-serif" font-size="12" font-weight="600">Tháng 1</text>
+              <text x="200" y="315" fill="#64748b" font-family="sans-serif" font-size="12" font-weight="600">Tháng 4</text>
+              <text x="400" y="315" fill="#64748b" font-family="sans-serif" font-size="12" font-weight="600">Tháng 7</text>
+              <text x="600" y="315" fill="#64748b" font-family="sans-serif" font-size="12" font-weight="600">Tháng 10</text>
+              <text x="740" y="315" fill="#0f172a" font-family="sans-serif" font-size="12" font-weight="800">Tháng 12</text>
+            </g>
+          </g>
+
+          <!-- Right Document & Export Box -->
+          <g transform="translate(910, 0)">
+            <rect width="470" height="470" rx="16" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+            <rect width="470" height="45" rx="16" fill="#ffffff" />
+            <rect y="30" width="470" height="15" fill="#ffffff" />
+            <line x1="0" y1="45" x2="470" y2="45" stroke="#e2e8f0" stroke-width="1" />
+            <text x="20" y="28" fill="#0f172a" font-family="sans-serif" font-size="14" font-weight="800">
+              HỒ SƠ BÀN GIAO &amp; XUẤT BÁO CÁO
+            </text>
+
+            <g transform="translate(24, 70)">
+              <rect width="422" height="75" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+              <text x="18" y="32" fill="#0f172a" font-family="sans-serif" font-size="14" font-weight="700">📄 Xuất Báo Cáo Kỹ Thuật (PDF)</text>
+              <text x="18" y="55" fill="#64748b" font-family="sans-serif" font-size="12">Bao gồm công thức, đồ thị và chứng thư số</text>
+
+              <rect y="90" width="422" height="75" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+              <text x="18" y="122" fill="#0f172a" font-family="sans-serif" font-size="14" font-weight="700">📊 Xuất Bảng Dữ Liệu Excel / CSV</text>
+              <text x="18" y="145" fill="#64748b" font-family="sans-serif" font-size="12">Dữ liệu phân tích chi tiết phục vụ đối soát</text>
+
+              <rect y="180" width="422" height="75" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+              <text x="18" y="212" fill="#0f172a" font-family="sans-serif" font-size="14" font-weight="700">🔗 Chia Sẻ Báo Cáo Tức Thì (Link)</text>
+              <text x="18" y="235" fill="#64748b" font-family="sans-serif" font-size="12">Link mã hóa an toàn gửi trực tiếp cho đối tác</text>
+
+              <!-- CTA Button inside mockup -->
+              <rect y="280" width="422" height="52" rx="12" fill="url(#primaryGrad)" />
+              <text x="211" y="312" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="800" text-anchor="middle">
+                TẢI HỒ SƠ HOÀN CHỈNH (1-CLICK EXPORT)
+              </text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
