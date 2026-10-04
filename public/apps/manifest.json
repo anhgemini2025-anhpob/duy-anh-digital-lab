@@ -21,7 +21,7 @@
     "id": "lipoid-advisor",
     "name": "Lipoid R&D Advisor",
     "category": "R&D & NGUYÊN LIỆU MỸ PHẨM",
-    "sourceUrl": "https://lipoid-advisor.pages.dev",
+    "sourceUrl": "https://lipoidadvisor.vercel.app",
     "cover": "/apps/lipoid-advisor/cover.svg",
     "placeholder": "/apps/lipoid-advisor/cover-placeholder.svg",
     "featured": false
@@ -93,7 +93,7 @@
     "id": "vanderbilt-advisor",
     "name": "Vanderbilt R&D Advisor",
     "category": "R&D & HÓA CHẤT CHUYÊN DỤNG",
-    "sourceUrl": "https://vanderbilt-advisor.anh-gemini2025.workers.dev/",
+    "sourceUrl": "https://vanderbiltadvisor.vercel.app",
     "cover": "/apps/vanderbilt-advisor/cover.svg",
     "placeholder": "/apps/vanderbilt-advisor/cover-placeholder.svg",
     "featured": false

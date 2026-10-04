@@ -76,7 +76,7 @@ npm run preview
 |---|---|---|---|---|
 | 01 | `bjc-sales-training` | BJC Sales Training | Bán hàng & Đào tạo | https://bjc-sales-training.pages.dev/ |
 | 02 | `customer-visit` | Customer Visit Management | Bán hàng & Quản trị thực địa | https://customer-visit.anhpob.workers.dev |
-| 03 | `lipoid-advisor` | Lipoid R&D Advisor | R&D & Nguyên liệu Mỹ phẩm | https://lipoid-advisor.pages.dev |
+| 03 | `lipoid-advisor` | Lipoid R&D Advisor | R&D & Nguyên liệu Mỹ phẩm | https://lipoidadvisor.vercel.app |
 | 04 | `clinic-spa` | Clinic Spa Management | Vận hành & Quản trị Dịch vụ | https://linh-da-skinlab.pages.dev |
 | 05 | `spa-landing` | Spa Service Landing Page | Dịch vụ & Trải nghiệm Spa | https://linhda-skinlap.pages.dev |
 | 06 | `bjc-sales-pitch` | Sales Pitch & Battle Card | Công cụ Bán hàng B2B | https://bjc-sales-pitch.pages.dev |
@@ -84,7 +84,7 @@ npm run preview
 | 08 | `tro-ly-vi-ngon` | Trợ Lý Vị Ngon | AI & Công nghệ Ẩm thực | https://trolyvingon.vercel.app/ |
 | 09 | `vet-aqua-erp` | Vet & Aqua ERP Lite | ERP & Nông nghiệp Thủy sản | https://vet-aqua-erp-lite.vercel.app |
 | 10 | `yeast-extract-test` | Yeast Extract Knowledge Test | Đào tạo & Đánh giá năng lực | https://cool-tulumba-fa58d6.netlify.app/ |
-| 11 | `vanderbilt-advisor` | Vanderbilt R&D Advisor | R&D & Hóa chất Chuyên dụng | https://vanderbilt-advisor.anh-gemini2025.workers.dev/ |
+| 11 | `vanderbilt-advisor` | Vanderbilt R&D Advisor | R&D & Hóa chất Chuyên dụng | https://vanderbiltadvisor.vercel.app |
 | 12 | `algaktiv-advisor` | Algaktiv R&D Advisor | R&D & Vi tảo Biển Sinh học | https://algaktiv-advisor.pages.dev/ |
 | 13 | `lanxess-cosmetic-advisor` | LANXESS Cosmetic Advisor | R&D & Hệ thống Bảo quản | https://lanxess-cosmetic-advisor.pages.dev/ |
 | 14 | `cosmederm-ai-academy` | CosmeDerm AI Academy | AI • Đào tạo & R&D Mỹ phẩm | https://cosmederm-ai.vercel.app/ |
