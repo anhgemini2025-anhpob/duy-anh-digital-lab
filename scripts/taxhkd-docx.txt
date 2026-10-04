@@ -1,0 +1,57 @@
+🎬 SMARTTAX HKD – TRỢ LÝ THUẾ CHO HỘ KINH DOANH
+Làm chủ một cửa hàng đã nhiều việc.Nhưng đến kỳ thuế, sổ sách, hóa đơn và chứng từ lại khiến nhiều chủ hộ phải đau đầu hơn cả việc bán hàng.
+Hóa đơn phải lưu thế nào?Hàng nhập – hàng bán – hàng tồn có khớp không?Tiền bán hàng đi đâu?Thuế phải tính bao nhiêu?Đến hạn nộp mà quên thì sao?
+SmartTax HKD được thiết kế để giúp chủ hộ kinh doanh quản lý những việc đó đơn giản hơn – ngay trên một ứng dụng.
+1. 🚀 KHỞI TẠO HỒ SƠ CHỈ VỚI 3 BƯỚC
+Không cần mất nhiều thời gian thiết lập ban đầu.
+Chỉ cần nhập thông tin kinh doanh, ngành nghề và doanh thu, hệ thống hỗ trợ xác định mức thuế phù hợp với từng nhóm ngành, giúp bạn có một hồ sơ rõ ràng ngay từ đầu.
+2. 🔐 XÁC THỰC VNeID &amp; QUẢN LÝ TÀI KHOẢN NGÂN HÀNG
+Thông tin kinh doanh được gắn với tài khoản định danh và tài khoản ngân hàng sử dụng cho hoạt động kinh doanh.
+Nhờ đó, chủ hộ dễ dàng đối chiếu tiền bán hàng và dòng tiền thực tế, hạn chế nhầm lẫn.
+3. 📷 CHỤP HÓA ĐƠN – AI TỰ ĐỌC
+Mỗi ngày có rất nhiều hóa đơn đầu vào?
+Không cần ngồi gõ từng dòng.
+Chỉ cần chụp ảnh hóa đơn, AI hỗ trợ đọc tên hàng, số lượng, đơn giá, ngày mua và đưa dữ liệu vào hệ thống.
+Nhanh hơn và giảm việc nhập tay.
+4. 🧾 MUA HÀNG KHÔNG CÓ HÓA ĐƠN – VẪN CÓ CHỨNG TỪ
+Có những trường hợp mua nông sản, lâm sản, thủy sản hoặc hàng hóa trực tiếp từ người dân nên không có hóa đơn.
+SmartTax HKD hỗ trợ tạo bảng kê mua hàng, lưu thông tin và chữ ký điện tử trên màn hình để thuận tiện quản lý chứng từ.
+5. 📦 QUẢN LÝ KHO – BIẾT HÀNG CÒN BAO NHIÊU
+Nhập hàng, bán hàng đến đâu, tồn kho được cập nhật đến đó.
+Hệ thống hỗ trợ quản lý kho theo mẫu và chặn việc xuất bán vượt quá số lượng đang có, giúp hạn chế sai lệch giữa sổ sách và hàng thực tế.
+6. 🛒 BÁN HÀNG NGAY TRÊN ĐIỆN THOẠI
+Không cần một hệ thống bán hàng phức tạp.
+SmartTax HKD có giao diện máy tính tiền đơn giản, thao tác nhanh ngay trên điện thoại.
+Chủ hộ cũng có thể phân quyền cho nhân viên bán hàng và xuất hóa đơn theo quyền được giao.
+7. 🧾 BÁN HÀNG – XUẤT HÓA ĐƠN ĐIỆN TỬ
+Khi khách cần hóa đơn, hệ thống hỗ trợ tạo hóa đơn điện tử trực tiếp từ quy trình bán hàng.
+Với khách mua lẻ không lấy hóa đơn, thông tin cũng được xử lý theo quy định tương ứng.
+Bán hàng và quản lý hóa đơn được kết nối trong cùng một quy trình.
+8. 💳 VIETQR – KHÁCH QUÉT LÀ THANH TOÁN
+Không cần đọc số tài khoản hay nhập số tiền bằng tay.
+Hệ thống tự tạo VietQR theo đúng giá trị hóa đơn, giúp khách thanh toán nhanh hơn và giảm nguy cơ chuyển nhầm tiền.
+9. 🏷️ TỰ ĐỘNG XỬ LÝ CHÍNH SÁCH GIẢM THUẾ
+Một mặt hàng có được áp dụng chính sách giảm thuế hay không đôi khi rất khó nhớ.
+SmartTax HKD hỗ trợ nhận diện những mặt hàng thuộc diện áp dụng theo dữ liệu cấu hình của hệ thống và tự động đưa thông tin cần thiết lên hóa đơn.
+Giúp chủ hộ giảm bớt việc phải tự nhớ và xử lý thủ công.
+10. 📚 TỰ ĐỘNG TỔNG HỢP 7 LOẠI SỔ SÁCH
+Đây là phần mà nhiều chủ hộ ngại nhất.
+Doanh thu, mua hàng, bán hàng, tiền mặt, tồn kho…
+Thay vì ghi chép từng cuốn sổ riêng, SmartTax HKD tự động tổng hợp dữ liệu thành các loại sổ cần thiết, giúp việc theo dõi và đối chiếu nhẹ nhàng hơn.
+11. 🧮 TÍNH THUẾ &amp; KẾT XUẤT HỒ SƠ
+Đến kỳ tính thuế, không cần lấy máy tính ra cộng từng khoản.
+Hệ thống hỗ trợ tạm tính nghĩa vụ thuế dựa trên dữ liệu đã nhập, đồng thời hỗ trợ kết xuất dữ liệu theo định dạng phù hợp để phục vụ việc kê khai, nộp thuế.
+12. 🚨 DASHBOARD – KHÔNG LO QUÊN HẠN
+Một trong những rủi ro lớn nhất là quên việc phải làm.
+SmartTax HKD có màn hình tổng quan để theo dõi doanh thu, nghĩa vụ thuế và các mốc thời gian quan trọng.
+Hệ thống cảnh báo khi gần đến hạn, giúp chủ hộ chủ động hơn và hạn chế rơi vào tình trạng đến hạn mới cuống cuồng tìm lại sổ sách, hóa đơn và chứng từ.
+🎯 SMARTTAX HKD – ĐỂ LÀM KINH DOANH, KHÔNG PHẢI LÀM KẾ TOÁN
+Bạn mở cửa hàng để kinh doanh, phục vụ khách hàng và kiếm lợi nhuận – chứ không phải để cả ngày ngồi cộng sổ.
+SmartTax HKD giúp kết nối những việc tưởng như rất rời rạc:
+Bán hàng → hóa đơn → thanh toán → kho → sổ sách → tính thuế → cảnh báo.
+Mọi thứ được đưa về một nơi, để chủ hộ dễ theo dõi hơn và chủ động hơn trong công việc của mình.
+Nếu bạn đang là chủ hộ kinh doanh và muốn giảm bớt việc ghi chép, hạn chế sai sót và chủ động hơn với hóa đơn, sổ sách và nghĩa vụ thuế…
+👉 Hãy trải nghiệm SmartTax HKD ngay hôm nay.
+Đừng đợi đến kỳ thuế mới bắt đầu整理 lại sổ sách.Hãy quản lý ngay từ giao dịch đầu tiên.
+**SmartTax HKD – Bán hàng dễ hơn.
+Sổ sách rõ hơn.Thuế chủ động hơn.**

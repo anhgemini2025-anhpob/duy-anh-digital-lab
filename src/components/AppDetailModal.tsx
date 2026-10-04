@@ -338,6 +338,9 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
   }, [isVideoFullscreen]);
 
   const getImageCaption = (idx: number, imgUrl: string) => {
+    if (app?.videoScenes && app.videoScenes[idx]?.title) {
+      return app.videoScenes[idx].title;
+    }
     if (imgUrl.includes('illustration') || imgUrl.includes('banner')) return 'Infographic & Mô hình minh họa giải pháp trực quan';
     if (imgUrl.includes('real-cover') || imgUrl.includes('real-screen-1')) return 'Giao diện bảng điều khiển ứng dụng thực tế (Chính)';
     if (imgUrl.includes('real-screen-2')) return 'Chi tiết tính năng & Thao tác nghiệp vụ';
@@ -706,39 +709,6 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                       </div>
 
                       <div className="flex items-center gap-1 sm:gap-2 text-xs font-mono text-slate-300">
-                        {/* Audio studio narration toggle */}
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setIsMuted(!isMuted);
-                          }}
-                          className={`flex items-center gap-1 px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-lg border transition-all cursor-pointer font-bold text-[10px] sm:text-xs whitespace-nowrap ${
-                            isMuted
-                              ? 'bg-slate-900/90 text-slate-400 border-slate-700 hover:text-white'
-                              : 'bg-emerald-950/90 text-emerald-300 border-emerald-500/60 shadow-md shadow-emerald-500/20'
-                          }`}
-                          title={isMuted ? `Bật thuyết minh ${app.id === 'vet-aqua-erp' ? 'Đối thoại Nam & Nữ Miền Tây' : app.id === 'htx-rau-cu' ? 'Nữ Miền Tây' : app.id === 'uth-scm-navigator' ? 'Nam & Nữ Sài Gòn' : app.id === 'tropilab-riskos' ? 'Giọng Nữ Miền Nam (Studio)' : 'Giọng Nam Miền Nam (Studio)'}` : "Tắt thuyết minh"}
-                        >
-                          {isMuted ? (
-                            <>
-                              <VolumeX className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-slate-400 shrink-0" />
-                              <span className="hidden xs:inline">Tắt tiếng</span>
-                            </>
-                          ) : (
-                            <>
-                              <Volume2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-emerald-400 shrink-0" />
-                              <div className="flex items-end gap-0.5 h-2.5 sm:h-3">
-                                <span className={`w-0.5 bg-emerald-400 rounded-full transition-all ${isAudioPlaying ? 'h-2.5 animate-pulse' : 'h-1'}`} />
-                                <span className={`w-0.5 bg-emerald-400 rounded-full transition-all ${isAudioPlaying ? 'h-2 animate-bounce' : 'h-1'}`} />
-                                <span className={`w-0.5 bg-emerald-400 rounded-full transition-all ${isAudioPlaying ? 'h-3 animate-pulse' : 'h-1'}`} />
-                              </div>
-                              <span className="text-[10px] sm:text-[11px] text-emerald-300 hidden sm:inline">
-                                {app.id === 'vet-aqua-erp' ? 'Nam & Nữ Miền Tây' : app.id === 'htx-rau-cu' ? 'Nữ Miền Tây' : app.id === 'uth-scm-navigator' ? 'Nam & Nữ UTH' : app.id === 'tropilab-riskos' ? 'Nữ Miền Nam' : 'Nam Studio'}
-                              </span>
-                            </>
-                          )}
-                        </button>
-
                         {/* Speed Selector */}
                         <button
                           onClick={(e) => {
@@ -823,12 +793,6 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                                     : `CHỨC NĂNG #${selectedSceneIdx + 1} • ${app.videoScenes[selectedSceneIdx]?.time || '0:00'}`}
                                 </span>
                               </div>
-                              {!isMuted && (
-                                <div className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-950/80 border border-emerald-500/50 text-emerald-300 text-[11px] font-bold">
-                                  <span className={`w-2 h-2 rounded-full bg-emerald-400 ${isAudioPlaying ? 'animate-ping' : ''} shrink-0`} />
-                                  <span>🎙️ {app.id === 'vet-aqua-erp' ? 'Đối thoại Nam & Nữ Miền Tây (Chân chất, Dễ thương)' : app.id === 'htx-rau-cu' ? 'Thuyết minh Nữ Miền Tây (Chân chất, Ấm áp)' : app.id === 'uth-scm-navigator' ? 'Đối thoại Nam & Nữ Sinh Viên UTH' : app.id === 'tropilab-riskos' ? 'Thuyết minh Nữ Miền Nam (Studio)' : 'Thuyết minh Giọng Nam Miền Nam (Studio)'}</span>
-                                </div>
-                              )}
                             </div>
                             
                             {/* Feature Name */}
@@ -940,6 +904,26 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                             title="Xem lại từ đầu"
                           >
                             <RotateCcw className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
+                          </button>
+
+                          {/* Audio Mute/Unmute */}
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setIsMuted(!isMuted);
+                            }}
+                            className={`p-1 sm:p-1.5 rounded-lg border transition-colors cursor-pointer ${
+                              isMuted
+                                ? 'bg-slate-800/90 hover:bg-slate-700 text-slate-400 border-slate-700'
+                                : 'bg-slate-800/90 hover:bg-slate-700 text-emerald-400 border-emerald-500/50'
+                            }`}
+                            title={isMuted ? "Bật âm thanh" : "Tắt âm thanh"}
+                          >
+                            {isMuted ? (
+                              <VolumeX className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
+                            ) : (
+                              <Volume2 className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
+                            )}
                           </button>
 
                           <span className="font-mono text-slate-400 text-[10px] sm:text-[11px] ml-0.5 sm:ml-1 whitespace-nowrap">

@@ -646,23 +646,106 @@ export const APPS_DATA: AppItem[] = [
     categoryId: "sales-business",
     description: "Trợ lý số hóa quản trị bán hàng POS, kiểm soát kho và tự động kê khai thuế GTGT / TNCN theo quý cho hộ gia đình và hộ kinh doanh cá thể.",
     tags: ["Thuế Hộ Gia Đình", "Báo Cáo Thuế Hộ Kinh Doanh", "SmartTax HKD", "Hóa Đơn Điện Tử", "Thuế HKD", "POS Bán Hàng"],
-    coverImage: '/apps/taxhkd/real-cover.jpg',
-    placeholderImage: '/apps/taxhkd/real-cover.jpg',
+    coverImage: '/apps/taxhkd/feature_01_gioi_thieu_tong_quan.jpg',
+    placeholderImage: '/apps/taxhkd/feature_01_gioi_thieu_tong_quan.jpg',
+    illustrationImage: '/apps/taxhkd/feature_14_smarttax_hkd_kinh_doanh_khong_ke_toan.jpg',
     detailImages: [
-      '/apps/taxhkd/real-cover.jpg',
-      '/apps/taxhkd/real-screen-2.jpg',
-      '/apps/taxhkd/real-screen-3.jpg'
+      '/apps/taxhkd/feature_01_gioi_thieu_tong_quan.jpg',
+      '/apps/taxhkd/feature_02_khoi_tao_ho_so_3_buoc.jpg',
+      '/apps/taxhkd/feature_03_xac_thuc_vneid_tai_khoan_ngan_hang.jpg',
+      '/apps/taxhkd/feature_04_chup_hoa_don_ai_nhan_dien.jpg',
+      '/apps/taxhkd/feature_05_mua_hang_khong_hoa_don_bang_ke.jpg',
+      '/apps/taxhkd/feature_06_quan_ly_kho_hang_chan_xuat_am.jpg',
+      '/apps/taxhkd/feature_07_ban_hang_pos_tren_dien_thoai.jpg',
+      '/apps/taxhkd/feature_08_xuat_hoa_don_dien_tu_tuc_thi.jpg',
+      '/apps/taxhkd/feature_09_thanh_toan_vietqr_dong.jpg',
+      '/apps/taxhkd/feature_10_tu_dong_xu_ly_giam_thue.jpg',
+      '/apps/taxhkd/feature_11_tu_dong_tong_hop_7_so_ke_toan.jpg',
+      '/apps/taxhkd/feature_12_tinh_thue_ket_xuat_to_khai_01_cnkd.jpg',
+      '/apps/taxhkd/feature_13_dashboard_canh_bao_nguong_thue.jpg',
+      '/apps/taxhkd/feature_14_smarttax_hkd_kinh_doanh_khong_ke_toan.jpg',
+      '/apps/taxhkd/feature_15_loi_binh_diem_bat_ngo_khi_thu_nghiem.jpg'
     ],
     imageAlt: "Giao diện bảng điều khiển quản trị thuế và bán hàng hộ kinh doanh SmartTax HKD",
     featured: false,
-    videoDuration: "1:15",
-    videoTagline: "Trải nghiệm máy tính tiền POS và kết xuất tờ khai thuế hộ kinh doanh trong 30 giây",
+    videoDuration: "5:32",
+    videoTagline: "SmartTax HKD – Bán hàng dễ hơn, Sổ sách rõ hơn, Thuế chủ động hơn",
     videoScenes: [
-      { time: "0:00", title: "Tổng quan & Cảnh báo Ngưỡng thuế", description: "Theo dõi quỹ tiền mặt, tiền gửi ngân hàng, thuế tạm tính và cảnh báo ngưỡng miễn thuế 500 triệu / HĐĐT máy tính tiền 1 tỷ." },
-      { time: "0:15", title: "Máy bán hàng POS & Hóa đơn VietQR", description: "Bán lẻ tạo hóa đơn máy tính tiền siêu tốc, tự động tính thuế GTGT và TNCN chuẩn xác theo từng ngành nghề kinh doanh, sinh mã thanh toán VietQR động." },
-      { time: "0:30", title: "Quản lý Kho hàng & Phân loại Thuế suất", description: "Kiểm soát xuất nhập tồn kho, cảnh báo xuất âm kho và tự động phân loại tỷ lệ thuế suất GTGT và TNCN chuẩn xác theo danh mục mặt hàng kinh doanh." },
-      { time: "0:45", title: "Hệ thống 7 Sổ sách & Tờ khai 01/CNKD", description: "Tự động kết chuyển đầy đủ 7 sổ kế toán S1 đến S7 và kết xuất hồ sơ tờ khai thuế quý 01/CNKD định dạng chuẩn sẵn sàng nộp cho cơ quan thuế." },
-      { time: "1:00", title: "Lời bình & Tính năng bất ngờ khi thử nghiệm", description: "Lời bình thực tế: Hệ thống trợ lý thuế hộ kinh doanh thiết kế rất sát với thực tế vận hành cửa hàng. Điểm bất ngờ khi thử nghiệm là chế độ Offline PWA vẫn bán hàng mượt mà khi mất mạng và bảng tra cứu mức phạt thuế minh bạch. Hãy khám phá và bạn sẽ phát hiện thêm nhiều chức năng khác như in hóa đơn mini và thiết lập thông tin cơ sở kinh doanh!" }
+      {
+        time: "0:00",
+        title: "SMARTTAX HKD: Trợ Lý Thuế Số Hóa Cho Hộ Kinh Doanh",
+        description: "Bán hàng đã bận, đến kỳ thuế sổ sách, hóa đơn, chứng từ lại khiến chủ hộ đau đầu. SmartTax HKD giúp kết nối bán hàng, hóa đơn, kho, sổ sách và kê khai thuế trọn vẹn ngay trên điện thoại."
+      },
+      {
+        time: "0:29",
+        title: "01 | Khởi Tạo Hồ Sơ Kinh Doanh Chỉ Với 3 Bước",
+        description: "Thiết lập ban đầu siêu tốc: Chọn ngành nghề, nhập doanh thu dự kiến, hệ thống tự động xác định mức thuế suất GTGT và TNCN chuẩn xác từng nhóm ngành."
+      },
+      {
+        time: "0:52",
+        title: "02 | Xác Thực VNeID & Quản Lý Tài Khoản Ngân Hàng",
+        description: "Gắn định danh VNeID và tài khoản ngân hàng kinh doanh riêng biệt. Tự động đối soát dòng tiền bán hàng thực tế, minh bạch thu chi và hạn chế tối đa nhầm lẫn."
+      },
+      {
+        time: "1:12",
+        title: "03 | Chụp Ảnh Hóa Đơn Đầu Vào – AI Tự Động Đọc Dữ Liệu",
+        description: "Không cần gõ tay từng dòng hóa đơn mua hàng. Trí tuệ nhân tạo AI tự động nhận diện tên hàng hóa, số lượng, đơn giá, ngày mua và đưa thẳng dữ liệu vào kho."
+      },
+      {
+        time: "1:33",
+        title: "04 | Mua Hàng Không Hóa Đơn – Lập Bảng Kê & Ký Điện Tử",
+        description: "Mua nông sản, thủy sản hoặc hàng trực tiếp từ người dân không có hóa đơn: Tự động lập Bảng kê mua hàng kèm chữ ký điện tử trên màn hình, chứng từ hợp lệ sẵn sàng giải trình thuế."
+      },
+      {
+        time: "1:54",
+        title: "05 | Quản Lý Kho Xuất Nhập Tồn & Chặn Xuất Âm Kho",
+        description: "Kiểm soát kho theo thời gian thực: Nhập bán đến đâu cập nhật đến đó, tự động chặn xuất bán vượt tồn kho thực tế, bảo đảm sổ sách khớp từng món ngoài quầy."
+      },
+      {
+        time: "2:17",
+        title: "06 | Bán Hàng POS Siêu Tốc Ngay Trên Điện Thoại",
+        description: "Giao diện máy tính tiền POS tối ưu trên điện thoại di động: Thao tác chọn món và thanh toán cực nhanh, hỗ trợ phân quyền cho nhân viên bán hàng đứng quầy."
+      },
+      {
+        time: "2:38",
+        title: "07 | Xuất Hóa Đơn Điện Tử Tức Thì Khi Bán Hàng",
+        description: "Đáp ứng chuẩn quy định hóa đơn điện tử khởi tạo từ máy tính tiền: Hoàn thành đơn bán hàng là hóa đơn được tạo ngay lập tức, phân loại chuẩn cả khách lẻ không lấy hóa đơn."
+      },
+      {
+        time: "3:00",
+        title: "08 | Thanh Toán Mã Động VietQR – Khách Quét Là Xong",
+        description: "Tự động sinh mã VietQR động theo đúng giá trị từng đơn hàng: Khách quét mã xác nhận chuyển khoản tức thì, tiền về tài khoản chuẩn xác không lo nhầm lẫn."
+      },
+      {
+        time: "3:20",
+        title: "09 | Tự Động Nhận Diện & Áp Dụng Chính Sách Giảm Thuế",
+        description: "Cấu hình sẵn chính sách thuế cập nhật: Tự động nhận diện mặt hàng thuộc diện giảm thuế GTGT và đưa mức ưu đãi lên hóa đơn, không cần ghi nhớ thủ công."
+      },
+      {
+        time: "3:41",
+        title: "10 | Tự Động Lập Trọn Bộ 7 Sổ Kế Toán Hộ Kinh Doanh",
+        description: "Tự động tổng hợp dữ liệu thành trọn bộ 7 cuốn sổ kế toán S1 đến S7 theo Thông tư 88 của Bộ Tài chính: Doanh thu, chi phí, vật liệu, tiền mặt, tiền gửi... tra cứu chỉ với một nút bấm."
+      },
+      {
+        time: "4:03",
+        title: "11 | Tự Động Tính Thuế & Kết Xuất Tờ Khai 01/CNKD",
+        description: "Tự động tạm tính chính xác nghĩa vụ thuế GTGT và TNCN theo doanh thu thực tế, kết xuất bộ hồ sơ tờ khai mẫu 01/CNKD sẵn sàng phục vụ kê khai và nộp thuế."
+      },
+      {
+        time: "4:23",
+        title: "12 | Dashboard Thông Minh & Cảnh Báo Ngưỡng Thuế",
+        description: "Bảng điều khiển trực quan theo dõi doanh thu lũy kế, giám sát ngưỡng 500 triệu và 1 tỷ đồng, đếm ngược nhắc hạn nộp tờ khai giúp chủ hộ luôn chủ động, tránh bị phạt."
+      },
+      {
+        time: "4:43",
+        title: "13 | SmartTax HKD: Làm Kinh Doanh, Không Phải Làm Kế Toán",
+        description: "Kết nối liền mạch: Bán hàng → Hóa đơn → Thanh toán → Kho → Sổ sách → Tính thuế → Cảnh báo. Mọi việc gói gọn trong tầm tay, giải phóng hoàn toàn thời gian cho chủ hộ."
+      },
+      {
+        time: "5:04",
+        title: "14 | Lời Bình Thực Tế & Khám Phá Trải Nghiệm SmartTax HKD",
+        description: "Lời bình thực tế: Hệ thống thiết kế rất sát với thực tiễn cửa hàng tại Việt Nam. Điểm bất ngờ khi thử nghiệm là ứng dụng PWA chạy mượt mà ngay cả khi mất mạng Internet. Khám phá ngay tại taxhkd.vercel.app!"
+      }
     ],
     audience: "Chủ hộ gia đình, hộ kinh doanh cá thể, cửa hàng tạp hóa, nhà thuốc, siêu thị mini, tiệm bán lẻ & chuỗi dịch vụ.",
     problem: "Hộ gia đình, hộ kinh doanh chuyển đổi sang chế độ kê khai gặp nhiều bỡ ngỡ, dễ sai sót sổ sách kế toán, khó nhớ hạn nộp và đối mặt với các mức phạt nặng về hóa đơn điện tử.",

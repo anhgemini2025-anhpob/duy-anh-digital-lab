@@ -990,12 +990,6 @@ export const Hero: React.FC<HeroProps> = ({
                   <ShieldCheck className="w-3.5 h-3.5 text-teal-400" />
                   <span>ISO 22367:2020 &amp; ISO 15189:2022</span>
                 </span>
-
-                {/* Voiceover Badge */}
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-950/80 border border-emerald-400/50 text-[11px] font-bold text-emerald-300">
-                  <Volume2 className="w-3.5 h-3.5 text-emerald-400 animate-pulse" />
-                  <span>Giọng thuyết minh: Nữ Miền Nam ngọt ngào</span>
-                </span>
               </div>
 
               {/* Direct Link to App */}
@@ -1081,7 +1075,7 @@ export const Hero: React.FC<HeroProps> = ({
                     className="flex-1 min-w-[200px] inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-black text-xs sm:text-sm text-slate-950 bg-gradient-to-r from-teal-400 via-cyan-400 to-teal-500 hover:from-teal-300 hover:to-cyan-300 shadow-lg shadow-teal-500/30 active:scale-95 transition-all cursor-pointer"
                   >
                     <Play className="w-4 h-4 fill-current text-slate-950" />
-                    <span>Xem Video Tour (Giọng nữ Miền Nam • 3:10)</span>
+                    <span>Xem Video Tour (3:10)</span>
                   </button>
 
                   <button

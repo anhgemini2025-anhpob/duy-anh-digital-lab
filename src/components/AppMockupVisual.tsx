@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Play, Pause, ExternalLink, Sparkles, Volume2, VolumeX, Maximize2, Minimize2, Layers } from 'lucide-react';
+import { Play, Pause, ExternalLink, Sparkles, Volume2, VolumeX, Maximize2, Minimize2 } from 'lucide-react';
 import { AppItem } from '../data/apps';
 import { openExternalApp, isMobileOrWebview } from '../utils/navigation';
 
@@ -57,7 +57,7 @@ export const AppMockupVisual: React.FC<AppMockupVisualProps> = ({
     return () => clearInterval(interval);
   }, [mode, isPlaying, totalScenes, secondsPerScene]);
 
-  // Audio voiceover sync (Giọng Nam Miền Nam - Studio)
+  // Audio voiceover sync
   useEffect(() => {
     if (mode !== 'video' || !isPlaying || isMuted) {
       if (audioRef.current) {
@@ -225,7 +225,7 @@ export const AppMockupVisual: React.FC<AppMockupVisualProps> = ({
                   ? 'bg-slate-900/80 hover:bg-slate-800 text-slate-400 border-slate-700/60'
                   : 'bg-emerald-950/80 text-emerald-300 border-emerald-500/50 shadow-sm'
               }`}
-              title={isMuted ? "Bấm để nghe thuyết minh Giọng Nam Miền Nam (Studio)" : "Tắt âm thanh thuyết minh"}
+              title={isMuted ? "Bật âm thanh" : "Tắt âm thanh"}
             >
               {isMuted ? (
                 <>
@@ -240,7 +240,6 @@ export const AppMockupVisual: React.FC<AppMockupVisualProps> = ({
                     <span className={`w-0.5 bg-emerald-400 rounded-full ${isAudioPlaying ? 'h-1.5 animate-bounce' : 'h-1'}`} />
                     <span className={`w-0.5 bg-emerald-400 rounded-full ${isAudioPlaying ? 'h-2 animate-pulse' : 'h-1'}`} />
                   </div>
-                  <span className="hidden md:inline text-[11px] text-emerald-300">Nam Miền Nam</span>
                 </span>
               )}
             </button>
@@ -424,12 +423,6 @@ export const AppMockupVisual: React.FC<AppMockupVisualProps> = ({
         }}
         className="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-[1.03]"
       />
-
-      {/* Gallery Count Badge */}
-      <div className="absolute bottom-2.5 right-2.5 z-10 px-3 py-1 rounded-xl bg-[#07111E]/95 text-white text-xs font-bold flex items-center gap-1.5 shadow-md backdrop-blur-md border border-amber-400/40">
-        <Layers className="w-3.5 h-3.5 text-amber-400" />
-        <span className="text-amber-200">{app.detailImages?.length || 3} ảnh thực tế &amp; Video</span>
-      </div>
 
       {/* Hover Overlay */}
       <div className="hidden md:flex absolute inset-0 bg-[#07111E]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-200 items-center justify-center backdrop-blur-[2px]">
