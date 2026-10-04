@@ -1,0 +1,87 @@
+Một Hợp tác xã mỗi ngày xuất hàng, nhập hàng, rau hư, tiền thu – tiền chi… nhưng nếu vẫn quản lý bằng sổ tay và Excel, Chủ nhiệm có thật sự biết mình đang lời hay đang thất thoát ở đâu?
+
+Ứng dụng Cánh đồng số được xây dựng để giúp Ban quản trị HTX nhìn thấy hàng hóa, dòng tiền và công việc mỗi ngày — ngay trên một chiếc điện thoại.
+
+🌱 1. QUẢN LÝ ĐƠN HÀNG & XUẤT KHO
+
+Mỗi đơn hàng đều được chia rõ: đang giao, đã giao hay cần xử lý.Khi xuất rau, hệ thống kiểm tra đúng từng lô, đúng số lượng thực tế trong kho, tránh tình trạng xuất nhầm hoặc xuất quá hàng.
+
+Nhân viên có thể chụp phiếu, chụp hóa đơn và lấy chữ ký khách hàng ngay trên điện thoại, giúp đối chiếu dễ dàng và hạn chế tranh chấp.
+
+🥬 2. BIẾT RAU HƯ Ở ĐÂU, HƯ BAO NHIÊU
+
+Rau bị dập, hỏng hay hao hụt đều được ghi nhận ngay.
+
+HTX có thể biết lô nào hư nhiều, nguyên nhân gì và tỷ lệ hao hụt bao nhiêu, từ đó tìm cách giảm thất thoát và giữ lại lợi nhuận.
+
+⏰ 3. HÀNG NÀO CẦN BÁN TRƯỚC?
+
+Không cần nhớ bằng đầu.
+
+Hệ thống tự cảnh báo những lô cận hạn, thu hoạch trước hoặc cần xuất trước, giúp HTX ưu tiên bán đúng hàng và hạn chế rau nằm kho quá lâu.
+
+🌾 4. BIẾT TRƯỚC SẮP CÓ BAO NHIÊU RAU
+
+Chủ nhiệm có thể theo dõi từng khu ruộng, từng xã viên và dự kiến sản lượng sắp thu hoạch.
+
+Đặc biệt, hệ thống cảnh báo thời gian cách ly thuốc, phân bón để biết lô nào đã đủ điều kiện thu hoạch, lô nào chưa.
+
+Nhờ vậy, HTX có thể chủ động tìm đầu ra và chốt đơn trước khi rau được thu hoạch.
+
+🎙️ 5. NÔNG DÂN KHÔNG RÀNH ĐIỆN THOẠI VẪN DÙNG ĐƯỢC
+
+Xuống giống, bón phân, phun thuốc, tưới nước… chỉ cần chọn, chụp ảnh hoặc nói để ghi.
+
+Không cần gõ nhiều.Dữ liệu được lưu thành nhật ký đồng ruộng và hồ sơ truy xuất nguồn gốc.
+
+💰 6. TIỀN RAU CỦA TỪNG XÃ VIÊN RÕ RÀNG
+
+Nhập bao nhiêu, đơn giá bao nhiêu, thành tiền bao nhiêu — hệ thống tự tính.
+
+Xã viên có thể tự xem “Tiền rau của tôi”, còn Ban quản trị nắm được tổng số tiền phải trả.
+
+Rõ ràng ngay từ đầu, giảm nhầm lẫn và hạn chế tranh chấp.
+
+📊 7. QUẢN LÝ SỔ QUỸ & DÒNG TIỀN
+
+Tiền vào, tiền ra, số dư quỹ được cập nhật trên hệ thống.
+
+Đặc biệt, HTX có thể đối chiếu tiền với hàng nhập, hàng xuất và hàng hỏng, từ đó dễ dàng phát hiện những khoản chênh lệch bất thường.
+
+📑 8. KHÔNG CÒN MẤT HÀNG GIỜ CỘNG EXCEL
+
+Các báo cáo nhập hàng, xuất hàng, tồn kho và sổ HTX có thể xuất ra Excel theo mẫu.
+
+Khi nhập dữ liệu từ Excel, hệ thống còn kiểm tra và cảnh báo lỗi trước khi lưu.
+
+Giảm việc cộng sổ thủ công, giảm sai sót và tiết kiệm thời gian cho cán bộ HTX.
+
+📶 9. MẤT MẠNG VẪN LÀM VIỆC
+
+Ngoài đồng không có mạng? Trong kho sóng yếu?
+
+Vẫn ghi nhận được.
+
+Khi có mạng trở lại, dữ liệu sẽ tự động đồng bộ. Công việc không phải dừng lại chỉ vì mất Internet.
+
+🔐 10. AI ĐƯỢC LÀM ĐÚNG VIỆC, AI ĐƯỢC QUẢN LÝ ĐÚNG QUYỀN
+
+Chủ nhiệm xem toàn bộ.Thủ kho quản lý nhập – xuất – hỏng.Nhân viên giao hàng quản lý đơn giao.Xã viên chỉ xem thông tin của mình.
+
+Ai làm việc gì, được xem đúng phần việc đó.
+
+🚨 11. MỞ APP LÀ BIẾT HÔM NAY PHẢI LÀM GÌ
+
+Không cần lật từng cuốn sổ.
+
+Màn hình “Việc hôm nay” đưa ngay những vấn đề cần xử lý lên trước:
+
+Đơn nào đang trễ?Lô nào sắp hết hạn?Rau nào bị hỏng?Ruộng nào sắp thu hoạch?Việc gì cần xử lý ngay?
+
+Cánh đồng số không thay người quản lý HTX.Nó giúp người quản lý nhìn rõ hơn để quyết định nhanh hơn.
+
+Từ ruộng → kho → giao hàng → tiền rau → sổ quỹ → báo cáo, tất cả được kết nối trên một hệ thống.
+
+Ít sổ sách hơn. Ít thất thoát hơn. Minh bạch hơn. Và quan trọng nhất — biết rõ HTX đang hoạt động như thế nào.
+
+👉 Hãy trải nghiệm App HTX Rau Củ Quả – “Cánh đồng số”Để quản lý HTX không chỉ bằng kinh nghiệm, mà bằng dữ liệu rõ ràng và kịp thời.
