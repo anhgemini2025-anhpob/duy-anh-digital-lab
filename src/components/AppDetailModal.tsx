@@ -135,7 +135,7 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
     const audio = getGlobalVoiceoverAudio();
     if (!audio) return;
 
-    const AUDIO_BUILD_VERSION = '20261004_htx_v1';
+    const AUDIO_BUILD_VERSION = '20261004_vetaqua_v1';
     const audioUrl = `/apps/${app.id}/audio-scene-${selectedSceneIdx + 1}.mp3?v=${AUDIO_BUILD_VERSION}`;
     
     // Only update and load if src is different
@@ -717,7 +717,7 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                               ? 'bg-slate-900/90 text-slate-400 border-slate-700 hover:text-white'
                               : 'bg-emerald-950/90 text-emerald-300 border-emerald-500/60 shadow-md shadow-emerald-500/20'
                           }`}
-                          title={isMuted ? `Bật thuyết minh ${app.id === 'tropilab-riskos' ? 'Giọng Nữ Miền Nam (Studio)' : 'Giọng Nam Miền Nam (Studio)'}` : "Tắt thuyết minh"}
+                          title={isMuted ? `Bật thuyết minh ${app.id === 'vet-aqua-erp' ? 'Đối thoại Nam & Nữ Miền Tây' : app.id === 'htx-rau-cu' ? 'Nữ Miền Tây' : app.id === 'uth-scm-navigator' ? 'Nam & Nữ Sài Gòn' : app.id === 'tropilab-riskos' ? 'Giọng Nữ Miền Nam (Studio)' : 'Giọng Nam Miền Nam (Studio)'}` : "Tắt thuyết minh"}
                         >
                           {isMuted ? (
                             <>
@@ -733,7 +733,7 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                                 <span className={`w-0.5 bg-emerald-400 rounded-full transition-all ${isAudioPlaying ? 'h-3 animate-pulse' : 'h-1'}`} />
                               </div>
                               <span className="text-[10px] sm:text-[11px] text-emerald-300 hidden sm:inline">
-                                {app.id === 'tropilab-riskos' ? 'Nữ Miền Nam' : 'Nam Studio'}
+                                {app.id === 'vet-aqua-erp' ? 'Nam & Nữ Miền Tây' : app.id === 'htx-rau-cu' ? 'Nữ Miền Tây' : app.id === 'uth-scm-navigator' ? 'Nam & Nữ UTH' : app.id === 'tropilab-riskos' ? 'Nữ Miền Nam' : 'Nam Studio'}
                               </span>
                             </>
                           )}
@@ -826,7 +826,7 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                               {!isMuted && (
                                 <div className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-950/80 border border-emerald-500/50 text-emerald-300 text-[11px] font-bold">
                                   <span className={`w-2 h-2 rounded-full bg-emerald-400 ${isAudioPlaying ? 'animate-ping' : ''} shrink-0`} />
-                                  <span>🎙️ Thuyết minh Giọng Nam Miền Nam (Studio)</span>
+                                  <span>🎙️ {app.id === 'vet-aqua-erp' ? 'Đối thoại Nam & Nữ Miền Tây (Chân chất, Dễ thương)' : app.id === 'htx-rau-cu' ? 'Thuyết minh Nữ Miền Tây (Chân chất, Ấm áp)' : app.id === 'uth-scm-navigator' ? 'Đối thoại Nam & Nữ Sinh Viên UTH' : app.id === 'tropilab-riskos' ? 'Thuyết minh Nữ Miền Nam (Studio)' : 'Thuyết minh Giọng Nam Miền Nam (Studio)'}</span>
                                 </div>
                               )}
                             </div>

@@ -1,0 +1,133 @@
+🐾 VET-AQUA ERP LITE
+
+Trợ lý quản lý cửa hàng thuốc thú y & thuốc thủy sản
+
+Bán thuốc thú y, thuốc thủy sản không khó.Khó là làm sao quản lý cửa hàng để không thất thoát hàng, mất tiền và mất khách.
+
+Hàng nhập về nhiều, nhưng có khi nằm sâu trong kho đến lúc gần hết hạn mới phát hiện.
+
+Khách lấy hàng trước, trả tiền sau… công nợ ngày càng lớn.
+
+Nhân viên bán hàng, chủ cửa hàng không có mặt thường xuyên… làm sao vẫn kiểm soát được mọi thứ?
+
+Và cuối tháng, sau rất nhiều hóa đơn, vẫn phải ngồi cộng sổ mới biết cửa hàng đang lời hay lỗ.
+
+Vet-Aqua ERP Lite được thiết kế để giải quyết những vấn đề rất thực tế đó.
+
+1. HÀNG CẬN DATE – BIẾT NGAY, XUẤT TRƯỚC
+
+Không cần lục từng kệ hàng.
+
+Hệ thống tự động nhận biết những lô hàng sắp hết hạn, cảnh báo bằng màu sắc và ưu tiên xuất trước.
+
+Giảm hàng tồn. Hạn chế mất vốn.
+
+2. HÀNG HẾT HẠN – TỰ ĐỘNG CHẶN BÁN
+
+Chỉ một lần nhân viên bán nhầm thuốc hết hạn cũng có thể ảnh hưởng đến uy tín cửa hàng.
+
+Vet-Aqua ERP Lite tự động chặn bán sản phẩm đã hết hạn, giúp hạn chế sai sót ngay từ khâu bán hàng.
+
+3. THANH TOÁN – ĐÚNG TIỀN, NHANH HƠN
+
+Quầy đông khách rất dễ thối nhầm tiền hoặc khách chuyển thiếu.
+
+Mỗi hóa đơn được tạo mã VietQR đúng số tiền cần thanh toán, giúp giao dịch nhanh và dễ kiểm tra hơn.
+
+4. MẤT MẠNG – VẪN BÁN HÀNG
+
+Mất Wifi, mất Internet không có nghĩa là phải đóng quầy.
+
+Ứng dụng vẫn hỗ trợ bán hàng và lập hóa đơn khi mất mạng, để công việc không bị gián đoạn.
+
+5. GẶP CA BỆNH KHÓ – CÓ TRỢ LÝ AI HỖ TRỢ
+
+Nhân viên mới đôi khi chưa có nhiều kinh nghiệm, hoặc tư vấn đúng thuốc nhưng cửa hàng lại đang hết hàng.
+
+Chỉ cần nhập thông tin triệu chứng, hệ thống có thể gợi ý hướng xử lý tham khảo và ưu tiên những sản phẩm đang có trong kho.
+
+Giúp nhân viên tra cứu nhanh hơn và chủ cửa hàng kiểm soát tốt hơn.
+
+6. THUỐC TƯƠNG KỴ – CẢNH BÁO NGAY
+
+Có những loại thuốc không nên phối hợp với nhau.
+
+Khi hệ thống phát hiện sản phẩm có nguy cơ tương kỵ trong cùng đơn hàng, cảnh báo sẽ được phát ra ngay để nhân viên kiểm tra lại trước khi bán.
+
+7. KHÁCH NỢ QUÁ HẠN MỨC – TỰ ĐỘNG CHẶN
+
+Khách nợ từ vụ này sang vụ khác, công nợ cứ tăng lên rất khó kiểm soát.
+
+Vet-Aqua ERP Lite tự động kiểm tra hạn mức.
+
+Vượt hạn mức – không cho bán chịu, trừ khi chủ cửa hàng cho phép.
+
+8. BIẾT KHÁCH NÀO CÓ RỦI RO CÔNG NỢ
+
+Không phải khách nào cũng có khả năng thanh toán giống nhau.
+
+Hệ thống phân tích lịch sử mua hàng và thanh toán để đưa ra điểm rủi ro công nợ, giúp chủ cửa hàng có thêm thông tin trước khi quyết định cho khách nợ.
+
+9. NHẮC NỢ ĐÚNG LÚC
+
+Đòi nợ quá sớm thì khó nói.
+
+Để quá lâu thì lại khó thu.
+
+Hệ thống hỗ trợ theo dõi thời điểm khách dự kiến thu hoạch và tạo nhanh nội dung nhắc nợ qua Zalo, giúp liên hệ đúng thời điểm và dễ trao đổi hơn.
+
+10. MỖI NGÀY ĐỀU BIẾT CỬA HÀNG LỜI HAY LỖ
+
+Không cần chờ cuối tháng mới cộng sổ.
+
+Doanh thu, chi phí và lợi nhuận được cập nhật liên tục, giúp chủ cửa hàng biết hôm nay bán được bao nhiêu, chi bao nhiêu và thực tế đang lời hay lỗ.
+
+11. SỔ SÁCH – TỔNG HỢP NHANH, XUẤT EXCEL DỄ DÀNG
+
+Nhập hàng, bán hàng, tồn kho… tất cả được hệ thống tổng hợp.
+
+Có thể xuất dữ liệu ra Excel để đối chiếu, quản lý và phục vụ công việc sổ sách theo yêu cầu.
+
+12. CHẤT CẦN KIỂM SOÁT – HỆ THỐNG TỰ ĐỘNG CẢNH BÁO
+
+Những sản phẩm hoặc hoạt chất cần kiểm soát được hệ thống đánh dấu và cảnh báo.
+
+Đồng thời, ứng dụng nhắc trước thời hạn gia hạn giấy phép để chủ cửa hàng không bỏ quên những việc quan trọng.
+
+13. VẮC-XIN – QUẢN LÝ NHIỆT ĐỘ VÀ NGUỒN GỐC
+
+Vắc-xin cần được bảo quản đúng điều kiện.
+
+Vet-Aqua ERP Lite hỗ trợ ghi nhận nhiệt độ bảo quản và quản lý theo từng lô, giúp khi cần có thể truy xuất lô hàng đã bán cho khách nào.
+
+14. NHẬP HÀNG – CHỤP HÓA ĐƠN, AI HỖ TRỢ ĐỌC
+
+Không cần ngồi nhập từng dòng sản phẩm từ hóa đơn.
+
+Chỉ cần chụp ảnh, công nghệ OCR hỗ trợ đọc thông tin trên hóa đơn và đưa dữ liệu vào hệ thống, giảm thời gian nhập liệu và hạn chế sai sót.
+
+15. NHÂN VIÊN – CÓ ĐỘNG LỰC VÀ CÓ KIẾN THỨC ĐỂ TRA CỨU
+
+Hàng gần hết hạn cần được ưu tiên bán.
+
+Hệ thống có thể tự động tính hoa hồng cho nhân viên khi xử lý những mặt hàng này.
+
+Đồng thời, cửa hàng có một kho kiến thức nội bộ, giúp nhân viên tự tra cứu khi gặp những tình huống khó thay vì lúc nào cũng phải gọi chủ cửa hàng.
+
+🚀 KHÔNG CHỈ LÀ PHẦN MỀM BÁN HÀNG
+
+Một cửa hàng quản lý tốt không chỉ là bán được nhiều hàng.
+
+Mà là:
+
+Biết hàng đang ở đâu.Biết tiền đang ở đâu.Biết khách đang nợ bao nhiêu.Biết cửa hàng đang lời hay lỗ.Và quan trọng nhất – biết rủi ro nằm ở đâu trước khi nó trở thành vấn đề.
+
+Vet-Aqua ERP Lite giúp tất cả trở nên rõ ràng và dễ kiểm soát hơn – ngay trên một hệ thống.
+
+Nếu bạn đang quản lý cửa hàng thuốc thú y, thuốc thủy sản, thuốc chăn nuôi hoặc vật tư nông nghiệp, hãy thử trải nghiệm Vet-Aqua ERP Lite.
+
+👉 Đừng chỉ quản lý cửa hàng bằng sổ sách và trí nhớ.Hãy để dữ liệu giúp bạn quản lý tốt hơn.
+
+Trải nghiệm Vet-Aqua ERP Lite ngay hôm nay.
+
+Vet-Aqua ERP Lite – Quản lý dễ hơn.Kiểm soát chặt hơn.Kinh doanh hiệu quả hơn giúp bạn tăng Doanh thu quản lý lợi nhuận tối ưu.
