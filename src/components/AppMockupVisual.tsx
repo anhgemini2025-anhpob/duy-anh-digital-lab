@@ -74,7 +74,7 @@ export const AppMockupVisual: React.FC<AppMockupVisualProps> = ({
       setIsAudioPlaying(false);
     }
 
-    const audioUrl = `/apps/${app.id}/audio-scene-${currentSceneIdx + 1}.mp3?v=20261004_trolyvingon_v1`;
+    const audioUrl = `/apps/${app.id}/audio-scene-${currentSceneIdx + 1}.mp3?v=20261004_lipoid_v1`;
     const audio = new Audio(audioUrl);
     audio.playbackRate = 1.3;
     audio.volume = 1.0;
