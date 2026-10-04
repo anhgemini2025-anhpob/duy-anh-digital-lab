@@ -135,7 +135,7 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
     const audio = getGlobalVoiceoverAudio();
     if (!audio) return;
 
-    const AUDIO_BUILD_VERSION = '20261004_vetaqua_v1';
+    const AUDIO_BUILD_VERSION = '20261004_vanderbilt_v2';
     const audioUrl = `/apps/${app.id}/audio-scene-${selectedSceneIdx + 1}.mp3?v=${AUDIO_BUILD_VERSION}`;
     
     // Only update and load if src is different
