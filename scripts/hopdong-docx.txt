@@ -1,0 +1,28 @@
+Hàng trăm hợp đồng, nhiều khách hàng, nhiều Sales và nhiều kỳ tái ký…Bạn có chắc mình đang biết hợp đồng nào sắp hết hạn, hợp đồng nào chưa ký và hồ sơ nào đang có vấn đề?
+App Quản lý Hợp đồng Mua bán được xây dựng để biến việc theo dõi hợp đồng từ những bảng Excel rời rạc thành một hệ thống trực quan, có cảnh báo và dễ kiểm soát hơn.
+1. QUẢN LÝ &amp; THEO DÕI HỢP ĐỒNG
+Tất cả hợp đồng được quản lý theo khách hàng, Sales, ASM, khu vực, nhóm khách hàng và từng kỳ hợp đồng.Trạng thái được cập nhật rõ ràng: chưa ký, sắp tái ký, sắp hết hạn, hết hạn, còn hiệu lực hoặc không tái ký.
+Chỉ cần tìm theo tên khách hàng, mã KH, số hợp đồng, MST hoặc Sales là có thể tìm thấy ngay thông tin cần thiết.
+2. DASHBOARD &amp; CẢNH BÁO
+Không cần mở từng file để kiểm tra.Dashboard giúp nhìn ngay những việc cần xử lý: hợp đồng chưa ký, hợp đồng quá hạn và hợp đồng sắp hết hạn.
+Đặc biệt, hệ thống có thể cảnh báo trước từ 15 đến 365 ngày, giúp Sales chủ động chuẩn bị cho kỳ tái ký.
+3. ƯU TIÊN ĐÚNG VIỆC
+Không phải hợp đồng nào cũng cần xử lý trước.Hệ thống giúp xác định những khách hàng chưa ký nhưng có doanh số cao, đồng thời theo dõi lịch hết hạn trong 12 tháng tới.
+Sales, ASM và quản lý có thể nhìn được tiến độ ký kết và chất lượng hồ sơ theo từng nhóm.
+4. KIỂM TRA CHẤT LƯỢNG HỒ SƠ
+Một hợp đồng có thể bị chậm chỉ vì thiếu một thông tin nhỏ.
+Hệ thống tự động phát hiện các lỗi như thiếu MST, thiếu số hợp đồng, sai định dạng, thiếu người đại diện, email lỗi hoặc chưa có file scan – giúp bổ sung ngay trước khi trở thành vấn đề.
+5. QUẢN LÝ FILE SCAN
+Mỗi hợp đồng có thể gắn trực tiếp với file scan trên Google Drive.Tên file cũng được chuẩn hóa theo một quy tắc thống nhất, giúp việc lưu trữ, tìm kiếm và bàn giao hồ sơ dễ dàng hơn.
+6. NHẬP DỮ LIỆU &amp; BÁO CÁO
+Dữ liệu từ Excel có thể được nhập vào hệ thống theo từng nhóm: hợp đồng, khách hàng và doanh số.
+Khi cần báo cáo, chỉ vài thao tác để xuất PDF hoặc Excel, theo bảng tổng hợp hoặc chi tiết từng khách hàng.
+7. QUẢN LÝ KHÁCH HÀNG &amp; DỮ LIỆU
+Danh sách khách hàng được tập trung tại một nơi, có thể xem nhanh hợp đồng mới nhất và tổng doanh số của từng khách.
+Hệ thống cũng hỗ trợ phân quyền người dùng, bảo mật đăng nhập và khóa tạm thời khi nhập sai nhiều lần.
+8. OFFLINE &amp; SAO LƯU
+Ngay cả khi không có Internet, hệ thống vẫn có thể hoạt động với dữ liệu được lưu trên thiết bị.
+Khi cần, toàn bộ dữ liệu có thể sao lưu hoặc khôi phục qua Google Drive, giúp giảm rủi ro mất dữ liệu.
+Quản lý hợp đồng không chỉ là lưu một file Excel.
+Quan trọng hơn là biết hợp đồng nào cần xử lý, biết khách hàng nào cần ưu tiên và phát hiện vấn đề trước khi quá muộn.
+App Quản lý Hợp đồng Mua bán – Theo dõi tập trung. Cảnh báo chủ động. Hồ sơ rõ ràng. Công việc dễ kiểm soát hơn.
