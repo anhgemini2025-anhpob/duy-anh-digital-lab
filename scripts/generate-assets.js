@@ -120,7 +120,7 @@ const apps = [
     id: "algaktiv-advisor",
     name: "Algaktiv R&D Advisor",
     category: "R&D & CÔNG NGHỆ TẢO BIỂN",
-    url: "https://algaktiv-advisor.pages.dev/",
+    url: "https://algaktivadvisor.vercel.app",
     theme: { from: "#065f46", to: "#059669", accent: "#34d399" },
     icon: "Waves",
     tagline: "Khám phá hoạt chất sinh học từ vi tảo biển cho các giải pháp chăm sóc da liễu tiên tiến",

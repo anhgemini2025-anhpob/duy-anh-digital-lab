@@ -102,7 +102,7 @@
     "id": "algaktiv-advisor",
     "name": "Algaktiv R&D Advisor",
     "category": "R&D & CÔNG NGHỆ TẢO BIỂN",
-    "sourceUrl": "https://algaktiv-advisor.pages.dev/",
+    "sourceUrl": "https://algaktivadvisor.vercel.app",
     "cover": "/apps/algaktiv-advisor/cover.svg",
     "placeholder": "/apps/algaktiv-advisor/cover-placeholder.svg",
     "featured": false

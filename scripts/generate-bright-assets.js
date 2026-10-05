@@ -300,7 +300,7 @@ const apps = [
     id: "algaktiv-advisor",
     name: "Algaktiv R&D Advisor",
     category: "R&D & HOẠT CHẤT CÔNG NGHỆ SINH HỌC",
-    url: "https://algaktiv-advisor.pages.dev/",
+    url: "https://algaktivadvisor.vercel.app",
     accent: "#059669",
     accentLight: "#d1fae5",
     sidebarBg: "#064e3b",

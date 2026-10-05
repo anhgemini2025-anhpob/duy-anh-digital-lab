@@ -258,7 +258,7 @@ const apps = [
     id: "algaktiv-advisor",
     name: "Algaktiv Advisor",
     category: "R&D • CÔNG NGHỆ HOẠT CHẤT VI TẢO",
-    url: "https://algaktiv-advisor.vercel.app/",
+    url: "https://algaktivadvisor.vercel.app",
     primaryColor: "#047857",
     secondaryColor: "#059669",
     accentColor: "#34d399",
