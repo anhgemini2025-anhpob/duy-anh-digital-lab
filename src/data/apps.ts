@@ -1079,34 +1079,97 @@ export const APPS_DATA: AppItem[] = [
     url: "https://bjc-sales-training.pages.dev/",
     category: "Bán hàng & Đào tạo nội bộ",
     categoryId: "sales-business",
-    description: "Hệ thống số hóa đào tạo kiến thức sản phẩm và lộ trình phát triển kỹ năng bán hàng B2B chuyên nghiệp nội bộ doanh nghiệp.",
-    tags: ["B2B Sales", "Training LMS", "Product Master", "Certification"],
-    coverImage: '/apps/bjc-sales-training/real-cover.jpg',
-    placeholderImage: '/apps/bjc-sales-training/real-cover.jpg',
+    description: "Hệ thống số hóa đào tạo kiến thức sản phẩm và lộ trình phát triển kỹ năng bán hàng B2B chuyên nghiệp: Cá nhân hóa theo ngành hàng, bộ công cụ Lead Scoring, kịch bản Battle Card, Roleplay Sandbox và sát hạch LMS tự động.",
+    tags: ["B2B Sales", "Training LMS", "Product Master", "Certification", "Lead Scoring", "Roleplay Sandbox"],
+    coverImage: '/apps/bjc-sales-training/feature_01_tong_quan_app_dao_tao_b2b.jpg',
+    placeholderImage: '/apps/bjc-sales-training/feature_01_tong_quan_app_dao_tao_b2b.jpg',
+    illustrationImage: '/apps/bjc-sales-training/feature_01_tong_quan_app_dao_tao_b2b.jpg',
     detailImages: [
-      '/apps/bjc-sales-training/real-cover.jpg',
-      '/apps/bjc-sales-training/real-screen-2.jpg',
-      '/apps/bjc-sales-training/real-screen-3.jpg'
+      '/apps/bjc-sales-training/feature_01_tong_quan_app_dao_tao_b2b.jpg',
+      '/apps/bjc-sales-training/feature_02_ca_nhan_hoa_theo_nganh_hang.jpg',
+      '/apps/bjc-sales-training/feature_03_cham_diem_uu_tien_khach_hang.jpg',
+      '/apps/bjc-sales-training/feature_04_kich_ban_tiep_can_kham_pha_nhu_cau.jpg',
+      '/apps/bjc-sales-training/feature_05_giai_phap_thay_the_xu_ly_phan_doi.jpg',
+      '/apps/bjc-sales-training/feature_06_mo_phong_tinh_huong_thuc_te.jpg',
+      '/apps/bjc-sales-training/feature_07_theo_doi_mau_thu_co_hoi_moi.jpg',
+      '/apps/bjc-sales-training/feature_08_lo_trinh_dao_tao_chuan_hoa_lms.jpg',
+      '/apps/bjc-sales-training/feature_09_bao_cao_tien_do_tu_dong.jpg',
+      '/apps/bjc-sales-training/feature_10_tai_san_tri_thuc_doanh_nghiep.jpg',
+      '/apps/bjc-sales-training/feature_11_loi_ket_may_do_ung_dung_rieng.jpg'
     ],
-    imageAlt: "Giao diện Huấn Luyện Sales Nội Bộ theo dõi lộ trình và kết quả đào tạo LMS",
+    imageAlt: "Giao diện Huấn Luyện Sales Nội Bộ B2B theo dõi lộ trình và kết quả đào tạo LMS",
     featured: true,
-    videoDuration: "1:15",
-    videoTagline: "Trải nghiệm học tập & sát hạch sản phẩm B2B cho nhân viên kinh doanh",
+    videoDuration: "6:11",
+    videoTagline: "Biến kiến thức thành hệ thống, biến kinh nghiệm thành công cụ thực chiến và kiến tạo lợi thế cạnh tranh B2B",
     videoScenes: [
-      { time: "0:00", title: "Dashboard Tiến độ Học tập", description: "Theo dõi lộ trình hoàn thành các khóa học nguyên liệu hóa chất và chỉ số kỹ năng của nhân viên kinh doanh." },
-      { time: "0:15", title: "Module Kiến thức Kỹ thuật Sản phẩm", description: "Học tập tương tác về tính năng, ứng dụng thực tế và thư viện tài liệu TDS/MSDS chi tiết." },
-      { time: "0:30", title: "Kiểm tra Trắc nghiệm & Sát hạch", description: "Ngân hàng đề thi đánh giá năng lực nghiệp vụ và hệ thống chấm điểm tự động." },
-      { time: "0:45", title: "Lộ trình Hội nhập 30-60-90 & Vinh danh", description: "Khung đào tạo nhân sự mới bám sát KPI thực tế và bảng xếp hạng Gamification khích lệ tinh thần thi đua." },
-      { time: "1:00", title: "Lời bình & Tính năng bất ngờ khi thử nghiệm", description: "Lời bình thực tế: Nền tảng học tập nội bộ chuẩn mực tập đoàn đa quốc gia. Điểm bất ngờ khi thử nghiệm là hệ thống tự động sinh chứng chỉ PDF có chữ ký số và mã QR xác thực ngay sau khi vượt qua bài thi 80%. Hãy khám phá và bạn sẽ phát hiện thêm nhiều chức năng khác như mô phỏng tình huống đàm phán B2B và thư viện kịch bản xử lý phản hồi khách hàng!" }
+      {
+        time: "0:00",
+        title: "Tổng Quan: Biến Kinh Nghiệm Nội Bộ Thành Tài Sản Số Doanh Nghiệp",
+        description: "Số hóa toàn bộ kiến thức, quy trình và kỹ năng bán hàng thực chiến phân tán thành nền tảng đào tạo tập trung, chấm dứt tình trạng nhân sự mới bơ vơ tự bơi."
+      },
+      {
+        time: "0:47",
+        title: "01 | Cá Nhân Hóa Toàn Diện Theo Từng Ngành Hàng",
+        description: "Tùy biến linh hoạt theo từng lĩnh vực: Thực phẩm, Mỹ phẩm, Hóa chất hay Công nghiệp; giao diện, tài liệu TDS và kịch bản tự động thay đổi theo ngành hàng đã chọn."
+      },
+      {
+        time: "1:23",
+        title: "02 | Chấm Điểm & Ưu Tiên Khách Hàng Tiềm Năng",
+        description: "Thuật toán Lead Scoring phân tích quy mô, ngân sách và nhu cầu thực tế của từng đối tác để gắn điểm ưu tiên, giúp sales tập trung nguồn lực chốt đơn hiệu quả nhất."
+      },
+      {
+        time: "1:55",
+        title: "03 | Tạo Kịch Bản Tiếp Cận & Khám Phá Nhu Cầu Chuẩn Chỉ",
+        description: "Bộ kịch bản mở lời chuyên nghiệp và bộ câu hỏi tư vấn chuẩn mực giúp nhân viên tự tin dẫn dắt cuộc trò chuyện, tìm đúng nỗi đau khách hàng mà không bị lúng túng."
+      },
+      {
+        time: "2:29",
+        title: "04 | Tra Cứu Giải Pháp Thay Thế & Kịch Bản Xử Lý Phản Đối",
+        description: "Thẻ tác chiến Battle Card gợi ý ngay luận điểm so sánh thông số kỹ thuật và phân tích tổng chi phí sở hữu TCO khi khách chê giá đắt hoặc so sánh với đối thủ."
+      },
+      {
+        time: "3:01",
+        title: "05 | Mô Phỏng Tình Huống Thực Tế & Luyện Tập Phản Xạ Bán Hàng",
+        description: "Phòng Roleplay Sandbox cho phép nhân viên nhập vai đàm phán chiết khấu, giải quyết khiếu nại giao hàng và rèn luyện bản lĩnh phản xạ trước khi gặp khách hàng thật."
+      },
+      {
+        time: "3:33",
+        title: "06 | Theo Dõi Mẫu Thử & Khai Thác Cơ Hội Phát Triển",
+        description: "Quản lý chặt chẽ chu trình gửi mẫu Sample Request: trạng thái thử nghiệm, nhắc nhở thời điểm vàng chốt đơn và gợi ý cơ hội bán chéo, gia tăng doanh số."
+      },
+      {
+        time: "4:06",
+        title: "07 | Lộ Trình Đào Tạo Chuẩn Hóa Theo Từng Bước",
+        description: "Lộ trình học tập bậc thang khép kín: Xem video → Làm bài tập → Thực hành → Kiểm tra sát hạch → Cấp chứng nhận điện tử, giúp rút ngắn thời gian thử việc."
+      },
+      {
+        time: "4:38",
+        title: "08 | Báo Cáo Tự Động & Quản Lý Tiến Độ Dễ Dàng",
+        description: "Tự động tổng hợp điểm số và tiến độ học tập theo từng phòng ban, chi nhánh; trực quan hóa biểu đồ năng lực giúp ban giám đốc nắm bắt tình hình mà không cần báo cáo Excel."
+      },
+      {
+        time: "5:11",
+        title: "09 | Biến Tri Thức Nội Bộ Thành Tài Sản Vô Giá",
+        description: "Bảo tồn bí quyết bán hàng độc quyền của đội ngũ giỏi, chuẩn hóa quy trình tiếp cận và liên tục truyền lửa cho các thế hệ nhân sự kế cận của doanh nghiệp."
+      },
+      {
+        time: "5:42",
+        title: "10 | Lời Kết: May Đo Ứng Dụng Riêng Cho Doanh Nghiệp Bạn",
+        description: "Nền tảng sẵn sàng thiết kế và may đo riêng theo quy trình, sản phẩm và văn hóa của từng doanh nghiệp: biến đào tạo thành vũ khí cạnh tranh bền vững."
+      }
     ],
-    audience: "Nhân viên Sales B2B, Quản lý kinh doanh, Trưởng nhóm đào tạo thương mại.",
-    problem: "Nhân viên mới mất nhiều tháng để nắm bắt danh mục hàng trăm nguyên liệu hóa chất, thiếu hệ thống kiểm tra năng lực chuẩn hóa.",
-    solution: "Kho bài giảng micro-learning, bài kiểm tra đánh giá tự động và dashboard theo dõi tiến độ học tập của từng sales.",
+    audience: "Ban giám đốc, Giám đốc kinh doanh, Trưởng phòng đào tạo nội bộ, Đội ngũ Sales B2B & Kỹ sư bán hàng kỹ thuật.",
+    problem: "Nhân viên mới mất 3–6 tháng để nắm bắt danh mục sản phẩm phức tạp, tài liệu đào tạo phân tán rải rác và kinh nghiệm thực chiến bị mất mát khi nhân sự giỏi nghỉ việc.",
+    solution: "Nền tảng đào tạo & tác chiến B2B may đo riêng: Cá nhân hóa theo ngành hàng, bộ công cụ Lead Scoring, kịch bản Battle Card, Roleplay Sandbox và lộ trình LMS sát hạch tự động.",
     keyFeatures: [
-      "Dashboard theo dõi tiến độ học tập và cấp độ kỹ năng nhân sự",
-      "Hệ thống module kiến thức nguyên liệu kèm tài liệu kỹ thuật chuẩn",
-      "Cơ chế kiểm tra trắc nghiệm chấm điểm tự động chống gian lận",
-      "Khung hội nhập 30-60-90 ngày và bảng vinh danh thành tích học tập"
+      "Cá nhân hóa giao diện và nội dung đào tạo theo từng ngành hàng (Thực phẩm, Mỹ phẩm, Hóa chất)",
+      "Chấm điểm Lead Scoring và xếp hạng ưu tiên khách hàng tiềm năng theo doanh số",
+      "Kịch bản tiếp cận và bộ câu hỏi khám phá nhu cầu khách hàng theo chuẩn tư vấn chuyên sâu",
+      "Thẻ tác chiến Battle Card phân tích TCO và kịch bản xử lý phản đối giá/đối thủ cạnh tranh",
+      "Phòng mô phỏng Roleplay Sandbox luyện tập phản xạ đàm phán và xử lý tình huống thực tế",
+      "Quản lý vòng đời mẫu thử Sample Request và tự động kích hoạt cơ hội Upsell/Cross-sell",
+      "Lộ trình đào tạo chuẩn hóa LMS: Video → Bài tập → Thực hành → Sát hạch → Chứng nhận",
+      "Báo cáo tiến độ tự động theo phòng ban và bảo tồn tri thức nội bộ thành tài sản số"
     ],
     demoCredential: {
       account: "Trang@bjc.co.th",
