@@ -1,0 +1,19 @@
+Một Spa/Clinic càng đông khách, càng dễ phát sinh một vấn đề: dữ liệu nằm ở quá nhiều nơi.
+Lễ tân quản lý lịch.Bác sĩ ghi bệnh án.Thu ngân theo dõi tiền.Kho theo dõi sản phẩm.
+Nhưng khách hàng chỉ có một — và toàn bộ hành trình của họ cần được kết nối.
+Đó là lý do Derma Medical Spa được xây dựng theo mô hình 4 trong 1: CRM – EMR – POS – INVENTORY.
+Tính năng 1 – CRM khách hàng &amp; Booking.Chỉ cần số điện thoại, nhân viên có thể tìm ngay hồ sơ khách hàng, xem lịch sử, nhu cầu, tiền sử dị ứng và các dịch vụ đã sử dụng.Lịch hẹn được quản lý trực quan, xem khung giờ của từng bác sĩ và hỗ trợ gửi nhắc lịch qua Zalo/SMS.
+Tính năng 2 – Hồ sơ da liễu điện tử.Bác sĩ có thể ghi nhận chẩn đoán, xây dựng phác đồ điều trị và lưu toàn bộ hình ảnh Before – Progress – After để theo dõi kết quả theo thời gian.
+Tính năng 3 – Kê đơn &amp; Routine chăm sóc tại nhà.Thuốc và dược mỹ phẩm được kê trực tiếp trên hồ sơ, kèm hướng dẫn sử dụng — đồng thời liên kết với dữ liệu kho.
+Tính năng 4 – Quản lý liệu trình thông minh.Khách mua một gói 10 hay 20 buổi? Hệ thống biết khách đã sử dụng bao nhiêu, còn bao nhiêu và tự động trừ buổi theo FIFO, hạn chế sai sót khi quản lý nhiều gói dịch vụ.
+Tính năng 5 – POS &amp; thanh toán.Thu ngân có thể bán dịch vụ, sản phẩm, in hóa đơn và tạo VietQR đúng số tiền để khách thanh toán nhanh chóng.
+Tính năng 6 – Quản lý kho dược mỹ phẩm.Theo dõi SKU, giá nhập, giá bán, số lô, hạn sử dụng, tồn kho và nhà cung cấp — tất cả tập trung trên một hệ thống.
+Tính năng 7 – Tự động trừ kho.Bác sĩ kê sản phẩm hoặc thu ngân bán hàng, tồn kho được cập nhật tương ứng.Không còn phải chờ cuối ngày mới ngồi cộng trừ thủ công.
+Tính năng 8 – Cảnh báo tồn kho.Hết hàng, sắp hết hay đang ở mức an toàn được hiển thị trực quan, giúp chủ Clinic biết ngay sản phẩm nào cần nhập thêm.
+Tính năng 9 – Dashboard &amp; phân quyền.Bác sĩ, lễ tân, thu ngân hay quản lý đều có quyền truy cập phù hợp.Chủ Clinic có thể nhìn toàn bộ hoạt động mà không cần hỏi từng bộ phận.
+Tính năng 10 – Một hệ thống, một dữ liệu khách hàng.Từ đặt lịch → tiếp nhận → khám → phác đồ → liệu trình → kê đơn → thanh toán → xuất kho → theo dõi kết quả, mọi thứ được kết nối trong cùng một hành trình.
+Và phía sau đó là nền tảng được thiết kế responsive, mobile-first, có kiểm thử tự động và quy trình cập nhật giúp hệ thống vận hành ổn định.
+Derma Medical Spa không đơn thuần là phần mềm quản lý Spa.
+Đó là cách biến những quy trình đang nằm trong Excel, sổ sách, Zalo và nhiều phần mềm rời rạc thành một hệ thống thống nhất.
+Khách hàng được chăm sóc liền mạch.Nhân viên làm việc rõ ràng hơn.Kho và dòng tiền được kiểm soát tốt hơn.Chủ Clinic nhìn thấy toàn bộ hoạt động.
+Derma Medical Spa – Một khách hàng. Một hồ sơ. Một hành trình. Một hệ thống quản lý.

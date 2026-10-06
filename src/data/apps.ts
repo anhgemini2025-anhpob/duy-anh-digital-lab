@@ -1308,25 +1308,76 @@ export const APPS_DATA: AppItem[] = [
     categoryId: "sales-business",
     description: "Ứng dụng theo dõi, lập kế hoạch hành trình và quản lý lịch viếng thăm khách hàng B2B của đội ngũ kinh doanh.",
     tags: ["Field Sales", "Visit Tracking", "CRM", "Activity Log"],
-    coverImage: '/apps/customer-visit/real-cover.jpg',
-    placeholderImage: '/apps/customer-visit/real-cover.jpg',
-    illustrationImage: '/apps/customer-visit/illustration-banner.jpg',
+    coverImage: '/apps/customer-visit/feature_01_tong_quan_quan_ly_di_khach.jpg',
+    placeholderImage: '/apps/customer-visit/feature_01_tong_quan_quan_ly_di_khach.jpg',
+    illustrationImage: '/apps/customer-visit/feature_10_so_hoa_toan_dien_hoat_dong_thi_truong.jpg',
     detailImages: [
-      '/apps/customer-visit/real-cover.jpg',
-      '/apps/customer-visit/real-screen-2.jpg',
-      '/apps/customer-visit/real-screen-3.jpg',
-      '/apps/customer-visit/illustration-banner.jpg'
+      '/apps/customer-visit/feature_01_tong_quan_quan_ly_di_khach.jpg',
+      '/apps/customer-visit/feature_02_check_in_thuc_dia_gps.jpg',
+      '/apps/customer-visit/feature_03_ghi_nhan_khach_hang_ocr_danh_thiep.jpg',
+      '/apps/customer-visit/feature_04_bien_ban_lam_viec_xuat_pdf.jpg',
+      '/apps/customer-visit/feature_05_theo_doi_du_an_pheu_meddic.jpg',
+      '/apps/customer-visit/feature_06_canh_bao_co_hoi_bo_quen_follow_up.jpg',
+      '/apps/customer-visit/feature_07_lap_ke_hoach_di_tuyen_thong_minh.jpg',
+      '/apps/customer-visit/feature_08_dashboard_quan_ly_realtime.jpg',
+      '/apps/customer-visit/feature_09_bao_cao_tu_dong_pdf_excel.jpg',
+      '/apps/customer-visit/feature_10_so_hoa_toan_dien_hoat_dong_thi_truong.jpg'
     ],
     imageAlt: "Customer Visit Management dashboard showing client list and visit activities",
     featured: true,
-    videoDuration: "1:15",
-    videoTagline: "Tối ưu hóa hành trình thăm viếng và báo cáo thực địa khách hàng B2B",
+    videoDuration: "5:46",
+    videoTagline: "Số hóa toàn diện hoạt động đi khách, theo dõi cơ hội và tối ưu hóa tuyến bán hàng B2B",
     videoScenes: [
-      { time: "0:00", title: "Lập Kế hoạch Lịch trình Viếng thăm", description: "Sắp xếp lịch hẹn gặp đối tác theo tuyến đường và cụm khu công nghiệp tối ưu." },
-      { time: "0:15", title: "Route Planner & Định vị GPS Thực địa", description: "Số hóa lộ trình di chuyển, hỗ trợ check-in thực tế tại nhà máy khách hàng bằng GPS." },
-      { time: "0:30", title: "Biên bản Cuộc họp & Ghi nhận Nhu cầu", description: "Ghi nhanh nội dung trao đổi (Minute of Meeting), lưu yêu cầu gửi mẫu thử nghiệm và thông số kỹ thuật." },
-      { time: "0:45", title: "Phân tích Độ phủ & Phân loại Lead", description: "Báo cáo tần suất chăm sóc khách hàng theo tuần và xếp hạng khách hàng tiềm năng theo chu kỳ mua sắm." },
-      { time: "1:00", title: "Lời bình & Tính năng bất ngờ khi thử nghiệm", description: "Lời bình thực tế: Trợ lý đắc lực giúp tối ưu hóa năng suất thực địa cho đội ngũ kinh doanh kỹ thuật B2B. Điểm bất ngờ khi thử nghiệm là tính năng đo khoảng cách và gợi ý tuyến đường kế tiếp trên Google Maps chỉ bằng một cú chạm. Hãy khám phá và bạn sẽ phát hiện thêm nhiều chức năng khác như theo dõi lịch sử cấp mẫu thử nghiệm và báo cáo phân tích tỷ lệ chuyển đổi dự án!" }
+      {
+        time: "0:00",
+        title: "Tổng Quan: Số Hóa Hoạt Động Đi Khách & Cơ Hội Thị Trường",
+        description: "Giải quyết triệt để nỗi đau bán hàng B2B: đi khách nhiều nhưng dữ liệu phân mảnh, thiếu theo dõi cơ hội. Nền tảng kết nối toàn diện từ thực địa đến quyết định kinh doanh."
+      },
+      {
+        time: "0:45",
+        title: "01 | Check-in Thực Tế Bằng GPS & Hình Ảnh Hiện Trường",
+        description: "Đến nhà máy hoặc văn phòng khách hàng, nhân viên check-in tức thì bằng GPS và đính kèm hình ảnh hiện trường, bảo đảm minh bạch tuyệt đối và quản trị thực tế."
+      },
+      {
+        time: "1:21",
+        title: "02 | Ghi Nhận Khách Hàng & Quét Danh Thiếp Bằng OCR",
+        description: "Gặp khách hàng mới, chỉ cần chụp danh thiếp: công nghệ OCR tự động bóc tách họ tên, chức danh, công ty, số điện thoại đưa thẳng vào hệ thống trong vài giây."
+      },
+      {
+        time: "1:55",
+        title: "03 | Biên Bản Cuộc Họp – Chấm Dứt Đi Khách Xong Rồi Quên",
+        description: "Ghi nhận nội dung thảo luận, yêu cầu gửi mẫu, báo giá và hành động tiếp theo ngay trên điện thoại. Xuất file PDF gửi email xác nhận cho khách ngay sau cuộc gặp."
+      },
+      {
+        time: "2:30",
+        title: "04 | Biến Mỗi Chuyến Thăm Thành Cơ Hội Kinh Doanh",
+        description: "Tạo cơ hội dự án trực tiếp từ biên bản làm việc, theo dõi từng giai đoạn theo chuẩn MEDDIC và dự báo doanh số thực tế cho từng tài khoản khách hàng."
+      },
+      {
+        time: "3:05",
+        title: "05 | Cảnh Báo Chủ Động – Không Để Cơ Hội Bị Bỏ Quên",
+        description: "Chiếc đồng hồ thông minh của Sales: tự động cảnh báo cơ hội chưa chăm sóc quá 7 ngày, hợp đồng sắp ký hoặc khách hàng cần gửi mẫu kiểm nghiệm."
+      },
+      {
+        time: "3:41",
+        title: "06 | Lập Kế Hoạch Đi Tuyến Thông Minh & Ghép Chuyến Đi",
+        description: "Lên lịch trình theo tuần và tháng: hệ thống gợi ý ghép các khách hàng cùng khu công nghiệp, cùng tuyến đường, tối ưu hóa thời gian di chuyển và chi phí xăng xe."
+      },
+      {
+        time: "4:12",
+        title: "07 | Dashboard Điều Hành Trực Quan Theo Thời Gian Thực",
+        description: "Bảng điều khiển trực quan cập nhật realtime: số lượt đi khách trong tuần, tỷ lệ ghé thăm theo khu vực, cơ hội mới mở và tiến độ doanh số của toàn đội ngũ."
+      },
+      {
+        time: "4:45",
+        title: "08 | Xuất Báo Cáo Tự Động – Tiết Kiệm Hàng Giờ Đồng Hồ",
+        description: "Chỉ một cú nhấp chuột là có ngay báo cáo chuyên nghiệp dạng PDF hoặc Excel để gửi ban giám đốc, giải phóng nhân viên khỏi gánh nặng giấy tờ hành chính."
+      },
+      {
+        time: "5:17",
+        title: "09 | Lời Kết: Số Hóa Hoạt Động Thị Trường – Bứt Phá Doanh Thu",
+        description: "Lời bình thực tế: Đi khách có dữ liệu, quản lý có tầm nhìn rõ ràng, đội ngũ bứt phá doanh số. Trải nghiệm ngay tại customer-visit.anhpob.workers.dev!"
+      }
     ],
     audience: "Đội ngũ Field Sales, Giám sát kinh doanh khu vực, Sales Director.",
     problem: "Báo cáo đi gặp khách hàng rời rạc qua chat/excel, không nắm được tần suất ghé thăm và cơ hội dự án tại từng nhà máy.",
@@ -1427,32 +1478,101 @@ export const APPS_DATA: AppItem[] = [
     categoryId: "services-clinic",
     description: "Hệ thống phần mềm quản lý vận hành chuyên sâu cho Clinic & Spa Da liễu: Lịch hẹn, phác đồ điều trị và doanh thu.",
     tags: ["Clinic ERP", "Spa Booking", "Patient EMR", "Revenue"],
-    coverImage: '/apps/clinic-spa/real-cover.jpg',
-    placeholderImage: '/apps/clinic-spa/real-cover.jpg',
+    coverImage: '/apps/clinic-spa/feature_01_mo_hinh_4_trong_1_derma_medical_spa.jpg',
+    placeholderImage: '/apps/clinic-spa/feature_01_mo_hinh_4_trong_1_derma_medical_spa.jpg',
+    illustrationImage: '/apps/clinic-spa/feature_11_mot_he_thong_mot_du_lieu_khach_hang.jpg',
     detailImages: [
-      '/apps/clinic-spa/real-cover.jpg',
-      '/apps/clinic-spa/real-screen-2.jpg',
-      '/apps/clinic-spa/real-screen-3.jpg'
+      '/apps/clinic-spa/feature_01_mo_hinh_4_trong_1_derma_medical_spa.jpg',
+      '/apps/clinic-spa/feature_02_crm_khach_hang_va_booking_lich_hen.jpg',
+      '/apps/clinic-spa/feature_03_ho_so_da_lieu_dien_tu_emr_before_after.jpg',
+      '/apps/clinic-spa/feature_04_ke_don_duoc_my_pham_routine_cham_soc.jpg',
+      '/apps/clinic-spa/feature_05_quan_ly_lieu_trinh_thong_minh_fifo.jpg',
+      '/apps/clinic-spa/feature_06_pos_ban_hang_thanh_toan_vietqr.jpg',
+      '/apps/clinic-spa/feature_07_quan_ly_kho_duoc_my_pham_lo_han.jpg',
+      '/apps/clinic-spa/feature_08_co_che_tu_dong_tru_kho_tuc_thi.jpg',
+      '/apps/clinic-spa/feature_09_canh_bao_ton_kho_duoi_nguong_an_toan.jpg',
+      '/apps/clinic-spa/feature_10_dashboard_tong_the_phan_quyen_nhan_su.jpg',
+      '/apps/clinic-spa/feature_11_mot_he_thong_mot_du_lieu_khach_hang.jpg',
+      '/apps/clinic-spa/feature_12_nen_tang_responsive_mobile_first_loi_binh.jpg'
     ],
-    imageAlt: "Clinic Spa Management operational and appointment dashboard",
+    imageAlt: "Derma Medical Spa 4-in-1 ERP CRM EMR POS Inventory management interface",
     featured: false,
-    videoDuration: "1:15",
-    videoTagline: "Vận hành phòng khám da liễu thẩm mỹ từ lịch hẹn đến hồ sơ bệnh án",
+    videoDuration: "4:32",
+    videoTagline: "Derma Medical Spa – Một khách hàng, Một hồ sơ, Một hành trình, Một hệ thống quản lý",
     videoScenes: [
-      { time: "0:00", title: "Lịch hẹn Điều phối Trực quan", description: "Đặt lịch theo phòng, giường và chuyên viên trị liệu, tự động gửi nhắc hẹn tránh trùng ca." },
-      { time: "0:15", title: "Hồ sơ Bệnh án & Soi da Y khoa", description: "Lưu trữ phác đồ điều trị đa buổi, hình ảnh theo dõi tiến trình hồi phục và lịch sử sử dụng mỹ phẩm." },
-      { time: "0:30", title: "Định mức Tiêu hao Kho Dược mỹ phẩm", description: "Tự động trừ kho nguyên phụ liệu, serum, ampoule theo từng bước kỹ thuật của gói dịch vụ." },
-      { time: "0:45", title: "Báo cáo Doanh thu & Tính Hoa hồng Tự động", description: "Tổng hợp doanh số dịch vụ, bán lẻ và tự động tính tỷ lệ hoa hồng cho bác sĩ, điều dưỡng, kỹ thuật viên." },
-      { time: "1:00", title: "Lời bình & Tính năng bất ngờ khi thử nghiệm", description: "Lời bình thực tế: Trợ thủ vận hành chuẩn y khoa giúp số hóa toàn diện quy trình phòng khám da liễu và spa chuyên sâu. Điểm bất ngờ khi thử nghiệm là thanh trượt so sánh Before-After hình ảnh da thực tế của khách hàng trực quan và tính năng cảnh báo tồn kho dược mỹ phẩm chạm ngưỡng an toàn. Hãy khám phá và bạn sẽ phát hiện thêm nhiều chức năng khác như hệ thống phân quyền nhân sự đa cấp và quản lý thẻ thành viên tích điểm!" }
+      {
+        time: "0:00",
+        title: "Mô Hình 4 Trong 1: CRM – EMR – POS & Kho Dược Mỹ Phẩm",
+        description: "Khắc phục triệt để tình trạng phân mảnh dữ liệu giữa lễ tân, bác sĩ, thu ngân và kho. Derma Medical Spa tích hợp chuẩn 4 trong 1: CRM, EMR bệnh án, POS máy tính tiền và Inventory quản trị kho."
+      },
+      {
+        time: "0:29",
+        title: "01 | CRM Khách Hàng & Quản Lý Đặt Lịch Hẹn Booking",
+        description: "Chỉ cần số điện thoại là tra cứu ngay tiền sử dị ứng, loại da, lịch sử dịch vụ. Điều phối lịch hẹn trực quan theo khung giờ bác sĩ, tự động gửi tin nhắc lịch Zalo/SMS hạn chế rụng khách."
+      },
+      {
+        time: "1:05",
+        title: "02 | Hồ Sơ Da Liễu Điện Tử EMR & Theo Dõi Before – After",
+        description: "Bác sĩ chẩn đoán mụn, nám, lão hóa, xây dựng phác đồ điều trị và lưu trữ trực tiếp hình ảnh soi da: Before, Progress đến After để theo dõi kết quả cải thiện rõ nét theo thời gian."
+      },
+      {
+        time: "1:25",
+        title: "03 | Kê Đơn Điện Tử & Thiết Kế Routine Chăm Sóc Tại Nhà",
+        description: "Kê đơn thuốc và routine dược mỹ phẩm sáng tối trực tiếp trên tablet/mobile. Hệ thống liên kết tự động với kho hàng, nắm bắt tức thì tình trạng còn hay hết của sản phẩm."
+      },
+      {
+        time: "1:45",
+        title: "04 | Quản Lý Gói Liệu Trình Thông Minh Theo Cơ Chế FIFO",
+        description: "Khách mua gói 10 hay 20 buổi: hệ thống tự động trừ theo nguyên tắc FIFO (nhập trước xuất trước), ghi nhận chuyên viên thực hiện tính hoa hồng, không bao giờ lo nhầm lẫn số buổi."
+      },
+      {
+        time: "2:10",
+        title: "05 | Thu Ngân POS & Thanh Toán Nhanh Bằng VietQR Động",
+        description: "Bán dịch vụ, bán lẻ mỹ phẩm trong tích tắc, in hóa đơn nhanh và sinh mã VietQR động đúng từng đồng cho khách quét chuyển khoản tức thì, đối soát tiền bạc chính xác tuyệt đối."
+      },
+      {
+        time: "2:30",
+        title: "06 | Quản Lý Kho Dược Mỹ Phẩm – Kiểm Soát Số Lô & Hạn Dùng",
+        description: "Quản lý chi tiết từng SKU mỹ phẩm, giá nhập, giá bán lẻ, nhà cung cấp, và đặc biệt là kiểm soát số lô sản xuất cùng hạn sử dụng. Cảnh báo hàng cận đát tránh tồn kho quá hạn."
+      },
+      {
+        time: "2:53",
+        title: "07 | Cơ Chế Tự Động Trừ Kho Tức Thì Theo Thời Gian Thực",
+        description: "Bác sĩ vừa kê sản phẩm hoặc thu ngân xuất bán hóa đơn là tồn kho tự động trừ ngay tức thì theo thời gian thực. Không còn cảnh cuối ngày hay cuối tháng ngồi kiểm đếm thủ công."
+      },
+      {
+        time: "3:13",
+        title: "08 | Cảnh Báo Tồn Kho Dưới Ngưỡng An Toàn & Đề Xuất Nhập Hàng",
+        description: "Màn hình trực quan phân 3 màu: xanh là an toàn, vàng sắp hết, đỏ đã chạm ngưỡng tối thiểu cần nhập gấp. Chủ Clinic luôn chủ động lên đơn hàng, không để đứt đoạn liệu trình."
+      },
+      {
+        time: "3:39",
+        title: "09 | Bảng Điều Khiển Dashboard & Phân Quyền Nhân Sự Đa Cấp",
+        description: "Phân quyền chặt chẽ theo vai trò y khoa: Bác sĩ, Lễ tân, Kỹ thuật viên, Thu ngân. Dashboard tổng quan cập nhật doanh thu, lượt khách và hiệu suất nhân sự ngay trên điện thoại."
+      },
+      {
+        time: "3:59",
+        title: "10 | Một Hệ Thống Khép Kín – Một Dữ Liệu Khách Hàng Liền Mạch",
+        description: "Hành trình khép kín 360 độ: Đặt lịch → Tiếp nhận → Khám & soi da → Phác đồ → Liệu trình → Kê đơn → Thanh toán → Trừ kho → Tái khám. Một hồ sơ duy nhất, dịch vụ đẳng cấp 5 sao."
+      },
+      {
+        time: "4:07",
+        title: "Nền Tảng Responsive Mobile-First & Lời Bình Trải Nghiệm Thực Tế",
+        description: "Lời bình thực tế: Thiết kế Responsive chuẩn mobile-first trên iPad, điện thoại và máy tính bàn. Trải nghiệm ngay tại linh-da-skinlab.pages.dev để nâng tầm phòng khám của bạn!"
+      }
     ],
     audience: "Chủ Clinic Spa, Bác sĩ da liễu thẩm mỹ, Lễ tân phòng khám, Kỹ thuật viên chăm sóc da.",
-    problem: "Quản lý lịch hẹn chồng chéo, thất thoát lịch sử liệu trình của khách hàng và khó kiểm soát hoa hồng kỹ thuật viên.",
-    solution: "Quy trình số hóa từ đặt lịch thông minh, hồ sơ bệnh án da liễu điện tử đến tính toán doanh số và tồn kho mỹ phẩm sử dụng.",
+    problem: "Quản lý lịch hẹn chồng chéo, phân mảnh dữ liệu giữa sổ sách và Excel, thất thoát lịch sử liệu trình và khó kiểm soát hoa hồng kỹ thuật viên.",
+    solution: "Hệ thống 4 trong 1 kết nối CRM khách hàng, Hồ sơ da liễu điện tử EMR, Thu ngân POS VietQR và Quản trị kho dược mỹ phẩm tự động trừ kho realtime.",
     keyFeatures: [
-      "Lịch hẹn thông minh kéo thả trực quan theo phòng, giường và chuyên viên",
-      "Hồ sơ bệnh án điện tử lưu trữ hình ảnh soi da Before-After và phác đồ điều trị",
-      "Quản lý định mức tiêu hao kho dược mỹ phẩm theo từng buổi trị liệu",
-      "Báo cáo tài chính doanh thu và tính toán hoa hồng kỹ thuật viên tự động"
+      "Mô hình 4 trong 1: CRM khách hàng, Hồ sơ da liễu điện tử EMR, Thu ngân POS và Kho dược mỹ phẩm",
+      "Quản lý đặt lịch hẹn trực quan theo bác sĩ, tự động gửi tin nhắn nhắc lịch qua Zalo/SMS",
+      "Hồ sơ bệnh án điện tử lưu phác đồ điều trị và hình ảnh Before – Progress – After soi da",
+      "Kê đơn điện tử kết nối routine tại nhà và tự động trừ kho tức thì theo thời gian thực",
+      "Quản lý gói liệu trình thông minh theo cơ chế FIFO hạn chế thất thoát và sai sót số buổi",
+      "Thu ngân POS bán hàng siêu tốc và tạo mã VietQR động đúng từng đồng cho khách quét thanh toán",
+      "Kiểm soát kho dược mỹ phẩm chi tiết theo mã SKU, số lô sản xuất, hạn sử dụng và cảnh báo cận đát",
+      "Dashboard điều hành tổng quan và phân quyền nhân sự y khoa bảo mật tuyệt đối dữ liệu bệnh án"
     ],
     theme: {
       from: "#db2777",

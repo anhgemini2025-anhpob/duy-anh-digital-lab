@@ -1,0 +1,90 @@
+{
+  "totalDurationSec": 272.18,
+  "totalDurationFormatted": "4:32",
+  "videoScenes": [
+    {
+      "time": "0:00",
+      "seconds": 0,
+      "duration": 30,
+      "title": "Mô Hình 4 Trong 1: CRM – EMR – POS & Kho Dược Mỹ Phẩm",
+      "description": "Nam: \"Mấy phòng khám da liễu hay Cli-níc Spa càng đông khách, là y như rằng dữ liệu bị phân mảnh tùm lum. Lễ tân giữ lịch một nơi, bác sĩ ghi bệnh án một nẻo, thu ngân tính tiền riêng, còn kho mỹ phẩm thì sổ sách ghi tay lộn xộn hết trơn hà!\" Nữ: \"Dạ chuẩn luôn anh Nam! Trong khi khách hàng chỉ có một, hành trình làm đẹp từ lúc đặt hẹn đến tái khám phải liền mạch. Đó là lý do Đơ-ma Mê-đi-cờn Spa ra đời, tích hợp trọn vẹn mô hình bốn trong một: Xi-R-M, Hồ sơ bệnh án E-M-R, Máy tính tiền Pi-O-S và Quản trị kho thông minh!\" Nam: \"Tất cả gom về một hệ thống duy nhất, vừa chuyên nghiệp chuẩn y khoa, vừa dẹp tan nỗi lo thất thoát cho chủ cơ sở luôn ha My!\""
+    },
+    {
+      "time": "0:29",
+      "seconds": 30,
+      "duration": 36,
+      "title": "01 | CRM Khách Hàng & Quản Lý Đặt Lịch Hẹn Booking",
+      "description": "Nữ: \"Tính năng đầu tiên là Xi-R-M khách hàng và búc-king lịch hẹn cực kỳ mượt mà. Khách bước vô hay gọi tới, lễ tân chỉ cần gõ số điện thoại là màn hình hiện ngay hồ sơ: tiền sử dị ứng, loại da, lịch sử đã làm những dịch vụ gì.\" Nam: \"Hay ta! Rồi lịch hẹn thì điều phối trực quan theo từng khung giờ của bác sĩ và kỹ thuật viên, hổng bao giờ bị trùng ca hay để khách ngồi đợi lâu. Chưa kể hệ thống còn tự động bắn tin nhắn nhắc lịch qua Da-lo với tin nhắn điện thoại nữa chớ!\" Nữ: \"Dạ đúng rồi anh, nhờ vậy mà tỉ lệ khách rụng hẹn giảm hẳn, trải nghiệm chăm sóc khách hàng cực kỳ chu đáo luôn!\""
+    },
+    {
+      "time": "1:05",
+      "seconds": 66,
+      "duration": 20,
+      "title": "02 | Hồ Sơ Da Liễu Điện Tử EMR & Theo Dõi Before – After",
+      "description": "Nam: \"Còn với bác sĩ da liễu, phần mềm có hồ sơ bệnh án điện tử E-M-R chuyên sâu phải hông em?\" Nữ: \"Dạ đúng ạ! Bác sĩ chẩn đoán loại mụn, nám hay lão hóa, lập phác đồ điều trị chi tiết và chụp ảnh lưu trữ trực tiếp: từ ảnh ban đầu Bi-pho, ảnh tiến trình Rô-gờ-rét tới kết quả sau cùng Áp-tơ.\" Nam: \"Khách nhìn vô hình ảnh so sánh da mình cải thiện rõ rệt qua từng tuần là mê liền, tin tưởng bác sĩ tuyệt đối luôn!\""
+    },
+    {
+      "time": "1:25",
+      "seconds": 85,
+      "duration": 20,
+      "title": "03 | Kê Đơn Điện Tử & Thiết Kế Routine Chăm Sóc Tại Nhà",
+      "description": "Nữ: \"Khám xong, bác sĩ kê đơn thuốc và ru-tin dược mỹ phẩm thoa tại nhà ngay trên máy tính bảng hoặc điện thoại. Có sẵn hướng dẫn thoa sáng tối rõ ràng, khách về nhà hổng sợ dùng lộn.\" Nam: \"Đặc biệt là khi kê đơn, hệ thống kết nối thẳng với kho dược mỹ phẩm, món nào còn hay hết là biết liền, hổng có chuyện kê xong khách xuống quầy mới hay hết hàng!\""
+    },
+    {
+      "time": "1:45",
+      "seconds": 106,
+      "duration": 25,
+      "title": "04 | Quản Lý Gói Liệu Trình Thông Minh Theo Cơ Chế FIFO",
+      "description": "Nam: \"Nhiều khách mua gói liệu trình mười buổi, hai mươi buổi, trước giờ quản lý bằng thẻ giấy hay gạch sổ dễ nhầm lẫn dữ lắm đó nha!\" Nữ: \"Ở đây phần mềm tự động quản lý từng buổi theo cơ chế Phi-phô: khách làm buổi nào trừ chính xác buổi đó, ghi nhận kỹ thuật viên thực hiện để tính hoa hồng, minh bạch rành mạch một trăm phần trăm!\" Nam: \"Vậy là dẹp hẳn cảnh khách thắc mắc sao em nhớ chị còn hai buổi mà sổ ghi hết buổi, đôi bên vui vẻ thoải mái!\""
+    },
+    {
+      "time": "2:10",
+      "seconds": 131,
+      "duration": 20,
+      "title": "05 | Thu Ngân POS & Thanh Toán Nhanh Bằng VietQR Động",
+      "description": "Nữ: \"Tại quầy thu ngân, giao diện Pi-O-S bán hàng cực nhanh. Bán liệu trình, bán kem chống nắng hay serum chỉ tốn vài giây, in hóa đơn chuyên nghiệp và tự tạo mã Việt Quy Rờ đúng từng đồng bạc.\" Nam: \"Khách giơ điện thoại quét mã là tiền vô tài khoản tức thì, thu ngân hổng phải đọc số tài khoản lằng nhằng, tiền nong đối soát chính xác tuyệt đối.\""
+    },
+    {
+      "time": "2:30",
+      "seconds": 151,
+      "duration": 23,
+      "title": "06 | Quản Lý Kho Dược Mỹ Phẩm – Kiểm Soát Số Lô & Hạn Dùng",
+      "description": "Nam: \"Kho dược mỹ phẩm trong Cli-níc là tiền bạc nằm ở trỏng đó My. Quản lý có chặt chẽ hông em?\" Nữ: \"Dạ chặt chẽ từng chi tiết luôn anh! Quản lý theo từng mã hàng Ét-Ca-U, giá nhập, giá bán lẻ, nhà cung cấp, và đặc biệt là quản lý số lô cùng hạn sử dụng. Hàng nào cận đát là cảnh báo liền, hổng sợ bị tồn kho quá hạn!\" Nam: \"Chuẩn y khoa là phải vậy, an toàn cho bệnh nhân và an tâm cho chủ cơ sở!\""
+    },
+    {
+      "time": "2:53",
+      "seconds": 174,
+      "duration": 20,
+      "title": "07 | Cơ Chế Tự Động Trừ Kho Tức Thì Theo Thời Gian Thực",
+      "description": "Nữ: \"Điểm lợi hại số bảy là tự động trừ kho tức thì. Bác sĩ vừa kê sản phẩm hay thu ngân vừa xuất bán hóa đơn là số lượng tồn kho tự động trừ ngay trong tích tắc!\" Nam: \"Khỏi cần cuối ngày ngồi đếm từng lọ serum hay cộng trừ sổ sách hoa cả mắt ha! Tồn kho trên máy lúc nào cũng khớp y chang ngoài kệ thực tế.\""
+    },
+    {
+      "time": "3:13",
+      "seconds": 193,
+      "duration": 26,
+      "title": "08 | Cảnh Báo Tồn Kho Dưới Ngưỡng An Toàn & Đề Xuất Nhập Hàng",
+      "description": "Nam: \"Rồi nếu món nào sắp hết hàng thì phần mềm có báo trước hông My?\" Nữ: \"Dạ có chứ anh! Màn hình cảnh báo tồn kho chia ba màu trực quan: màu xanh là an toàn, vàng là sắp hết, đỏ là đã chạm ngưỡng tối thiểu cần nhập gấp. Chủ Cli-níc liếc mắt một cái là biết ngay mặt hàng nào cần lên đơn nhà cung ứng!\" Nam: \"Chủ động nhập hàng thông minh, dịch vụ chăm sóc khách lúc nào cũng trơn tru, không bao giờ bị đứt đoạn liệu trình!\""
+    },
+    {
+      "time": "3:39",
+      "seconds": 219,
+      "duration": 20,
+      "title": "09 | Bảng Điều Khiển Dashboard & Phân Quyền Nhân Sự Đa Cấp",
+      "description": "Nữ: \"Về mặt quản trị, hệ thống phân quyền cực kỳ chặt chẽ: bác sĩ, lễ tân, kỹ thuật viên, thu ngân chỉ thấy đúng phần việc của mình, bảo mật tuyệt đối dữ liệu bệnh án.\" Nam: \"Còn chủ phòng khám thì có bảng Đát-bót tổng quan: xem doanh thu trong ngày, số lượt khách đang làm dịch vụ, hiệu suất nhân viên ngay trên điện thoại di động dù đang đi công tác hay đi du lịch!\""
+    },
+    {
+      "time": "3:59",
+      "seconds": 240,
+      "duration": 7,
+      "title": "10 | Một Hệ Thống Khép Kín – Một Dữ Liệu Khách Hàng Liền Mạch",
+      "description": "Nam: \"Nhìn lại toàn bộ quy trình mới thấy sự lợi hại: từ đặt lịch, tiếp nhận, khám soi da, lên phác đồ, thực hiện liệu trình, kê đơn, thanh toán, trừ kho cho tới nhắc tái khám... tất cả nằm trọn trong một hành trình khép kín!\" Nữ: \"Dạ đúng anh Nam! Không còn file Ét-xen rải rác, không còn sổ tay thất lạc. Mọi bộ phận trong Cli-níc phối hợp nhịp nhàng, nâng tầm đẳng cấp dịch vụ năm sao!\""
+    },
+    {
+      "time": "4:07",
+      "seconds": 247,
+      "duration": 25,
+      "title": "Nền Tảng Responsive Mobile-First & Lời Bình Trải Nghiệm Thực Tế",
+      "description": "Nữ: \"Lời bình thực tế: Đơ-ma Mê-đi-cờn Spa được tối ưu giao diện rít-spon-xíp trên cả máy tính bảng, điện thoại di động và máy tính bàn, thao tác mượt mà và cực kỳ nhạy bén.\" Nam: \"Điểm bất ngờ nhất khi thử nghiệm là sự ăn khớp hoàn hảo giữa hồ sơ da liễu và trừ kho tự động, giúp chủ cơ sở tiết kiệm hàng chục giờ kiểm kê mỗi tháng. Hãy trải nghiệm ngay tại linh gạch da gạch sờ-kin-láp chấm bai-dịt chấm đép để nâng tầm phòng khám của bạn nhé!\""
+    }
+  ]
+}
