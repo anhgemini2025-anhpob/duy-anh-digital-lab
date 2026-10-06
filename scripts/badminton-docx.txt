@@ -1,0 +1,21 @@
+Quản lý một CLB cầu lông 30–100 thành viên tưởng đơn giản.Nhưng đến cuối tháng: ai đã đóng tiền, ai còn nợ, buổi nào bao nhiêu tiền, chia cho ai thế nào… lại là cả một mớ Excel và tin nhắn.
+AEROz Badminton Manager được xây dựng để giải quyết chính những việc đó.
+Đầu tiên là thu tiền và công nợ.
+Thành viên chỉ cần quét VietQR, hệ thống tự điền chính xác số tiền cần đóng.Khi tiền về tài khoản, hệ thống có thể tự động đối chiếu giao dịch, nhận diện người chuyển và cập nhật trạng thái “Đã thu”.
+Không còn phải ngồi dò sao kê, tìm ảnh chuyển khoản hay cộng trừ thủ công.
+Mỗi buổi chơi cũng được tính tiền tự động:Tiền sân + tiền cầu → chia theo số người thực tế điểm danh, cộng phụ phí vãng lai và làm tròn theo quy định của CLB.
+Còn những khoản chưa thanh toán?
+Hệ thống tự phát hiện nợ quá hạn, hỗ trợ nhắc qua Zalo hoặc SMS, đồng thời mỗi thành viên có thể tự xem số tiền đang nợ và toàn bộ lịch sử đóng tiền của mình.
+Tiếp theo là điểm danh và lịch chơi.
+Thành viên chỉ cần bấm “Tôi đã đến” ngay trên điện thoại.Số người chơi thực tế được ghi nhận rõ ràng — chia tiền công bằng, hạn chế tranh cãi.
+Ban quản trị cũng có thể quản lý lịch sân, nhóm chơi, thành viên chính thức và vãng lai ngay trên một màn hình.
+Và quan trọng nhất: tài chính của CLB luôn được nhìn thấy.
+Dashboard hiển thị ngay Tổng thu, Tổng chi, Số dư quỹ, Tỷ lệ thu tiền, Chi phí mỗi buổi và Chi phí mỗi người.
+Kèm theo biểu đồ dòng tiền, cơ cấu chi phí, Top công nợ và khả năng xuất báo cáo sang Google Sheets chỉ với một cú nhấp.
+Tất cả được thiết kế dưới dạng PWA — cài trực tiếp lên điện thoại, không cần App Store hay Google Play.
+Với 3 cấp phân quyền Admin – Thủ quỹ – Thành viên, mỗi người chỉ nhìn thấy và thực hiện đúng những gì mình được phép.
+AEROz Badminton Manager không chỉ là app điểm danh hay thu tiền.
+Đó là một hệ thống giúp CLB quản lý trọn vẹn:
+Đặt sân → Điểm danh → Tính phí → Thu tiền → Công nợ → Dòng tiền → Báo cáo.
+Ít Excel hơn.Ít phải nhắc nợ hơn.Minh bạch hơn.Và ban quản trị có nhiều thời gian hơn để tập trung vào việc xây dựng một CLB tốt hơn.
+AEROz Badminton Manager – Chơi vui, quản lý gọn, tài chính minh bạch.

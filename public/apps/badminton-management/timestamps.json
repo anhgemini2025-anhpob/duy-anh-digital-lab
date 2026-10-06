@@ -1,0 +1,50 @@
+{
+  "totalDuration": "3:46",
+  "scenes": [
+    {
+      "time": "0:00",
+      "title": "Chào Mừng & Giải Quyết Bài Toán Quản Lý CLB Cầu Lông",
+      "duration": 38.5
+    },
+    {
+      "time": "0:38",
+      "title": "Điểm Danh & Lịch Chơi 1 Chạm 'Tôi Đã Đến'",
+      "duration": 24.24
+    },
+    {
+      "time": "1:02",
+      "title": "Quét VietQR Tự Động Gạch Nợ Thông Minh",
+      "duration": 25.08
+    },
+    {
+      "time": "1:27",
+      "title": "Tự Động Chia Phí Buổi Chơi & Dashboard Dòng Tiền",
+      "duration": 23.02
+    },
+    {
+      "time": "1:50",
+      "title": "Quản Lý Nhóm Chơi & Phân Chia Công Bằng",
+      "duration": 22.1
+    },
+    {
+      "time": "2:12",
+      "title": "Trải Nghiệm Thảnh Thơi Sau Buổi Tập Thể Thao",
+      "duration": 21.79
+    },
+    {
+      "time": "2:34",
+      "title": "Nhắc Nợ Tự Động Qua Zalo/SMS & Tra Cứu Cá Nhân",
+      "duration": 19.42
+    },
+    {
+      "time": "2:54",
+      "title": "Báo Cáo Tài Chính Chuyên Nghiệp & Phân Quyền 3 Cấp",
+      "duration": 26.88
+    },
+    {
+      "time": "3:21",
+      "title": "Chuẩn PWA Hiện Đại – Chơi Vui, Quản Lý Gọn, Minh Bạch",
+      "duration": 25.44
+    }
+  ]
+}
