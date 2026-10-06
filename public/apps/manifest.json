@@ -111,9 +111,9 @@
     "id": "lanxess-cosmetic-advisor",
     "name": "LANXESS Cosmetic Advisor",
     "category": "R&D & HỆ BẢO QUẢN MỸ PHẨM",
-    "sourceUrl": "https://lanxess-cosmetic-advisor.pages.dev/",
-    "cover": "/apps/lanxess-cosmetic-advisor/cover.svg",
-    "placeholder": "/apps/lanxess-cosmetic-advisor/cover-placeholder.svg",
+    "sourceUrl": "https://lanxessadvisor.vercel.app",
+    "cover": "/apps/lanxess-cosmetic-advisor/feature_01_chon_dang_san_pham.jpg",
+    "placeholder": "/apps/lanxess-cosmetic-advisor/feature_01_chon_dang_san_pham.jpg",
     "featured": false
   },
   {

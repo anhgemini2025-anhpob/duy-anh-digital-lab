@@ -86,7 +86,7 @@ npm run preview
 | 10 | `yeast-extract-test` | Yeast Extract Knowledge Test | Đào tạo & Đánh giá năng lực | https://cool-tulumba-fa58d6.netlify.app/ |
 | 11 | `vanderbilt-advisor` | Vanderbilt R&D Advisor | R&D & Hóa chất Chuyên dụng | https://vanderbiltadvisor.vercel.app |
 | 12 | `algaktiv-advisor` | Algaktiv R&D Advisor | R&D & Vi tảo Biển Sinh học | https://algaktivadvisor.vercel.app |
-| 13 | `lanxess-cosmetic-advisor` | LANXESS Cosmetic Advisor | R&D & Hệ thống Bảo quản | https://lanxess-cosmetic-advisor.pages.dev/ |
+| 13 | `lanxess-cosmetic-advisor` | LANXESS Cosmetic Advisor | R&D & Hệ thống Bảo quản | https://lanxessadvisor.vercel.app |
 | 14 | `cosmederm-ai-academy` | CosmeDerm AI Academy | AI • Đào tạo & R&D Mỹ phẩm | https://cosmederm-ai.vercel.app/ |
 | 15 | `foodtech-hub` | Vietnam Food Tech Hub | R&D & Công nghệ Thực phẩm | https://foodtechhub.vercel.app/ |
 | 16 | `htx-rau-cu` | HTX Rau Củ Quả | Nông nghiệp Số & Hợp tác xã | https://htxraucuqua.vercel.app |

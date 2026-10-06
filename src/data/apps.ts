@@ -1838,37 +1838,68 @@ export const APPS_DATA: AppItem[] = [
     id: "lanxess-cosmetic-advisor",
     logoUrl: '/apps/lanxess-cosmetic-advisor/app-logo.png',
     name: "LANXESS Cosmetic Advisor",
-    url: "https://lanxess-cosmetic-advisor.pages.dev/",
+    url: "https://lanxessadvisor.vercel.app",
     category: "R&D & Hệ thống Bảo quản",
     categoryId: "rd-cosmetics",
-    description: "Hệ thống hỗ trợ lựa chọn giải pháp bảo quản mỹ phẩm, kiểm soát vi sinh an toàn và tuân thủ quy định quốc tế từ tập đoàn LANXESS.",
-    tags: ["LANXESS", "Preservatives", "Microbiology", "Regulatory"],
-    coverImage: '/apps/lanxess-cosmetic-advisor/real-cover.jpg',
-    placeholderImage: '/apps/lanxess-cosmetic-advisor/real-cover.jpg',
+    description: "Hệ thống hỗ trợ lựa chọn giải pháp bảo quản và nguyên liệu mỹ phẩm LANXESS Personal Care: Bộ lọc kỹ thuật theo dải pH & chứng nhận Clean Beauty, cẩm nang phối chế Formulation Guide và yêu cầu mẫu thử trực tiếp.",
+    tags: ["LANXESS", "Personal Care", "Formulation Advisor", "Preservatives", "Clean Beauty", "Sample Request"],
+    coverImage: '/apps/lanxess-cosmetic-advisor/feature_01_chon_dang_san_pham.jpg',
+    placeholderImage: '/apps/lanxess-cosmetic-advisor/feature_01_chon_dang_san_pham.jpg',
+    illustrationImage: '/apps/lanxess-cosmetic-advisor/feature_01_chon_dang_san_pham.jpg',
     detailImages: [
-      '/apps/lanxess-cosmetic-advisor/real-cover.jpg',
-      '/apps/lanxess-cosmetic-advisor/real-screen-2.jpg',
-      '/apps/lanxess-cosmetic-advisor/real-screen-3.jpg'
+      '/apps/lanxess-cosmetic-advisor/feature_01_chon_dang_san_pham.jpg',
+      '/apps/lanxess-cosmetic-advisor/feature_02_bo_loc_ph_clean_beauty.jpg',
+      '/apps/lanxess-cosmetic-advisor/feature_03_lanxess_solution_card.jpg',
+      '/apps/lanxess-cosmetic-advisor/feature_04_formulation_guide_pha_che.jpg',
+      '/apps/lanxess-cosmetic-advisor/feature_05_luu_mau_sample_request.jpg',
+      '/apps/lanxess-cosmetic-advisor/feature_06_tds_verified_thuong_mai_hoa.jpg'
     ],
-    imageAlt: "LANXESS Cosmetic Advisor preservative selection and microbial control interface",
+    imageAlt: "LANXESS Personal Care Formulation Advisor interface and preservative technical profile",
     featured: false,
-    videoDuration: "1:15",
-    videoTagline: "Chọn hệ chất bảo quản phổ rộng & kiểm soát nhiễm khuẩn mỹ phẩm",
+    videoDuration: "4:05",
+    videoTagline: "LANXESS Personal Care Formulation Advisor – Tìm đúng giải pháp, tối ưu công thức và rút ngắn chu kỳ R&D mỹ phẩm",
     videoScenes: [
-      { time: "0:00", title: "Bộ lọc Hệ Bảo quản theo pH & Dạng Sản phẩm", description: "Lựa chọn chất bảo quản thay thế Paraben (như Benzyl Alcohol, Benzoic Acid, Dehydroacetic Acid) tương thích theo dải pH 3.0 đến 8.5." },
-      { time: "0:15", title: "Mô phỏng Thử nghiệm Vi sinh ISO 11930", description: "Đồ thị đường cong tiêu diệt vi sinh vật mô phỏng bài kiểm tra Challenge Test 28 ngày đối với nấm men, nấm mốc và vi khuẩn." },
-      { time: "0:30", title: "Tra cứu Pháp lý Toàn cầu ASEAN, EU & FDA", description: "Đối chiếu giới hạn nồng độ tối đa cho phép trong mỹ phẩm lưu lại (leave-on) và mỹ phẩm rửa trôi (rinse-off) theo quy định quốc tế." },
-      { time: "0:45", title: "Tối ưu Hiệu quả Sát khuẩn & Hiệp đồng Tác dụng", description: "Hướng dẫn kết hợp các chất trợ bảo quản (Chelating agents, Caprylyl Glycol) để tăng cường phổ kháng khuẩn và giảm liều lượng hoạt chất chính." },
-      { time: "1:00", title: "Lời bình & Tính năng bất ngờ khi thử nghiệm", description: "Lời bình thực tế: Giải pháp kỹ thuật bảo quản mỹ phẩm không Paraben toàn diện và khoa học nhất cho các phòng R&D mỹ phẩm. Điểm bất ngờ khi thử nghiệm là công cụ cảnh báo tương tác vô hiệu hóa chất bảo quản khi công thức có chứa chất hoạt động bề mặt ethoxylated (như Polysorbate). Hãy khám phá và bạn sẽ phát hiện thêm nhiều chức năng khác như công cụ tính toán chi phí bảo quản cho mỗi kilogam thành phẩm và bảng chứng nhận an toàn cho da nhạy cảm!" }
+      {
+        time: "0:00",
+        title: "01 | Định Hướng Dạng Sản Phẩm & Giải Bài Toán R&D Mỹ Phẩm",
+        description: "Bắt đầu dự án R&D nhanh chóng: Lựa chọn dạng sản phẩm Leave-on hoặc Rinse-off, dầu gội, sữa tắm hay serum; hệ thống tự động định hướng giải pháp nguyên liệu LANXESS tối ưu."
+      },
+      {
+        time: "0:53",
+        title: "02 | Bộ Lọc Kỹ Thuật Thông Minh: Dải pH & Chuẩn Xanh Quốc Tế",
+        description: "Tùy biến bộ lọc chuyên sâu theo dải pH công thức (từ 3.0 đến 8.5) và các chứng nhận quốc tế khắt khe như COSMOS, ECOCERT, Clean Beauty, Halal, Kosher và không Sulfate."
+      },
+      {
+        time: "1:33",
+        title: "03 | LANXESS Solution Card: Hồ Sơ Nguyên Liệu Toàn Diện",
+        description: "Hiển thị thẻ giải pháp nguyên liệu chi tiết: Tên thương mại, INCI name chuẩn quốc tế, công dụng cốt lõi, tỷ lệ sử dụng khuyến nghị và tính năng thay thế Paraben/Phenoxyethanol vượt trội."
+      },
+      {
+        time: "2:13",
+        title: "04 | Formulation Guide: Quy Trình Phối Chế & Kiểm Soát Nhiệt Độ",
+        description: "Cẩm nang hướng dẫn thao tác kỹ thuật phòng lab: Thứ tự cho nguyên liệu vào từng pha (nước/dầu), ngưỡng nhiệt độ an toàn (dưới 40°C hay 80°C) và lưu ý chống sốc nhiệt hoặc đục hệ."
+      },
+      {
+        time: "2:51",
+        title: "05 | Lưu Danh Sách Mẫu & Gửi Yêu Cầu Sample Request Trực Tiếp",
+        description: "Lưu trữ nguyên liệu phù hợp vào giỏ mẫu thử nghiệm (Sample List), xuất phiếu yêu cầu mẫu đầy đủ thông số kỹ thuật và gửi trực tiếp tới đội ngũ kỹ thuật LANXESS chỉ với 1 cú click."
+      },
+      {
+        time: "3:25",
+        title: "06 | Chuẩn Hóa Dữ Liệu TDS, Pháp Lý & Tự Tin Thương Mại Hóa",
+        description: "Dữ liệu được chuẩn hóa và bảo chứng chính thức từ LANXESS Đức: Tra cứu tài liệu kỹ thuật TDS, kiểm tra quy chuẩn an toàn pháp lý ASEAN, EU, FDA để tự tin đưa sản phẩm ra thị trường thương mại."
+      }
     ],
-    audience: "Kỹ sư R&D mỹ phẩm, Chuyên viên an toàn sản phẩm (Regulatory Affairs), Kỹ thuật viên vi sinh.",
-    problem: "Xu hướng loại bỏ Paraben/Phenoxyethanol đòi hỏi phải tìm hệ bảo quản thay thế nhưng vẫn phải vượt qua bài kiểm tra Challenge Test khắt khe.",
-    solution: "Thuật toán gợi ý hệ bảo quản phổ rộng dựa trên pH sản phẩm, dạng bào chế và thị trường xuất khẩu mục tiêu (ASEAN, EU, USA).",
+    audience: "Kỹ sư R&D mỹ phẩm, Chuyên gia bào chế Formulator, Chuyên viên pháp chế Regulatory Affairs, Kỹ thuật viên kiểm nghiệm vi sinh.",
+    problem: "Tìm kiếm chất bảo quản và hoạt chất thay thế Paraben/Phenoxyethanol tốn nhiều tuần tra cứu tài liệu, dễ gặp sự cố sốc nhiệt, mất hoạt tính theo pH và kéo dài chu kỳ thử nghiệm mẫu.",
+    solution: "LANXESS Formulation Advisor định hướng nhanh theo dạng sản phẩm và pH, cung cấp Formulation Guide chi tiết từng pha và hỗ trợ gửi Sample Request thử nghiệm tức thì.",
     keyFeatures: [
-      "Bộ lọc chất bảo quản không Paraben theo khoảng pH ổn định và dạng sản phẩm",
-      "Mô phỏng đường cong động học tiêu diệt vi sinh vật bài test 28 ngày ISO 11930",
-      "Kiểm tra tính tuân thủ pháp lý theo tiêu chuẩn mỹ phẩm ASEAN, EU và FDA",
-      "Giải pháp phối hợp chất trợ bảo quản nâng cao phổ ức chế nấm men nấm mốc"
+      "Định hướng nguyên liệu chuẩn xác theo dạng sản phẩm Leave-on, Rinse-off và chăm sóc tóc/da",
+      "Bộ lọc kỹ thuật thông minh theo dải pH (3.0 - 8.5) và tiêu chuẩn Clean Beauty (COSMOS, Halal)",
+      "LANXESS Solution Card: Thông tin INCI, công dụng chính và tỷ lệ sử dụng khuyến nghị",
+      "Formulation Guide: Hướng dẫn chi tiết thứ tự pha trộn, giới hạn nhiệt độ và chống sốc hệ",
+      "Giỏ mẫu Sample Request: Tạo danh sách và gửi yêu cầu mẫu thử nghiệm phòng lab 1 chạm",
+      "Dữ liệu TDS bảo chứng từ tập đoàn LANXESS Đức, hỗ trợ đối chiếu pháp lý ASEAN, EU & FDA"
     ],
     theme: {
       from: "#dc2626",
