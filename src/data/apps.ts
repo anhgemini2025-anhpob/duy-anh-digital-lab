@@ -1133,6 +1133,7 @@ export const APPS_DATA: AppItem[] = [
     tags: ["Hợp đồng mua bán", "Quản lý hợp đồng", "Google Drive", "PWA Offline", "B2B Sales", "Dashboard Cảnh báo"],
     coverImage: '/apps/quan-ly-hop-dong-abm/cover.jpg',
     placeholderImage: '/apps/quan-ly-hop-dong-abm/cover.jpg',
+    illustrationImage: '/apps/quan-ly-hop-dong-abm/feature_01.jpg',
     detailImages: [
       '/apps/quan-ly-hop-dong-abm/feature_01.jpg',
       '/apps/quan-ly-hop-dong-abm/feature_02.jpg',
@@ -1147,19 +1148,59 @@ export const APPS_DATA: AppItem[] = [
     ],
     imageAlt: "Giao diện quản lý hợp đồng mua bán thương mại, cảnh báo hạn hợp đồng và tra cứu file scan Google Drive",
     featured: true,
-    videoDuration: "4:03",
+    videoDuration: "6:22",
     videoTagline: "Số hóa hợp đồng thương mại tập trung, tự động bắt lỗi hồ sơ, cảnh báo tái ký & tra cứu file scan Drive",
     videoScenes: [
-      { time: "0:00", title: "Tổng Quan Quản Lý Hợp Đồng Mua Bán: Số Hóa & Giám Sát Tập Trung", description: "Chuyển hóa toàn bộ quy trình theo dõi hợp đồng từ file Excel rời rạc sang nền tảng số hóa trực quan, cảnh báo chủ động và kiểm soát đa chiều." },
-      { time: "0:33", title: "01 | Quản Lý & Theo Dõi Hợp Đồng Toàn Diện", description: "Phân loại khoa học theo khách hàng, Sales, ASM, nhóm đối tác và trạng thái: chưa ký, sắp tái ký, sắp hết hạn, còn hiệu lực; tra cứu tức thì theo MST và số hợp đồng." },
-      { time: "0:58", title: "02 | Đát-bo Trực Quan & Cảnh Báo Hết Hạn Thông Minh", description: "Bức tranh toàn cảnh về tiến độ ký kết và rủi ro quá hạn; cấu hình cảnh báo linh hoạt trước 15 đến 365 ngày giúp đội ngũ kinh doanh luôn ở thế chủ động." },
-      { time: "1:22", title: "03 | Ưu Tiên Đúng Việc – Tập Trung Khách Hàng Doanh Số Cao", description: "Tự động xếp hạng ưu tiên khách hàng doanh số lớn nhất cần hoàn tất hợp đồng, theo dõi sát sao lịch đáo hạn trong 12 tháng tới để tối ưu hóa nguồn lực." },
-      { time: "1:44", title: "04 | Kiểm Tra & Tự Động Bắt Lỗi Chất Lượng Hồ Sơ", description: "Tự động rà soát phát hiện thiếu sót: thiếu MST, sai định dạng, thiếu người đại diện, email lỗi hoặc chưa có file scan, ngăn ngừa tranh chấp pháp lý." },
-      { time: "2:09", title: "05 | Quản Lý & Liên Kết File Scan Gu-gồ Đơ-rai-vơ", description: "Gắn kết trực tiếp file scan hợp đồng có dấu mộc đỏ lưu trữ trên Google Drive; quy tắc đặt tên chuẩn hóa, mở xem ngay lập tức trên máy tính và điện thoại." },
-      { time: "2:32", title: "06 | Nhập Liệu Éch-xen & Xuất Báo Cáo Pê-Đê-Ép Đa Định Dạng", description: "Đồng bộ hàng nghìn dòng dữ liệu từ Excel chỉ trong vài giây theo từng nhóm hợp đồng, khách hàng; xuất báo cáo tổng hợp và chi tiết dạng PDF, Excel chuyên nghiệp." },
-      { time: "2:55", title: "07 | Quản Lý Danh Bạ Đối Tác & Phân Quyền Bảo Mật", description: "Tập trung danh bạ khách hàng, theo dõi hợp đồng mới nhất và lũy kế doanh số; phân quyền chặt chẽ theo vai trò và cơ chế khóa tạm thời khi đăng nhập sai nhiều lần." },
-      { time: "3:17", title: "08 | Chế Độ Pê-Đúp-A Óp-lai & Sao Lưu Phục Hồi Đám Mây", description: "Ứng dụng hoạt động mượt mà ngay cả khi mất kết nối Internet nhờ bộ nhớ offline thiết bị; đồng thời sao lưu và phục hồi dữ liệu an toàn tuyệt đối qua Google Drive." },
-      { time: "3:42", title: "09 | Lời Kết: Chuẩn Hóa Quản Trị – Nâng Tầm Vận Hành Doanh Nghiệp", description: "Quản lý hợp đồng thương mại thông minh giúp doanh nghiệp giữ vững khách hàng, phòng ngừa rủi ro pháp lý và tạo bệ phóng phát triển kinh doanh bền vững." }
+      {
+        time: "0:00",
+        title: "Tổng Quan Quản Lý Hợp Đồng Mua Bán: Số Hóa & Giám Sát Tập Trung",
+        description: "Chuyển hóa toàn bộ quy trình theo dõi hợp đồng từ file Excel rời rạc sang nền tảng số hóa trực quan, cảnh báo tự động và kiểm soát đa chiều."
+      },
+      {
+        time: "0:48",
+        title: "01 | Quản Lý & Theo Dõi Hợp Đồng Toàn Diện",
+        description: "Phân loại khoa học theo khách hàng, Sales, ASM, nhóm đối tác và trạng thái: chưa ký, sắp tái ký, sắp hết hạn, còn hiệu lực; tra cứu tức thì theo MST và số hợp đồng."
+      },
+      {
+        time: "1:27",
+        title: "02 | Đát-bo Trực Quan & Cảnh Báo Hết Hạn Thông Minh",
+        description: "Bức tranh toàn cảnh về tiến độ ký kết và rủi ro quá hạn; cấu hình cảnh báo linh hoạt trước 15 đến 365 ngày giúp đội ngũ kinh doanh luôn ở thế chủ động."
+      },
+      {
+        time: "2:06",
+        title: "03 | Ưu Tiên Đúng Việc – Tập Trung Khách Hàng Doanh Số Cao",
+        description: "Tự động xếp hạng ưu tiên khách hàng doanh số lớn nhất cần hoàn tất hợp đồng, theo dõi sát sao lịch đáo hạn trong 12 tháng tới để tối ưu hóa nguồn lực."
+      },
+      {
+        time: "2:41",
+        title: "04 | Kiểm Tra & Tự Động Bắt Lỗi Chất Lượng Hồ Sơ",
+        description: "Tự động rà soát phát hiện thiếu sót: thiếu MST, sai định dạng, thiếu người đại diện, email lỗi hoặc chưa có file scan, ngăn ngừa tranh chấp pháp lý."
+      },
+      {
+        time: "3:18",
+        title: "05 | Quản Lý & Liên Kết File Scan Gu-gồ Đơ-rai-vơ",
+        description: "Gắn kết trực tiếp file scan hợp đồng có dấu mộc đỏ lưu trữ trên Google Drive; quy tắc đặt tên chuẩn hóa, mở xem ngay lập tức trên máy tính và điện thoại."
+      },
+      {
+        time: "3:59",
+        title: "06 | Nhập Liệu Éch-xen & Xuất Báo Cáo Pê-Đê-Ép Đa Định Dạng",
+        description: "Đồng bộ hàng nghìn dòng dữ liệu từ Excel chỉ trong vài giây theo từng nhóm hợp đồng, khách hàng; xuất báo cáo tổng hợp và chi tiết dạng PDF, Excel chuyên nghiệp."
+      },
+      {
+        time: "4:35",
+        title: "07 | Quản Lý Danh Bạ Đối Tác & Phân Quyền Bảo Mật",
+        description: "Tập trung danh bạ khách hàng, theo dõi hợp đồng mới nhất và lũy kế doanh số; phân quyền chặt chẽ theo vai trò và cơ chế khóa tạm thời khi đăng nhập sai nhiều lần."
+      },
+      {
+        time: "5:14",
+        title: "08 | Chế Độ Pê-Đúp-A Óp-lai & Sao Lưu Phục Hồi Đám Mây",
+        description: "Ứng dụng hoạt động mượt mà ngay cả khi mất kết nối Internet nhờ bộ nhớ offline thiết bị; đồng thời sao lưu và phục hồi dữ liệu an toàn tuyệt đối qua Google Drive."
+      },
+      {
+        time: "5:50",
+        title: "09 | Lời Kết: Chuẩn Hóa Quản Trị – Nâng Tầm Vận Hành Doanh Nghiệp",
+        description: "Quản lý hợp đồng thương mại thông minh giúp doanh nghiệp giữ vững khách hàng, phòng ngừa rủi ro pháp lý và tạo bệ phóng phát triển kinh doanh bền vững."
+      }
     ],
     audience: "Ban giám đốc, Giám đốc kinh doanh, Quản lý vùng (ASM), Đội ngũ Sales B2B, Chuyên viên pháp chế & Admin bán hàng.",
     problem: "Hợp đồng thương mại lưu trữ phân tán trên nhiều file Excel cá nhân, dễ quên kỳ tái ký gây gián đoạn doanh thu, khó kiểm soát chất lượng pháp lý và không tra cứu được file scan gốc khi đi thị trường.",

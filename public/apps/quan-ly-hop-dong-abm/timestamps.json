@@ -1,0 +1,55 @@
+{
+  "totalDuration": "6:22",
+  "scenes": [
+    {
+      "time": "0:00",
+      "title": "Tổng Quan Quản Lý Hợp Đồng Mua Bán: Số Hóa & Giám Sát Tập Trung",
+      "duration": 48.96
+    },
+    {
+      "time": "0:48",
+      "title": "01 | Quản Lý & Theo Dõi Hợp Đồng Toàn Diện",
+      "duration": 38.69
+    },
+    {
+      "time": "1:27",
+      "title": "02 | Dashboard Trực Quan & Cảnh Báo Hết Hạn Thông Minh",
+      "duration": 38.86
+    },
+    {
+      "time": "2:06",
+      "title": "03 | Ưu Tiên Đúng Việc – Tập Trung Khách Hàng Doanh Số Cao",
+      "duration": 34.7
+    },
+    {
+      "time": "2:41",
+      "title": "04 | Kiểm Tra & Tự Động Bắt Lỗi Chất Lượng Hồ Sơ",
+      "duration": 37.78
+    },
+    {
+      "time": "3:18",
+      "title": "05 | Quản Lý & Liên Kết File Scan Google Drive",
+      "duration": 40.08
+    },
+    {
+      "time": "3:59",
+      "title": "06 | Nhập Liệu Excel & Xuất Báo Cáo PDF Đa Định Dạng",
+      "duration": 36.12
+    },
+    {
+      "time": "4:35",
+      "title": "07 | Quản Lý Danh Bạ Đối Tác & Phân Quyền Bảo Mật",
+      "duration": 39.67
+    },
+    {
+      "time": "5:14",
+      "title": "08 | Chế Độ PWA Offline & Sao Lưu Phục Hồi Đám Mây",
+      "duration": 35.98
+    },
+    {
+      "time": "5:50",
+      "title": "09 | Lời Kết: Chuẩn Hóa Quản Trị – Nâng Tầm Vận Hành Doanh Nghiệp",
+      "duration": 32.09
+    }
+  ]
+}

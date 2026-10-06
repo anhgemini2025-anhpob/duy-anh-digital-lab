@@ -2,23 +2,20 @@ import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
 
-const projectRoot = 'C:/Nam 2026/Web app/DANH SACH CAC APP WEB DA THUC HIÊN';
-const srcDir = path.join(projectRoot, 'Hinh ảnh minh hoa cho ung dung', 'Quan ly hop dong');
-console.log('Source directory:', srcDir);
-
+const srcDir = path.join(process.cwd(), 'Hinh ảnh minh hoa cho ung dung', 'Quan ly hop dong');
 const files = fs.readdirSync(srcDir);
-const docxFileName = files.find(f => f.endsWith('.docx') && !f.startsWith('~$'));
+const docxFileName = files.find(f => f.endsWith('.docx'));
 const docxFile = path.join(srcDir, docxFileName);
 console.log('Docx file:', docxFile);
 
-const localZip = path.join(projectRoot, 'scripts', 'temp_hopdong.zip');
+const localZip = path.join(process.cwd(), 'scripts', 'temp_hopdong.zip');
 fs.copyFileSync(docxFile, localZip);
 
-const tmpDir = path.join(projectRoot, 'scripts', 'tmp_hopdong_docx');
+const tmpDir = path.join(process.cwd(), 'scripts', 'tmp_hopdong_docx');
 if (fs.existsSync(tmpDir)) fs.rmSync(tmpDir, { recursive: true, force: true });
 fs.mkdirSync(tmpDir, { recursive: true });
 
-execSync(`tar -xf "${localZip}" -C "${tmpDir}"`);
+execSync(`tar -xf "scripts/temp_hopdong.zip" -C "scripts/tmp_hopdong_docx"`);
 
 const xmlFile = path.join(tmpDir, 'word', 'document.xml');
 const xml = fs.readFileSync(xmlFile, 'utf8');
@@ -38,9 +35,8 @@ for (const p of pMatches) {
   }
 }
 
-const outTxt = path.join(projectRoot, 'scripts', 'hopdong-docx.txt');
-fs.writeFileSync(outTxt, paragraphs.join('\n'), 'utf8');
-console.log(`Extracted ${paragraphs.length} paragraphs to ${outTxt}`);
+fs.writeFileSync(path.join(process.cwd(), 'scripts', 'hopdong-docx.txt'), paragraphs.join('\n'), 'utf8');
+console.log(`Extracted ${paragraphs.length} paragraphs to scripts/hopdong-docx.txt`);
 
 // cleanup
 fs.rmSync(tmpDir, { recursive: true, force: true });
