@@ -1637,32 +1637,62 @@ export const APPS_DATA: AppItem[] = [
     categoryId: "sales-business",
     description: "Công cụ hỗ trợ sales B2B tạo kịch bản thuyết phục khách hàng và tra cứu thẻ chiến lược đối đầu sản phẩm cạnh tranh.",
     tags: ["Battle Card", "Sales Pitch", "Value Selling", "Competitor Matrix"],
-    coverImage: '/apps/bjc-sales-pitch/real-cover.jpg',
-    placeholderImage: '/apps/bjc-sales-pitch/real-cover.jpg',
+    coverImage: '/apps/bjc-sales-pitch/feature_01_tong_quan_sales_pitch_battlecard.jpg',
+    placeholderImage: '/apps/bjc-sales-pitch/feature_01_tong_quan_sales_pitch_battlecard.jpg',
+    illustrationImage: '/apps/bjc-sales-pitch/feature_04_the_tac_chien_battlecard_doi_dau_doi_thu.jpg',
     detailImages: [
-      '/apps/bjc-sales-pitch/real-cover.jpg',
-      '/apps/bjc-sales-pitch/real-screen-2.jpg',
-      '/apps/bjc-sales-pitch/real-screen-3.jpg'
+      '/apps/bjc-sales-pitch/feature_01_tong_quan_sales_pitch_battlecard.jpg',
+      '/apps/bjc-sales-pitch/feature_02_khoi_tao_tuy_bien_ai_gemini_claude.jpg',
+      '/apps/bjc-sales-pitch/feature_03_cau_truc_sales_pitch_gia_tri_khac_biet.jpg',
+      '/apps/bjc-sales-pitch/feature_04_the_tac_chien_battlecard_doi_dau_doi_thu.jpg',
+      '/apps/bjc-sales-pitch/feature_05_xuat_da_dinh_dang_powerpoint_pdf_word_excel.jpg',
+      '/apps/bjc-sales-pitch/feature_06_chuan_hoa_quy_trinh_nhan_ban_sales_gioi.jpg'
     ],
-    imageAlt: "Sales Pitch and Battle Card tool interface for B2B chemical sales",
+    imageAlt: "BJC Sales Pitch and Battle Card AI tool interface for B2B sales enablement",
     featured: false,
-    videoDuration: "1:15",
-    videoTagline: "Tạo kịch bản thuyết phục và đối đầu sản phẩm đối thủ trong 30 giây",
+    videoDuration: "2:19",
+    videoTagline: "BJC Sales Pitch & Battlecard Generator – Biết khách hàng cần gì, Biết mình nên nói gì, Biết đối thủ đang ở đâu",
     videoScenes: [
-      { time: "0:00", title: "Ma trận So sánh Sản phẩm & Đối thủ", description: "Đối chiếu trực diện thông số kỹ thuật, xuất xứ và hiệu quả công nghệ giữa sản phẩm công ty và đối thủ cạnh tranh." },
-      { time: "0:15", title: "Thẻ Chiến lược Battle Card", description: "Bộ luận điểm phản biện sắc bén, vạch rõ điểm yếu của đối thủ và định vị giá trị khác biệt cốt lõi." },
-      { time: "0:30", title: "Công cụ Tính toán ROI & Tổng Chi phí", description: "Nhập sản lượng và quy mô sản xuất của khách hàng để tính toán chính xác số tiền tiết kiệm nguyên liệu hàng năm." },
-      { time: "0:45", title: "Kịch bản SPIN Selling & Xử lý Từ chối", description: "Cung cấp lộ trình câu hỏi gợi mở nhu cầu ngầm định, hóa giải lo ngại về đơn giá cao và chốt thỏa thuận hợp tác." },
-      { time: "1:00", title: "Lời bình & Tính năng bất ngờ khi thử nghiệm", description: "Lời bình thực tế: Cẩm nang đàm phán di động cực kỳ thực chiến, giúp nhân viên kinh doanh tự tin tư vấn ngay trước mặt đối tác. Điểm bất ngờ khi thử nghiệm là khả năng kết xuất bản báo cáo đề xuất giá trị định dạng PDF chuyên nghiệp chỉ trong 5 giây để gửi ngay sau cuộc họp. Hãy khám phá và bạn sẽ phát hiện thêm nhiều chức năng khác như thư viện mẫu thử nghiệm kỹ thuật và kho tài liệu chứng minh lâm sàng!" }
+      {
+        time: "0:00",
+        title: "Tổng Quan: BJC Sales Pitch & Battlecard Generator – Trợ Lý AI Bán Hàng B2B",
+        description: "Chấm dứt hàng giờ lục lọi tài liệu cũ, tự soạn email hay loay hoay trước câu hỏi so sánh của khách hàng. Trợ lý AI toàn diện giúp Sales chuẩn bị sắc bén, thần tốc trước mọi cuộc gặp đối tác."
+      },
+      {
+        time: "0:36",
+        title: "01 | Khởi Tạo Kịch Bản Siêu Tốc Bằng AI Kép Gemini & Claude",
+        description: "Chỉ cần nhập tên khách hàng, sản phẩm, ngành hàng và đối thủ. Trí tuệ nhân tạo Gemini & Claude tự động phân tích sâu sát bối cảnh thực tế để phác thảo kịch bản thuyết phục may đo riêng biệt."
+      },
+      {
+        time: "0:57",
+        title: "02 | Cấu Trúc Lời Thuyết Phục Sắc Bén: Từ Nhu Cầu Đến Giá Trị Khác Biệt",
+        description: "Dẫn dắt theo chuỗi logic hoàn hảo: Khách hàng cần gì → Giá trị vượt trội mang lại → Điểm khác biệt độc nhất (USP) → Định vị đối thủ → Kịch bản đàm phán chốt deal giá trị cao."
+      },
+      {
+        time: "1:12",
+        title: "03 | Thẻ Chiến Lược Battlecard: Định Vị Đối Thủ & Hóa Giải Mọi Lời Từ Chối",
+        description: "Vũ khí phản biện tức thì: vạch rõ điểm yếu của đối thủ cạnh tranh, phân tích tổng chi phí sở hữu TCO và cung cấp câu trả lời sắc sảo khi khách chê giá đắt hay so sánh tính năng."
+      },
+      {
+        time: "1:37",
+        title: "04 | Xuất Bản Tài Liệu Đa Định Dạng: PowerPoint, PDF, Word & Excel",
+        description: "Chỉ một cú nhấp chuột: xuất ngay slide PowerPoint thuyết trình, file Word hoặc PDF sang trọng gửi khách hàng sau cuộc họp, và bảng tính Excel quản lý dữ liệu đối soát báo giá."
+      },
+      {
+        time: "1:58",
+        title: "05 | Chuẩn Hóa Tri Thức & Nhân Bản Năng Lực Sales Xuất Sắc Cho Doanh Nghiệp",
+        description: "Nền tảng Next.js, FastAPI và PostgreSQL hiện đại giúp chuẩn hóa phương pháp tiếp cận khách hàng, nhân bản kinh nghiệm của Sales giỏi nhất thành tài sản số vững mạnh cho doanh nghiệp."
+      }
     ],
-    audience: "Đại diện kinh doanh B2B, Kỹ sư bán hàng (Technical Sales), Trưởng phòng kinh doanh.",
-    problem: "Sales lúng túng khi bị khách hàng ép giá hoặc so sánh với sản phẩm đối thủ ngoại nhập giá rẻ hơn.",
-    solution: "Cung cấp ngay lập tức các luận điểm giá trị gia tăng (USP), phân tích tổng chi phí sở hữu (TCO) và kịch bản xử lý phản đối.",
+    audience: "Đại diện kinh doanh B2B, Kỹ sư bán hàng (Technical Sales), Trưởng phòng kinh doanh, Giám đốc thương mại.",
+    problem: "Sales tốn nhiều giờ chuẩn bị bài nói, lúng túng khi bị khách hàng ép giá hoặc so sánh với đối thủ ngoại nhập giá rẻ hơn.",
+    solution: "Trợ lý AI may đo kịch bản Sales Pitch và thẻ tác chiến Battlecard: phân tích tổng chi phí sở hữu (TCO), hóa giải phản đối và xuất tài liệu đa định dạng tức thì.",
     keyFeatures: [
-      "Ma trận so sánh thông số kỹ thuật và tính năng trực diện với sản phẩm đối thủ",
-      "Thẻ chiến lược Battle Card cung cấp luận điểm phản biện sắc bén khi gặp trở ngại giá",
-      "Bảng tính kinh tế ROI và tổng chi phí sở hữu TCO theo thời gian thực",
-      "Bộ kịch bản câu hỏi SPIN Selling và kết xuất bản đề xuất giá trị PDF tức thì"
+      "Trợ lý AI kép Gemini & Claude tự động phác thảo kịch bản Sales Pitch theo ngành hàng trong 30 giây",
+      "Cấu trúc luận điểm bán hàng giá trị cao: Nhu cầu đối tác → Giá trị mang lại → Điểm khác biệt cốt lõi (USP)",
+      "Thẻ tác chiến Battlecard so sánh trực diện đối thủ, phân tích tổng chi phí sở hữu (TCO) và hóa giải từ chối",
+      "Kết xuất tài liệu đa định dạng 1 chạm: Slide PowerPoint thuyết trình, file Word/PDF sang trọng và bảng tính Excel",
+      "Chuẩn hóa quy trình tiếp cận, nhân bản kinh nghiệm của chuyên viên Sales giỏi nhất thành tài sản số doanh nghiệp"
     ],
     demoCredential: {
       account: "Trang@bjc.co.th",

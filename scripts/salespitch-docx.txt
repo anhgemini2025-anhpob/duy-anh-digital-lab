@@ -1,0 +1,16 @@
+Một Sales giỏi không chỉ cần biết sản phẩm.Họ cần biết nói gì, nói với ai, xử lý đối thủ thế nào — và phải chuẩn bị thật nhanh.
+Nhưng trong thực tế, Sales thường phải tự tìm thông tin, tự viết email, tự làm slide, tự chuẩn bị câu trả lời khi khách hàng so sánh với đối thủ.
+BJC Sales Pitch &amp; Battlecard Generator được xây dựng để biến toàn bộ quá trình đó thành một trợ lý AI ngay trong tay đội ngũ kinh doanh.
+Chỉ cần nhập khách hàng, sản phẩm, ngành hàng, nhu cầu hoặc đối thủ, hệ thống có thể sử dụng Gemini và Claude để hỗ trợ tạo Sales Pitch và Battlecard phù hợp với từng tình huống.
+Không chỉ nói “sản phẩm của mình tốt”, ứng dụng giúp Sales cấu trúc được:
+Khách hàng đang cần gì → Giá trị mình mang lại → Điểm khác biệt → Đối thủ đang ở đâu → Và nên xử lý phản đối như thế nào.
+Khi nội dung đã sẵn sàng, không cần ngồi thiết kế lại từ đầu.
+Ứng dụng có thể xuất thành PowerPoint để trình bày, Word hoặc PDF để gửi khách hàng, và Excel để quản lý dữ liệu, báo giá hoặc phân tích.
+Điều đó đặc biệt hữu ích khi doanh nghiệp có nhiều sản phẩm, nhiều ngành hàng và nhiều nhân viên Sales.
+Thay vì mỗi người tự xây dựng một cách, doanh nghiệp có thể chuẩn hóa cách tiếp cận khách hàng và lưu giữ kiến thức bán hàng ngay trong hệ thống.
+Phía sau trải nghiệm đơn giản là nền tảng công nghệ với Next.js, FastAPI, PostgreSQL, JWT và mã hóa mật khẩu, sẵn sàng mở rộng theo quy mô doanh nghiệp.
+BJC Sales Pitch &amp; Battlecard Generator không thay Sales đi gặp khách hàng.
+Nó giúp Sales chuẩn bị nhanh hơn, nói đúng trọng tâm hơn và tự tin hơn khi bước vào một cuộc gặp.
+Và với doanh nghiệp, đó còn là cách:
+Số hóa kiến thức bán hàng.Chuẩn hóa cách tiếp cận.Nhân bản kinh nghiệm của Sales giỏi.Và biến dữ liệu thành công cụ hỗ trợ chốt deal.
+BJC Sales Pitch &amp; Battlecard Generator –Biết khách hàng cần gì. Biết mình nên nói gì. Biết đối thủ đang ở đâu.
