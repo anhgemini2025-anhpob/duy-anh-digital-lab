@@ -71,8 +71,11 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
 
   const handleCopyAppLink = (e: React.MouseEvent) => {
     e.stopPropagation();
-    if (!app?.url) return;
-    navigator.clipboard.writeText(app.url);
+    if (!app) return;
+    const shareUrl = typeof window !== 'undefined'
+      ? `${window.location.origin}/${app.id}`
+      : app.url;
+    navigator.clipboard.writeText(shareUrl);
     setCopiedLink(true);
     setTimeout(() => setCopiedLink(false), 2500);
   };

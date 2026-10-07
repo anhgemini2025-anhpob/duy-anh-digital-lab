@@ -1,4 +1,5 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { useNavigate, useLocation, useSearchParams } from 'react-router-dom';
 import { APPS_DATA, AppItem } from './data/apps';
 import { CATEGORIES } from './data/categories';
 import { Navbar } from './components/Navbar';
@@ -15,18 +16,64 @@ import { MessageSquareCode, ArrowRight } from 'lucide-react';
 import { openExternalApp, isMobileOrWebview } from './utils/navigation';
 
 export function App() {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [searchParams] = useSearchParams();
+
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [selectedApp, setSelectedApp] = useState<AppItem | null>(null);
-  const [modalTab, setModalTab] = useState<'image' | 'video'>('image');
   const [requestedAppIds, setRequestedAppIds] = useState<string[]>([]);
   const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
   const [isCatalogOpen, setIsCatalogOpen] = useState<boolean>(false);
   const [viewMode, setViewMode] = useState<'grouped' | 'grid'>('grouped');
 
+  // Extract routeAppId from location.pathname
+  // Supports both direct paths "/:appId" (e.g., "/vietreal") and "/app/:appId" (e.g., "/app/vietreal")
+  const pathSegments = location.pathname.split('/').filter(Boolean);
+  let routeAppId = '';
+  if (pathSegments.length === 1) {
+    routeAppId = pathSegments[0];
+  } else if (pathSegments.length >= 2 && pathSegments[0] === 'app') {
+    routeAppId = pathSegments[1];
+  }
+
+  // Find matching app from APPS_DATA
+  const activeApp = useMemo(() => {
+    if (!routeAppId) return null;
+    return APPS_DATA.find((a) => a.id.toLowerCase() === routeAppId.toLowerCase()) || null;
+  }, [routeAppId]);
+
+  // Determine modal active tab from searchParams (defaults to 'image', 'video' if ?tab=video)
+  const [modalTab, setModalTab] = useState<'image' | 'video'>(
+    searchParams.get('tab') === 'video' ? 'video' : 'image'
+  );
+
+  useEffect(() => {
+    if (searchParams.get('tab') === 'video') {
+      setModalTab('video');
+    } else if (searchParams.get('tab') === 'image') {
+      setModalTab('image');
+    }
+  }, [searchParams]);
+
+  // If a non-existent app ID was manually typed in the URL, gracefully redirect to root '/'
+  useEffect(() => {
+    if (routeAppId && !activeApp) {
+      console.warn(`[Router] App with id "${routeAppId}" not found in catalog. Redirecting to home.`);
+      navigate('/', { replace: true });
+    }
+  }, [routeAppId, activeApp, navigate]);
+
   const handleSelectApp = (app: AppItem, tab: 'image' | 'video' = 'image') => {
-    setSelectedApp(app);
     setModalTab(tab);
+    const tabQuery = tab === 'video' ? '?tab=video' : '';
+    // Navigate smoothly to the app's dedicated URL without page reload
+    navigate(`/${app.id}${tabQuery}`);
+  };
+
+  const handleCloseDetailModal = () => {
+    // Navigate back to root path '/' without reloading
+    navigate('/');
   };
 
   const openCatalog = (categoryId: string = 'all') => {
@@ -176,17 +223,17 @@ export function App() {
         isAppRequested={isAppRequested}
       />
 
-      {/* 10. Interactive App Detail Modal */}
-      {selectedApp && (
+      {/* 10. Interactive App Detail Modal (URL-driven routing) */}
+      {activeApp && (
         <AppDetailModal
-          key={selectedApp.id}
-          app={selectedApp}
+          key={activeApp.id}
+          app={activeApp}
           allApps={APPS_DATA}
           onSelectApp={handleSelectApp}
           initialTab={modalTab}
-          onClose={() => setSelectedApp(null)}
+          onClose={handleCloseDetailModal}
           onToggleRequest={toggleRequestApp}
-          isRequested={isAppRequested(selectedApp.id)}
+          isRequested={isAppRequested(activeApp.id)}
         />
       )}
 

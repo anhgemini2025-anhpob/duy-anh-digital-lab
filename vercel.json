@@ -1,15 +1,8 @@
 {
-  "framework": "vite",
-  "cleanUrls": true,
-  "headers": [
+  "rewrites": [
     {
-      "source": "/apps/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=86400"
-        }
-      ]
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
