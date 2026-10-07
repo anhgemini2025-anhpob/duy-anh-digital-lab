@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, ExternalLink, ShieldCheck, Eye, EyeOff, Check, Plus, ArrowLeft, ArrowRight, Play, Pause, RotateCcw, Volume2, VolumeX, Video, Image as ImageIcon, CheckCircle2, HelpCircle, Target, Sparkles, Clock, SkipBack, SkipForward, Share2, Copy, FileDown, FileText, BookOpen, Maximize2, Minimize2, Loader2 } from 'lucide-react';
+import { X, ExternalLink, ShieldCheck, Eye, EyeOff, Check, Plus, ArrowLeft, ArrowRight, Play, Pause, RotateCcw, Volume2, VolumeX, Video, Image as ImageIcon, CheckCircle2, HelpCircle, Target, Sparkles, Clock, SkipBack, SkipForward, Share2, Copy, FileDown, FileText, BookOpen, Maximize2, Minimize2, Loader2, Globe } from 'lucide-react';
 import { AppItem } from '../data/apps';
 import { openExternalApp, isMobileOrWebview, downloadPdfFile } from '../utils/navigation';
 import { PdfViewerModal } from './PdfViewerModal';
@@ -57,6 +57,7 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
   const [videoSpeed, setVideoSpeed] = useState<number>(1.3);
   const [copiedLink, setCopiedLink] = useState(false);
   const [isAudioPlaying, setIsAudioPlaying] = useState<boolean>(false);
+  const [audioLanguage, setAudioLanguage] = useState<'vi' | 'en'>('vi');
   const [isVideoFullscreen, setIsVideoFullscreen] = useState(false);
   const [isPdfViewerOpen, setIsPdfViewerOpen] = useState(false);
   const [isDownloadingPdf, setIsDownloadingPdf] = useState(false);
@@ -87,6 +88,7 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
     setVideoProgress(0);
     setIsPlayingVideo(true); // Always start video playing when opening an app
     setIsAudioPlaying(false);
+    setAudioLanguage('vi');
     setIsVideoFullscreen(false);
     setIsPdfViewerOpen(false);
     if (initialTab) {
@@ -135,8 +137,12 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
     const audio = getGlobalVoiceoverAudio();
     if (!audio) return;
 
-    const AUDIO_BUILD_VERSION = '20261007_salespitch_v1';
-    const audioUrl = `/apps/${app.id}/audio-scene-${selectedSceneIdx + 1}.mp3?v=${AUDIO_BUILD_VERSION}`;
+    const AUDIO_BUILD_VERSION = '20261007_salespitch_v2';
+    const isEn = audioLanguage === 'en';
+    const audioFileName = isEn
+      ? `audio-scene-${selectedSceneIdx + 1}-en.mp3`
+      : `audio-scene-${selectedSceneIdx + 1}.mp3`;
+    const audioUrl = `/apps/${app.id}/${audioFileName}?v=${AUDIO_BUILD_VERSION}`;
     
     // Only update and load if src is different
     if (!audio.src.includes(audioUrl)) {
@@ -217,7 +223,7 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
       audio.removeEventListener('timeupdate', onTimeUpdate);
       audio.removeEventListener('ended', onEnded);
     };
-  }, [app?.id, selectedSceneIdx, activeTab, isPlayingVideo, isMuted, videoSpeed]);
+  }, [app?.id, selectedSceneIdx, activeTab, isPlayingVideo, isMuted, videoSpeed, audioLanguage]);
 
   // Fallback Timer: Only advances video if audio is muted or unavailable
   useEffect(() => {
@@ -337,9 +343,23 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
     };
   }, [isVideoFullscreen]);
 
+  const isEnAudio = audioLanguage === 'en';
+  const getSceneTitle = (sc?: { title: string; titleEn?: string }): string => {
+    if (!sc) return '';
+    return (isEnAudio && sc.titleEn) ? sc.titleEn : sc.title;
+  };
+  const getSceneDesc = (sc?: { description: string; descriptionEn?: string }): string => {
+    if (!sc) return '';
+    return (isEnAudio && sc.descriptionEn) ? sc.descriptionEn : sc.description;
+  };
+  const getSceneTime = (sc?: { time: string; timeEn?: string }): string => {
+    if (!sc) return '0:00';
+    return (isEnAudio && sc.timeEn) ? sc.timeEn : sc.time;
+  };
+
   const getImageCaption = (idx: number, imgUrl: string) => {
-    if (app?.videoScenes && app.videoScenes[idx]?.title) {
-      return app.videoScenes[idx].title;
+    if (app?.videoScenes && app.videoScenes[idx]) {
+      return getSceneTitle(app.videoScenes[idx]);
     }
     if (imgUrl.includes('illustration') || imgUrl.includes('banner')) return 'Infographic & Mô hình minh họa giải pháp trực quan';
     if (imgUrl.includes('real-cover') || imgUrl.includes('real-screen-1')) return 'Giao diện bảng điều khiển ứng dụng thực tế (Chính)';
@@ -675,22 +695,22 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                     {/* Minh Họa Bằng Từ Ngữ (Text Illustration Banner) - Chỉ hiện trên Laptop/Desktop */}
                     <div className="hidden md:flex absolute top-14 inset-x-4 z-10 pointer-events-none justify-center">
                       <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-2xl backdrop-blur-md shadow-2xl text-xs sm:text-sm max-w-full border ${
-                        app.videoScenes[selectedSceneIdx]?.title.includes('Lời bình')
+                        getSceneTitle(app.videoScenes[selectedSceneIdx]).includes('Lời bình')
                           ? 'bg-slate-950/95 border-emerald-400/90 shadow-emerald-500/20'
                           : 'bg-slate-950/95 border-amber-400/80 shadow-black'
                       }`}>
-                        <Sparkles className={`w-4 h-4 shrink-0 ${app.videoScenes[selectedSceneIdx]?.title.includes('Lời bình') ? 'text-emerald-400' : 'text-amber-400'}`} />
+                        <Sparkles className={`w-4 h-4 shrink-0 ${getSceneTitle(app.videoScenes[selectedSceneIdx]).includes('Lời bình') ? 'text-emerald-400' : 'text-amber-400'}`} />
                         <span className={`font-black uppercase tracking-wider shrink-0 ${
-                          app.videoScenes[selectedSceneIdx]?.title.includes('Lời bình')
+                          getSceneTitle(app.videoScenes[selectedSceneIdx]).includes('Lời bình')
                             ? 'text-emerald-300'
                             : 'text-amber-300'
                         }`}>
-                          {app.videoScenes[selectedSceneIdx]?.title.includes('Lời bình')
-                            ? '💡 LỜI BÌNH & BẤT NGỜ:'
-                            : `Chức năng #${selectedSceneIdx + 1}:`}
+                          {getSceneTitle(app.videoScenes[selectedSceneIdx]).includes('Lời bình')
+                            ? (isEnAudio ? '💡 COMMENTARY & INSIGHT:' : '💡 LỜI BÌNH & BẤT NGỜ:')
+                            : (isEnAudio ? `Feature #${selectedSceneIdx + 1}:` : `Chức năng #${selectedSceneIdx + 1}:`)}
                         </span>
                         <span className="text-white font-black truncate text-xs sm:text-sm">
-                          {app.videoScenes[selectedSceneIdx]?.title}
+                          {getSceneTitle(app.videoScenes[selectedSceneIdx])}
                         </span>
                       </div>
                     </div>
@@ -709,6 +729,40 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                       </div>
 
                       <div className="flex items-center gap-1 sm:gap-2 text-xs font-mono text-slate-300">
+                        {/* Bilingual Audio Selector (VN / EN) */}
+                        {app.supportedAudioLanguages && app.supportedAudioLanguages.includes('en') && (
+                          <div className="flex items-center bg-slate-900/95 rounded-lg p-0.5 border border-sky-400/50 shadow-md">
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setAudioLanguage('vi');
+                              }}
+                              className={`px-1.5 sm:px-2 py-0.5 rounded text-[9px] sm:text-[10px] font-bold transition-all cursor-pointer flex items-center gap-1 ${
+                                audioLanguage === 'vi'
+                                  ? 'bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-950 font-black shadow-xs'
+                                  : 'text-slate-300 hover:text-white'
+                              }`}
+                              title="Lời bình Tiếng Việt (Giọng Nam & Nữ chuẩn Hà Nội)"
+                            >
+                              <span>🇻🇳 VN</span>
+                            </button>
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setAudioLanguage('en');
+                              }}
+                              className={`px-1.5 sm:px-2 py-0.5 rounded text-[9px] sm:text-[10px] font-bold transition-all cursor-pointer flex items-center gap-1 ${
+                                audioLanguage === 'en'
+                                  ? 'bg-gradient-to-r from-sky-400 to-blue-500 text-white font-black shadow-xs'
+                                  : 'text-slate-300 hover:text-white'
+                              }`}
+                              title="English Voiceover (US Standard Male & Female)"
+                            >
+                              <span>🇺🇸 EN</span>
+                            </button>
+                          </div>
+                        )}
+
                         {/* Speed Selector */}
                         <button
                           onClick={(e) => {
@@ -776,37 +830,37 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
 
                           {/* Large, Crystal-Clear Feature Explanation Card */}
                           <div className={`w-full backdrop-blur-xl border sm:border-2 rounded-xl sm:rounded-2xl p-2 sm:p-4 shadow-2xl text-center ${
-                            app.videoScenes[selectedSceneIdx]?.title.includes('Lời bình')
+                            getSceneTitle(app.videoScenes[selectedSceneIdx]).includes('Lời bình')
                               ? 'bg-[#041E26]/95 border-emerald-400/90 shadow-emerald-950/50'
                               : 'bg-[#07111E]/95 border-amber-400/90 shadow-black'
                           }`}>
                             <div className="flex flex-wrap items-center justify-center gap-1 sm:gap-2 mb-1 sm:mb-1.5">
                               <div className={`inline-flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-slate-950 text-[10px] sm:text-xs font-black uppercase tracking-wider shadow-md ${
-                                app.videoScenes[selectedSceneIdx]?.title.includes('Lời bình')
+                                getSceneTitle(app.videoScenes[selectedSceneIdx]).includes('Lời bình')
                                   ? 'bg-gradient-to-r from-emerald-400 via-teal-300 to-amber-300 text-slate-950'
                                   : 'bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-950'
                               }`}>
                                 <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-slate-950" />
                                 <span>
-                                  {app.videoScenes[selectedSceneIdx]?.title.includes('Lời bình')
-                                    ? `💡 LỜI BÌNH & ĐIỂM BẤT NGỜ • ${app.videoScenes[selectedSceneIdx]?.time || '1:00'}`
-                                    : `CHỨC NĂNG #${selectedSceneIdx + 1} • ${app.videoScenes[selectedSceneIdx]?.time || '0:00'}`}
+                                  {getSceneTitle(app.videoScenes[selectedSceneIdx]).includes('Lời bình')
+                                    ? `💡 ${isEnAudio ? 'COMMENTARY & INSIGHT' : 'LỜI BÌNH & ĐIỂM BẤT NGỜ'} • ${getSceneTime(app.videoScenes[selectedSceneIdx])}`
+                                    : `${isEnAudio ? 'FEATURE' : 'CHỨC NĂNG'} #${selectedSceneIdx + 1} • ${getSceneTime(app.videoScenes[selectedSceneIdx])}`}
                                 </span>
                               </div>
                             </div>
                             
                             {/* Feature Name */}
                             <h4 className={`text-xs sm:text-2xl lg:text-3xl font-black tracking-tight leading-snug drop-shadow-md break-words ${
-                              app.videoScenes[selectedSceneIdx]?.title.includes('Lời bình')
+                              getSceneTitle(app.videoScenes[selectedSceneIdx]).includes('Lời bình')
                                 ? 'text-emerald-300'
                                 : 'text-amber-300'
                             }`}>
-                              {app.videoScenes[selectedSceneIdx]?.title}
+                              {getSceneTitle(app.videoScenes[selectedSceneIdx])}
                             </h4>
 
                             {/* Feature Description */}
                             <p className="mt-1 text-[11px] sm:text-base lg:text-lg text-white font-medium leading-relaxed max-w-xl mx-auto bg-slate-900/80 px-2 sm:px-3.5 py-1 sm:py-2 rounded-lg sm:rounded-xl border border-slate-700/80 line-clamp-2 sm:line-clamp-3">
-                              {app.videoScenes[selectedSceneIdx]?.description}
+                              {getSceneDesc(app.videoScenes[selectedSceneIdx])}
                             </p>
                           </div>
                         </div>
@@ -819,7 +873,7 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                       {/* Subtitle Caption Line */}
                       <div className="flex items-center justify-between text-[10px] sm:text-sm text-slate-100 font-medium bg-slate-900/90 px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-xl border border-slate-800 backdrop-blur-md">
                         <span className="text-amber-300 font-bold truncate flex-1 min-w-0 mr-2 text-[10px] sm:text-sm">
-                          ▶ [{app.videoScenes[selectedSceneIdx]?.time || '0:00'}] {app.videoScenes[selectedSceneIdx]?.title}: <span className="text-white font-normal hidden sm:inline">{app.videoScenes[selectedSceneIdx]?.description}</span>
+                          ▶ [{getSceneTime(app.videoScenes[selectedSceneIdx])}] {getSceneTitle(app.videoScenes[selectedSceneIdx])}: <span className="text-white font-normal hidden sm:inline">{getSceneDesc(app.videoScenes[selectedSceneIdx])}</span>
                         </span>
                         <span className="font-mono text-[10px] sm:text-xs text-amber-300 font-bold shrink-0 ml-1.5 bg-[#07111E] px-1.5 sm:px-2 py-0.5 rounded border border-amber-400/40">
                           {selectedSceneIdx + 1}/{app.videoScenes?.length || 3} • {videoSpeed}x
@@ -948,9 +1002,9 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                                     ? 'bg-blue-600 text-white shadow-xs'
                                     : 'bg-slate-800/90 text-slate-400 hover:text-white'
                                 }`}
-                                title={sc.title}
+                                title={getSceneTitle(sc)}
                               >
-                                {sc.time}
+                                {getSceneTime(sc)}
                               </button>
                             ))}
                           </div>
@@ -988,10 +1042,57 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                 );
               })()}
 
+              {/* Bilingual Audio Selector Bar (For apps supporting Vietnamese & English voiceovers) */}
+              {app.supportedAudioLanguages && app.supportedAudioLanguages.includes('en') && (
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-3 p-3 sm:p-4 rounded-2xl bg-gradient-to-r from-[#0B1A2F] via-[#0E223D] to-[#0A192F] border border-sky-400/40 shadow-lg">
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 rounded-xl bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-sky-300 shrink-0">
+                      <Volume2 className="w-5 h-5 text-sky-400" />
+                    </div>
+                    <div>
+                      <div className="text-xs sm:text-sm font-black text-white flex items-center gap-2">
+                        <span>Giọng Đọc Lời Bình Tương Tác 2 Ngôn Ngữ:</span>
+                        <span className="text-[10px] font-mono font-bold text-sky-300 bg-sky-950/80 px-2 py-0.5 rounded border border-sky-400/30">[BILINGUAL]</span>
+                      </div>
+                      <div className="text-[11px] sm:text-xs text-slate-300 mt-0.5">
+                        {isEnAudio
+                          ? 'US English Accent: Christopher & Jenny (Native, clear & natural interactive dialogue)'
+                          : 'Giọng đọc chuẩn Hà Nội: Nam Minh & Hoài My (Sang trọng, ấm áp, tương tác tự nhiên)'}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-center bg-[#07111E] p-1 rounded-xl border border-slate-700 shadow-inner shrink-0">
+                    <button
+                      onClick={() => setAudioLanguage('vi')}
+                      className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                        audioLanguage === 'vi'
+                          ? 'bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-950 font-black shadow-md'
+                          : 'text-slate-300 hover:text-white'
+                      }`}
+                    >
+                      <span>🇻🇳 Tiếng Việt (Hà Nội)</span>
+                    </button>
+                    <button
+                      onClick={() => setAudioLanguage('en')}
+                      className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                        audioLanguage === 'en'
+                          ? 'bg-gradient-to-r from-sky-400 to-blue-600 text-white font-black shadow-md'
+                          : 'text-slate-300 hover:text-white'
+                      }`}
+                    >
+                      <span>🇺🇸 English (US)</span>
+                    </button>
+                  </div>
+                </div>
+              )}
+
               {/* Video Scene Breakdown Interactive Buttons (5 Cột cân đối, mượt mà trên cả Mobile & Laptop) */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 sm:gap-2.5">
                 {app.videoScenes.map((scene, idx) => {
-                  const isReviewScene = scene.title.includes('Lời bình');
+                  const sceneTitle = getSceneTitle(scene);
+                  const sceneDesc = getSceneDesc(scene);
+                  const sceneTime = getSceneTime(scene);
+                  const isReviewScene = sceneTitle.includes('Lời bình') || (scene.titleEn && scene.titleEn.includes('Review'));
                   return (
                     <button
                       key={idx}
@@ -1014,7 +1115,7 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                         <span className={selectedSceneIdx === idx ? (isReviewScene ? 'text-emerald-400 flex items-center gap-1 font-black' : 'text-amber-400 flex items-center gap-1 font-black') : (isReviewScene ? 'text-emerald-400 flex items-center gap-1 font-bold' : 'text-slate-400')}>
                           {selectedSceneIdx === idx && <span className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full ${isReviewScene ? 'bg-emerald-400' : 'bg-amber-400'} animate-ping`} />}
                           <span className="truncate">
-                            {isReviewScene ? '💡 Lời bình & Bất ngờ' : (selectedSceneIdx === idx ? `Đang phát #${idx + 1}` : `Phần #${idx + 1}`)}
+                            {isReviewScene ? (isEnAudio ? '💡 Commentary' : '💡 Lời bình & Bất ngờ') : (selectedSceneIdx === idx ? (isEnAudio ? `Playing #${idx + 1}` : `Đang phát #${idx + 1}`) : (isEnAudio ? `Part #${idx + 1}` : `Phần #${idx + 1}`))}
                           </span>
                         </span>
                         <span className={`font-mono px-1.5 py-0.5 rounded border text-[9px] sm:text-[10px] font-bold shrink-0 ml-1 ${
@@ -1022,14 +1123,14 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                             ? 'bg-[#061C24] border-emerald-500/60 text-emerald-300'
                             : 'bg-[#07111E] border-slate-700 text-amber-300'
                         }`}>
-                          {scene.time}
+                          {sceneTime}
                         </span>
                       </div>
                       <div className="text-xs sm:text-sm font-black text-white mt-1 line-clamp-1">
-                        {scene.title}
+                        {sceneTitle}
                       </div>
                       <div className="text-[11px] sm:text-xs text-slate-300 mt-1 line-clamp-2 leading-relaxed">
-                        {scene.description}
+                        {sceneDesc}
                       </div>
                     </button>
                   );

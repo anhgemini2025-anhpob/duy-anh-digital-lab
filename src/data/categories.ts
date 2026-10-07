@@ -32,7 +32,7 @@ const RAW_CATEGORIES: Omit<CategoryItem, 'count'>[] = [
     name: "AI & Đào tạo Tri thức",
     shortName: "AI & Đào tạo",
     icon: "Sparkles",
-    description: "Nền tảng học viện số hóa, trợ lý AI chuyên ngành và bài thi đánh giá năng lực",
+    description: "Hệ sinh thái học Tiếng Việt Thực Chiến 360° (Vietreal), học viện thẩm mỹ CosmeDerm AI Academy và giải pháp số hóa giáo dục",
     color: "from-indigo-500 to-purple-600"
   },
   {

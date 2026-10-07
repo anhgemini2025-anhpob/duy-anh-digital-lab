@@ -31,13 +31,13 @@ export const CategoryVisuals: React.FC<CategoryVisualsProps> = ({ onSelectCatego
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-400/10 border border-amber-400/30 text-xs font-bold text-amber-300 mb-3">
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-            <span>8 KHỐI NGÀNH CHUYÊN SÂU • 20+ ỨNG DỤNG THỰC TẾ</span>
+            <span>8 KHỐI NGÀNH CHUYÊN SÂU • 25+ ỨNG DỤNG THỰC TẾ</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
             Năng Lực Triển Khai Thực Nghiệm Đa Lĩnh Vực
           </h2>
           <p className="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed">
-            Hệ sinh thái gồm 8 nhóm ngành chuyên sâu: Sức khỏe &amp; Y tế, Đời sống, Nông nghiệp &amp; SCM, Food Tech &amp; F&amp;B, R&amp;D Mỹ phẩm, Quản trị B2B, AI Đào tạo và Dịch vụ Clinic. Mỗi hệ thống được thiết kế riêng biệt dựa trên thực tiễn sản xuất và trải nghiệm người dùng thực địa.
+            Hệ sinh thái gồm 8 nhóm ngành chuyên sâu: Sức khỏe &amp; Y tế, Đời sống &amp; Gia đình, Nông nghiệp &amp; SCM, Food Tech &amp; F&amp;B, R&amp;D Mỹ phẩm, Quản trị B2B, AI Đào tạo &amp; Ngôn ngữ và Dịch vụ Clinic. Mỗi hệ thống được thiết kế riêng biệt dựa trên thực tiễn sản xuất và trải nghiệm người dùng thực địa.
           </p>
         </div>
 

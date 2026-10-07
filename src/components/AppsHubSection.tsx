@@ -23,7 +23,7 @@ export const AppsHubSection: React.FC<AppsHubSectionProps> = ({
         {/* Top Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/30 text-xs sm:text-sm font-bold text-amber-300 mb-4">
           <Sparkles className="w-4 h-4 text-amber-400" />
-          <span>THƯ VIỆN SỐ HÓA • TOÀN BỘ 20+ DỰ ÁN</span>
+          <span>THƯ VIỆN SỐ HÓA • TOÀN BỘ 25+ DỰ ÁN</span>
         </div>
 
         {/* Section Heading */}
@@ -32,7 +32,7 @@ export const AppsHubSection: React.FC<AppsHubSectionProps> = ({
         </h2>
         
         <p className="text-base sm:text-lg text-slate-300 mt-3 max-w-2xl mx-auto leading-relaxed">
-          Toàn bộ các ứng dụng đã được quy hoạch gọn gàng theo 7 lĩnh vực chuyên môn ở trên. Nhấn vào biểu tượng bên dưới để mở toàn bộ kho lưu trữ <strong>20+ ứng dụng thực tế</strong>.
+          Toàn bộ các ứng dụng đã được quy hoạch gọn gàng theo các lĩnh vực chuyên môn ở trên. Nhấn vào biểu tượng bên dưới để mở toàn bộ kho lưu trữ <strong>25+ ứng dụng thực tế</strong>.
         </p>
 
         {/* Dedicated Main Interactive Icon & Trigger Card */}
@@ -49,24 +49,24 @@ export const AppsHubSection: React.FC<AppsHubSectionProps> = ({
               <div className="w-full h-full rounded-[22px] bg-[#07111E] flex flex-col items-center justify-center gap-1 group-hover:bg-[#0A192F] transition-colors">
                 <Layers className="w-10 h-10 sm:w-12 sm:h-12 text-amber-400 animate-pulse" />
                 <span className="text-[10px] font-mono font-black text-amber-300 tracking-wider">
-                  20+ APPS
+                  25+ APPS
                 </span>
               </div>
             </div>
 
             {/* Call to Action Text */}
             <h3 className="text-xl sm:text-2xl font-black text-white mt-6 group-hover:text-amber-300 transition-colors">
-              Mở Kho Thư Viện 20+ Ứng Dụng Thực Tế
+              Mở Kho Thư Viện 25+ Ứng Dụng Thực Tế
             </h3>
 
             <p className="text-xs sm:text-sm text-slate-300 mt-2 max-w-lg mx-auto">
-              Bao gồm thanh tìm kiếm nhanh, lọc theo 7 nhóm ngành, xem ảnh chụp thực tế màn hình, video tour và liên kết trải nghiệm trực tiếp.
+              Bao gồm thanh tìm kiếm nhanh, lọc theo các nhóm ngành, xem ảnh chụp thực tế màn hình, video tour và liên kết trải nghiệm trực tiếp.
             </p>
 
             {/* Button */}
             <div className="mt-6 inline-flex items-center gap-2.5 px-8 py-3.5 rounded-xl font-black text-sm sm:text-base text-slate-950 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 shadow-xl shadow-amber-500/25 group-hover:scale-105 transition-all">
               <FolderKanban className="w-5 h-5 text-slate-950" />
-              <span>Khám phá toàn bộ 20+ Ứng dụng</span>
+              <span>Khám phá toàn bộ 25+ Ứng dụng</span>
               <ArrowRight className="w-4 h-4 text-slate-950 group-hover:translate-x-1 transition-transform" />
             </div>
           </div>

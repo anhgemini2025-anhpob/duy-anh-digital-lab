@@ -8,6 +8,13 @@ export interface VideoScene {
   time: string;
   title: string;
   description: string;
+  timeEn?: string;
+  titleEn?: string;
+  descriptionEn?: string;
+  seconds?: number;
+  duration?: number;
+  secondsEn?: number;
+  durationEn?: number;
 }
 
 export interface UserManualInfo {
@@ -42,6 +49,7 @@ export interface AppItem {
   demoCredential?: DemoCredential;
   illustrationImage?: string;
   userManual?: UserManualInfo;
+  supportedAudioLanguages?: ('vi' | 'en')[];
   theme: {
     from: string;
     to: string;
@@ -635,6 +643,263 @@ export const APPS_DATA: AppItem[] = [
       badgeBg: "bg-indigo-500/10",
       badgeText: "text-indigo-400",
       badgeBorder: "border-indigo-500/30"
+    }
+  },
+  {
+    "logoUrl": "/apps/vietreal/app-logo.svg",
+    "id": "vietreal",
+    "name": "VIETREAL — Tiếng Việt Thực Chiến 360°",
+    "url": "https://vietreal.vercel.app",
+    "category": "AI & Đào tạo",
+    "categoryId": "ai-education",
+    "description": "Hệ sinh thái học Tiếng Việt Thực Chiến 360° kết nối Người học – Giáo viên – Trung tâm đào tạo trên một nền tảng chuyển đổi số toàn diện. Tích hợp AI phân tích cao độ sóng âm 6 thanh điệu, ma trận đại từ xưng hô thông minh theo ngữ cảnh, tùy chọn 3 phương ngữ Bắc – Trung – Nam, AI Role-Play 24/7 và lộ trình cá nhân hóa cho từng cộng đồng quốc gia (Nhật, Hàn, Trung, Mỹ, Pháp, Đức, Nga, Thái).",
+    "tags": [
+      "Tiếng Việt Thực Chiến",
+      "Vietreal 360",
+      "EdTech AI",
+      "Visual Pronunciation",
+      "6 Thanh Điệu",
+      "Bắc Trung Nam",
+      "AI Role-Play",
+      "Giáo Viên Số Hóa",
+      "AI Đào Tạo"
+    ],
+    "coverImage": "/apps/vietreal/cover.jpg",
+    "placeholderImage": "/apps/vietreal/cover.jpg",
+    "detailImages": [
+      "/apps/vietreal/feature_01_sua_phat_am_bang_hinh_anh.jpg",
+      "/apps/vietreal/feature_02_hoc_xung_ho_theo_tinh_huong.jpg",
+      "/apps/vietreal/feature_03_hoc_dung_giong_dia_phuong.jpg",
+      "/apps/vietreal/feature_04_tinh_huong_thuc_te_doi_song.jpg",
+      "/apps/vietreal/feature_05_ai_roleplay_luyen_phan_xa.jpg",
+      "/apps/vietreal/feature_06_ca_nhan_hoa_theo_quoc_tich.jpg",
+      "/apps/vietreal/feature_07_tu_dong_tao_lo_trinh_hoc.jpg",
+      "/apps/vietreal/feature_08_on_tap_thong_minh_spaced_repetition.jpg",
+      "/apps/vietreal/feature_09_hoc_khong_ap_luc_gamification.jpg",
+      "/apps/vietreal/feature_10_kho_bai_tap_giao_bai_so_hoa.jpg",
+      "/apps/vietreal/feature_11_ai_danh_gia_phat_am_giao_vien.jpg",
+      "/apps/vietreal/feature_12_luu_tru_bai_noi_tap_trung.jpg",
+      "/apps/vietreal/feature_13_phan_hoi_bang_voice_note.jpg",
+      "/apps/vietreal/feature_14_theo_doi_tien_bo_tung_hoc_vien.jpg",
+      "/apps/vietreal/feature_15_he_sinh_thai_vietreal_360.jpg"
+    ],
+    "imageAlt": "Vietreal - Hệ sinh thái học Tiếng Việt Thực Chiến 360 độ cho người nước ngoài",
+    "featured": true,
+    "audience": "Người nước ngoài học tiếng Việt, Giảng viên tiếng Việt bản ngữ, Trung tâm ngôn ngữ & Doanh nghiệp FDI tại Việt Nam.",
+    "problem": "Người nước ngoài học tiếng Việt thường 'học nhiều nhưng không dám mở lời' do rào cản 6 thanh điệu khó phân biệt bằng tai thường, đại từ xưng hô phức tạp theo thứ bậc, sự khác biệt ngữ điệu 3 miền Bắc – Trung – Nam và giáo trình xa rời thực tế đời sống. Trong khi đó, giáo viên dạy tiếng Việt phải soạn bài thủ công, thiếu công cụ chấm âm học tự động và lưu trữ bài thu âm học viên rải rác.",
+    "solution": "Hệ sinh thái EdTech & AI toàn diện Vietreal 360°: Trực quan hóa cao độ thanh điệu bằng biểu đồ sóng âm so sánh trực tiếp với giọng mẫu bản xứ, ma trận đại từ xưng hô tự động, hỗ trợ đủ 3 phương ngữ Bắc - Trung - Nam, AI Role-Play 24/7 luyện phản xạ hai chiều không phán xét, cá nhân hóa lộ trình theo 8 quốc tịch. Phía giáo viên: Kho bài tập chuẩn hóa giao 1 chạm, AI trợ giảng bóc tách lỗi âm thanh điệu, nhận xét bằng Voice Note và Dashboard tiến độ toàn diện.",
+    "keyFeatures": [
+      "Sửa phát âm bằng hình ảnh: So sánh đường cong cao độ giọng nói trực quan với giọng mẫu bản xứ",
+      "Học đại từ xưng hô chuẩn xác: Ma trận chọn tuổi, giới tính, bối cảnh giao tiếp tự nhiên và lịch thiệp",
+      "Linh hoạt 3 phương ngữ: Tùy chọn giọng Bắc, giọng Trung, giọng Nam phù hợp nơi học viên sinh sống",
+      "Tình huống thực tế đời sống: Học từ gọi phở, đi chợ, thuê nhà, ký hợp đồng đến hội thoại công sở",
+      "AI Role-Play 24/7: Đóng vai người bản xứ luyện phản xạ giao tiếp tự nhiên hai chiều, xóa bỏ e ngại",
+      "Cá nhân hóa theo quốc tịch: Lộ trình chuyên sâu khắc phục điểm nghẽn phát âm riêng của từng nước",
+      "Lộ trình vi mô tự động: Tối ưu khối lượng học từ 3–5 phút đến 30 phút theo mục tiêu cá nhân",
+      "Ôn tập thông minh Spaced Repetition: Nhận diện từ hay quên và kích hoạt thời điểm vàng ghi nhớ sâu",
+      "Gamification & Streak: Chuỗi ngày luyện tập, điểm kinh nghiệm và huy hiệu khích lệ thói quen bền bỉ",
+      "Kho bài tập số hóa 1 chạm cho giáo viên: Giao bài tập nghe - nói chuẩn hóa không cần soạn thủ công",
+      "AI trợ giảng chấm phát âm tự động: Bóc tách lỗi phụ âm đầu, vần và đường cao độ thanh điệu chi tiết",
+      "Lưu trữ bài nói đám mây tập trung: Quản lý toàn bộ voice recording theo hồ sơ học viên, tua lại đối chiếu",
+      "Phản hồi trực quan bằng Voice Note: Thầy cô thu âm giọng mẫu và hướng dẫn khẩu hình miệng 1-kèm-1",
+      "Dashboard phân tích tiến độ: Thống kê tỷ lệ hoàn thành, tốc độ phản xạ và học viên cần kèm cặp",
+      "Hệ sinh thái mở rộng đa quốc gia: Kết nối phiên bản bản địa hóa cho Nhật, Hàn, Trung, Mỹ, Pháp, Đức, Nga, Thái"
+    ],
+    "videoDuration": "5:19",
+    "videoTagline": "Vietreal 360° — Cầu nối ngôn ngữ & văn hóa cho cộng đồng quốc tế sống và làm việc tại Việt Nam",
+    "supportedAudioLanguages": [
+      "vi",
+      "en"
+    ],
+    "videoScenes": [
+      {
+        "time": "0:00",
+        "seconds": 0,
+        "duration": 30,
+        "title": "01 | Sửa Phát Âm Bằng Hình Ảnh & So Sánh Đường Cao Độ Chuẩn",
+        "description": "Nam: \"Chào Hoài My! Rất nhiều bạn bè quốc tế tâm sự với mình rằng, họ học tiếng Việt cả năm trời nhưng bước ra đường vẫn không dám mở lời. Khó nhất chính là 6 thanh điệu sắc, huyền, hỏi, ngã, nặng, ngang!\" Nữ: \"Dạ chuẩn xác anh Nam! Người nước ngoài nghe tai thường rất khó phân biệt đâu là dấu ngã, đâu là dấu hỏi. Vietreal giải quyết triệt để nỗi đau này bằng tính năng trực quan hóa cao độ giọng nói. Thay vì chỉ phán đoán đúng sai mơ hồ, người học nhìn thấy biểu đồ đường sóng âm của mình và so sánh trực tiếp với giọng mẫu bản xứ để tự điều chỉnh ngay lập tức!\" Nam: \"Tuyệt vời! Nhìn thấy tận mắt sự uốn lượn của thanh điệu giúp người học sửa lỗi cực kỳ nhanh và chuẩn xác!\"",
+        "timeEn": "0:00",
+        "secondsEn": 0,
+        "durationEn": 41,
+        "titleEn": "01 | Visual Pronunciation Correction & Pitch Contour Comparison",
+        "descriptionEn": "Male: \"Hello Jenny! Many international friends have shared that even after studying Vietnamese for months, they still hesitate to speak. The biggest hurdle is mastering the six distinct Vietnamese tones!\" Female: \"That's so true, Christopher! Distinguishing between tones by ear alone is tough for non-native speakers. Vietreal solves this with visual pitch contour mapping. Instead of just guessing, learners see their own voice curve overlaid onto native speaker benchmarks, allowing instant adjustments!\" Male: \"Incredible! Seeing the exact pitch contour makes mastering Vietnamese tones intuitive and effortless!\""
+      },
+      {
+        "time": "0:30",
+        "seconds": 30,
+        "duration": 27,
+        "title": "02 | Học Đại Từ Xưng Hô Chuẩn Xác Theo Hoàn Cảnh Giao Tiếp",
+        "description": "Nam: \"Trong tiếng Việt, xưng hô là cả một nghệ thuật văn hóa. Anh, chị, em, cô, chú, bác... người nước ngoài rất dễ bị bối rối và sợ thất lễ khi gặp người lạ.\" Nữ: \"Đúng thế anh! Vietreal phát triển ma trận xưng hô tương tác thông minh. Người học chỉ cần chọn độ tuổi, giới tính và bối cảnh như công sở, gia đình hay ngoài phố, hệ thống lập tức hướng dẫn cặp đại từ chuẩn xác, tự nhiên và lịch thiệp nhất chỉ sau vài giây.\"",
+        "timeEn": "0:40",
+        "secondsEn": 41,
+        "durationEn": 30,
+        "titleEn": "02 | Smart Pronoun Mastery by Context & Social Hierarchy",
+        "descriptionEn": "Male: \"Vietnamese pronouns are deeply tied to cultural respect. With words like anh, chi, em, co, and chu, foreign learners often worry about using the wrong form of address.\" Female: \"Exactly, Christopher! Vietreal features an interactive pronoun matrix. Learners simply select the listener's age, gender, and setting—workplace, family, or casual street talk—and receive the exact, polite pronoun pair within seconds.\""
+      },
+      {
+        "time": "0:57",
+        "seconds": 58,
+        "duration": 13,
+        "title": "03 | Lựa Chọn Đa Dạng Giọng Địa Phương: Bắc – Trung – Nam",
+        "description": "Nữ: \"Một vấn đề rất phổ biến là học viên học phát âm giọng Hà Nội, nhưng khi vào Sài Gòn làm việc hay du lịch miền Trung thì lại nghe không kịp ngữ điệu địa phương.\" Nam: \"Vietreal đã chủ động tích hợp trọn vẹn cả 3 phương ngữ Bắc, Trung và Nam! Người học có thể chuyển đổi linh hoạt theo vùng miền mình sinh sống, giúp đôi tai nhanh chóng thích nghi với giọng nói đời thực của người dân bản địa.\"",
+        "timeEn": "1:10",
+        "secondsEn": 71,
+        "durationEn": 22,
+        "titleEn": "03 | Flexible Regional Accents: Northern, Central & Southern",
+        "descriptionEn": "Female: \"A very common challenge is that students learn the standard Hanoi accent, but struggle when working in Ho Chi Minh City or traveling through Central Vietnam.\" Male: \"Vietreal integrates all three major regional accents: Northern, Central, and Southern! Learners can switch freely to match where they live and work, tuning their ears to authentic local speech.\""
+      },
+      {
+        "time": "1:10",
+        "seconds": 71,
+        "duration": 23,
+        "title": "04 | Học Qua Tình Huống Đời Thực Thay Vì Hội Thoại Sách Vở",
+        "description": "Nam: \"Nhiều người thuộc làu ngữ pháp trong sách, nhưng khi ra quán gọi tô phở bò, đi chợ bến thành trả giá hay bắt xe công nghệ lại lúng túng không biết nói sao.\" Nữ: \"Vì thế Việt-ri-ơn đảo ngược quy trình, bắt đầu từ chính những tình huống đời thực! Từ gọi món, hỏi đường, thuê căn hộ đến đàm phán hợp đồng văn phòng. Học viên nghe hiểu và áp dụng ngay vào cuộc sống hàng ngày.\"",
+        "timeEn": "1:32",
+        "secondsEn": 92,
+        "durationEn": 20,
+        "titleEn": "04 | Real-Life Practical Scenarios Over Textbook Theory",
+        "descriptionEn": "Male: \"Many people memorize textbook grammar, yet freeze up when ordering a bowl of pho, bargaining at local markets, or booking a ride.\" Female: \"That is why Vietreal reverses the learning curve: starting from real life! From street food and apartment leasing to workplace discussions, learners acquire practical phrases they can use right away.\""
+      },
+      {
+        "time": "1:33",
+        "seconds": 94,
+        "duration": 23,
+        "title": "05 | AI Role-Play 24/7 Luyện Phản Xạ Giao Tiếp Tương Tác Hai Chiều",
+        "description": "Nữ: \"Không có bạn cùng phòng người Việt? Thầy cô không thể kèm 24 trên 7? Tính năng Ây-Ai Râu-lây chính là người bạn đồng hành lý tưởng cho học viên!\" Nam: \"Đúng vậy! Trí tuệ nhân tạo đóng vai người bán hàng, tài xế hay đồng nghiệp thân thiện. Học viên luyện nói tự nhiên, không sợ phán xét hay ngại ngùng, từ đó hình thành phản xạ bật ra câu nói cực nhanh.\"",
+        "timeEn": "1:52",
+        "secondsEn": 113,
+        "durationEn": 23,
+        "titleEn": "05 | 24/7 AI Role-Play for Dynamic Conversational Reflexes",
+        "descriptionEn": "Female: \"Don't have a native roommate or a round-the-clock tutor? Vietreal's 24/7 AI Role-Play provides the perfect speaking companion!\" Male: \"Exactly! The AI role-plays as shopkeepers, drivers, or coworkers. Learners practice in a safe, zero-judgment environment, building instinctive conversational reflexes.\""
+      },
+      {
+        "time": "1:56",
+        "seconds": 117,
+        "duration": 27,
+        "title": "06 | Cá Nhân Hóa Theo Nền Tảng Ngôn Ngữ & Quốc Tịch Học Viên",
+        "description": "Nam: \"Mỗi quốc gia lại có một điểm nghẽn phát âm đặc thù. Học viên Nhật Bản hay nhầm lẫn âm L và N, học viên Hàn Quốc khó uốn âm gió, còn người Âu Mỹ lại chật vật với thanh ngã và thanh hỏi.\" Nữ: \"Nắm bắt điều đó, hệ sinh thái Việt-ri-ơn xây dựng lộ trình riêng cho từng cộng đồng: Nhật Bản, Hàn Quốc, Trung Quốc, Mỹ, Pháp, Đức, Nga và Thái Lan. Đi thẳng vào việc khắc phục điểm yếu ngôn ngữ mẹ đẻ, tiết kiệm hàng chục giờ học vô ích!\"",
+        "timeEn": "2:15",
+        "secondsEn": 135,
+        "durationEn": 26,
+        "titleEn": "06 | Native Tongue Personalization by Learner Nationality",
+        "descriptionEn": "Male: \"Every native language carries unique phonetic challenges. Japanese learners often mix up L and N, Koreans navigate specific breath sounds, while Western speakers wrestle with broken tones.\" Female: \"Vietreal customizes dedicated pathways for Japan, Korea, China, America, France, Germany, Russia, and Thailand—directly addressing native-tongue friction points to accelerate fluency.\""
+      },
+      {
+        "time": "2:24",
+        "seconds": 144,
+        "duration": 20,
+        "title": "07 | Tự Động Thiết Kế Lộ Trình Học Cá Nhân Hóa Linh Hoạt",
+        "description": "Nữ: \"Dù người học chỉ có 3 đến 5 phút mỗi sáng khi chờ xe buýt, hay có 30 phút mỗi tối, Việt-ri-ơn đều tự động điều chỉnh khối lượng bài học tối ưu.\" Nam: \"Chỉ cần chọn mục tiêu: du lịch ngắn ngày, kết hôn cùng người Việt hay công tác kinh doanh lâu năm. Lộ trình vi mô được thiết kế vừa vặn, giúp người học không bao giờ cảm thấy bị quá tải.\"",
+        "timeEn": "2:41",
+        "secondsEn": 161,
+        "durationEn": 21,
+        "titleEn": "07 | Automated Adaptive Learning Roadmap Tailored to Your Goals",
+        "descriptionEn": "Female: \"Whether you only have 3 to 5 minutes waiting for a ride, or 30 minutes in the evening, Vietreal automatically tailors lesson chunks to fit your schedule.\" Male: \"Simply select your objective—travel, family life, or business negotiations. The smart engine curates micro-lessons so you make steady progress without burnout.\""
+      },
+      {
+        "time": "2:44",
+        "seconds": 164,
+        "duration": 21,
+        "title": "08 | Ôn Tập Thông Minh Spaced Repetition: Nhớ Đúng Lúc, Nhớ Trọn Đời",
+        "description": "Nam: \"Nỗi khổ lớn nhất của người học ngoại ngữ là học trước quên sau. Từ vựng và mẫu câu nếu không được gợi nhớ đúng lúc sẽ tan biến rất nhanh.\" Nữ: \"Thuật toán lặp lại ngắt quãng của Việt-ri-ơn chủ động theo dõi những từ học viên hay phát âm sai hoặc do dự. Hệ thống sẽ khéo léo đưa chúng trở lại vào đúng thời điểm vàng để khắc sâu vào trí nhớ dài hạn.\"",
+        "timeEn": "3:02",
+        "secondsEn": 182,
+        "durationEn": 17,
+        "titleEn": "08 | Smart Spaced Repetition: Long-Term Memory Retention",
+        "descriptionEn": "Male: \"The greatest frustration for language learners is forgetting things almost as fast as they learn them.\" Female: \"Vietreal's Spaced Repetition algorithm tracks hesitated phrases and frequent pronunciation mistakes, seamlessly reintroducing them at the ideal cognitive moment for permanent retention.\""
+      },
+      {
+        "time": "3:04",
+        "seconds": 185,
+        "duration": 17,
+        "title": "09 | Học Không Áp Lực Với Chuỗi Streak & Gamification Cuốn Hút",
+        "description": "Nữ: \"Không bài tập khô cứng, không áp lực điểm số! Việt-ri-ơn biến mỗi ngày luyện tiếng Việt thành một chuyến phiêu lưu văn hóa đầy ắp niềm vui.\" Nam: \"Chuỗi thói quen Xờ-tờ-rếch, điểm thưởng kinh nghiệm và huy hiệu mở khóa giúp học viên duy trì động lực bền bỉ, biến việc học tiếng Việt thành thói quen yêu thích mỗi ngày!\"",
+        "timeEn": "3:19",
+        "secondsEn": 199,
+        "durationEn": 18,
+        "titleEn": "09 | Stress-Free Gamification, Streaks & Interactive Badges",
+        "descriptionEn": "Female: \"No dry drills, no exam anxiety! Vietreal transforms daily language practice into an enjoyable cultural exploration.\" Male: \"Daily streaks, experience points, and milestone badges build healthy habits, inspiring learners to return happily every single day!\""
+      },
+      {
+        "time": "3:22",
+        "seconds": 202,
+        "duration": 20,
+        "title": "10 | Kho Bài Tập & Giao Bài Số Hóa 1 Chạm Dành Cho Giáo Viên",
+        "description": "Nam: \"Bên cạnh người học, Việt-ri-ơn còn là trợ thủ đắc lực giải phóng sức lao động cho các thầy cô giáo dạy tiếng Việt cho người nước ngoài.\" Nữ: \"Dạ đúng anh Nam! Thầy cô không còn phải mất hàng giờ tự soạn giáo trình hay gửi bài qua tin nhắn nữa. Hệ thống bài tập đã chuẩn hóa sẵn sàng, giáo viên chỉ cần giao bài cho học viên chỉ bằng một cú chạm!\"",
+        "timeEn": "3:37",
+        "secondsEn": 218,
+        "durationEn": 21,
+        "titleEn": "10 | Digital Homework Hub & One-Click Assignment for Teachers",
+        "descriptionEn": "Male: \"Beyond students, Vietreal is equally designed to empower educators teaching Vietnamese to international audiences.\" Female: \"Indeed! Teachers no longer need to spend hours building slides or emailing audio clips. With a pre-built standardized exercise repository, assigning curated homework takes just one click.\""
+      },
+      {
+        "time": "3:42",
+        "seconds": 222,
+        "duration": 16,
+        "title": "11 | Trợ Lý AI Chấm Phát Âm Tự Động & Bóc Tách Thanh Điệu Chi Tiết",
+        "description": "Nữ: \"Khi sĩ số lớp đông, việc nghe lại và nhận xét phát âm cho từng bạn là gánh nặng khổng lồ. Ây-Ai của Việt-ri-ơn đóng vai trò trợ giảng phân tích âm học chuyên sâu.\" Nam: \"Hệ thống tự động phát hiện chính xác học viên sai phụ âm đầu, vần hay thanh điệu ở giây thứ mấy. Thầy cô nắm ngay bức tranh tổng thể để tập trung hỗ trợ đúng điểm cốt lõi trên lớp!\"",
+        "timeEn": "3:58",
+        "secondsEn": 239,
+        "durationEn": 21,
+        "titleEn": "11 | AI Assistant for Phonetic Diagnostics & Tone Analysis",
+        "descriptionEn": "Female: \"In larger classrooms, listening and evaluating every student's audio recordings is exhausting. Vietreal's AI acts as a dedicated acoustic teaching assistant.\" Male: \"It pinpoints exact timestamped errors in consonants, vowels, and tone contours, allowing instructors to focus instructional time on high-impact corrections.\""
+      },
+      {
+        "time": "3:58",
+        "seconds": 239,
+        "duration": 20,
+        "title": "12 | Lưu Trữ & Quản Lý Bài Nói Học Viên Tập Trung Trên Điện Toán Đám Mây",
+        "description": "Nam: \"Trước đây, bài thu âm của học viên gửi rải rác trên Gia-lo, Oát-sáp hay email, tìm lại rất cực và dễ bị trôi mất.\" Nữ: \"Với Việt-ri-ơn, toàn bộ bản ghi âm được lưu trữ khoa học trên đám mây theo từng hồ sơ học viên. Cả thầy và trò có thể dễ dàng tua lại bài nói từ tháng trước để cảm nhận rõ rệt sự tiến bộ vượt bậc theo thời gian.\"",
+        "timeEn": "4:19",
+        "secondsEn": 260,
+        "durationEn": 19,
+        "titleEn": "12 | Centralized Cloud Audio Storage for Student Submissions",
+        "descriptionEn": "Male: \"Historically, students' recordings were scattered across chat apps and emails, making retrieval cumbersome and chaotic.\" Female: \"Vietreal organizes all voice files securely in centralized student portfolios. Both teachers and students can replay past recordings to witness tangible progress over time.\""
+      },
+      {
+        "time": "4:18",
+        "seconds": 259,
+        "duration": 18,
+        "title": "13 | Phản Hồi Tương Tác Bằng Voice Note Trực Quan & Ấm Áp",
+        "description": "Nữ: \"Chỉ gõ nhận xét bằng chữ rất khó để học viên ngoại quốc hình dung khẩu hình miệng và cách nhả hơi chuẩn xác.\" Nam: \"Việt-ri-ơn trang bị công cụ ghi âm Voi-nốt tiện lợi. Thầy cô thu âm giọng mẫu chuẩn, hướng dẫn cách đặt đầu lưỡi và gửi trực tiếp, mang đến cảm giác đồng hành gần gũi như đang dạy kèm một kèm một.\"",
+        "timeEn": "4:38",
+        "secondsEn": 279,
+        "durationEn": 19,
+        "titleEn": "13 | Expressive Voice Note Feedback & Personalized Audio Coaching",
+        "descriptionEn": "Female: \"Written comments alone cannot effectively convey mouth shape, tongue position, and breath control to language learners.\" Male: \"Vietreal integrates one-tap voice note feedback. Teachers record model pronunciation and personalized tips, creating a warm, one-on-one mentoring experience.\""
+      },
+      {
+        "time": "4:36",
+        "seconds": 277,
+        "duration": 20,
+        "title": "14 | Dashboard Theo Dõi Tiến Bộ Học Tập Toàn Diện & Trực Quan",
+        "description": "Nam: \"Một trung tâm đào tạo chuyên nghiệp rất cần dữ liệu số liệu cụ thể để đánh giá hiệu quả giảng dạy.\" Nữ: \"Chính xác anh Nam! Bảng điều khiển phân tích học tập của Việt-ri-ơn thống kê chi tiết tỷ lệ hoàn thành bài tập, tốc độ phản xạ và danh sách học viên cần bổ trợ. Nhờ đó, trung tâm nâng cao chất lượng đào tạo và giữ chân học viên bền vững.\"",
+        "timeEn": "4:57",
+        "secondsEn": 298,
+        "durationEn": 21,
+        "titleEn": "14 | Comprehensive Analytics Dashboard for Student Progress Tracking",
+        "descriptionEn": "Male: \"Educational centers need clear, actionable data to measure teaching effectiveness and learning retention.\" Female: \"Exactly, Christopher! Vietreal's analytics dashboard tracks assignment completion, conversational response time, and students needing extra support, driving higher retention and academic success.\""
+      },
+      {
+        "time": "4:57",
+        "seconds": 297,
+        "duration": 23,
+        "title": "15 | Tổng Kết Hệ Sinh Thái Vietreal 360°: Từ Học Tiếng Đến Sống Trọn Đời",
+        "description": "Nam: \"Việt-ri-ơn không chỉ dừng lại ở một ứng dụng dạy tiếng Việt, mà là một hệ sinh thái chuyển đổi số giáo dục toàn diện kết nối Học viên, Giáo viên và Trung tâm đào tạo trên cùng một nền tảng.\" Nữ: \"Học để nói, nói để giao tiếp và giao tiếp để thực sự sống, làm việc và hạnh phúc tại Việt Nam! Kính mời quý vị cùng trải nghiệm và khám phá hệ sinh thái Việt-ri-ơn ngay hôm nay tại việt-ri-ơn chấm vơ-seo chấm áp!\"",
+        "timeEn": "5:18",
+        "secondsEn": 318,
+        "durationEn": 20,
+        "titleEn": "15 | Vietreal 360° Ecosystem: From Learning the Language to Living in Vietnam",
+        "descriptionEn": "Male: \"Vietreal is far more than a language app—it is a comprehensive educational ecosystem uniting Students, Teachers, and Language Centers seamlessly.\" Female: \"Learn to speak, speak to connect, and connect to truly thrive in Vietnam! Discover and experience Vietreal today at vietreal dot vercel dot app!\""
+      }
+    ],
+    "theme": {
+      "from": "#0284c7",
+      "to": "#06b6d4",
+      "accent": "#0ea5e9",
+      "badgeBg": "bg-sky-50",
+      "badgeText": "text-sky-800",
+      "badgeBorder": "border-sky-200"
     }
   },
   {
