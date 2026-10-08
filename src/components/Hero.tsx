@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { ArrowRight, Sparkles, Play, ExternalLink, ShieldCheck, HeartPulse, Rocket, Zap, ShieldAlert, QrCode, Cpu, FileCheck, Globe, ChevronDown, ChevronUp } from 'lucide-react';
+import { ArrowRight, Sparkles, Play, ExternalLink, ShieldCheck, HeartPulse, Rocket, Zap, ShieldAlert, QrCode, Cpu, FileCheck, Globe } from 'lucide-react';
 import { AppItem } from '../data/apps';
 import { openExternalApp, isMobileOrWebview } from '../utils/navigation';
-import { VIETREAL_COUNTRY_EDITIONS } from '../data/vietrealCountries';
 
 interface HeroProps {
   onExploreClick: () => void;
@@ -21,7 +20,6 @@ export const Hero: React.FC<HeroProps> = ({
   const vietrealApp = allApps.find(a => a.id === 'vietreal');
 
   const [activeVietrealFeatureIdx, setActiveVietrealFeatureIdx] = useState<number>(0);
-  const [showCountryLinks, setShowCountryLinks] = useState<boolean>(false);
 
   // 10 tính năng cốt lõi VIETREAL 360° (Dạy Tiếng Việt Thực Chiến Cho Người Nước Ngoài)
   const vietrealFeatures = [
@@ -415,63 +413,17 @@ export const Hero: React.FC<HeroProps> = ({
                   </button>
                 </div>
 
-                {/* 6. Subtle Collapsible Trigger: 13 National Editions (Only expands when clicked) */}
+                {/* 6. 13 National Editions (Khóa mở ra vì link chưa hoạt động, chỉ ghi Sắp ra mắt) */}
                 <div className="mt-3 pt-2.5 border-t border-slate-800/80">
-                  <button
-                    onClick={() => setShowCountryLinks(!showCountryLinks)}
-                    className="w-full flex items-center justify-between px-3.5 py-2 rounded-xl text-xs font-bold text-sky-300 hover:text-white bg-sky-950/40 hover:bg-sky-900/50 border border-sky-500/30 transition-all cursor-pointer group"
-                    title="Bấm để mở danh sách đường link 13 quốc gia"
-                  >
+                  <div className="w-full flex items-center justify-between px-3.5 py-2 rounded-xl text-xs font-bold text-sky-300 bg-sky-950/40 border border-sky-500/30">
                     <span className="flex items-center gap-2">
-                      <Globe className="w-3.5 h-3.5 text-sky-400 group-hover:rotate-45 transition-transform" />
-                      <span>13 Phiên Bản Quốc Gia Dạy Tiếng Việt (Sắp ra mắt)</span>
+                      <Globe className="w-3.5 h-3.5 text-sky-400" />
+                      <span>13 Phiên Bản Quốc Gia Dạy Tiếng Việt</span>
                     </span>
-                    <span className="flex items-center gap-1 text-[11px] font-mono text-amber-300 font-bold">
-                      <span>{showCountryLinks ? 'Thu gọn' : 'Xem link'}</span>
-                      {showCountryLinks ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+                    <span className="px-2.5 py-0.5 rounded-md text-[10px] font-mono text-amber-300 bg-amber-400/15 border border-amber-400/40 font-extrabold uppercase tracking-wider">
+                      Sắp ra mắt
                     </span>
-                  </button>
-
-                  {/* Clean list of links revealed ONLY when clicked */}
-                  {showCountryLinks && (
-                    <div className="mt-2.5 p-3 rounded-2xl bg-[#07111E]/95 border border-sky-400/40 shadow-2xl space-y-2 animate-fadeIn max-h-[300px] overflow-y-auto">
-                      <div className="flex items-center justify-between pb-1.5 border-b border-slate-800 text-[11px] text-slate-400">
-                        <span className="font-bold text-sky-300">Click vào tên quốc gia để mở link app:</span>
-                        <button
-                          onClick={() => setShowCountryLinks(false)}
-                          className="text-slate-400 hover:text-white text-xs px-1.5 py-0.5 rounded cursor-pointer"
-                        >
-                          ✕ Đóng
-                        </button>
-                      </div>
-
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
-                        {VIETREAL_COUNTRY_EDITIONS.map((c) => (
-                          <a
-                            key={c.id}
-                            href={c.route}
-                            target={isMobileOrWebview() ? '_self' : '_blank'}
-                            rel="noopener noreferrer"
-                            onClick={(e) => openExternalApp(c.route, e)}
-                            className="flex items-center justify-between p-2 rounded-xl bg-slate-900/90 hover:bg-sky-950/80 border border-slate-800 hover:border-sky-400 transition-all group"
-                          >
-                            <div className="flex items-center gap-2 min-w-0">
-                              <span className="text-xl shrink-0">{c.flag}</span>
-                              <div className="truncate">
-                                <div className="text-xs font-bold text-white group-hover:text-sky-300 truncate">
-                                  {c.countryName}: <span className="font-normal text-slate-300">{c.vietnameseTitle}</span>
-                                </div>
-                                <div className="text-[10px] font-mono text-sky-400 group-hover:text-amber-300 truncate">
-                                  {c.route.replace('https://', '')}
-                                </div>
-                              </div>
-                            </div>
-                            <ExternalLink className="w-3.5 h-3.5 text-slate-500 group-hover:text-sky-400 shrink-0 ml-1.5" />
-                          </a>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+                  </div>
                 </div>
 
               </div>
