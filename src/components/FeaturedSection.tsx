@@ -1323,7 +1323,7 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
                 Tiêu Điểm Dự Án Vận Hành &amp; Quản Trị Nghiệp Vụ
               </h2>
               <p className="text-base sm:text-lg text-slate-200 mt-3 max-w-3xl leading-relaxed">
-                Chuỗi cung ứng UTH SCM, quản lý hợp đồng AB Mauri, ERP thú y thủy sản, đào tạo kinh doanh BJC và quản trị khách hàng thực địa.
+                Chuỗi cung ứng UTH SCM, quản lý hợp đồng mua bán, ERP thú y thủy sản, đào tạo kinh doanh BJC và quản trị khách hàng thực địa.
               </p>
             </div>
             <div className="mt-4 md:mt-0 text-xs sm:text-sm font-mono text-emerald-400 font-bold bg-[#0A192F] px-4 py-2 rounded-xl border border-emerald-400/30 whitespace-nowrap shadow-sm">
@@ -1355,7 +1355,7 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
               spotlightApps,
               () => setActiveSpotlightIdx(null),
               (newIdx) => setActiveSpotlightIdx(newIdx),
-              ['1. UTH SCM', '2. AB Mauri', '3. Vet Aqua ERP', '4. BJC Training', '5. Customer Visit']
+              ['1. UTH SCM', '2. Hợp Đồng Mua Bán', '3. Vet Aqua ERP', '4. BJC Training', '5. Customer Visit']
             )
           )}
         </div>
