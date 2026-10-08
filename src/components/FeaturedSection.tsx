@@ -39,7 +39,7 @@ const VIETREAL_COUNTRY_EDITIONS: CountryEdition[] = [
     vietnameseTitle: 'Người Thái học tiếng Việt',
     nativeDesc: 'เรียนภาษาเวียดนามที่ใช้ได้จริง ทั้งการเรียน การทำงาน และชีวิตประจำวัน',
     vietnameseDesc: 'Học tiếng Việt dùng được thực tế trong học tập, công việc và đời sống hàng ngày.',
-    route: 'https://thvn.vercel.app'
+    route: 'https://thviet.vercel.app'
   },
   {
     id: 'korea',
@@ -49,7 +49,7 @@ const VIETREAL_COUNTRY_EDITIONS: CountryEdition[] = [
     vietnameseTitle: 'Người Hàn học tiếng Việt',
     nativeDesc: '결혼·가족·비즈니스, 생활에서 바로 쓰는 베트남어.',
     vietnameseDesc: 'Kết hôn, gia đình, kinh doanh — tiếng Việt dùng ngay trong đời sống.',
-    route: 'https://krvn.vercel.app'
+    route: 'https://krviet.vercel.app'
   },
   {
     id: 'china',
@@ -99,7 +99,7 @@ const VIETREAL_COUNTRY_EDITIONS: CountryEdition[] = [
     vietnameseTitle: 'Người Nga học tiếng Việt',
     nativeDesc: 'Живой вьетнамский для работы, семьи và путешествий — под ваши цели.',
     vietnameseDesc: 'Tiếng Việt sống động cho công việc, gia đình và du lịch — phù hợp mục tiêu của bạn.',
-    route: 'https://ruvn.vercel.app'
+    route: 'https://ruviet.vercel.app'
   },
   {
     id: 'cambodia',
@@ -109,7 +109,7 @@ const VIETREAL_COUNTRY_EDITIONS: CountryEdition[] = [
     vietnameseTitle: 'Người Campuchia học tiếng Việt',
     nativeDesc: 'ភាសាវៀតណាមពិតៗ សម្រាប់ការងារ អាជីវកម្ម និងជីវិតប្រចាំថ្ងៃ។',
     vietnameseDesc: 'Tiếng Việt thực tế cho công việc, kinh doanh và đời sống thường nhật.',
-    route: 'https://khvn.vercel.app'
+    route: 'https://khviet.vercel.app'
   },
   {
     id: 'laos',
@@ -129,7 +129,7 @@ const VIETREAL_COUNTRY_EDITIONS: CountryEdition[] = [
     vietnameseTitle: 'Người Ấn học tiếng Việt',
     nativeDesc: 'काम, कारोबार और रोज़मर्रा की ज़िंदगी के लिए असली वियतनामी।',
     vietnameseDesc: 'Tiếng Việt thực tế cho công việc, kinh doanh và cuộc sống hàng ngày.',
-    route: 'https://invn.vercel.app'
+    route: 'https://inviet.vercel.app'
   },
   {
     id: 'spain',
@@ -139,7 +139,7 @@ const VIETREAL_COUNTRY_EDITIONS: CountryEdition[] = [
     vietnameseTitle: 'Người Tây Ban Nha học tiếng Việt',
     nativeDesc: 'Vietnamita práctico y real para el trabajo, la familia y los viajes.',
     vietnameseDesc: 'Tiếng Việt thực tế và ứng dụng cao cho công việc, gia đình và du lịch.',
-    route: 'https://esvn.vercel.app'
+    route: 'https://esviet.vercel.app'
   },
   {
     id: 'portugal',
@@ -149,7 +149,7 @@ const VIETREAL_COUNTRY_EDITIONS: CountryEdition[] = [
     vietnameseTitle: 'Người Bồ Đào Nha học tiếng Việt',
     nativeDesc: 'Vietnamita prático para o dia a dia, negócios e integração cultural.',
     vietnameseDesc: 'Tiếng Việt thực hành cho cuộc sống hàng ngày, kinh doanh và hòa nhập văn hóa.',
-    route: 'https://ptvn.vercel.app'
+    route: 'https://ptviet.vercel.app'
   }
 ];
 
