@@ -244,6 +244,7 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
   const tropilabApp = apps.find(a => a.id === 'tropilab-riskos');
   const [activeTropilabFeatureIdx, setActiveTropilabFeatureIdx] = useState<number>(0);
   const [tropilabMode, setTropilabMode] = useState<'image' | 'video'>('image');
+  const [showTropilabDetail, setShowTropilabDetail] = useState<boolean>(false);
 
   // 2. Hệ Sinh Thái Đồng Hành Làm Cha Mẹ & Đời Sống Gia Đình (4 app)
   const parentingOrder = [
@@ -759,147 +760,62 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
         {tropilabApp && (
           <div className="relative">
             {/* Tropilab Header */}
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-8">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-6">
               <div>
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-500/15 border border-teal-400/40 text-xs sm:text-sm font-bold text-teal-300 mb-3 shadow-sm">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-500/15 border border-teal-400/40 text-xs sm:text-sm font-bold text-teal-300 mb-2.5 shadow-sm">
                   <Stethoscope className="w-4 h-4 text-teal-400" />
                   <span>SỨC KHỎE &amp; Y TẾ • ISO 22367:2020 &amp; ISO 15189:2022 • TRUNG TÂM ĐIỀU HÀNH SỐ</span>
                 </div>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-                  TROPILAB RISKOS — Quản Trị Rủi Ro &amp; An Toàn Phòng Xét Nghiệm Bệnh Viện
+                  TROPILAB RISKOS — Quản Trị Rủi Ro &amp; An Toàn Xét Nghiệm
                 </h2>
-                <p className="text-base sm:text-lg text-slate-200 mt-3 max-w-3xl leading-relaxed">
-                  Trung tâm điều hành số hóa toàn diện quy trình kiểm soát rủi ro xét nghiệm bệnh viện: Báo lỗi 1 chạm trên di động, tự động khóa mẫu trên LIS, đối chiếu barcode người bệnh, bản đồ ống nghiệm trực quan CLSI, AI kiểm tra y lệnh và ma trận rủi ro thời gian thực.
-                </p>
               </div>
               <div className="mt-4 md:mt-0 text-xs sm:text-sm font-mono text-teal-400 font-bold bg-[#0A192F] px-4 py-2 rounded-xl border border-teal-400/40 whitespace-nowrap shadow-sm">
                 [ LIVE PRODUCTION • TROPILAB.VERCEL.APP ]
               </div>
             </div>
 
-            {/* Tropilab Interactive Showcase Card */}
-            <div className="rounded-3xl bg-[#0B1A2F] border border-teal-400/50 shadow-2xl overflow-hidden flex flex-col lg:flex-row">
-              
-              {/* Visual Side: Interactive 10 Features / Video Clip */}
-              <div className="w-full lg:w-7/12 min-h-[380px] sm:min-h-[460px] lg:min-h-[560px] relative overflow-hidden bg-slate-950 border-b lg:border-b-0 lg:border-r border-slate-800 flex flex-col justify-between">
-                
-                {/* Mode Switcher */}
-                <div className="absolute top-3 right-3 z-30 flex items-center bg-[#07111E]/95 backdrop-blur-md rounded-xl p-0.5 border border-slate-700 shadow-md">
-                  <button
-                    onClick={() => setTropilabMode('image')}
-                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
-                      tropilabMode === 'image'
-                        ? 'bg-gradient-to-r from-teal-400 to-cyan-500 text-slate-950 font-black shadow-xs'
-                        : 'text-slate-300 hover:text-white'
-                    }`}
-                  >
-                    <ImageIcon className="w-3.5 h-3.5" />
-                    <span>10 Ảnh Tính Năng</span>
-                  </button>
+            {/* CONDITIONAL RENDERING: Compact Visual Card vs Full Detail View */}
+            {!showTropilabDetail ? (
+              /* MẶC ĐỊNH: CHỈ HIỆN ẢNH VÀ TÊN, KHÔNG HIỆN CHỮ ĐỂ TRÁNH RỐI MẮT */
+              <div
+                onClick={() => setShowTropilabDetail(true)}
+                className="group relative rounded-3xl bg-[#0B1A2F] border border-teal-400/50 hover:border-teal-400 transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden cursor-pointer"
+              >
+                {/* Large Visual Area */}
+                <div className="relative aspect-[16/9] sm:aspect-[21/9] w-full overflow-hidden bg-slate-950">
+                  <img
+                    src={tropilabApp.coverImage || tropilabApp.placeholderImage || '/apps/tropilab-riskos/cover.jpg'}
+                    alt="TROPILAB RISKOS"
+                    className="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-500"
+                    loading="lazy"
+                  />
 
-                  <button
-                    onClick={() => setTropilabMode('video')}
-                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
-                      tropilabMode === 'video'
-                        ? 'bg-teal-400 text-slate-950 font-black shadow-xs'
-                        : 'text-slate-300 hover:text-white'
-                    }`}
-                  >
-                    <Video className="w-3.5 h-3.5" />
-                    <span>Video Clip Tour</span>
-                  </button>
-                </div>
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B1A2F] via-[#0B1A2F]/40 to-transparent" />
 
-                {/* Badge Top Left */}
-                <div className="absolute top-3 left-3 z-30 pointer-events-none flex items-center gap-2">
-                  <span className="px-3.5 py-1.5 rounded-full text-xs font-black tracking-wide bg-gradient-to-r from-teal-400 to-cyan-400 text-slate-950 shadow-md flex items-center gap-1.5">
-                    <Activity className="w-3.5 h-3.5 text-slate-950" />
-                    <span>TROPILAB RISKOS • ISO 15189 / 22367</span>
-                  </span>
-                  <span className="px-3 py-1 rounded-full text-xs font-bold bg-[#07111E]/95 border border-teal-400/50 text-teal-300 shadow-md">
-                    Có TK Demo
-                  </span>
-                </div>
-
-                {/* Main Visual Display */}
-                {tropilabMode === 'video' ? (
-                  <div className="w-full h-full min-h-[380px] lg:min-h-[560px]">
-                    <AppMockupVisual
-                      app={tropilabApp}
-                      mode="video"
-                      onOpenDetails={() => onSelectApp(tropilabApp, 'video')}
-                    />
-                  </div>
-                ) : (
-                  <div className="relative w-full h-full min-h-[380px] lg:min-h-[560px] flex flex-col justify-between p-4 sm:p-6 bg-slate-950">
-                    {/* Active Screenshot Display with smooth zoom */}
-                    <div 
-                      onClick={() => onSelectApp(tropilabApp, 'image')}
-                      className="relative w-full flex-1 rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 group cursor-pointer flex items-center justify-center"
-                    >
-                      <img
-                        src={currentTropilabFeature.screen}
-                        alt={currentTropilabFeature.title}
-                        className="w-full h-full object-contain group-hover:scale-102 transition-transform duration-300"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
-                        <div className="text-left">
-                          <span className="px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-teal-400 text-slate-950">
-                            {currentTropilabFeature.badge}
-                          </span>
-                          <h4 className="text-base sm:text-lg font-black text-white mt-1 drop-shadow-md">
-                            {currentTropilabFeature.title}
-                          </h4>
-                          <p className="text-xs sm:text-sm text-slate-200 mt-0.5 line-clamp-2 max-w-xl">
-                            {currentTropilabFeature.desc}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* 10 Interactive Feature Buttons Grid */}
-                    <div className="mt-4 pt-3 border-t border-slate-800 grid grid-cols-2 sm:grid-cols-5 gap-2">
-                      {TROPILAB_FEATURES.map((feat) => {
-                        const isCurrent = feat.idx === activeTropilabFeatureIdx;
-                        return (
-                          <button
-                            key={feat.idx}
-                            onClick={() => setActiveTropilabFeatureIdx(feat.idx)}
-                            className={`p-2 rounded-xl text-left transition-all cursor-pointer flex flex-col justify-between ${
-                              isCurrent
-                                ? 'bg-teal-500/20 border border-teal-400 text-white shadow-md'
-                                : 'bg-[#07111E] border border-slate-800 text-slate-400 hover:text-white hover:border-slate-600'
-                            }`}
-                          >
-                            <span className={`text-[10px] font-mono font-bold ${isCurrent ? 'text-teal-300' : 'text-slate-500'}`}>
-                              0{feat.idx + 1}
-                            </span>
-                            <span className="text-xs font-bold truncate mt-0.5">
-                              {feat.shortTitle}
-                            </span>
-                          </button>
-                        );
-                      })}
-                    </div>
-                  </div>
-                )}
-
-              </div>
-
-              {/* Tropilab Info Side */}
-              <div className="p-6 sm:p-8 lg:p-10 flex flex-col justify-between flex-1 bg-[#0B1A2F] lg:w-5/12">
-                <div>
-                  <div className="flex items-center justify-between gap-2 mb-4">
-                    <span className="text-xs font-black uppercase tracking-wider px-3.5 py-1 rounded-lg bg-teal-500/10 text-teal-300 border border-teal-400/30">
-                      Sức Khỏe &amp; Y Tế Bệnh Viện
+                  {/* Top Badges */}
+                  <div className="absolute top-3.5 left-3.5 z-10 flex items-center gap-2">
+                    <span className="px-3.5 py-1.5 rounded-full text-xs font-black tracking-wide bg-gradient-to-r from-teal-400 to-cyan-400 text-slate-950 shadow-md flex items-center gap-1.5">
+                      <Activity className="w-3.5 h-3.5 text-slate-950" />
+                      <span>SỨC KHỎE &amp; Y TẾ • CHUẨN ISO 15189 / 22367</span>
                     </span>
-                    <span className="text-xs font-mono text-slate-400">
-                      Chuẩn ISO 22367 &amp; 15189
+                    <span className="px-3 py-1 rounded-full text-xs font-bold bg-[#07111E]/90 border border-teal-400/40 text-teal-300 shadow-sm backdrop-blur-md">
+                      PWA Offline
                     </span>
                   </div>
 
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="w-16 h-16 rounded-2xl overflow-hidden shrink-0 bg-[#0E223D] border border-teal-400/40 shadow-lg p-2 flex items-center justify-center">
+                  {/* Click to expand overlay cue */}
+                  <div className="absolute top-3.5 right-3.5 z-10 hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-950/80 border border-teal-400/50 text-teal-300 text-xs font-bold backdrop-blur-md group-hover:bg-teal-400 group-hover:text-slate-950 transition-colors">
+                    <Eye className="w-3.5 h-3.5" />
+                    <span>Click để xem chi tiết nghiệp vụ</span>
+                  </div>
+                </div>
+
+                {/* Compact Footer: Logo, Tên App, Nhóm ngành, và Nút mở */}
+                <div className="p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-[#0B1A2F] border-t border-slate-800">
+                  <div className="flex items-center gap-4">
+                    <div className="w-14 h-14 rounded-2xl overflow-hidden shrink-0 bg-[#0E223D] border border-teal-400/40 shadow-lg p-1.5 flex items-center justify-center group-hover:border-teal-400 transition-colors">
                       <img
                         src={tropilabApp.logoUrl}
                         alt="Tropilab logo"
@@ -907,102 +823,314 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
                       />
                     </div>
                     <div>
-                      <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight leading-snug">
-                        TROPILAB RISKOS
+                      <div className="flex items-center gap-2">
+                        <span className="text-[11px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-md bg-teal-500/15 text-teal-300 border border-teal-400/30">
+                          {tropilabApp.category}
+                        </span>
+                        <span className="text-xs font-mono text-slate-400">
+                          Phòng Xét Nghiệm Bệnh Viện
+                        </span>
+                      </div>
+                      <h3 className="text-xl sm:text-2xl font-black text-white group-hover:text-teal-300 transition-colors leading-snug mt-0.5">
+                        {tropilabApp.name}
                       </h3>
-                      <div className="text-xs font-bold text-teal-400 mt-1">
-                        PWA Hoạt Động Offline • Không Lưu Dữ Liệu Riêng Tư • Phân Quyền Y Khoa
-                      </div>
                     </div>
                   </div>
 
-                  <p className="text-base text-slate-200 mt-3 leading-relaxed">
-                    {tropilabApp.description}
-                  </p>
+                  {/* Action Row */}
+                  <div className="flex items-center gap-2.5" onClick={(e) => e.stopPropagation()}>
+                    <button
+                      onClick={() => setShowTropilabDetail(true)}
+                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-black text-slate-950 bg-gradient-to-r from-teal-400 to-cyan-400 hover:from-teal-300 hover:to-cyan-300 shadow-md shadow-teal-500/20 transition-all cursor-pointer"
+                    >
+                      <Eye className="w-4 h-4 text-slate-950" />
+                      <span>Xem chi tiết &amp; 10 Tính năng</span>
+                      <ArrowRight className="w-4 h-4 text-slate-950" />
+                    </button>
 
-                  {/* 4 Core Pillars */}
-                  <div className="mt-5 p-4 rounded-2xl bg-[#07111E]/90 border border-slate-700/80 space-y-2.5">
-                    <div className="text-xs font-extrabold uppercase tracking-wider text-teal-300 flex items-center gap-1.5">
-                      <ShieldCheck className="w-4 h-4 text-teal-400" />
-                      <span>4 Điểm Nhấn Nghiệp Vụ Y Khoa Đột Phá:</span>
-                    </div>
-                    <div className="space-y-2 text-xs sm:text-sm text-slate-200">
-                      <div className="flex items-start gap-2">
-                        <Check className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
-                        <span><strong>Báo lỗi 1 chạm:</strong> Khóa trạng thái mẫu tức thời trên LIS, chống sai sót lọt qua khâu phân tích.</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
-                        <span><strong>Quét mã QR vòng tay:</strong> Đối chiếu kép thông tin y lệnh trước khi chọc kim lấy máu bệnh nhân.</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
-                        <span><strong>Bản đồ ống nghiệm CLSI:</strong> Trực quan hóa chuẩn màu nắp ống, thể tích và quy cách chống đông.</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
-                        <span><strong>Tự động hóa hồ sơ ISO:</strong> Kết xuất CAPA ký số điện tử chuẩn ISO 22367:2020 &amp; ISO 15189:2022.</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Demo Credential Note */}
-                  <div className="mt-4 px-4 py-2.5 rounded-xl bg-teal-950/40 border border-teal-500/30 flex items-center justify-between text-xs sm:text-sm text-teal-200">
-                    <span className="flex items-center gap-2">
-                      <span className="font-bold text-teal-300">💡 Trải nghiệm ngay:</span>
-                      <span>Có sẵn tài khoản Demo phân quyền Kỹ thuật viên &amp; Quản lý chất lượng</span>
-                    </span>
-                  </div>
-                </div>
-
-                {/* Actions */}
-                <div className="pt-6 mt-6 border-t border-slate-800 flex flex-wrap items-center justify-between gap-3">
-                  <button
-                    onClick={() => onSelectApp(tropilabApp, 'image')}
-                    className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-black bg-gradient-to-r from-teal-400 to-cyan-400 hover:from-teal-300 hover:to-cyan-300 text-slate-950 shadow-lg shadow-teal-500/20 transition-all cursor-pointer"
-                  >
-                    <span>Xem Chi Tiết TROPILAB RISKOS</span>
-                    <ArrowRight className="w-4 h-4 text-slate-950" />
-                  </button>
-
-                  <div className="flex items-center gap-2">
                     <a
                       href="https://tropilab.vercel.app"
                       target={isMobileOrWebview() ? '_self' : '_blank'}
                       rel="noopener noreferrer"
                       onClick={(e) => openExternalApp('https://tropilab.vercel.app', e)}
-                      className="inline-flex items-center gap-1.5 px-4 py-3 rounded-xl text-xs sm:text-sm font-bold text-teal-200 bg-[#0E223D] hover:bg-teal-400 hover:text-slate-950 transition-all border border-slate-700 hover:border-teal-400 cursor-pointer"
+                      className="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-teal-200 bg-[#0E223D] hover:bg-teal-400 hover:text-slate-950 transition-all border border-slate-700 hover:border-teal-400 cursor-pointer"
                     >
-                      <span>Mở tropilab.vercel.app</span>
-                      <ExternalLink className="w-4 h-4" />
+                      <span>Mở web app</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
                     </a>
 
                     <button
                       onClick={() => onToggleRequest(tropilabApp)}
-                      className={`inline-flex items-center gap-1.5 px-4 py-3 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+                      className={`p-2.5 rounded-xl transition-all cursor-pointer ${
                         isAppRequested(tropilabApp.id)
-                          ? 'bg-emerald-600 text-white'
-                          : 'bg-[#0E223D] hover:bg-teal-400 text-slate-200 hover:text-slate-950 border border-slate-700'
+                          ? 'bg-emerald-600 text-white shadow-xs'
+                          : 'bg-[#0E223D] hover:bg-teal-400 text-slate-300 hover:text-slate-950 border border-slate-700'
                       }`}
+                      title={isAppRequested(tropilabApp.id) ? 'Đã chọn yêu cầu' : 'Thêm vào yêu cầu'}
                     >
-                      {isAppRequested(tropilabApp.id) ? (
-                        <>
-                          <Check className="w-4 h-4" />
-                          <span>Đã chọn</span>
-                        </>
-                      ) : (
-                        <>
-                          <Plus className="w-4 h-4" />
-                          <span>Chọn yêu cầu</span>
-                        </>
-                      )}
+                      {isAppRequested(tropilabApp.id) ? <Check className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                     </button>
                   </div>
                 </div>
+              </div>
+            ) : (
+              /* CHI TIẾT ĐẦY ĐỦ: CHỈ HIỆN KHI NGƯỜI DÙNG NHẤN VÀO */
+              <div className="space-y-5 animate-fadeIn">
+                {/* Top Bar with Back Button */}
+                <div className="rounded-2xl bg-[#0B1A2F] border border-teal-400/40 p-4 shadow-xl flex items-center justify-between gap-4">
+                  <button
+                    onClick={() => setShowTropilabDetail(false)}
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-black text-slate-200 bg-[#07111E] hover:bg-teal-400 hover:text-slate-950 border border-slate-700 hover:border-teal-400 transition-all cursor-pointer shadow-md"
+                  >
+                    <ArrowLeft className="w-4 h-4" />
+                    <span>⬅ Thu gọn (Quay lại)</span>
+                  </button>
+                  <div className="text-xs sm:text-sm font-bold text-teal-300 flex items-center gap-2">
+                    <Activity className="w-4 h-4" />
+                    <span>Chi tiết nghiệp vụ TROPILAB RISKOS</span>
+                  </div>
+                </div>
+
+                {/* Tropilab Interactive Showcase Card */}
+                <div className="rounded-3xl bg-[#0B1A2F] border border-teal-400/50 shadow-2xl overflow-hidden flex flex-col lg:flex-row">
+                  
+                  {/* Visual Side: Interactive 10 Features / Video Clip */}
+                  <div className="w-full lg:w-7/12 min-h-[380px] sm:min-h-[460px] lg:min-h-[560px] relative overflow-hidden bg-slate-950 border-b lg:border-b-0 lg:border-r border-slate-800 flex flex-col justify-between">
+                    
+                    {/* Mode Switcher */}
+                    <div className="absolute top-3 right-3 z-30 flex items-center bg-[#07111E]/95 backdrop-blur-md rounded-xl p-0.5 border border-slate-700 shadow-md">
+                      <button
+                        onClick={() => setTropilabMode('image')}
+                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                          tropilabMode === 'image'
+                            ? 'bg-gradient-to-r from-teal-400 to-cyan-500 text-slate-950 font-black shadow-xs'
+                            : 'text-slate-300 hover:text-white'
+                        }`}
+                      >
+                        <ImageIcon className="w-3.5 h-3.5" />
+                        <span>10 Ảnh Tính Năng</span>
+                      </button>
+
+                      <button
+                        onClick={() => setTropilabMode('video')}
+                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                          tropilabMode === 'video'
+                            ? 'bg-teal-400 text-slate-950 font-black shadow-xs'
+                            : 'text-slate-300 hover:text-white'
+                        }`}
+                      >
+                        <Video className="w-3.5 h-3.5" />
+                        <span>Video Clip Tour</span>
+                      </button>
+                    </div>
+
+                    {/* Badge Top Left */}
+                    <div className="absolute top-3 left-3 z-30 pointer-events-none flex items-center gap-2">
+                      <span className="px-3.5 py-1.5 rounded-full text-xs font-black tracking-wide bg-gradient-to-r from-teal-400 to-cyan-400 text-slate-950 shadow-md flex items-center gap-1.5">
+                        <Activity className="w-3.5 h-3.5 text-slate-950" />
+                        <span>TROPILAB RISKOS • ISO 15189 / 22367</span>
+                      </span>
+                      <span className="px-3 py-1 rounded-full text-xs font-bold bg-[#07111E]/95 border border-teal-400/50 text-teal-300 shadow-md">
+                        Có TK Demo
+                      </span>
+                    </div>
+
+                    {/* Main Visual Display */}
+                    {tropilabMode === 'video' ? (
+                      <div className="w-full h-full min-h-[380px] lg:min-h-[560px]">
+                        <AppMockupVisual
+                          app={tropilabApp}
+                          mode="video"
+                          onOpenDetails={() => onSelectApp(tropilabApp, 'video')}
+                        />
+                      </div>
+                    ) : (
+                      <div className="relative w-full h-full min-h-[380px] lg:min-h-[560px] flex flex-col justify-between p-4 sm:p-6 bg-slate-950">
+                        {/* Active Screenshot Display with smooth zoom */}
+                        <div 
+                          onClick={() => onSelectApp(tropilabApp, 'image')}
+                          className="relative w-full flex-1 rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 group cursor-pointer flex items-center justify-center"
+                        >
+                          <img
+                            src={currentTropilabFeature.screen}
+                            alt={currentTropilabFeature.title}
+                            className="w-full h-full object-contain group-hover:scale-102 transition-transform duration-300"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
+                            <div className="text-left">
+                              <span className="px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-teal-400 text-slate-950">
+                                {currentTropilabFeature.badge}
+                              </span>
+                              <h4 className="text-base sm:text-lg font-black text-white mt-1 drop-shadow-md">
+                                {currentTropilabFeature.title}
+                              </h4>
+                              <p className="text-xs sm:text-sm text-slate-200 mt-0.5 line-clamp-2 max-w-xl">
+                                {currentTropilabFeature.desc}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* 10 Interactive Feature Buttons Grid */}
+                        <div className="mt-4 pt-3 border-t border-slate-800 grid grid-cols-2 sm:grid-cols-5 gap-2">
+                          {TROPILAB_FEATURES.map((feat) => {
+                            const isCurrent = feat.idx === activeTropilabFeatureIdx;
+                            return (
+                              <button
+                                key={feat.idx}
+                                onClick={() => setActiveTropilabFeatureIdx(feat.idx)}
+                                className={`p-2 rounded-xl text-left transition-all cursor-pointer flex flex-col justify-between ${
+                                  isCurrent
+                                    ? 'bg-teal-500/20 border border-teal-400 text-white shadow-md'
+                                    : 'bg-[#07111E] border border-slate-800 text-slate-400 hover:text-white hover:border-slate-600'
+                                }`}
+                              >
+                                <span className={`text-[10px] font-mono font-bold ${isCurrent ? 'text-teal-300' : 'text-slate-500'}`}>
+                                  0{feat.idx + 1}
+                                </span>
+                                <span className="text-xs font-bold truncate mt-0.5">
+                                  {feat.shortTitle}
+                                </span>
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
+
+                  </div>
+
+                  {/* Tropilab Info Side */}
+                  <div className="p-6 sm:p-8 lg:p-10 flex flex-col justify-between flex-1 bg-[#0B1A2F] lg:w-5/12">
+                    <div>
+                      <div className="flex items-center justify-between gap-2 mb-4">
+                        <span className="text-xs font-black uppercase tracking-wider px-3.5 py-1 rounded-lg bg-teal-500/10 text-teal-300 border border-teal-400/30">
+                          Sức Khỏe &amp; Y Tế Bệnh Viện
+                        </span>
+                        <span className="text-xs font-mono text-slate-400">
+                          Chuẩn ISO 22367 &amp; 15189
+                        </span>
+                      </div>
+
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="w-16 h-16 rounded-2xl overflow-hidden shrink-0 bg-[#0E223D] border border-teal-400/40 shadow-lg p-2 flex items-center justify-center">
+                          <img
+                            src={tropilabApp.logoUrl}
+                            alt="Tropilab logo"
+                            className="w-full h-full object-contain rounded-xl"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight leading-snug">
+                            TROPILAB RISKOS
+                          </h3>
+                          <div className="text-xs font-bold text-teal-400 mt-1">
+                            PWA Hoạt Động Offline • Không Lưu Dữ Liệu Riêng Tư • Phân Quyền Y Khoa
+                          </div>
+                        </div>
+                      </div>
+
+                      <p className="text-base text-slate-200 mt-3 leading-relaxed">
+                        {tropilabApp.description}
+                      </p>
+
+                      {/* 4 Core Pillars */}
+                      <div className="mt-5 p-4 rounded-2xl bg-[#07111E]/90 border border-slate-700/80 space-y-2.5">
+                        <div className="text-xs font-extrabold uppercase tracking-wider text-teal-300 flex items-center gap-1.5">
+                          <ShieldCheck className="w-4 h-4 text-teal-400" />
+                          <span>4 Điểm Nhấn Nghiệp Vụ Y Khoa Đột Phá:</span>
+                        </div>
+                        <div className="space-y-2 text-xs sm:text-sm text-slate-200">
+                          <div className="flex items-start gap-2">
+                            <Check className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
+                            <span><strong>Báo lỗi 1 chạm:</strong> Khóa trạng thái mẫu tức thời trên LIS, chống sai sót lọt qua khâu phân tích.</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <Check className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
+                            <span><strong>Quét mã QR vòng tay:</strong> Đối chiếu kép thông tin y lệnh trước khi chọc kim lấy máu bệnh nhân.</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <Check className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
+                            <span><strong>Bản đồ ống nghiệm CLSI:</strong> Trực quan hóa chuẩn màu nắp ống, thể tích và quy cách chống đông.</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <Check className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
+                            <span><strong>Tự động hóa hồ sơ ISO:</strong> Kết xuất CAPA ký số điện tử chuẩn ISO 22367:2020 &amp; ISO 15189:2022.</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Demo Credential Note */}
+                      <div className="mt-4 px-4 py-2.5 rounded-xl bg-teal-950/40 border border-teal-500/30 flex items-center justify-between text-xs sm:text-sm text-teal-200">
+                        <span className="flex items-center gap-2">
+                          <span className="font-bold text-teal-300">💡 Trải nghiệm ngay:</span>
+                          <span>Có sẵn tài khoản Demo phân quyền Kỹ thuật viên &amp; Quản lý chất lượng</span>
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Actions */}
+                    <div className="pt-6 mt-6 border-t border-slate-800 flex flex-wrap items-center justify-between gap-3">
+                      <button
+                        onClick={() => onSelectApp(tropilabApp, 'image')}
+                        className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-black bg-gradient-to-r from-teal-400 to-cyan-400 hover:from-teal-300 hover:to-cyan-300 text-slate-950 shadow-lg shadow-teal-500/20 transition-all cursor-pointer"
+                      >
+                        <span>Xem Toàn Bộ Ảnh &amp; Báo Cáo</span>
+                        <ArrowRight className="w-4 h-4 text-slate-950" />
+                      </button>
+
+                      <div className="flex items-center gap-2">
+                        <a
+                          href="https://tropilab.vercel.app"
+                          target={isMobileOrWebview() ? '_self' : '_blank'}
+                          rel="noopener noreferrer"
+                          onClick={(e) => openExternalApp('https://tropilab.vercel.app', e)}
+                          className="inline-flex items-center gap-1.5 px-4 py-3 rounded-xl text-xs sm:text-sm font-bold text-teal-200 bg-[#0E223D] hover:bg-teal-400 hover:text-slate-950 transition-all border border-slate-700 hover:border-teal-400 cursor-pointer"
+                        >
+                          <span>Mở tropilab.vercel.app</span>
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+
+                        <button
+                          onClick={() => onToggleRequest(tropilabApp)}
+                          className={`inline-flex items-center gap-1.5 px-4 py-3 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+                            isAppRequested(tropilabApp.id)
+                              ? 'bg-emerald-600 text-white'
+                              : 'bg-[#0E223D] hover:bg-teal-400 text-slate-200 hover:text-slate-950 border border-slate-700'
+                          }`}
+                        >
+                          {isAppRequested(tropilabApp.id) ? (
+                            <>
+                              <Check className="w-4 h-4" />
+                              <span>Đã chọn</span>
+                            </>
+                          ) : (
+                            <>
+                              <Plus className="w-4 h-4" />
+                              <span>Chọn yêu cầu</span>
+                            </>
+                          )}
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                {/* Bottom Back Button */}
+                <div className="text-center pt-2">
+                  <button
+                    onClick={() => setShowTropilabDetail(false)}
+                    className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-bold text-slate-400 hover:text-teal-300 hover:bg-slate-800/80 border border-slate-700 transition-all cursor-pointer"
+                  >
+                    <ArrowLeft className="w-3.5 h-3.5" />
+                    <span>Thu gọn và trở lại chế độ xem tinh gọn</span>
+                  </button>
+                </div>
 
               </div>
-
-            </div>
+            )}
           </div>
         )}
 
