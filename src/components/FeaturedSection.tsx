@@ -9,18 +9,8 @@ import { AppItem } from '../data/apps';
 import { AppMockupVisual } from './AppMockupVisual';
 import { openExternalApp, isMobileOrWebview, downloadPdfFile } from '../utils/navigation';
 
-interface CountryEdition {
-  id: string;
-  flag: string;
-  countryName: string;
-  nativeTitle: string;
-  vietnameseTitle: string;
-  nativeDesc: string;
-  vietnameseDesc: string;
-  route: string;
-}
-
-const VIETREAL_COUNTRY_EDITIONS: CountryEdition[] = [
+/* Unused - country editions moved to shared dataset and rendered under Vietreal in Hero
+const VIETREAL_COUNTRY_EDITIONS: any[] = [
   {
     id: 'japan',
     flag: '🇯🇵',
@@ -152,6 +142,7 @@ const VIETREAL_COUNTRY_EDITIONS: CountryEdition[] = [
     route: 'https://ptviet.vercel.app'
   }
 ];
+*/
 
 const TROPILAB_FEATURES = [
   {
@@ -1173,96 +1164,6 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
               ['1. Food Tech Hub', '2. CosmeDerm AI', '3. HTX Nông Nghiệp', '4. Thuế SmartTax HKD']
             )
           )}
-        </div>
-
-        {/* Separator */}
-        <div className="relative py-2">
-          <div className="absolute inset-0 flex items-center">
-            <div className="w-full border-t border-slate-800/80" />
-          </div>
-          <div className="relative flex justify-center">
-            <span className="px-4 py-1.5 rounded-full bg-[#07111E] border border-sky-500/40 text-xs font-mono font-bold text-sky-400 flex items-center gap-2 shadow-md">
-              <Globe className="w-3.5 h-3.5 text-sky-400" />
-              <span>HỆ SINH THÁI GIÁO DỤC QUỐC TẾ • 13 QUỐC GIA BẢN ĐỊA HÓA</span>
-            </span>
-          </div>
-        </div>
-
-        {/* ═════════════════════════════════════════════════════════════════════════ */}
-        {/* PHẦN 4: VIETREAL 13 QUỐC GIA (13 PHIÊN BẢN BẢN ĐỊA HÓA SẮP RA MẮT) */}
-        {/* ═════════════════════════════════════════════════════════════════════════ */}
-        <div className="rounded-3xl bg-[#081524] border border-sky-500/40 p-6 sm:p-8 shadow-2xl">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-6 border-b border-slate-800">
-            <div>
-              <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-sky-400">
-                <Globe className="w-4 h-4 text-sky-400" />
-                <span>13 PHIÊN BẢN BẢN ĐỊA HÓA CHO TỪNG QUỐC GIA • VIETREAL 360°</span>
-                <span className="text-slate-500">•</span>
-                <span className="text-amber-400 font-extrabold">SẮP RA MẮT</span>
-              </div>
-              <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight mt-1">
-                Lộ Trình &amp; Ngôn Ngữ Giải Thích May Đo Theo Quốc Tịch Học Viên
-              </h3>
-              <p className="text-xs sm:text-sm text-slate-300 mt-1 max-w-2xl">
-                Nền tảng cốt lõi Vietreal 360° kết nối 13 phiên bản bản địa hóa chuyên sâu theo từng quốc tịch với đường dẫn ứng dụng độc lập cho từng nước.
-              </p>
-            </div>
-            <a
-              href="https://vietreal.vercel.app"
-              target={isMobileOrWebview() ? '_self' : '_blank'}
-              rel="noopener noreferrer"
-              onClick={(e) => openExternalApp('https://vietreal.vercel.app', e)}
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-sky-200 bg-sky-950/80 border border-sky-400/50 hover:bg-sky-900/80 hover:text-white transition-all shrink-0 cursor-pointer shadow-md"
-            >
-              <span>Xem Cốt Lõi: vietreal.vercel.app</span>
-              <ExternalLink className="w-3.5 h-3.5" />
-            </a>
-          </div>
-
-          {/* 13 Country Cards Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5">
-            {VIETREAL_COUNTRY_EDITIONS.map((c) => (
-              <div
-                key={c.id}
-                onClick={(e) => openExternalApp(c.route, e)}
-                className="group relative rounded-2xl bg-[#0B1A2F]/90 border border-slate-700/80 hover:border-sky-400 transition-all duration-300 p-4 sm:p-5 flex flex-col justify-between shadow-lg hover:shadow-sky-500/15 cursor-pointer"
-              >
-                <div>
-                  <div className="flex items-center justify-between gap-2 mb-2.5">
-                    <span className="text-3xl filter drop-shadow-md">{c.flag}</span>
-                    <div className="flex items-center gap-1.5">
-                      <span className="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold tracking-wider bg-amber-400/15 border border-amber-400/40 text-amber-300">
-                        SẮP RA MẮT
-                      </span>
-                      <ExternalLink className="w-3.5 h-3.5 text-slate-400 group-hover:text-sky-300 transition-colors" />
-                    </div>
-                  </div>
-                  
-                  <h4 className="text-base sm:text-lg font-black text-white group-hover:text-sky-300 transition-colors tracking-tight line-clamp-1">
-                    {c.nativeTitle}
-                  </h4>
-                  <div className="text-xs sm:text-sm font-bold text-emerald-400 mt-0.5">
-                    {c.vietnameseTitle}
-                  </div>
-                  
-                  <p className="text-xs text-slate-300 mt-2 leading-relaxed line-clamp-2">
-                    {c.nativeDesc}
-                  </p>
-                  <p className="text-[11px] text-slate-400 mt-1 italic line-clamp-1">
-                    ({c.vietnameseDesc})
-                  </p>
-                </div>
-
-                <div className="mt-4 pt-2.5 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
-                  <div className="flex items-center gap-1.5 truncate min-w-0">
-                    <span className="font-semibold text-slate-300">{c.countryName}:</span>
-                    <span className="font-mono text-sky-400 font-bold truncate">{c.route.replace('https://', '')}</span>
-                  </div>
-                  <span className="text-amber-400 group-hover:translate-x-1 group-hover:text-amber-300 transition-all text-xs font-bold shrink-0 ml-1">➔</span>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* Separator */}
