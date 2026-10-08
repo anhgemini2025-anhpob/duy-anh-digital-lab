@@ -24,37 +24,7 @@ const VIETREAL_COUNTRY_EDITIONS: CountryEdition[] = [
     vietnameseTitle: 'Người Nhật học tiếng Việt',
     nativeDesc: 'ビジネスでも生活でも、本当に使えるベトナム語を。',
     vietnameseDesc: 'Tiếng Việt thực tế dùng được trong kinh doanh và đời sống.',
-    route: 'https://vietreal.vercel.app/hoc/nguoi-nhat'
-  },
-  {
-    id: 'korea',
-    flag: '🇰🇷',
-    countryName: 'Hàn Quốc',
-    nativeTitle: '한국인을 위한 베트남어',
-    vietnameseTitle: 'Người Hàn học tiếng Việt',
-    nativeDesc: '결혼·가족·비즈니스, 생활에서 바로 쓰는 베트남어.',
-    vietnameseDesc: 'Kết hôn, gia đình, kinh doanh — tiếng Việt dùng ngay trong đời sống.',
-    route: 'https://vietreal.vercel.app/hoc/nguoi-han'
-  },
-  {
-    id: 'china',
-    flag: '🇨🇳',
-    countryName: 'Trung Quốc (Hoa)',
-    nativeTitle: '华人学越南语',
-    vietnameseTitle: 'Người Hoa học tiếng Việt',
-    nativeDesc: '为工作、生活和家庭量身定制的实用越南语。',
-    vietnameseDesc: 'Tiếng Việt thực dụng may đo cho công việc, cuộc sống và gia đình.',
-    route: 'https://vietreal.vercel.app/hoc/nguoi-hoa'
-  },
-  {
-    id: 'usa',
-    flag: '🇺🇸',
-    countryName: 'Mỹ (Hoa Kỳ)',
-    nativeTitle: 'Vietnamese for Americans',
-    vietnameseTitle: 'Người Mỹ học tiếng Việt',
-    nativeDesc: 'Real-life Vietnamese for work, family and travel — built around you.',
-    vietnameseDesc: 'Tiếng Việt đời thực cho công việc, gia đình và du lịch — thiết kế riêng cho bạn.',
-    route: 'https://vietreal.vercel.app/hoc/nguoi-my'
+    route: 'https://jpvn.vercel.app'
   },
   {
     id: 'thailand',
@@ -64,7 +34,37 @@ const VIETREAL_COUNTRY_EDITIONS: CountryEdition[] = [
     vietnameseTitle: 'Người Thái học tiếng Việt',
     nativeDesc: 'เรียนภาษาเวียดนามที่ใช้ได้จริง ทั้งการเรียน การทำงาน และชีวิตประจำวัน',
     vietnameseDesc: 'Học tiếng Việt dùng được thực tế trong học tập, công việc và đời sống hàng ngày.',
-    route: 'https://vietreal.vercel.app/hoc/nguoi-thai'
+    route: 'https://thvn.vercel.app'
+  },
+  {
+    id: 'korea',
+    flag: '🇰🇷',
+    countryName: 'Hàn Quốc',
+    nativeTitle: '한국인을 위한 베트남어',
+    vietnameseTitle: 'Người Hàn học tiếng Việt',
+    nativeDesc: '결혼·가족·비즈니스, 생활에서 바로 쓰는 베트남어.',
+    vietnameseDesc: 'Kết hôn, gia đình, kinh doanh — tiếng Việt dùng ngay trong đời sống.',
+    route: 'https://krvn.vercel.app'
+  },
+  {
+    id: 'china',
+    flag: '🇨🇳',
+    countryName: 'Trung Quốc (Hoa)',
+    nativeTitle: '华人学越南语',
+    vietnameseTitle: 'Người Hoa học tiếng Việt',
+    nativeDesc: '为工作、生活和家庭量身定制的实用越南语。',
+    vietnameseDesc: 'Tiếng Việt thực dụng may đo cho công việc, cuộc sống và gia đình.',
+    route: 'https://zhvn.vercel.app'
+  },
+  {
+    id: 'usa',
+    flag: '🇺🇸',
+    countryName: 'Mỹ (Hoa Kỳ)',
+    nativeTitle: 'Vietnamese for Americans',
+    vietnameseTitle: 'Người Mỹ học tiếng Việt',
+    nativeDesc: 'Real-life Vietnamese for work, family and travel — built around you.',
+    vietnameseDesc: 'Tiếng Việt đời thực cho công việc, gia đình và du lịch — thiết kế riêng cho bạn.',
+    route: 'https://usvn.vercel.app'
   },
   {
     id: 'france',
@@ -74,7 +74,7 @@ const VIETREAL_COUNTRY_EDITIONS: CountryEdition[] = [
     vietnameseTitle: 'Người Pháp học tiếng Việt',
     nativeDesc: 'Un vietnamien concret pour vivre, voyager et travailler au Vietnam.',
     vietnameseDesc: 'Tiếng Việt cụ thể để sinh sống, du lịch và làm việc tại Việt Nam.',
-    route: 'https://vietreal.vercel.app/hoc/nguoi-phap'
+    route: 'https://frvn.vercel.app'
   },
   {
     id: 'germany',
@@ -84,7 +84,7 @@ const VIETREAL_COUNTRY_EDITIONS: CountryEdition[] = [
     vietnameseTitle: 'Người Đức học tiếng Việt',
     nativeDesc: 'Alltagstaugliches Vietnamesisch für Arbeit, Familie und Reisen.',
     vietnameseDesc: 'Tiếng Việt ứng dụng đời thường cho công việc, gia đình và du lịch.',
-    route: 'https://vietreal.vercel.app/hoc/nguoi-duc'
+    route: 'https://devn.vercel.app'
   },
   {
     id: 'russia',
@@ -92,9 +92,59 @@ const VIETREAL_COUNTRY_EDITIONS: CountryEdition[] = [
     countryName: 'Nga',
     nativeTitle: 'Вьетнамский для русских',
     vietnameseTitle: 'Người Nga học tiếng Việt',
-    nativeDesc: 'Живой вьетнамский для работы, семьи và путешествий — под ваши цели.',
+    nativeDesc: 'Живой вьетнамский для работы, семьи и путешествий — под ваши цели.',
     vietnameseDesc: 'Tiếng Việt sống động cho công việc, gia đình và du lịch — phù hợp mục tiêu của bạn.',
-    route: 'https://vietreal.vercel.app/hoc/nguoi-nga'
+    route: 'https://ruvn.vercel.app'
+  },
+  {
+    id: 'cambodia',
+    flag: '🇰🇭',
+    countryName: 'Campuchia',
+    nativeTitle: 'ភាសាវៀតណាមសម្រាប់ជនជាតិខ្មែរ',
+    vietnameseTitle: 'Người Campuchia học tiếng Việt',
+    nativeDesc: 'ភាសាវៀតណាមពិតៗ សម្រាប់ការងារ អាជីវកម្ម និងជីវិតប្រចាំថ្ងៃ។',
+    vietnameseDesc: 'Tiếng Việt thực tế cho công việc, kinh doanh và đời sống thường nhật.',
+    route: 'https://khvn.vercel.app'
+  },
+  {
+    id: 'laos',
+    flag: '🇱🇦',
+    countryName: 'Lào',
+    nativeTitle: 'ພາສາຫວຽດສຳລັບຄົນລາວ',
+    vietnameseTitle: 'Người Lào học tiếng Việt',
+    nativeDesc: 'ພາສາຫວຽດທີ່ໃຊ້ໄດ້ແທ້ ສຳລັບການຮຽນ, ການເຮັດວຽກ ແລະ ຊີວິດປະຈຳວັນ.',
+    vietnameseDesc: 'Tiếng Việt ứng dụng thực tế cho học tập, làm việc và sinh hoạt hàng ngày.',
+    route: 'https://lavn.vercel.app'
+  },
+  {
+    id: 'india',
+    flag: '🇮🇳',
+    countryName: 'Ấn Độ',
+    nativeTitle: 'भारतीयों के लिए वियतनामी',
+    vietnameseTitle: 'Người Ấn học tiếng Việt',
+    nativeDesc: 'काम, कारोबार और रोज़मर्रा की ज़िंदगी के लिए असली वियतनामी।',
+    vietnameseDesc: 'Tiếng Việt thực tế cho công việc, kinh doanh và cuộc sống hàng ngày.',
+    route: 'https://invn.vercel.app'
+  },
+  {
+    id: 'spain',
+    flag: '🇪🇸',
+    countryName: 'Tây Ban Nha',
+    nativeTitle: 'Vietnamita para hispanohablantes',
+    vietnameseTitle: 'Người Tây Ban Nha học tiếng Việt',
+    nativeDesc: 'Vietnamita práctico y real para el trabajo, la familia y los viajes.',
+    vietnameseDesc: 'Tiếng Việt thực tế và ứng dụng cao cho công việc, gia đình và du lịch.',
+    route: 'https://esvn.vercel.app'
+  },
+  {
+    id: 'portugal',
+    flag: '🇵🇹',
+    countryName: 'Bồ Đào Nha',
+    nativeTitle: 'Vietnamita para lusófonos',
+    vietnameseTitle: 'Người Bồ Đào Nha học tiếng Việt',
+    nativeDesc: 'Vietnamita prático para o dia a dia, negócios e integração cultural.',
+    vietnameseDesc: 'Tiếng Việt thực hành cho cuộc sống hàng ngày, kinh doanh và hòa nhập văn hóa.',
+    route: 'https://ptvn.vercel.app'
   }
 ];
 
@@ -487,13 +537,13 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
               {renderAppCard(vietrealApp, 0, true, 'HỆ SINH THÁI CỐT LÕI • LIVE PRODUCTION')}
             </div>
 
-            {/* 8 Country Editions Sub-Section */}
+            {/* 13 Country Editions Sub-Section */}
             <div className="mt-8 rounded-3xl bg-[#081524] border border-sky-500/40 p-6 sm:p-8 shadow-2xl">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-6 border-b border-slate-800">
                 <div>
                   <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-sky-400">
                     <Globe className="w-4 h-4 text-sky-400" />
-                    <span>8 PHIÊN BẢN BẢN ĐỊA HÓA CHO TỪNG QUỐC GIA</span>
+                    <span>13 PHIÊN BẢN BẢN ĐỊA HÓA CHO TỪNG QUỐC GIA</span>
                     <span className="text-slate-500">•</span>
                     <span className="text-amber-400 font-extrabold">SẮP RA MẮT (COMING SOON)</span>
                   </div>
@@ -501,7 +551,7 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
                     Lộ Trình &amp; Ngôn Ngữ Giải Thích May Đo Theo Quốc Tịch Học Viên
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300 mt-1 max-w-2xl">
-                    Mỗi quốc gia có khó khăn ngữ âm và văn hóa riêng. Vietreal thiết kế giáo trình bản địa hóa khắc phục trực tiếp điểm nghẽn của từng thứ tiếng mẹ đẻ.
+                    Mỗi quốc gia có khó khăn ngữ âm và văn hóa riêng. Vietreal thiết kế giáo trình bản địa hóa khắc phục trực tiếp điểm nghẽn của từng thứ tiếng mẹ đẻ với liên kết ứng dụng độc lập cho từng nước.
                   </p>
                 </div>
                 <a
@@ -516,8 +566,8 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
                 </a>
               </div>
 
-              {/* 8 Cards Grid (4 columns on lg, 2 on sm, 1 on xs) */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+              {/* 13 Cards Grid (4 columns on xl/lg, 2 on sm, 1 on xs) */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5">
                 {VIETREAL_COUNTRY_EDITIONS.map((c) => (
                   <div
                     key={c.id}
@@ -551,8 +601,11 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
                     </div>
 
                     <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
-                      <span className="font-mono text-sky-400/80 truncate">{c.countryName}</span>
-                      <span className="text-slate-400 group-hover:translate-x-1 transition-transform text-xs">➔</span>
+                      <div className="flex items-center gap-1.5 truncate min-w-0">
+                        <span className="font-semibold text-slate-300">{c.countryName}:</span>
+                        <span className="font-mono text-sky-400 font-bold truncate">{c.route.replace('https://', '')}</span>
+                      </div>
+                      <span className="text-amber-400 group-hover:translate-x-1 group-hover:text-amber-300 transition-all text-xs font-bold shrink-0 ml-1">➔</span>
                     </div>
                   </div>
                 ))}
@@ -571,7 +624,7 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
                       Hệ Sinh Thái Dạy Tiếng Việt Thực Chiến Đa Quốc Gia (Vietreal 360°)
                     </div>
                     <div className="text-xs sm:text-sm text-slate-300 mt-0.5">
-                      Nền tảng Cốt lõi Vietreal ➔ 8 Bản địa hóa Quốc gia (Nhật 🇯🇵, Hàn 🇰🇷, Trung 🇨🇳, Mỹ 🇺🇸, Thái 🇹🇭, Pháp 🇫🇷, Đức 🇩🇪, Nga 🇷🇺) ➔ Đồng bộ Học viên - Giáo viên - Trung tâm
+                      Nền tảng Cốt lõi Vietreal ➔ 13 Bản địa hóa Quốc gia (Nhật 🇯🇵, Thái 🇹🇭, Hàn 🇰🇷, Trung 🇨🇳, Mỹ 🇺🇸, Pháp 🇫🇷, Đức 🇩🇪, Nga 🇷🇺, Campuchia 🇰🇭, Lào 🇱🇦, Ấn Độ 🇮🇳, Tây Ban Nha 🇪🇸, Bồ Đào Nha 🇵🇹) ➔ Đồng bộ Học viên - Giáo viên - Trung tâm
                     </div>
                   </div>
                 </div>
