@@ -72,7 +72,7 @@ const RAW_CATEGORIES: Omit<CategoryItem, 'count'>[] = [
     name: "Sức khỏe & Y tế",
     shortName: "Sức khỏe",
     icon: "HeartPulse",
-    description: "Hệ thống quản trị rủi ro và chất lượng phòng xét nghiệm bệnh viện chuẩn ISO 22367 / ISO 15189, giám sát IoT môi trường và kiểm soát an toàn người bệnh.",
+    description: "Hệ thống PWA quản trị rủi ro và chất lượng phòng xét nghiệm bệnh viện, giám sát IoT môi trường và kiểm soát an toàn người bệnh.",
     color: "from-teal-500 to-cyan-600"
   },
   {

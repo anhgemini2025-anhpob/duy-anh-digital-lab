@@ -177,7 +177,7 @@ export const Hero: React.FC<HeroProps> = ({
 
             {/* Subtitle */}
             <p className="text-base sm:text-lg text-slate-300 max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed pt-1">
-              Chuyên thiết kế &amp; phát triển các ứng dụng Web chuyên sâu, giải pháp AI thực chiến và phần mềm quản trị nghiệp vụ theo yêu cầu riêng của bạn: từ y tế, quản trị rủi ro bệnh viện chuẩn ISO 22367 đến kinh doanh, giáo dục và hệ sinh thái đa ngành.
+              Chuyên thiết kế &amp; phát triển các ứng dụng Web chuyên sâu, giải pháp AI thực chiến và nền tảng PWA: bảo mật không lưu dữ liệu, sử dụng được offline và cá nhân hóa từng người sử dụng trên 8 nhóm ngành chuyên sâu.
             </p>
 
             {/* Action Buttons */}
@@ -202,12 +202,12 @@ export const Hero: React.FC<HeroProps> = ({
             {/* Trust Markers */}
             <div className="pt-5 grid grid-cols-3 gap-3 border-t border-slate-800 max-w-lg mx-auto lg:mx-0 text-left">
               <div>
-                <div className="text-3xl sm:text-4xl font-black text-amber-400">{allApps.length}+</div>
+                <div className="text-3xl sm:text-4xl font-black text-amber-400">30+</div>
                 <div className="text-xs sm:text-sm text-slate-300 font-bold">Web Apps &amp; AI Thực tế</div>
               </div>
               <div>
-                <div className="text-3xl sm:text-4xl font-black text-teal-400">ISO 22367</div>
-                <div className="text-xs sm:text-sm text-slate-300 font-bold">Quản Trị Rủi Ro Y Tế</div>
+                <div className="text-3xl sm:text-4xl font-black text-teal-400">PWA</div>
+                <div className="text-xs sm:text-sm text-slate-300 font-bold leading-tight">Không lưu dữ liệu • Dùng Offline • Cá nhân hóa</div>
               </div>
               <div>
                 <div className="text-3xl sm:text-4xl font-black text-emerald-400">100%</div>
@@ -265,7 +265,7 @@ export const Hero: React.FC<HeroProps> = ({
                   </div>
 
                   <span className="text-[11px] sm:text-xs font-mono font-black text-teal-300 bg-teal-400/10 border border-teal-400/40 px-2 py-0.5 rounded-lg whitespace-nowrap">
-                    ISO 22367:2020
+                    PWA • OFFLINE-FIRST
                   </span>
                 </div>
 

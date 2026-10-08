@@ -196,7 +196,7 @@ export function App() {
                 onClick={() => openCatalog('all')}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm text-white bg-[#0B1A2F] border border-amber-400/40 hover:border-amber-400 hover:bg-[#0E223D] hover:text-amber-300 transition-all shadow-md cursor-pointer"
               >
-                <span>Xem toàn bộ kho {APPS_DATA.length}+ ứng dụng</span>
+                <span>Xem toàn bộ kho 30+ ứng dụng</span>
               </button>
             </div>
           </div>

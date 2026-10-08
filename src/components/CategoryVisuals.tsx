@@ -31,7 +31,7 @@ export const CategoryVisuals: React.FC<CategoryVisualsProps> = ({ onSelectCatego
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-400/10 border border-amber-400/30 text-xs font-bold text-amber-300 mb-3">
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-            <span>8 KHỐI NGÀNH CHUYÊN SÂU • 25+ ỨNG DỤNG THỰC TẾ</span>
+            <span>8 KHỐI NGÀNH CHUYÊN SÂU • 30+ ỨNG DỤNG THỰC TẾ</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
             Năng Lực Triển Khai Thực Nghiệm Đa Lĩnh Vực

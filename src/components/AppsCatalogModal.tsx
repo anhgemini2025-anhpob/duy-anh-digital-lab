@@ -137,14 +137,14 @@ export const AppsCatalogModal: React.FC<AppsCatalogModalProps> = ({
               <div>
                 <div className="flex items-center gap-2">
                   <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
-                    Kho Thư Viện 25+ Ứng Dụng Thực Nghiệm
+                    Kho Thư Viện 30+ Ứng Dụng Thực Tế
                   </h2>
                   <span className="text-xs px-2.5 py-0.5 rounded-full font-bold bg-amber-400/10 text-amber-300 border border-amber-400/30">
                     {filteredApps.length} / {apps.length} Apps
                   </span>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-300 mt-0.5">
-                  Khám phá toàn bộ 25+ ứng dụng đã triển khai theo các nhóm ngành trọng điểm, xem hình ảnh thực tế và trải nghiệm trực tiếp.
+                  Khám phá toàn bộ 30+ ứng dụng đã triển khai theo 8 nhóm ngành chuyên sâu, xem hình ảnh thực tế và trải nghiệm trực tiếp.
                 </p>
               </div>
             </div>
