@@ -50,6 +50,8 @@ export interface AppItem {
   illustrationImage?: string;
   userManual?: UserManualInfo;
   supportedAudioLanguages?: ('vi' | 'en')[];
+  videoUrl?: string;
+  statusNote?: string;
   theme: {
     from: string;
     to: string;
@@ -61,6 +63,96 @@ export interface AppItem {
 }
 
 export const APPS_DATA: AppItem[] = [
+  {
+    logoUrl: "/apps/trolybank/app-logo.svg",
+    id: "tro-ly-giam-doc-ngan-hang",
+    name: "Trợ Lý Giám Đốc Ngân Hàng 24/7",
+    url: "https://trolybank.vercel.app",
+    category: "Ngân hàng",
+    categoryId: "banking",
+    description: "Ứng dụng hỗ trợ Giám đốc, Phó Giám đốc chi nhánh và lãnh đạo phòng giao dịch ngân hàng trong công tác quản lý, điều hành và kiểm soát rủi ro 24/7. Tích hợp không gian làm việc số: rà soát hợp đồng tín dụng & cảnh báo đèn giao thông, phân tích thẩm định dòng tiền & mô phỏng DSCR/RAROC, tra cứu quy định pháp lý 3 lớp chuẩn xác, bộ bảng kiểm tự kiểm toán RCSA, tự động hóa biên bản họp giao việc và lập báo cáo điều hành xuất Word/Excel/PDF. Vận hành độc lập, an toàn bảo mật, không can thiệp hệ thống Core Banking.",
+    tags: [
+      "Ngân Hàng 24/7",
+      "Quản Trị Tín Dụng",
+      "Rà Soát Hợp Đồng",
+      "Kiểm Soát Rủi Ro",
+      "RCSA",
+      "DSCR RAROC",
+      "Biên Bản Họp AI",
+      "Bảo Mật Độc Lập"
+    ],
+    coverImage: "/apps/trolybank/cover.jpg",
+    placeholderImage: "/apps/trolybank/cover.jpg",
+    detailImages: [
+      "/apps/trolybank/feature_01_ra_soat_hop_dong.jpg",
+      "/apps/trolybank/feature_02_phan_tich_tin_dung.jpg",
+      "/apps/trolybank/feature_03_tra_cuu_phap_ly.jpg",
+      "/apps/trolybank/feature_04_kiem_toan_rcsa.jpg",
+      "/apps/trolybank/feature_05_bien_ban_hop_ai.jpg"
+    ],
+    imageAlt: "Trợ Lý Giám Đốc Ngân Hàng 24/7 - Bớt việc sự vụ, chủ động quản trị, kiểm soát rủi ro",
+    featured: true,
+    audience: "Giám đốc, Phó Giám đốc chi nhánh ngân hàng, Lãnh đạo Phòng giao dịch, Cán bộ quản trị rủi ro tín dụng & Kiểm soát nội bộ ngân hàng thương mại.",
+    problem: "Lãnh đạo ngân hàng đối mặt áp lực kép: vừa gánh chỉ tiêu kinh doanh khắt khe, vừa phải rà soát hàng chục bộ hồ sơ tín dụng phức tạp, xử lý nợ quá hạn, cập nhật văn bản quy định liên tục và tham gia các cuộc họp dày đặc. Chỉ một điều khoản sót, một căn cứ pháp lý chưa kiểm chứng hay một điều kiện giải ngân chưa hoàn tất đều có thể dẫn đến rủi ro pháp lý và tổn thất tín dụng nghiêm trọng.",
+    solution: "Không gian làm việc số chuyên biệt 'Trợ Lý Giám Đốc Ngân Hàng 24/7' giúp lãnh đạo chuyển dịch từ xử lý sự vụ thụ động sang quản trị chủ động: Rà soát hợp đồng phát hiện khác biệt mẫu chuẩn & cảnh báo đèn giao thông 1 trang; Tự động trích xuất phân tích phương án vay, dòng tiền và stress test; Tra cứu quy định theo cấu trúc Căn cứ - Phân tích - Đề xuất; Bảng kiểm RCSA tự kiểm toán hồ sơ trước kiểm tra nội bộ; Chuyển đổi giọng nói cuộc họp thành biên bản & phân công việc tự động; Báo cáo điều hành xuất file đa định dạng và Bộ Prompt AI ẩn danh dữ liệu an toàn.",
+    keyFeatures: [
+      "Rà soát hợp đồng & hồ sơ tín dụng: So sánh dự thảo với mẫu chuẩn, phát hiện nội dung thêm/sửa/xóa, kiểm tra thẩm quyền phán quyết & điều kiện giải ngân; báo cáo tóm tắt 1 trang kèm ma trận đèn giao thông (Xanh/Vàng/Đỏ)",
+      "Phân tích tín dụng & Mô phỏng rủi ro: Tự động tổng hợp dòng tiền, phương án vay, TSBĐ; tính toán mô phỏng chỉ số tài chính DSCR, RAROC, EVA, trích lập dự phòng và kiểm tra sức chịu đựng dòng tiền (stress-test)",
+      "Tra cứu quy định & Căn cứ pháp lý chuẩn xác: Cung cấp thông tin theo cấu trúc chuẩn 3 phần (Căn cứ – Phân tích – Đề xuất hành động); cảnh báo rõ nội dung chưa kiểm chứng, chống suy diễn sai lệch",
+      "Tự kiểm toán & Kiểm soát nội bộ (RCSA): Hệ thống bảng kiểm (Checklist) và công cụ RCSA rà soát lỗ hổng hồ sơ tín dụng, chủ động phòng ngừa rủi ro tác nghiệp trước kỳ kiểm tra, thanh tra",
+      "Biên bản họp tự động & Giao việc thông minh: Chuyển giọng nói ghi âm cuộc họp thành văn bản tức thì; tự động bóc tách đầu việc, người phụ trách, đơn vị phối hợp và thời hạn hoàn thành rõ ràng",
+      "Báo cáo điều hành & Quản lý thời gian: Lập nhanh báo cáo ngày, tuần, báo cáo chuyên đề; xuất file Word, Excel, PDF; phân bổ lịch điều hành theo khung giờ và tích hợp thời tiết, mùa vụ cho khách hàng nông - thủy sản",
+      "Bộ Prompt AI chuẩn hóa & Đào tạo nghiệp vụ: Tạo đề trắc nghiệm, thẻ nhớ nghiệp vụ; tích hợp bộ lệnh AI chuyên dụng ngân hàng có cơ chế tự động ẩn danh hóa dữ liệu, an toàn tuyệt đối, không can thiệp Core Banking"
+    ],
+    videoUrl: "/apps/trolybank/trolybank.mp4",
+    videoDuration: "0:23",
+    videoTagline: "Trợ Lý Giám Đốc Ngân Hàng 24/7 — Bớt việc sự vụ, chủ động quản trị, kiểm soát rủi ro toàn diện",
+    videoScenes: [
+      {
+        time: "0:00",
+        seconds: 0,
+        duration: 5,
+        title: "01 | Tổng Quan Không Gian Làm Việc Trợ Lý Giám Đốc 24/7",
+        description: "Không gian làm việc số và trợ lý thông minh hỗ trợ lãnh đạo chi nhánh ngân hàng kiểm soát rủi ro, bớt việc sự vụ và chủ động điều hành."
+      },
+      {
+        time: "0:05",
+        seconds: 5,
+        duration: 5,
+        title: "02 | Rà Soát Hợp Đồng & Báo Cáo Đèn Giao Thông 1 Trang",
+        description: "So sánh dự thảo hợp đồng với mẫu chuẩn, phát hiện nội dung thêm/sửa/xóa, kiểm tra thẩm quyền phán quyết và điều kiện trước giải ngân."
+      },
+      {
+        time: "0:10",
+        seconds: 10,
+        duration: 5,
+        title: "03 | Phân Tích Dòng Tiền & Mô Phỏng Tài Chính DSCR, RAROC",
+        description: "Tổng hợp phương án vay, đo lường năng lực trả nợ, tính toán tỷ suất sinh lời điều chỉnh theo rủi ro và trích lập dự phòng tín dụng."
+      },
+      {
+        time: "0:15",
+        seconds: 15,
+        duration: 4,
+        title: "04 | Tra Cứu Pháp Lý 3 Lớp & Bảng Kiểm Tự Kiểm Toán RCSA",
+        description: "Cấu trúc thông tin Căn cứ - Phân tích - Đề xuất; bảng kiểm soát rủi ro tác nghiệp phòng ngừa sai sót trước các kỳ thanh tra, kiểm tra."
+      },
+      {
+        time: "0:19",
+        seconds: 19,
+        duration: 4,
+        title: "05 | Biên Bản Họp Tự Động, Báo Cáo Điều Hành & Bộ Prompt AI Ẩn Danh",
+        description: "Chuyển giọng nói cuộc họp thành biên bản giao việc có deadline; vận hành độc lập, an toàn bảo mật tuyệt đối với Core Banking."
+      }
+    ],
+    theme: {
+      from: "from-blue-900",
+      to: "to-slate-900",
+      accent: "text-amber-400",
+      badgeBg: "bg-amber-400/10",
+      badgeText: "text-amber-300",
+      badgeBorder: "border-amber-400/30"
+    }
+  },
   {
     id: "tropilab-riskos",
     logoUrl: '/apps/tropilab-riskos/app-logo.png',
@@ -1264,6 +1356,103 @@ export const APPS_DATA: AppItem[] = [
       badgeBg: "bg-amber-50",
       badgeText: "text-amber-800",
       badgeBorder: "border-amber-200"
+    }
+  },
+  {
+    id: "bao-quan-bun-tuoi",
+    logoUrl: '/apps/bao-quan-bun-tuoi/app-logo.svg',
+    name: "Bảo Quản Bún Tươi Truyền Thống",
+    url: "https://baoquanbun.vercel.app",
+    category: "Công nghệ Thực phẩm & F&B",
+    categoryId: "food-tech",
+    description: "Cẩm nang kỹ thuật hướng dẫn sử dụng phụ gia an toàn, đúng chuẩn pháp lý Bộ Y tế (Văn bản hợp nhất 09/VBHN-BYT và Thông tư 24/2019/TT-BYT) cho bún tươi nhóm 06.4.3. Hệ thống hóa cơ chế ức chế vi sinh vật của hệ Sorbate, tối ưu khoảng pH 5.0–5.5 bền nhiệt bằng Acid Lactic, máy tính mẻ bột tự động và hướng dẫn xử lý các sự cố đứt gãy, bún chua, chảy nhớt trên dây chuyền.",
+    tags: [
+      "Bảo Quản Bún Tươi",
+      "Food Tech",
+      "Bún Tươi Nhóm 06.4.3",
+      "Phụ Gia Thực Phẩm",
+      "Quy Chuẩn Bộ Y Tế",
+      "09/VBHN-BYT",
+      "Hệ Sorbate INS 202",
+      "STPP Polyphosphat",
+      "Acid Lactic INS 270",
+      "Máy Tính Mẻ Bột",
+      "Xử Lý Sự Cố Bún",
+      "An Toàn Vệ Sinh Thực Phẩm"
+    ],
+    coverImage: '/apps/bao-quan-bun-tuoi/cover.jpg',
+    placeholderImage: '/apps/bao-quan-bun-tuoi/cover.jpg',
+    detailImages: [
+      '/apps/bao-quan-bun-tuoi/feature_01_quy_trinh_ky_thuat_bao_quan_bun_tuoi.jpg',
+      '/apps/bao-quan-bun-tuoi/feature_02_kiem_tra_thuc_te_day_chuyen_san_xuat.jpg',
+      '/apps/bao-quan-bun-tuoi/feature_03_so_do_4_buoc_san_xuat_bao_quan.jpg',
+      '/apps/bao-quan-bun-tuoi/feature_04_kiem_soat_chuan_ph_50_55.jpg',
+      '/apps/bao-quan-bun-tuoi/feature_05_day_chuyen_lam_nguoi_dong_goi.jpg',
+      '/apps/bao-quan-bun-tuoi/feature_06_chuyen_vien_giam_sat_qaqc.jpg'
+    ],
+    imageAlt: "Quy trình kỹ thuật sản xuất và bảo quản bún tươi truyền thống an toàn",
+    featured: true,
+    audience: "Cơ sở & xưởng sản xuất bún tươi, kỹ sư R&D công nghệ thực phẩm, chuyên viên QA/QC nhà máy F&B, cơ quan kiểm nghiệm vệ sinh an toàn thực phẩm.",
+    problem: "Bún tươi độ ẩm cao nên rất nhanh chua nhớt trong 12-24 giờ; hành vi sử dụng chất cấm (hàn the, formol, tinopal) vi phạm pháp luật nghiêm trọng; ngộ nhận mã nhóm thực phẩm và dùng sai cơ chế tan của sorbate dẫn đến vón cục đốm trắng hoặc bún bở nát khi chan nước lèo nóng.",
+    solution: "Chuẩn hóa quy trình 4 bước kỹ thuật theo nhóm 06.4.3: chỉnh pH 5.0–5.5 bằng Acid Lactic bền nhiệt, phối hợp STPP tạo dai giữ nước, xử lý bề mặt bằng dung dịch Kali Sorbat 2%, máy tính liều lượng mẻ bột tự động và tài liệu cẩm nang PDF 290KB tải về miễn phí.",
+    keyFeatures: [
+      "Căn cứ pháp lý chuẩn nhóm 06.4.3: Hướng dẫn theo Văn bản hợp nhất 09/VBHN-BYT và Thông tư 24/2019/TT-BYT, đính chính triệt để việc tra nhầm nhóm bột 06.2.1.",
+      "Cảnh báo 4 hóa chất cấm nghiêm ngặt: Nhận diện và loại trừ tuyệt đối Hàn the (Borax), Formol, Tinopal và Javel tẩy trắng trong chế biến bún sợi.",
+      "Đính chính 7 sai lầm kỹ thuật: Làm rõ độ tan Acid Sorbic, độ bền nhiệt Acid Lactic, cơ chế gel thoái hóa amylose thay vì 'gluten', và ngưỡng tinh bột biến tính an toàn.",
+      "Danh mục phụ gia tiêu chuẩn & Giới hạn ML: Giới hạn Sorbate 2.000 mg/kg bún thành phẩm, Phosphat STPP 2.500 mg P/kg, và các phụ gia GMP cho phép.",
+      "Quy trình 4 bước công nghệ: Kết hợp phối trộn gia nhiệt (nồi luộc 100°C) và xử lý bề mặt bằng dung dịch Kali Sorbat 2% sau khi làm nguội.",
+      "Máy tính mẻ bột tự động: Tính toán nhanh chuẩn xác lượng Kali Sorbat, STPP, Acid Lactic và Tinh bột biến tính theo khối lượng bột gạo mẻ thực tế.",
+      "Hướng dẫn xử lý sự cố thực chiến: Khắc phục triệt để hiện tượng bún nhanh chua, bở gãy, dính bết sợi, xuất hiện đốm trắng li ti hoặc chảy nước.",
+      "Tích hợp cẩm nang kỹ thuật PDF: Đọc trực tuyến hoặc tải về cẩm nang 290KB hoàn chỉnh do Nguyễn Đức Duy Anh biên soạn để đào tạo nhân sự."
+    ],
+    videoDuration: "3:40",
+    videoTagline: "Quy trình kỹ thuật sản xuất và bảo quản bún tươi an toàn, đúng chuẩn pháp lý Bộ Y tế",
+    videoScenes: [
+      {
+        time: "0:00",
+        title: "BẢO QUẢN BÚN TƯƠI: Hướng Dẫn Kỹ Thuật Sử Dụng Phụ Gia An Toàn & Chuẩn Pháp Lý Nhóm 06.4.3",
+        description: "Bún tươi là món ăn truyền thống của người Việt, nhưng rất dễ chua nhớt do độ ẩm cao. Ứng dụng web Cẩm nang kỹ thuật sử dụng phụ gia bún tươi được biên soạn bởi Nguyễn Đức Duy Anh, chuẩn hóa toàn diện theo Văn bản hợp nhất 09 năm 2024 của Bộ Y tế. Nền tảng phân định chính xác bún tươi thuộc nhóm thực phẩm 06.4.3, sản phẩm sợi đã làm chín, giúp các cơ sở sản xuất và kỹ sư áp dụng công nghệ bảo quản an toàn, hợp chuẩn pháp lý."
+      },
+      {
+        time: "0:35",
+        title: "01 | Căn Cứ Pháp Lý, 4 Hóa Chất Cấm & Đính Chính 7 Sai Lầm Kỹ Thuật",
+        description: "Tính năng một: Căn cứ pháp lý, cảnh báo hóa chất cấm và đính chính bảy sai lầm kỹ thuật. Nền tảng nêu rõ bốn hóa chất cấm tuyệt đối: Hàn the, Formol, Tinopal và Javel. Đồng thời đính chính các quan niệm sai lệch: nhầm mã nhóm bột, cố hòa tan acid sorbic vào nước lạnh gây vón cục, ngộ nhận STPP tạo mạng gluten, hay lạm dụng quá nhiều tinh bột biến tính làm bún bở nát khi chan nước lèo nóng."
+      },
+      {
+        time: "1:15",
+        title: "02 | Danh Mục Phụ Gia Tiêu Chuẩn & Giới Hạn ML Bộ Y Tế",
+        description: "Tính năng hai: Danh mục phụ gia tiêu chuẩn và giới hạn sử dụng tối đa. Tra cứu tức thì các phụ gia được phép dùng cho bún tươi: hệ Sorbate INS 200, 202 với mức giới hạn hai nghìn miligram trên một kilogam bún; hệ Polyphosphat STPP giữ nước và tăng dai ở mức hai nghìn năm trăm miligram; cùng các phụ gia GMP an toàn như Acid Lactic INS 270, Tinh bột biến tính và Gum liên kết cấu trúc."
+      },
+      {
+        time: "1:55",
+        title: "03 | Quy Trình Công Nghệ 4 Bước: Gia Nhiệt & Xử Lý Bề Mặt",
+        description: "Tính năng ba: Sơ đồ quy trình công nghệ bốn bước kết hợp hai phương pháp bổ sung phụ gia. Bước một: phối trộn phụ gia cấu trúc và hạ pH khối bột xuống 5.0 đến 5.5. Bước hai: đùn sợi và luộc chín một trăm độ C để hồ hóa tinh bột. Bước ba: xử lý bề mặt bằng dung dịch Kali Sorbat hai phần trăm sau khi vớt ráo. Và bước bốn: làm nguội nhanh, đóng gói kín và bảo quản mát bốn đến tám độ C để đạt hạn dùng tối ưu."
+      },
+      {
+        time: "2:35",
+        title: "04 | Máy Tính Mẻ Bột Thông Minh & Tối Ưu Tỷ Lệ Thực Chiến",
+        description: "Tính năng bốn: Máy tính mẻ bột thông minh. Chỉ cần nhập khối lượng bột gạo mẻ sản xuất, hệ thống tự động tính toán chính xác số gram Kali Sorbat, STPP, Acid Lactic và Tinh bột biến tính cần phối trộn. Giúp xưởng sản xuất loại bỏ hoàn toàn việc ước lượng thủ công, kiểm soát chi phí nguyên liệu và đảm bảo hàm lượng tồn dư luôn trong ngưỡng an toàn cho phép."
+      },
+      {
+        time: "3:10",
+        title: "05 | Xử Lý Sự Cố Dây Chuyền & Cẩm Nang Kỹ Thuật Toàn Diện",
+        description: "Tính năng năm: Xử lý sự cố thực chiến và tải cẩm nang chuyên sâu. Hướng dẫn khắc phục triệt để các sự cố như bún nhanh chua, sợi bở nát, đốm trắng do sorbic không tan, sợi dính bết hay rỉ nước khi bảo quản. Người dùng có thể đọc trực tuyến hoặc tải ngay cẩm nang kỹ thuật định dạng PDF hai trăm chín mươi kilobyte để lưu trữ và tập huấn kỹ thuật viên dây chuyền sản xuất."
+      }
+    ],
+    userManual: {
+      url: '/manuals/Huong_dan_phu_gia_bun_tuoi.pdf',
+      fileName: 'Huong_dan_phu_gia_bun_tuoi.pdf',
+      fileSize: '290 KB',
+      title: 'Cẩm nang Kỹ thuật Sử dụng Phụ gia Bún tươi (PDF)',
+      description: 'Tài liệu hướng dẫn an toàn, đúng chuẩn pháp lý Bộ Y tế 09/VBHN-BYT cho bún tươi nhóm 06.4.3. Tác giả: Nguyễn Đức Duy Anh.'
+    },
+    theme: {
+      from: "#1F4E3D",
+      to: "#16382C",
+      accent: "#B8892E",
+      badgeBg: "bg-emerald-900/50",
+      badgeText: "text-emerald-300",
+      badgeBorder: "border-emerald-600/40"
     }
   },
   {

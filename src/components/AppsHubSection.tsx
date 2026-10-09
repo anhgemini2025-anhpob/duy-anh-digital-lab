@@ -32,7 +32,7 @@ export const AppsHubSection: React.FC<AppsHubSectionProps> = ({
         </h2>
         
         <p className="text-base sm:text-lg text-slate-300 mt-3 max-w-2xl mx-auto leading-relaxed">
-          Toàn bộ các ứng dụng đã được quy hoạch gọn gàng theo <strong>8 nhóm ngành chuyên sâu</strong> ở trên. Nhấn vào biểu tượng bên dưới để mở toàn bộ kho lưu trữ <strong>30+ ứng dụng thực tế</strong>.
+          Toàn bộ các ứng dụng đã được quy hoạch gọn gàng theo <strong>9 nhóm ngành chuyên sâu</strong> ở trên. Nhấn vào biểu tượng bên dưới để mở toàn bộ kho lưu trữ <strong>30+ ứng dụng thực tế</strong>.
         </p>
 
         {/* Dedicated Main Interactive Icon & Trigger Card */}
@@ -60,7 +60,7 @@ export const AppsHubSection: React.FC<AppsHubSectionProps> = ({
             </h3>
 
             <p className="text-xs sm:text-sm text-slate-300 mt-2 max-w-lg mx-auto">
-              Bao gồm thanh tìm kiếm nhanh, lọc theo 8 nhóm ngành, xem ảnh chụp thực tế màn hình, video tour và liên kết trải nghiệm trực tiếp.
+              Bao gồm thanh tìm kiếm nhanh, lọc theo 9 nhóm ngành, xem ảnh chụp thực tế màn hình, video tour và liên kết trải nghiệm trực tiếp.
             </p>
 
             {/* Button */}

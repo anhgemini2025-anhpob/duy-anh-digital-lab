@@ -127,7 +127,7 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
   // Unified Audio Voiceover & Video Progress Engine
   // Reuses singleton HTMLAudioElement so user gesture authorization is maintained across all app transitions
   useEffect(() => {
-    if (!app || activeTab !== 'video') {
+    if (!app || activeTab !== 'video' || app.videoUrl) {
       const audio = getGlobalVoiceoverAudio();
       if (audio) {
         audio.pause();
@@ -653,8 +653,56 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
           ) : (
             /* VIDEO CLIP WALKTHROUGH TOUR (COMPLETE INTERACTIVE PLAYER) */
             <div className="space-y-4">
-              {/* Dynamic screen image based on scene */}
-              {(() => {
+              {app.videoUrl ? (
+                /* Native MP4 Video Player for Apps with real video */
+                <div className="space-y-3">
+                  <div 
+                    ref={videoContainerRef}
+                    className={`relative w-full rounded-2xl overflow-hidden bg-slate-950 text-white shadow-2xl border border-amber-500/40 select-none group/video transition-all ${
+                      isVideoFullscreen
+                        ? 'fixed inset-0 z-[100] w-screen h-screen rounded-none border-0'
+                        : 'aspect-[16/9]'
+                    }`}
+                  >
+                    <video
+                      src={app.videoUrl}
+                      poster={app.coverImage}
+                      controls
+                      playsInline
+                      autoPlay
+                      className="w-full h-full object-contain bg-slate-950"
+                    />
+                  </div>
+
+                  {/* Attention & Status Note for Bank App */}
+                  <div className="p-4 rounded-2xl bg-[#081528] border border-amber-400/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-lg">
+                    <div className="space-y-1">
+                      <div className="flex items-center gap-2">
+                        <span className="text-amber-400 font-black text-sm">⚠️ THÔNG BÁO TIẾN ĐỘ &amp; BẢO MẬT:</span>
+                        <span className="text-[10px] px-2 py-0.5 rounded bg-amber-400/20 text-amber-300 font-mono font-bold uppercase border border-amber-400/40">
+                          ĐANG PHÁT TRIỂN &amp; HOÀN THIỆN
+                        </span>
+                      </div>
+                      <p className="text-xs text-slate-300 leading-relaxed">
+                        🚧 Ứng dụng vận hành độc lập, không kết nối trực tiếp Core Banking, dữ liệu lưu trữ cục bộ mã hóa an toàn. Video thực tế mô phỏng trực quan các tính năng cốt lõi.
+                      </p>
+                    </div>
+
+                    <a
+                      href={app.url}
+                      target={isMobileOrWebview() ? '_self' : '_blank'}
+                      rel="noopener noreferrer"
+                      onClick={(e) => openExternalApp(app.url, e)}
+                      className="shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-black text-slate-950 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-amber-300 hover:to-yellow-400 shadow-md shadow-amber-400/25 transition-all cursor-pointer"
+                    >
+                      <span>Mở Web App: {app.url.replace('https://', '')}</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                </div>
+              ) : (
+                /* Dynamic screen image based on scene */
+                (() => {
                 const activeVideoScreen = (app.detailImages && app.detailImages[selectedSceneIdx])
                   || ((selectedSceneIdx === 10 && app.detailImages?.[9]) ? app.detailImages[9] : undefined)
                   || (app.detailImages && app.detailImages[selectedSceneIdx % app.detailImages.length])
@@ -1043,7 +1091,7 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
 
                   </div>
                 );
-              })()}
+              })())}
 
               {/* Bilingual Audio Selector Bar (For apps supporting Vietnamese & English voiceovers) */}
               {app.supportedAudioLanguages && app.supportedAudioLanguages.includes('en') && (

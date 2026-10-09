@@ -7,15 +7,15 @@ Hệ thống Landing Page và Quản trị Tài nguyên Hình ảnh (App Visual 
 ## 🎯 Tôn Chỉ Thiết Kế & Trải Nghiệm
 > **"SEE THE PRODUCT → UNDERSTAND THE PRODUCT → OPEN THE PRODUCT"**
 
-Mọi chi tiết trên trang được xây dựng để khách truy cập và đối tác nhận thấy rõ đây là các sản phẩm phần mềm thực nghiệm hoàn chỉnh, có giá trị ứng dụng cao trong các ngành: R&D Hóa mỹ phẩm, Công nghệ thực phẩm, Bán hàng B2B, ERP Nông nghiệp & Thủy sản, Quản trị Clinic Spa và EdTech Chuỗi cung ứng.
+Mọi chi tiết trên trang được xây dựng để khách truy cập và đối tác nhận thấy rõ đây là các sản phẩm phần mềm thực nghiệm hoàn chỉnh, có giá trị ứng dụng cao trong 9 nhóm ngành chuyên sâu: Ngân hàng & Quản trị Rủi ro Tín dụng, R&D Hóa mỹ phẩm, Công nghệ thực phẩm & F&B, Bán hàng B2B, ERP Nông nghiệp & Chuỗi cung ứng SCM, Quản trị Clinic Spa, Sức khỏe & Y tế, Đời sống & Gia đình, AI & Đào tạo Tri thức.
 
 ---
 
 ## 🚀 Tính Năng Chính Của Hệ Thống
 
 1. **Digital Product Collage (Hero Section)**:
-   - Tổ hợp nghệ thuật các mini-screen sản phẩm tiêu biểu (CosmeDerm AI Academy, Vietnam Food Tech Hub, BJC Sales Training, UTH SCM Navigator...).
-   - Chỉ số năng lực thực tế: 17+ ứng dụng, 6 ngành chuyên sâu, 100% Cloud-native.
+   - Spotlight ứng dụng mới: **Trợ Lý Giám Đốc Ngân Hàng 24/7** (https://trolybank.vercel.app) với video thực tế, rà soát hợp đồng tín dụng và ma trận cảnh báo đèn giao thông RCSA.
+   - Chỉ số năng lực thực tế: 30+ ứng dụng, 9 nhóm ngành chuyên sâu, 100% Cloud-native.
 
 2. **Featured Apps Spotlight**:
    - Bố cục 2 cột đặc biệt cho 3 ứng dụng trọng điểm: **CosmeDerm AI Academy**, **Vietnam Food Tech Hub**, và **UTH SCM Navigator**.

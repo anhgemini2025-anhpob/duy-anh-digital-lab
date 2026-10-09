@@ -144,7 +144,7 @@ export const AppsCatalogModal: React.FC<AppsCatalogModalProps> = ({
                   </span>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-300 mt-0.5">
-                  Khám phá toàn bộ 30+ ứng dụng đã triển khai theo 8 nhóm ngành chuyên sâu, xem hình ảnh thực tế và trải nghiệm trực tiếp.
+                  Khám phá toàn bộ 30+ ứng dụng đã triển khai theo 9 nhóm ngành chuyên sâu, xem hình ảnh thực tế và trải nghiệm trực tiếp.
                 </p>
               </div>
             </div>

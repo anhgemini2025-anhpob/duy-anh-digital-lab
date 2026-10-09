@@ -20,6 +20,14 @@ const RAW_CATEGORIES: Omit<CategoryItem, 'count'>[] = [
     color: "from-blue-500 to-indigo-600"
   },
   {
+    id: "banking",
+    name: "Ngân hàng & Quản trị Rủi ro Tín dụng",
+    shortName: "Ngân hàng",
+    icon: "Landmark",
+    description: "Trợ lý giám đốc ngân hàng 24/7, rà soát hợp đồng tín dụng đèn giao thông, phân tích thẩm định DSCR/RAROC, kiểm soát rủi ro RCSA và tự động hóa điều hành",
+    color: "from-blue-700 via-indigo-600 to-amber-500"
+  },
+  {
     id: "sales-business",
     name: "Bán hàng B2B & Quản trị Doanh nghiệp",
     shortName: "Sales & B2B",

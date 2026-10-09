@@ -1,6 +1,6 @@
 import React from 'react';
 import { CATEGORIES } from '../data/categories';
-import { Sparkles, FlaskConical, Utensils, Briefcase, Sprout, Building2, Cpu, ArrowRight, Baby, HeartPulse } from 'lucide-react';
+import { Sparkles, FlaskConical, Utensils, Briefcase, Sprout, Building2, Cpu, ArrowRight, Baby, HeartPulse, Landmark } from 'lucide-react';
 
 interface CategoryVisualsProps {
   onSelectCategory: (categoryId: string) => void;
@@ -11,6 +11,7 @@ export const CategoryVisuals: React.FC<CategoryVisualsProps> = ({ onSelectCatego
 
   const getDomainIcon = (id: string) => {
     switch (id) {
+      case 'banking': return <Landmark className="w-5 h-5 text-amber-400" />;
       case 'lifestyle': return <Baby className="w-5 h-5 text-amber-400" />;
       case 'healthcare': return <HeartPulse className="w-5 h-5 text-amber-400" />;
       case 'ai-education': return <Sparkles className="w-5 h-5 text-amber-400" />;
@@ -31,18 +32,18 @@ export const CategoryVisuals: React.FC<CategoryVisualsProps> = ({ onSelectCatego
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-400/10 border border-amber-400/30 text-xs font-bold text-amber-300 mb-3">
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-            <span>8 KHỐI NGÀNH CHUYÊN SÂU • 30+ ỨNG DỤNG THỰC TẾ</span>
+            <span>9 KHỐI NGÀNH CHUYÊN SÂU • HỆ SINH THÁI 30+ ỨNG DỤNG THỰC TẾ</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
             Năng Lực Triển Khai Thực Nghiệm Đa Lĩnh Vực
           </h2>
           <p className="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed">
-            Hệ sinh thái gồm 8 nhóm ngành chuyên sâu: Sức khỏe &amp; Y tế, Đời sống &amp; Gia đình, Nông nghiệp &amp; SCM, Food Tech &amp; F&amp;B, R&amp;D Mỹ phẩm, Quản trị B2B, AI Đào tạo &amp; Ngôn ngữ và Dịch vụ Clinic. Mỗi hệ thống được thiết kế riêng biệt dựa trên thực tiễn sản xuất và trải nghiệm người dùng thực địa.
+            Hệ sinh thái gồm 9 nhóm ngành chuyên sâu: Ngân hàng &amp; Quản trị Tín dụng, Sức khỏe &amp; Y tế, Đời sống &amp; Gia đình, Nông nghiệp &amp; SCM, Food Tech &amp; F&amp;B, R&amp;D Mỹ phẩm, Quản trị B2B, AI Đào tạo &amp; Ngôn ngữ và Dịch vụ Clinic. Mỗi hệ thống được thiết kế riêng biệt dựa trên thực tiễn sản xuất và trải nghiệm người dùng thực địa.
           </p>
         </div>
 
-        {/* 7 Domain Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {/* 9 Domain Cards (Balanced 3x3 Grid) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {domainList.map((domain) => (
             <div
               key={domain.id}

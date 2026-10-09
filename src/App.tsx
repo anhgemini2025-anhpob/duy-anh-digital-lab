@@ -4,6 +4,7 @@ import { APPS_DATA, AppItem } from './data/apps';
 import { CATEGORIES } from './data/categories';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { VietrealShowcaseSection } from './components/VietrealShowcaseSection';
 import { FeaturedSection } from './components/FeaturedSection';
 import { CategoryVisuals } from './components/CategoryVisuals';
 import { TechStackSection } from './components/TechStackSection';
@@ -37,10 +38,16 @@ export function App() {
     routeAppId = pathSegments[1];
   }
 
-  // Find matching app from APPS_DATA
+  // Find matching app from APPS_DATA (with alias support for baoquanbun)
   const activeApp = useMemo(() => {
     if (!routeAppId) return null;
-    return APPS_DATA.find((a) => a.id.toLowerCase() === routeAppId.toLowerCase()) || null;
+    const lower = routeAppId.toLowerCase();
+    return APPS_DATA.find((a) => {
+      if (a.id.toLowerCase() === lower) return true;
+      if (a.id === 'bao-quan-bun-tuoi' && (lower === 'baoquanbun' || lower === 'bao-quan-bun' || lower === 'bun-tuoi')) return true;
+      if (a.id === 'tro-ly-giam-doc-ngan-hang' && (lower === 'trolybank' || lower === 'tro-ly-bank' || lower === 'ngan-hang' || lower === 'trolybank247')) return true;
+      return false;
+    }) || null;
   }, [routeAppId]);
 
   // Determine modal active tab from searchParams (defaults to 'image', 'video' if ?tab=video)
@@ -116,7 +123,7 @@ export function App() {
       />
 
       <main>
-        {/* 2. Hero Section */}
+        {/* 2. Hero Section: Trợ lý giám đốc ngân hàng 24/7 (Nhóm ngành thứ 9) */}
         <Hero
           onExploreClick={() => openCatalog('all')}
           onSelectApp={handleSelectApp}
@@ -124,7 +131,13 @@ export function App() {
           featuredApps={APPS_DATA.filter((a) => a.featured)}
         />
 
-        {/* 3. Featured Spotlight Section (5 Nền Tảng Tiêu Biểu - Bố cục cân đối, không khoảng trống) */}
+        {/* 3. Dời nội dung app Dạy tiếng việt cho người nước ngoài xuống dưới Hero */}
+        <VietrealShowcaseSection
+          onSelectApp={handleSelectApp}
+          apps={APPS_DATA}
+        />
+
+        {/* 4. Featured Spotlight Section (Nền Tảng Tiêu Biểu) */}
         <FeaturedSection
           apps={APPS_DATA}
           onSelectApp={handleSelectApp}
