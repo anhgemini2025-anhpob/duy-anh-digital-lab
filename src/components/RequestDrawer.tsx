@@ -199,26 +199,53 @@ Gửi từ Duy Anh Digital Lab (ungdung.vercel.app)`;
           </div>
 
           {/* Quick Contact Banner inside Drawer */}
-          <div className="px-4 py-2 bg-[#0E223D] border-b border-slate-800 flex items-center justify-between text-xs">
-            <span className="font-semibold text-slate-300">Tư vấn trực tiếp:</span>
-            <div className="flex items-center gap-2">
+          <div className="px-4 py-2.5 bg-[#0E223D] border-b border-slate-800 space-y-2 text-xs">
+            <div className="flex items-center justify-between">
+              <span className="font-semibold text-slate-300">Tư vấn trực tiếp:</span>
+              <div className="flex items-center gap-2">
+                <a
+                  href="https://zalo.me/84908095693"
+                  target={isMobileOrWebview() ? '_self' : '_blank'}
+                  rel="noopener noreferrer"
+                  onClick={(e) => openExternalApp('https://zalo.me/84908095693', e)}
+                  className="font-bold text-amber-300 hover:underline flex items-center gap-1 cursor-pointer"
+                >
+                  <Phone className="w-3.5 h-3.5 text-amber-400" />
+                  +84 908095693
+                </a>
+                <span className="text-slate-500">•</span>
+                <a
+                  href="mailto:anhpob@gmail.com"
+                  className="font-bold text-amber-300 hover:underline flex items-center gap-1"
+                >
+                  <Mail className="w-3.5 h-3.5 text-amber-400" />
+                  anhpob@gmail.com
+                </a>
+              </div>
+            </div>
+
+            {/* Icon Gởi yêu cầu (bên dưới Tư vấn trực tiếp:) */}
+            <div className="pt-2 border-t border-slate-700/70 flex items-center justify-between">
               <a
-                href="https://zalo.me/84908095693"
+                href="https://yeucau.vercel.app"
                 target={isMobileOrWebview() ? '_self' : '_blank'}
                 rel="noopener noreferrer"
-                onClick={(e) => openExternalApp('https://zalo.me/84908095693', e)}
-                className="font-bold text-amber-300 hover:underline flex items-center gap-1 cursor-pointer"
+                onClick={(e) => openExternalApp('https://yeucau.vercel.app', e)}
+                className="w-full group flex items-center justify-between gap-2 px-3 py-2 rounded-xl bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-amber-300 hover:to-yellow-400 text-slate-950 font-extrabold shadow-md shadow-amber-500/20 active:scale-[0.99] transition-all cursor-pointer"
+                title="Nhấn vào để mở trang Gởi yêu cầu (https://yeucau.vercel.app)"
               >
-                <Phone className="w-3.5 h-3.5 text-amber-400" />
-                +84 908095693
-              </a>
-              <span className="text-slate-500">•</span>
-              <a
-                href="mailto:anhpob@gmail.com"
-                className="font-bold text-amber-300 hover:underline flex items-center gap-1"
-              >
-                <Mail className="w-3.5 h-3.5 text-amber-400" />
-                anhpob@gmail.com
+                <div className="flex items-center gap-2">
+                  <span className="w-6 h-6 rounded-lg bg-slate-950 text-amber-400 flex items-center justify-center shadow-xs shrink-0 group-hover:scale-105 transition-transform">
+                    <Send className="w-3.5 h-3.5" />
+                  </span>
+                  <span className="text-xs sm:text-sm font-black tracking-tight text-slate-950">
+                    Gởi yêu cầu
+                  </span>
+                </div>
+                <div className="flex items-center gap-1 text-[11px] font-bold bg-slate-950/15 px-2 py-0.5 rounded-lg text-slate-950">
+                  <span>yeucau.vercel.app</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </div>
               </a>
             </div>
           </div>
@@ -227,12 +254,19 @@ Gửi từ Duy Anh Digital Lab (ungdung.vercel.app)`;
           <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-4 pb-16">
             {requestedApps.length === 0 ? (
               <div className="text-center py-12 text-slate-400 space-y-3">
-                <div className="w-12 h-12 mx-auto rounded-2xl bg-amber-400/10 text-amber-400 border border-amber-400/30 flex items-center justify-center">
+                <a
+                  href="https://yeucau.vercel.app"
+                  target={isMobileOrWebview() ? '_self' : '_blank'}
+                  rel="noopener noreferrer"
+                  onClick={(e) => openExternalApp('https://yeucau.vercel.app', e)}
+                  title="Nhấn để mở trang Gởi yêu cầu (https://yeucau.vercel.app)"
+                  className="w-12 h-12 mx-auto rounded-2xl bg-amber-400/10 hover:bg-amber-400/20 text-amber-400 border border-amber-400/30 hover:border-amber-400 flex items-center justify-center transition-all cursor-pointer"
+                >
                   <Sparkles className="w-6 h-6" />
-                </div>
+                </a>
                 <p className="text-sm font-bold text-white">Bạn chưa chọn ứng dụng nào.</p>
                 <p className="text-xs text-slate-400 max-w-xs mx-auto">
-                  Hãy bấm nút <strong>"+ Thêm vào yêu cầu"</strong> ở bất kỳ thẻ ứng dụng nào để gom thành danh sách tư vấn.
+                  Hãy bấm nút <strong>"+ Thêm vào yêu cầu"</strong> ở bất kỳ thẻ ứng dụng nào để gom thành danh sách tư vấn, hoặc nhấn <strong>Gởi yêu cầu</strong> để điền phiếu trực tuyến.
                 </p>
               </div>
             ) : (
