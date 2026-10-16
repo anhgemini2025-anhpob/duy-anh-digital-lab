@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Play, Pause, ExternalLink, Sparkles, Volume2, VolumeX, Maximize2, Minimize2 } from 'lucide-react';
 import { AppItem } from '../data/apps';
-import { openExternalApp, isMobileOrWebview } from '../utils/navigation';
+import { openExternalApp, isMobileOrWebview, getYouTubeEmbedUrl } from '../utils/navigation';
 
 interface AppMockupVisualProps {
   app: AppItem;
@@ -38,7 +38,7 @@ export const AppMockupVisual: React.FC<AppMockupVisualProps> = ({
 
   // Auto-advancing video simulation timer (+30% speed)
   useEffect(() => {
-    if (mode !== 'video' || !isPlaying) return;
+    if (mode !== 'video' || !isPlaying || app.youtubeUrl || (!app.videoScenes || app.videoScenes.length === 0)) return;
 
     // Advance 30% faster by default (1.3x speed)
     const speedMultiplier = 1.3;
@@ -55,11 +55,11 @@ export const AppMockupVisual: React.FC<AppMockupVisualProps> = ({
     }, 100);
 
     return () => clearInterval(interval);
-  }, [mode, isPlaying, totalScenes, secondsPerScene]);
+  }, [mode, isPlaying, totalScenes, secondsPerScene, app.youtubeUrl, app.videoScenes]);
 
   // Audio voiceover sync
   useEffect(() => {
-    if (mode !== 'video' || !isPlaying || isMuted) {
+    if (mode !== 'video' || !isPlaying || isMuted || app.youtubeUrl || (!app.videoScenes || app.videoScenes.length === 0)) {
       if (audioRef.current) {
         audioRef.current.pause();
         audioRef.current = null;
@@ -176,6 +176,41 @@ export const AppMockupVisual: React.FC<AppMockupVisualProps> = ({
   // ==========================================
   // 1. VIDEO CLIP TOUR (CRYSTAL CLEAR, FULLY VISIBLE APP SCREEN)
   // ==========================================
+  if (mode === 'video' && app.youtubeUrl) {
+    return (
+      <div className={`relative w-full h-full bg-slate-950 overflow-hidden ${className}`}>
+        <iframe
+          src={getYouTubeEmbedUrl(app.youtubeUrl)}
+          title={app.name}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="w-full h-full border-0"
+        />
+      </div>
+    );
+  }
+
+  if (mode === 'video' && (!app.videoScenes || app.videoScenes.length === 0)) {
+    return (
+      <div 
+        onClick={onOpenDetails}
+        className={`relative w-full h-full bg-[#081528] flex flex-col items-center justify-center p-4 text-center cursor-pointer group ${className}`}
+      >
+        <div className="w-12 h-12 rounded-2xl bg-red-600/20 text-red-500 flex items-center justify-center border border-red-500/40 shadow-lg group-hover:scale-110 transition-transform">
+          <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </div>
+        <span className="text-xs font-bold text-white mt-2 group-hover:text-amber-300 transition-colors">
+          Video YouTube Giới Thiệu
+        </span>
+        <span className="text-[10px] text-slate-400 mt-0.5">
+          Nhấn để xem chi tiết tính năng
+        </span>
+      </div>
+    );
+  }
+
   if (mode === 'video') {
     return (
       <div 

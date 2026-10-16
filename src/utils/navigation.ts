@@ -79,3 +79,17 @@ export const downloadPdfFile = async (url: string, fileName: string): Promise<bo
   }
 };
 
+/**
+ * Extracts and formats a YouTube URL into an embeddable iframe URL.
+ * Supports standard URLs, short links (youtu.be), embed URLs, and raw 11-char video IDs.
+ */
+export const getYouTubeEmbedUrl = (url?: string): string => {
+  if (!url) return '';
+  const trimmed = url.trim();
+  if (trimmed.includes('youtube.com/embed/')) return trimmed;
+  if (/^[a-zA-Z0-9_-]{11}$/.test(trimmed)) {
+    return `https://www.youtube.com/embed/${trimmed}`;
+  }
+  const match = trimmed.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w-]{11})/);
+  return match ? `https://www.youtube.com/embed/${match[1]}` : trimmed;
+};

@@ -53,10 +53,10 @@ const RAW_CATEGORIES: Omit<CategoryItem, 'count'>[] = [
   },
   {
     id: "food-tech",
-    name: "Công nghệ Thực phẩm & F&B",
-    shortName: "Food Tech",
+    name: "Dinh dưỡng & Công nghệ Thực phẩm F&B",
+    shortName: "Dinh dưỡng & F&B",
     icon: "Utensils",
-    description: "Giải pháp số hóa nghiên cứu phụ gia thực phẩm, xử lý sự cố dây chuyền và trợ lý vị giác",
+    description: "Trợ lý dinh dưỡng người Việt & gia đình 'Hôm Nay Ăn Gì?', giải pháp số hóa nghiên cứu phụ gia thực phẩm, xử lý sự cố và trợ lý vị giác",
     color: "from-amber-500 to-orange-600"
   },
   {

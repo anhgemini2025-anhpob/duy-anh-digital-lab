@@ -46,6 +46,7 @@ export function App() {
       if (a.id.toLowerCase() === lower) return true;
       if (a.id === 'bao-quan-bun-tuoi' && (lower === 'baoquanbun' || lower === 'bao-quan-bun' || lower === 'bun-tuoi')) return true;
       if (a.id === 'tro-ly-giam-doc-ngan-hang' && (lower === 'trolybank' || lower === 'tro-ly-bank' || lower === 'ngan-hang' || lower === 'trolybank247')) return true;
+      if (a.id === 'hom-nay-an-gi' && (lower === 'vietnuti' || lower === 'homnayan-gi' || lower === 'homnayangi' || lower === 'an-gi' || lower === 'hom-nay-an-gi')) return true;
       return false;
     }) || null;
   }, [routeAppId]);

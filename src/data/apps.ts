@@ -51,6 +51,7 @@ export interface AppItem {
   userManual?: UserManualInfo;
   supportedAudioLanguages?: ('vi' | 'en')[];
   videoUrl?: string;
+  youtubeUrl?: string;
   statusNote?: string;
   theme: {
     from: string;
@@ -151,6 +152,68 @@ export const APPS_DATA: AppItem[] = [
       badgeBg: "bg-amber-400/10",
       badgeText: "text-amber-300",
       badgeBorder: "border-amber-400/30"
+    }
+  },
+  {
+    logoUrl: "/apps/hom-nay-an-gi/app-logo.svg",
+    id: "hom-nay-an-gi",
+    name: "Hôm Nay Ăn Gì?",
+    url: "https://vietnuti.vercel.app",
+    category: "Dinh dưỡng & F&B",
+    categoryId: "food-tech",
+    description: "Trợ lý dinh dưỡng thông minh và tổ chức bữa ăn gia đình người Việt đa thế hệ (từ 0 đến trên 90 tuổi). Giúp ra quyết định nhanh 5–10s: ăn món gì, nấu thế nào, mua gì, chi bao nhiêu, quản lý tủ lạnh chống lãng phí và giải pháp 'Một mâm cơm — Nhiều nhu cầu' chuẩn y khoa có nguồn kiểm chứng minh bạch.",
+    tags: [
+      "Dinh Dưỡng Người Việt",
+      "Mâm Cơm Gia Đình",
+      "Gợi Ý Món Ăn 5s",
+      "Một Mâm Nhiều Nhu Cầu",
+      "Quản Lý Tủ Lạnh",
+      "Đi Chợ Tiết Kiệm",
+      "Chuẩn Y Khoa WHO BYT",
+      "PWA Local-First"
+    ],
+    coverImage: "/apps/hom-nay-an-gi/cover.png",
+    placeholderImage: "/apps/hom-nay-an-gi/cover.png",
+    detailImages: [
+      "/apps/hom-nay-an-gi/cover.png",
+      "/apps/hom-nay-an-gi/feature_01_quet_tu_lanh_ai.png",
+      "/apps/hom-nay-an-gi/feature_02_nhap_bien_doi_dot_xuat.png"
+    ],
+    imageAlt: "Hôm Nay Ăn Gì? - Trợ lý dinh dưỡng thông minh cho người Việt và gia đình",
+    featured: true,
+    audience: "• Gia đình Việt đa thế hệ: Trẻ ăn dặm (0–12 tháng), trẻ nhỏ, thanh thiếu niên, người đi làm văn phòng và người cao tuổi.\n• Người có bệnh lý nền cần kiểm soát dinh dưỡng: Tiểu đường, Gout, Tăng huyết áp, Rối loạn mỡ máu, thừa cân/béo phì.",
+    problem: "• Đau đầu mỗi ngày nghĩ món: Tốn 15–30 phút tự hỏi 'Hôm nay ăn gì?' cho cả nhà vừa ngon miệng vừa đủ chất.\n• Mâm cơm đa nhu cầu xung đột: Ông bà kiêng mặn/đường, con nhỏ kén ăn, bố mẹ cần giảm cân/siết cơ — không thể nấu 3–4 nồi riêng biệt.\n• Ma trận thông tin trôi nổi: Nhiều mẹo ăn uống thiếu căn cứ khoa học, quảng cáo TPCN gây nhiễu loạn và hoang mang.\n• Lãng phí tủ lạnh & đi chợ vượt chi: Thực phẩm mua về hay bỏ quên cận date, không kiểm soát được thực chi hàng tuần.\n• Bất cập từ app ngoại: Các app calo nước ngoài không hiểu mâm cơm chung Việt Nam, đơn vị mua bán chợ cóc hay gia vị bản địa.",
+    solution: "• Quyết định chọn món trong 5–10 giây: 3 phương án Nhanh nhất / Cân bằng / Tiết kiệm kèm lý do y khoa rõ ràng.\n• 'Một mâm cơm — Nhiều nhu cầu': Nấu chung một nồi gốc, tối ưu khâu múc bát và thứ tự ăn riêng cho từng thành viên.\n• Dữ liệu chuẩn y khoa minh bạch: Dựa trên Viện Dinh Dưỡng Quốc Gia, Bộ Y tế, WHO và USDA; nói không với số liệu bịa đặt.\n• Đi chợ thông minh & Tủ lạnh chống lãng phí: Nhập bằng giọng nói tiếng Việt, tự gom nguyên liệu tuần, ưu tiên món giải cứu đồ cận date.\n• Trợ lý AI thấu cảm & Vision an toàn: Quét tủ lạnh, nhận diện nhãn hàng, cảnh báo rủi ro an toàn và tích hợp cấp cứu 115.",
+    keyFeatures: [
+      "Ra quyết định chọn món 5–10s: Gợi ý 3 phương án (Nhanh nhất / Cân bằng / Tiết kiệm) kèm lý do rõ ràng; tùy chọn đổi món, ít dầu, rẻ hơn.",
+      "Mâm cơm 1 nồi - đa nhu cầu: Tự động điều chỉnh khẩu phần cho từng thành viên (dị ứng, ăn chay, tiểu đường, gout, trẻ em, người cao tuổi).",
+      "34+ Công thức món Việt 3 miền: Tự động nhân định lượng theo số người, hướng dẫn thay thế nguyên liệu, phân tách phần mềm và cảnh báo xương.",
+      "Tính toán dinh dưỡng chuẩn y khoa: Đối chiếu USDA FoodData & Viện Dinh dưỡng, minh bạch độ phủ dữ liệu, không tạo số liệu giả lập.",
+      "Thực đơn tuần & Đi chợ thông minh: Tự động lên thực đơn 7 ngày không trùng món, gộp danh sách đi chợ, hỗ trợ nhập giọng nói tiếng Việt.",
+      "Tủ lạnh thông minh & Chống lãng phí: Theo dõi hạn dùng thực phẩm, ưu tiên đề xuất món ăn tận dụng nguyên liệu cận date để tiết kiệm chi phí.",
+      "So sánh nhãn thực phẩm & Lọc dị ứng: Quy chuẩn 100g/100ml để đối chiếu sản phẩm, tự động quét từ khóa dị ứng tiếng Việt chuẩn xác.",
+      "Trợ lý AI phân tầng rủi ro R1–R4: Trả lời có trích dẫn nguồn kiểm chứng, không chuẩn đoán bệnh bừa bãi, cảnh báo khẩn cấp gọi 115.",
+      "Bảo mật Local-First & PWA Offline: Dữ liệu lưu trữ an toàn trên thiết bị (IndexedDB), cài đặt màn hình chính điện thoại, xuất/nhập JSON tự do."
+    ],
+    videoDuration: "YouTube",
+    videoTagline: "Video giới thiệu tính năng ứng dụng qua YouTube",
+    videoScenes: [],
+    youtubeUrl: "",
+    statusNote: "Sẵn sàng liên kết video giới thiệu YouTube. Trải nghiệm trực tiếp tại https://vietnuti.vercel.app",
+    userManual: {
+      url: '/Sach huong dan su dung/PRD-Hom-Nay-An-Gi.pdf',
+      fileName: 'PRD-Hom-Nay-An-Gi.pdf',
+      fileSize: '63 KB',
+      title: 'Tài Liệu Đặc Tả & Kiến Trúc Hôm Nay Ăn Gì? (PRD & System Blueprint)',
+      description: 'Tài liệu kiến trúc hệ thống, quy chuẩn dữ liệu dinh dưỡng y khoa lâm sàng, giải pháp mâm cơm gia đình đa thế hệ và hướng dẫn vận hành PWA Local-First.'
+    },
+    theme: {
+      from: "from-emerald-500",
+      to: "to-teal-600",
+      accent: "text-emerald-400",
+      badgeBg: "bg-emerald-500/15",
+      badgeText: "text-emerald-300",
+      badgeBorder: "border-emerald-400/30"
     }
   },
   {

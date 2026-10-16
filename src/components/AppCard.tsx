@@ -51,38 +51,40 @@ export const AppCard: React.FC<AppCardProps> = ({
           )}
         </div>
 
-        {/* View Mode Switcher: [Ảnh giao diện] / [Video Clip] */}
-        <div className="absolute top-2.5 right-2.5 z-20 flex items-center bg-[#07111E]/95 backdrop-blur-md rounded-xl p-0.5 border border-slate-700 shadow-md">
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              setViewMode('image');
-            }}
-            className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
-              viewMode === 'image'
-                ? 'bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-950 font-black shadow-xs'
-                : 'text-slate-300 hover:text-white'
-            }`}
-          >
-            <ImageIcon className="w-3.5 h-3.5" />
-            <span>Hình ảnh</span>
-          </button>
+        {/* View Mode Switcher: Only render if video is available */}
+        {(app.videoUrl || app.youtubeUrl || (app.videoScenes && app.videoScenes.length > 0)) && (
+          <div className="absolute top-2.5 right-2.5 z-20 flex items-center bg-[#07111E]/95 backdrop-blur-md rounded-xl p-0.5 border border-slate-700 shadow-md">
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setViewMode('image');
+              }}
+              className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                viewMode === 'image'
+                  ? 'bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-950 font-black shadow-xs'
+                  : 'text-slate-300 hover:text-white'
+              }`}
+            >
+              <ImageIcon className="w-3.5 h-3.5" />
+              <span>Hình ảnh</span>
+            </button>
 
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              setViewMode('video');
-            }}
-            className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
-              viewMode === 'video'
-                ? 'bg-amber-400 text-slate-950 font-black shadow-xs'
-                : 'text-slate-300 hover:text-white'
-            }`}
-          >
-            <Video className="w-3.5 h-3.5" />
-            <span>Video Clip</span>
-          </button>
-        </div>
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setViewMode('video');
+              }}
+              className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                viewMode === 'video'
+                  ? 'bg-amber-400 text-slate-950 font-black shadow-xs'
+                  : 'text-slate-300 hover:text-white'
+              }`}
+            >
+              <Video className="w-3.5 h-3.5" />
+              <span>{app.youtubeUrl ? 'YouTube' : 'Video Clip'}</span>
+            </button>
+          </div>
+        )}
 
         {/* MOCKUP VISUAL OR INTERACTIVE VIDEO */}
         <AppMockupVisual

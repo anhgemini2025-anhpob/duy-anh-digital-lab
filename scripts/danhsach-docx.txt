@@ -1,0 +1,283 @@
+﻿
+
+
+DANH 
+SÁCH  CÁC
+ APP-WEB ĐÃ THỰC HIỆN
+
+
+APP WEB DÙNG ĐỂ TRAINING CHO NHÂN VIÊN SALES
+
+https://bjc-sales-training.pages.dev/
+
+
+Test: Account: Trang@bjc.co.th         PW: Trang@2026!
+
+
+APP WEB THEO DÕI QUẢN LÝ 
+SALES  ĐI
+ THĂM KHÁCH HÀNG
+
+https://customer-visit.anhpob.workers.dev
+
+Test: Account: Trang@bjc.co.th         PW: Trang@2026!
+
+
+APP WEB DÀNH CHO KHÁCH HÀNG R&D NGHIÊN CỨU LIPOID
+
+
+https://lipoidadvisor.vercel.app
+
+
+
+
+
+APP WEB DÙNG ĐỂ QUẢN LÝ CLINIC SPA
+
+https://linh-da-skinlab.pages.dev
+
+
+LANDING PAGE GIỚI THIỆU DỊCH VỤ SPA
+
+
+https://linhda-skinlap.pages.dev
+
+
+APP WEB CÔNG CỤ TẠO SALES PITCH & SALES BATTLE CARD
+
+
+            https://bjc-sales-pitch.pages.dev
+
+Test: Account: Trang@bjc.co.th         PW: Trang@2026!
+
+
+APP WEB QUẢN LÝ NHÓM CẦU LÔNG
+
+https://splendid-panda-ef075e.netlify.app
+
+
+APP WEB TRO LY VỊ NGON 
+
+https://trolyvingon.vercel.app/
+
+
+APP WEB QUẢN LÝ CỬA HÀNG THÚ Y- THUY SẢN 
+
+https://vet-aqua-erp-lite.vercel.app
+
+
+BAI TRAC NGHIEM KIEN THUC YEAST EXTRACT - Lallemand
+
+https://cool-tulumba-fa58d6.netlify.app/
+
+
+APP WEB DÀNH CHO KHÁCH HÀNG R&D NGHIÊN CỨU VANDERBILT
+
+
+https://vanderbiltadvisor.vercel.app
+
+
+APP WEB DÀNH CHO KHÁCH HÀNG R&D NGHIÊN CỨU ALGAKTIV
+
+
+https://algaktivadvisor.vercel.app
+
+
+APP WEB DÀNH CHO KHÁCH HÀNG R&D NGHIÊN CỨU LANXESS COSMETIC
+
+
+https://Lanxessadvisor.vercel.app
+
+
+
+
+
+
+APP 
+WEB  TAP
+ DA LIEU & LAM MỸ PHẨM COSMEDERM AI ACADEMY
+
+https://cosmederm-ai.vercel.app/
+
+
+APP WEB VIETNAM FOOD TECH HUB
+
+
+            https://foodtechhub.vercel.app/
+
+
+APP WEB QUẢN LÝ HỢP TÁC XÃ RAU CỦ
+
+
+            https://htxraucuqua.vercel.app
+
+
+APP WEB HƯỚNG DẪN HỌC SCM- ĐẠI HỌC GIAO THÔNG VẬN TẢI TPHCM
+
+
+          https://uhtscm.vercel.app/
+
+
+WEB LANDING PAGE QUANG CAO ƯNG DUNG
+
+
+https://ungdung.vercel.app/
+
+
+link phu:  HYPERLINK "https://duy-anh-digital-lab.vercel.app/"https://duy-anh-digital-lab.vercel.app
+
+
+APP WEB BÁO CÁO THUẾ HỘ KINH DOANH
+
+
+https://taxhkd.vercel.app
+
+
+APP NUÔI DƯỠNG TRẺ 0 -12 THÁNG TẠI VIỆT NAM
+
+
+https://lamchame1.vercel.app
+
+
+APP NUÔI DẠY TRẺ TỪ 6 ĐẾN 11 TUỔI TẠI VIỆT NAM
+
+
+https://lamchame2.vercel.app
+
+
+APP THẤU HIỂU THIẾU NIÊN 12 ĐẾN 15 TUỔI TẠI VIỆT NAM
+
+
+https://lamchame3.vercel.app
+
+
+APP ĐỊNH HƯỚNG THANH NIÊN 16 ĐẾN 18 TUỔI TẠI VIỆT NAM
+
+
+https://lamchame4.vercel.app
+
+
+WEB HƯỚNG DẪN SỬ DỤNG CHẤT BẢO QUẢN BÚN AN TOÀN
+
+
+https://baoquanbun.vercel.app/
+
+
+APP QUẢN TRỊ RỦI RO XÉT NGHIỆM BỆNH VIỆN CHUẨN ISO 22367:2020, ISO 35001, GLP 
+và
+ 
+Quyết
+ 
+định
+ 2429/QĐ-BYT1731.
+
+
+https://tropilab.vercel.app
+
+
+WEB LANDING PAGE QUẢNG CÁO ỨNG DỤNG LÀM CHA MẸ
+
+
+https://lamchame.vercel.app/
+
+
+APP DAY TIẾNG VIỆT CHO NGƯỜI NƯỚC NGOÀI
+
+
+https://vietreal.vercel.app/
+
+
+APP NGƯỜI NHẬT HỌC TIẾNG VIỆT
+
+
+https://jpvn.vercel.app/
+
+
+APP NGƯỜI THÁI HỌC TIẾNG VIỆT
+
+
+https://thvn.vercel.app
+
+
+APP NGƯỜI HÀN HỌC TIẾNG VIỆT
+
+
+https://krvn.vercel.app/
+
+
+APP NGƯỜI HOA HỌC TIẾNG VIỆT
+
+
+https://zhvn.vercel.app/
+
+
+
+
+
+
+
+
+APP NGƯỜI MỸ HỌC TIẾNG VIỆT
+
+
+https://usvn.vercel.app/
+
+
+APP NGƯỜI PHÁP HỌC TIẾNG VIỆT
+
+
+https://frvn.vercel.app/
+
+
+APP NGƯỜI ĐỨC HỌC TIẾNG VIỆT
+
+
+https://devn.vercel.app/
+
+
+APP NGƯỜI NGA HỌC TIẾNG VIỆT
+
+
+https://ruvn.vercel.app/
+
+
+APP NGƯỜI CAMBODIA HỌC TIẾNG VIỆT
+
+
+https://khvn.vercel.app/
+
+
+APP LÀO HỌC TIẾNG VIỆT
+
+
+https://lavn.vercel.app/
+
+
+APP ẤN HỌC TIẾNG VIỆT
+
+
+https://invn.vercel.app/
+
+
+APP TÂY BAN NHA HỌC TIẾNG VIỆT
+
+
+https://esvn.vercel.app/
+
+
+APP BỒ ĐÀO NHA HỌC TIẾNG VIỆT
+
+
+https://ptvn.vercel.app/
+
+
+WEB HƯỚNG DẪN BẢO QUẢN BÚN TƯƠI
+
+
+https://baoquanbun.vercel.app
+
+
+
+
+
+

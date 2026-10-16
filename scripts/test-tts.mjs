@@ -7,7 +7,7 @@ async function test() {
   await tts.setMetadata('vi-VN-NamMinhNeural', OUTPUT_FORMAT.AUDIO_24KHZ_48KBITRATE_MONO_MP3, {});
   console.log('Metadata set! Calling toStream...');
   
-  const { audioStream } = tts.toStream('Chào Hoài My! Rất nhiều bạn bè quốc tế tâm sự với mình rằng, họ học tiếng Việt cả năm trời nhưng bước ra đường vẫn không dám mở lời.');
+  const { audioStream } = tts.toStream('Bảo quản bún tươi theo quy trình kỹ thuật.');
   const chunks = [];
   
   await new Promise((resolve, reject) => {

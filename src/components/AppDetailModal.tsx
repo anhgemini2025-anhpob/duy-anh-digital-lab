@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, ExternalLink, ShieldCheck, Eye, EyeOff, Check, Plus, ArrowLeft, ArrowRight, Play, Pause, RotateCcw, Volume2, VolumeX, Video, Image as ImageIcon, CheckCircle2, HelpCircle, Target, Sparkles, Clock, SkipBack, SkipForward, Share2, Copy, FileDown, FileText, BookOpen, Maximize2, Minimize2, Loader2, Globe } from 'lucide-react';
 import { AppItem } from '../data/apps';
-import { openExternalApp, isMobileOrWebview, downloadPdfFile } from '../utils/navigation';
+import { openExternalApp, isMobileOrWebview, downloadPdfFile, getYouTubeEmbedUrl } from '../utils/navigation';
 import { PdfViewerModal } from './PdfViewerModal';
 
 // Persistent singleton audio instance (preserves user interaction authorization across apps & scenes)
@@ -127,7 +127,7 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
   // Unified Audio Voiceover & Video Progress Engine
   // Reuses singleton HTMLAudioElement so user gesture authorization is maintained across all app transitions
   useEffect(() => {
-    if (!app || activeTab !== 'video' || app.videoUrl) {
+    if (!app || activeTab !== 'video' || app.videoUrl || app.youtubeUrl || (!app.videoScenes || app.videoScenes.length === 0)) {
       const audio = getGlobalVoiceoverAudio();
       if (audio) {
         audio.pause();
@@ -230,7 +230,7 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
 
   // Fallback Timer: Only advances video if audio is muted or unavailable
   useEffect(() => {
-    if (!app || activeTab !== 'video' || !isPlayingVideo || isAudioPlaying) return;
+    if (!app || activeTab !== 'video' || !isPlayingVideo || isAudioPlaying || app.videoUrl || app.youtubeUrl || (!app.videoScenes || app.videoScenes.length === 0)) return;
 
     const totalDurationSeconds = parseDurationSeconds(app.videoDuration);
     const scenesCount = app.videoScenes?.length || 5;
@@ -457,8 +457,8 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                 }`}
               >
                 <ImageIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                <span className="hidden sm:inline">Hình ảnh</span>
-                <span className="sm:hidden">Ảnh</span>
+                <span className="hidden sm:inline">Hình ảnh &amp; Tính năng</span>
+                <span className="sm:hidden">Tính năng</span>
               </button>
 
               <button
@@ -474,7 +474,9 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                 }`}
               >
                 <Video className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                <span className="hidden sm:inline">Video Clip Tour</span>
+                <span className="hidden sm:inline">
+                  {app.youtubeUrl ? 'Video YouTube' : (app.videoScenes && app.videoScenes.length > 0) ? 'Video Clip Tour' : 'Điểm chèn YouTube'}
+                </span>
                 <span className="sm:hidden">Video</span>
               </button>
             </div>
@@ -698,6 +700,112 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                       <span>Mở Web App: {app.url.replace('https://', '')}</span>
                       <ExternalLink className="w-3.5 h-3.5" />
                     </a>
+                  </div>
+                </div>
+              ) : app.youtubeUrl ? (
+                /* Native YouTube Player Embed */
+                <div className="space-y-4">
+                  <div 
+                    ref={videoContainerRef}
+                    className={`relative w-full rounded-2xl overflow-hidden bg-slate-950 text-white shadow-2xl border border-amber-500/40 select-none transition-all ${
+                      isVideoFullscreen
+                        ? 'fixed inset-0 z-[100] w-screen h-screen rounded-none border-0'
+                        : 'aspect-[16/9]'
+                    }`}
+                  >
+                    <iframe
+                      src={getYouTubeEmbedUrl(app.youtubeUrl)}
+                      title={app.name}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full border-0"
+                    />
+                  </div>
+
+                  <div className="p-4 rounded-2xl bg-[#081528] border border-amber-400/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-lg">
+                    <div className="space-y-1">
+                      <div className="flex items-center gap-2">
+                        <span className="text-amber-400 font-black text-sm">🎬 VIDEO GIỚI THIỆU QUA YOUTUBE</span>
+                        <span className="text-[10px] px-2 py-0.5 rounded bg-emerald-400/20 text-emerald-300 font-mono font-bold uppercase border border-emerald-400/40">
+                          YOUTUBE EMBED
+                        </span>
+                      </div>
+                      <p className="text-xs text-slate-300 leading-relaxed">
+                        {app.statusNote || 'Video giới thiệu chi tiết tính năng và trải nghiệm người dùng.'}
+                      </p>
+                    </div>
+
+                    <a
+                      href={app.url}
+                      target={isMobileOrWebview() ? '_self' : '_blank'}
+                      rel="noopener noreferrer"
+                      onClick={(e) => openExternalApp(app.url, e)}
+                      className="shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-black text-slate-950 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-amber-300 hover:to-yellow-400 shadow-md shadow-amber-400/25 transition-all cursor-pointer"
+                    >
+                      <span>Mở Web App: {app.url.replace('https://', '')}</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                </div>
+              ) : (!app.videoScenes || app.videoScenes.length === 0) ? (
+                /* YouTube Video Embed Slot Placeholder */
+                <div className="space-y-4">
+                  <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#081528] via-[#0B1A2F] to-[#07111E] border-2 border-dashed border-red-500/40 text-center space-y-5 shadow-2xl relative overflow-hidden">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-red-500/10 rounded-full blur-3xl pointer-events-none" />
+
+                    <div className="relative">
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-3xl bg-gradient-to-br from-red-600/20 to-red-500/10 text-red-500 mx-auto flex items-center justify-center border border-red-500/40 shadow-xl shadow-red-500/10">
+                        <svg className="w-8 h-8 sm:w-10 sm:h-10 fill-current" viewBox="0 0 24 24">
+                          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                      </div>
+
+                      <div className="mt-4 space-y-2">
+                        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-500/15 border border-red-400/40 text-xs font-mono font-bold text-red-300">
+                          <span>ĐIỂM CHÈN VIDEO YOUTUBE SẴN SÀNG</span>
+                        </div>
+                        <h3 className="text-xl sm:text-2xl font-black text-white">
+                          Video Giới Thiệu Tính Năng Qua YouTube
+                        </h3>
+                        <p className="text-xs sm:text-sm text-slate-300 max-w-lg mx-auto leading-relaxed">
+                          Ứng dụng tập trung trình bày trực tiếp các tính năng nghiệp vụ cốt lõi dưới dạng gạch đầu dòng. Điểm chèn video YouTube đã được thiết lập sẵn sàng và sẽ tự động hiển thị khi cập nhật liên kết.
+                        </p>
+                      </div>
+
+                      {/* Bullet summary of key features right inside this view */}
+                      <div className="mt-6 max-w-xl mx-auto p-4 rounded-2xl bg-[#07111E]/80 border border-slate-700/80 text-left">
+                        <span className="text-xs font-mono font-extrabold text-amber-400 uppercase tracking-wider block mb-2">
+                          ⚡ Tóm tắt tính năng cốt lõi:
+                        </span>
+                        <ul className="space-y-1.5 text-xs sm:text-sm text-slate-200">
+                          {app.keyFeatures.slice(0, 4).map((feat, fIdx) => (
+                            <li key={fIdx} className="flex items-start gap-2">
+                              <span className="text-amber-400 font-bold">•</span>
+                              <span className="leading-snug">{feat}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+                        <a
+                          href={app.url}
+                          target={isMobileOrWebview() ? '_self' : '_blank'}
+                          rel="noopener noreferrer"
+                          onClick={(e) => openExternalApp(app.url, e)}
+                          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs sm:text-sm font-black text-slate-950 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-amber-300 hover:to-yellow-400 shadow-lg shadow-amber-400/25 transition-all cursor-pointer"
+                        >
+                          <span>Trải nghiệm ngay: {app.url.replace('https://', '')}</span>
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                        <button
+                          onClick={() => setActiveTab('image')}
+                          className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs sm:text-sm font-bold text-slate-200 bg-[#0E223D] hover:bg-[#142C4C] border border-slate-700 hover:border-amber-400/50 transition-all cursor-pointer"
+                        >
+                          <span>Xem hình ảnh &amp; toàn bộ tính năng</span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               ) : (
@@ -1138,55 +1246,57 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
               )}
 
               {/* Video Scene Breakdown Interactive Buttons (5 Cột cân đối, mượt mà trên cả Mobile & Laptop) */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 sm:gap-2.5">
-                {app.videoScenes.map((scene, idx) => {
-                  const sceneTitle = getSceneTitle(scene);
-                  const sceneDesc = getSceneDesc(scene);
-                  const sceneTime = getSceneTime(scene);
-                  const isReviewScene = sceneTitle.includes('Lời bình') || (scene.titleEn && scene.titleEn.includes('Review'));
-                  return (
-                    <button
-                      key={idx}
-                      onClick={() => {
-                        setSelectedSceneIdx(idx);
-                        setVideoProgress(0);
-                        setIsPlayingVideo(true);
-                      }}
-                      className={`p-2.5 sm:p-3 rounded-xl sm:rounded-2xl text-left border transition-all cursor-pointer flex flex-col justify-between ${
-                        selectedSceneIdx === idx
-                          ? isReviewScene
-                            ? 'bg-emerald-950/40 border-emerald-400 text-emerald-100 shadow-lg ring-2 ring-emerald-400/30'
-                            : 'bg-amber-400/15 border-amber-400 text-amber-200 shadow-md ring-2 ring-amber-400/20'
-                          : isReviewScene
-                            ? 'bg-gradient-to-br from-[#0B253A] to-[#0A1D30] border-emerald-500/40 text-slate-300 hover:border-emerald-400/70 hover:bg-[#0F2F49]'
-                            : 'bg-[#0E223D] border-slate-700/80 text-slate-300 hover:bg-[#142C4C] hover:border-slate-650'
-                      }`}
-                    >
-                      <div className="flex items-center justify-between text-[10px] sm:text-xs font-bold w-full">
-                        <span className={selectedSceneIdx === idx ? (isReviewScene ? 'text-emerald-400 flex items-center gap-1 font-black' : 'text-amber-400 flex items-center gap-1 font-black') : (isReviewScene ? 'text-emerald-400 flex items-center gap-1 font-bold' : 'text-slate-400')}>
-                          {selectedSceneIdx === idx && <span className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full ${isReviewScene ? 'bg-emerald-400' : 'bg-amber-400'} animate-ping`} />}
-                          <span className="truncate">
-                            {isReviewScene ? (isEnAudio ? '💡 Commentary' : '💡 Lời bình & Bất ngờ') : (selectedSceneIdx === idx ? (isEnAudio ? `Playing #${idx + 1}` : `Đang phát #${idx + 1}`) : (isEnAudio ? `Part #${idx + 1}` : `Phần #${idx + 1}`))}
+              {app.videoScenes && app.videoScenes.length > 0 && (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 sm:gap-2.5">
+                  {app.videoScenes.map((scene, idx) => {
+                    const sceneTitle = getSceneTitle(scene);
+                    const sceneDesc = getSceneDesc(scene);
+                    const sceneTime = getSceneTime(scene);
+                    const isReviewScene = sceneTitle.includes('Lời bình') || (scene.titleEn && scene.titleEn.includes('Review'));
+                    return (
+                      <button
+                        key={idx}
+                        onClick={() => {
+                          setSelectedSceneIdx(idx);
+                          setVideoProgress(0);
+                          setIsPlayingVideo(true);
+                        }}
+                        className={`p-2.5 sm:p-3 rounded-xl sm:rounded-2xl text-left border transition-all cursor-pointer flex flex-col justify-between ${
+                          selectedSceneIdx === idx
+                            ? isReviewScene
+                              ? 'bg-emerald-950/40 border-emerald-400 text-emerald-100 shadow-lg ring-2 ring-emerald-400/30'
+                              : 'bg-amber-400/15 border-amber-400 text-amber-200 shadow-md ring-2 ring-amber-400/20'
+                            : isReviewScene
+                              ? 'bg-gradient-to-br from-[#0B253A] to-[#0A1D30] border-emerald-500/40 text-slate-300 hover:border-emerald-400/70 hover:bg-[#0F2F49]'
+                              : 'bg-[#0E223D] border-slate-700/80 text-slate-300 hover:bg-[#142C4C] hover:border-slate-650'
+                        }`}
+                      >
+                        <div className="flex items-center justify-between text-[10px] sm:text-xs font-bold w-full">
+                          <span className={selectedSceneIdx === idx ? (isReviewScene ? 'text-emerald-400 flex items-center gap-1 font-black' : 'text-amber-400 flex items-center gap-1 font-black') : (isReviewScene ? 'text-emerald-400 flex items-center gap-1 font-bold' : 'text-slate-400')}>
+                            {selectedSceneIdx === idx && <span className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full ${isReviewScene ? 'bg-emerald-400' : 'bg-amber-400'} animate-ping`} />}
+                            <span className="truncate">
+                              {isReviewScene ? (isEnAudio ? '💡 Commentary' : '💡 Lời bình & Bất ngờ') : (selectedSceneIdx === idx ? (isEnAudio ? `Playing #${idx + 1}` : `Đang phát #${idx + 1}`) : (isEnAudio ? `Part #${idx + 1}` : `Phần #${idx + 1}`))}
+                            </span>
                           </span>
-                        </span>
-                        <span className={`font-mono px-1.5 py-0.5 rounded border text-[9px] sm:text-[10px] font-bold shrink-0 ml-1 ${
-                          isReviewScene
-                            ? 'bg-[#061C24] border-emerald-500/60 text-emerald-300'
-                            : 'bg-[#07111E] border-slate-700 text-amber-300'
-                        }`}>
-                          {sceneTime}
-                        </span>
-                      </div>
-                      <div className="text-xs sm:text-sm font-black text-white mt-1 line-clamp-1">
-                        {sceneTitle}
-                      </div>
-                      <div className="text-[11px] sm:text-xs text-slate-300 mt-1 line-clamp-2 leading-relaxed">
-                        {sceneDesc}
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
+                          <span className={`font-mono px-1.5 py-0.5 rounded border text-[9px] sm:text-[10px] font-bold shrink-0 ml-1 ${
+                            isReviewScene
+                              ? 'bg-[#061C24] border-emerald-500/60 text-emerald-300'
+                              : 'bg-[#07111E] border-slate-700 text-amber-300'
+                          }`}>
+                            {sceneTime}
+                          </span>
+                        </div>
+                        <div className="text-xs sm:text-sm font-black text-white mt-1 line-clamp-1">
+                          {sceneTitle}
+                        </div>
+                        <div className="text-[11px] sm:text-xs text-slate-300 mt-1 line-clamp-2 leading-relaxed">
+                          {sceneDesc}
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
 
               {/* Quick App Transition Bar (Chuyển tiếp tức thì sang App kế tiếp) */}
               {allApps && onSelectApp && (
@@ -1376,9 +1486,9 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                 <HelpCircle className="w-4 h-4" />
                 <span>Nỗi đau &amp; Bài toán thực tế</span>
               </div>
-              <p className="text-sm sm:text-base text-slate-100 leading-relaxed font-normal">
+              <div className="text-sm sm:text-base text-slate-100 leading-relaxed font-normal whitespace-pre-line space-y-1.5">
                 {app.problem}
-              </p>
+              </div>
             </div>
 
             <div className="p-5 sm:p-6 rounded-2xl bg-[#0E223D] border border-slate-700/80 space-y-2.5 shadow-md">
@@ -1386,9 +1496,9 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                 <Target className="w-4 h-4" />
                 <span>Giải pháp &amp; Giá trị mang lại</span>
               </div>
-              <p className="text-sm sm:text-base text-slate-100 leading-relaxed font-normal">
+              <div className="text-sm sm:text-base text-slate-100 leading-relaxed font-normal whitespace-pre-line space-y-1.5">
                 {app.solution}
-              </p>
+              </div>
             </div>
           </div>
 

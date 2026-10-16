@@ -260,8 +260,9 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
   // Focus view index for Parenting apps: null means compact grid view, 0-3 means single app focus view
   const [activeParentingIdx, setActiveParentingIdx] = useState<number | null>(null);
 
-  // 3. Nền Tảng Công Nghệ & Quản Trị Tiêu Biểu (Flagship 4 app: Foodtech, CosmeDerm, HTX, TaxHKD)
+  // 3. Nền Tảng Công Nghệ & Quản Trị Tiêu Biểu (Flagship apps: Hôm Nay Ăn Gì?, Foodtech, CosmeDerm, HTX, TaxHKD)
   const flagshipOrder = [
+    'hom-nay-an-gi',
     'foodtech-hub',
     'cosmederm-ai-academy',
     'htx-rau-cu',
@@ -1251,24 +1252,24 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
             <div>
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/30 text-xs sm:text-sm font-bold text-amber-300 mb-3">
                 <Sparkles className="w-4 h-4 text-amber-400" />
-                <span>NỀN TẢNG TRỌNG ĐIỂM • HỆ SINH THÁI DOANH NGHIỆP (4 APP)</span>
+                <span>NỀN TẢNG TRỌNG ĐIỂM • HỆ SINH THÁI DOANH NGHIỆP &amp; ĐỜI SỐNG ({flagshipApps.length} APP)</span>
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
                 Nền Tảng Công Nghệ &amp; Quản Trị Tiêu Biểu
               </h2>
               <p className="text-base sm:text-lg text-slate-200 mt-3 max-w-3xl leading-relaxed">
-                4 nền tảng số hóa quản trị doanh nghiệp &amp; nghiên cứu chuyên sâu: Vietnam Food Tech Hub, CosmeDerm AI Academy, Nông nghiệp HTX Rau Củ Quả và Thuế SmartTax HKD.
+                Các nền tảng số hóa quản trị doanh nghiệp, nghiên cứu chuyên sâu &amp; đời sống: Trợ lý dinh dưỡng Hôm Nay Ăn Gì?, Vietnam Food Tech Hub, CosmeDerm AI Academy, Nông nghiệp HTX Rau Củ Quả và Thuế SmartTax HKD.
               </p>
             </div>
             <div className="mt-4 md:mt-0 text-xs sm:text-sm font-mono text-amber-400 font-bold bg-[#0A192F] px-4 py-2 rounded-xl border border-amber-400/30 whitespace-nowrap shadow-sm">
-              [ 4 NỀN TẢNG TRỌNG ĐIỂM • LIVE PRODUCTION ]
+              [ {flagshipApps.length} NỀN TẢNG TRỌNG ĐIỂM • LIVE PRODUCTION ]
             </div>
           </div>
 
           {/* Conditional View: Grid View vs Focus Detail View */}
           {activeFlagshipIdx === null ? (
             /* COMPACT GRID VIEW (Chỉ hiện hình + tên app thu nhỏ, tránh rối mắt) */
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
               {flagshipApps.map((app, index) => 
                 renderCompactCard(
                   app,
@@ -1289,7 +1290,7 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
               flagshipApps,
               () => setActiveFlagshipIdx(null),
               (newIdx) => setActiveFlagshipIdx(newIdx),
-              ['1. Food Tech Hub', '2. CosmeDerm AI', '3. HTX Nông Nghiệp', '4. Thuế SmartTax HKD']
+              ['1. Hôm Nay Ăn Gì?', '2. Food Tech Hub', '3. CosmeDerm AI', '4. HTX Nông Nghiệp', '5. Thuế SmartTax HKD']
             )
           )}
         </div>
