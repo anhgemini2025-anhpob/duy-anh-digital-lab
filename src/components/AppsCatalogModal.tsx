@@ -72,6 +72,8 @@ export const AppsCatalogModal: React.FC<AppsCatalogModalProps> = ({
     return (
       app.name.toLowerCase().includes(q) ||
       app.category.toLowerCase().includes(q) ||
+      app.url.toLowerCase().includes(q) ||
+      app.id.toLowerCase().includes(q) ||
       app.description.toLowerCase().includes(q) ||
       app.problem.toLowerCase().includes(q) ||
       app.solution.toLowerCase().includes(q) ||

@@ -157,12 +157,15 @@ export const APPS_DATA: AppItem[] = [
   {
     logoUrl: "/apps/hom-nay-an-gi/app-logo.svg",
     id: "hom-nay-an-gi",
-    name: "Hôm Nay Ăn Gì?",
+    name: "Hôm Nay Ăn Gì? (Vietnuti)",
     url: "https://vietnuti.vercel.app",
     category: "Dinh dưỡng & F&B",
     categoryId: "food-tech",
     description: "Trợ lý dinh dưỡng thông minh và tổ chức bữa ăn gia đình người Việt đa thế hệ (từ 0 đến trên 90 tuổi). Giúp ra quyết định nhanh 5–10s: ăn món gì, nấu thế nào, mua gì, chi bao nhiêu, quản lý tủ lạnh chống lãng phí và giải pháp 'Một mâm cơm — Nhiều nhu cầu' chuẩn y khoa có nguồn kiểm chứng minh bạch.",
     tags: [
+      "Vietnuti",
+      "vietnuti.vercel.app",
+      "Hôm Nay Ăn Gì",
       "Dinh Dưỡng Người Việt",
       "Mâm Cơm Gia Đình",
       "Gợi Ý Món Ăn 5s",
