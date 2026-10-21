@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layers, ShoppingBag, Sparkles, Phone, Mail } from 'lucide-react';
+import { Layers, ShoppingBag, Sparkles, Phone, Mail, Flame } from 'lucide-react';
 import { openExternalApp, isMobileOrWebview } from '../utils/navigation';
 
 interface NavbarProps {
@@ -43,7 +43,18 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           {/* Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-300">
+          <nav className="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-300">
+            {/* New App Spotlight Pill */}
+            <a 
+              href="#vietnail-showcase" 
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-red-600 via-amber-500 to-yellow-400 text-slate-950 font-black text-xs shadow-md shadow-amber-400/20 hover:scale-105 active:scale-95 transition-all cursor-pointer animate-pulse"
+              title="Khám phá ứng dụng mới: VietNail Guide AI"
+            >
+              <Flame className="w-3.5 h-3.5 text-slate-950 fill-current" />
+              <span>App Mới: VietNail Guide</span>
+              <Sparkles className="w-3 h-3 text-slate-950" />
+            </a>
+
             <a href="#featured" className="hover:text-amber-300 transition-colors flex items-center gap-1.5">
               <Sparkles className="w-4 h-4 text-amber-400" />
               <span>Tiêu biểu</span>

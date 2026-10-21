@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { 
   Sparkles, ExternalLink, ArrowRight, Rocket, Check, Plus, 
-  Video, Image as ImageIcon, BookOpen, Bot, ShieldCheck, 
-  FileText, DollarSign, Award, Store, Languages, HelpCircle
+  Video, Image as ImageIcon, Bot, ShieldCheck, 
+  FileText, DollarSign, Award, Store, Languages, Flame,
+  Star, Zap, Trophy, Play, CheckCircle2, RefreshCw
 } from 'lucide-react';
 import { AppItem } from '../data/apps';
 import { openExternalApp, isMobileOrWebview, getYouTubeEmbedUrl } from '../utils/navigation';
@@ -24,41 +25,53 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
   const [activeTab, setActiveTab] = useState<'video' | 'image'>('video');
   const [activeFeatureIdx, setActiveFeatureIdx] = useState<number>(0);
 
-  // 8 Tính năng cốt lõi (Trình bày ngắn gọn, súc tích, dễ nắm bắt)
+  // 8 Tính năng cốt lõi (Gắn icon bắt mắt, màu sắc riêng biệt, ngắn gọn, súc tích)
   const coreFeatures = [
     {
       idx: 0,
       badge: "Tính năng 1",
-      icon: Award,
+      icon: Trophy,
+      iconColor: "text-amber-400",
+      iconBg: "bg-amber-500/20 border-amber-400/50",
+      tag: "Song ngữ Việt - Anh",
       title: "Học Nghề & Luyện Thi Bằng Nail (State Board)",
-      shortTitle: "Luyện Thi Bằng",
-      desc: "Ngân hàng câu hỏi trắc nghiệm lý thuyết song ngữ Việt - Anh sát cấu trúc đề thi thật của Hội đồng Thẩm mỹ (State Board) các tiểu bang.",
+      shortTitle: "Luyện Thi Bằng Nail",
+      desc: "Ngân hàng câu hỏi trắc nghiệm lý thuyết song ngữ Việt - Anh bám sát cấu trúc đề thi thật của Hội đồng Thẩm mỹ (State Board) các tiểu bang.",
       screen: "/apps/vietnail/feature_01_luyen_thi_bang_nail.png"
     },
     {
       idx: 1,
       badge: "Tính năng 2",
-      icon: RefreshCwIcon,
+      icon: RefreshCw,
+      iconColor: "text-sky-400",
+      iconBg: "bg-sky-500/20 border-sky-400/50",
+      tag: "Đổi bằng CA, TX, FL, NY...",
       title: "Cấp Phép & Chuyển Đổi Bằng Tiểu Bang (Reciprocity)",
-      shortTitle: "Chuyển Bằng Bang",
-      desc: "Hướng dẫn chi tiết thủ tục, hồ sơ và điều kiện đổi bằng giữa các tiểu bang (CA, TX, FL, NY, GA...) mà không cần học lại từ đầu.",
+      shortTitle: "Chuyển Bằng Liên Bang",
+      desc: "Hướng dẫn chi tiết thủ tục, hồ sơ và điều kiện đổi bằng giữa các tiểu bang (CA, TX, FL, NY, GA...) mà không cần phải học lại từ đầu.",
       screen: "/apps/vietnail/feature_02_chuyen_doi_bang_tieu_bang.png"
     },
     {
       idx: 2,
       badge: "Tính năng 3",
       icon: Store,
+      iconColor: "text-emerald-400",
+      iconBg: "bg-emerald-500/20 border-emerald-400/50",
+      tag: "A-Z Pháp lý & Mặt bằng",
       title: "Mở Tiệm Nail & Vận Hành Kinh Doanh Salon",
       shortTitle: "Mở Tiệm Salon",
-      desc: "Trọn bộ quy trình xin giấy phép Salon, đăng ký kinh doanh, hợp đồng thuê mặt bằng, tiêu chuẩn cơ sở vật chất và quản trị nhân sự.",
+      desc: "Trọn bộ quy trình xin giấy phép Salon, đăng ký kinh doanh, hợp đồng thuê mặt bằng, tiêu chuẩn cơ sở vật chất và quản trị thợ.",
       screen: "/apps/vietnail/feature_03_mo_tiem_nail_salon.png"
     },
     {
       idx: 3,
       badge: "Tính năng 4",
       icon: DollarSign,
+      iconColor: "text-lime-400",
+      iconBg: "bg-lime-500/20 border-lime-400/50",
+      tag: "Chuẩn IRS & Tối ưu Tip",
       title: "Quản Lý Thu Chi & Tối Ưu Thuế (W-2 vs 1099)",
-      shortTitle: "Thu Chi & Thuế",
+      shortTitle: "Thu Chi & Thuế 1099",
       desc: "Phân biệt rõ ràng thợ ăn lương W-2 và thợ độc lập 1099; theo dõi tiền tip, chi phí khấu trừ đồ nghề và chuẩn bị sổ sách kế toán tránh bị IRS phạt.",
       screen: "/apps/vietnail/feature_04_thu_chi_thue_w2_1099.png"
     },
@@ -66,8 +79,11 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
       idx: 4,
       badge: "Tính năng 5",
       icon: ShieldCheck,
+      iconColor: "text-rose-400",
+      iconBg: "bg-rose-500/20 border-rose-400/50",
+      tag: "Tránh phạt thanh tra đột xuất",
       title: "An Toàn & Vệ Sinh Chuẩn State Board / OSHA",
-      shortTitle: "An Toàn Vệ Sinh",
+      shortTitle: "An Toàn & Vệ Sinh",
       desc: "Quy chuẩn khử trùng tiệt trùng dụng cụ, bảo hộ lao động, thông gió hút bụi hóa chất và bảng kiểm sẵn sàng đón đợt thanh tra đột xuất.",
       screen: "/apps/vietnail/feature_05_an_toan_ve_sinh_state_board.png"
     },
@@ -75,6 +91,9 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
       idx: 5,
       badge: "Tính năng 6",
       icon: FileText,
+      iconColor: "text-indigo-400",
+      iconBg: "bg-indigo-500/20 border-indigo-400/50",
+      tag: "Booth Rental in sẵn",
       title: "Biểu Mẫu Song Ngữ & Hợp Đồng In Sẵn",
       shortTitle: "Biểu Mẫu & Hợp Đồng",
       desc: "Mẫu hợp đồng thuê bàn ghế (Booth Rental Agreement), thỏa thuận thợ ăn chia, phiếu miễn trừ trách nhiệm và tư vấn khách hàng song ngữ.",
@@ -84,6 +103,9 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
       idx: 6,
       badge: "Tính năng 7",
       icon: Languages,
+      iconColor: "text-cyan-400",
+      iconBg: "bg-cyan-500/20 border-cyan-400/50",
+      tag: "Giao tiếp với khách Mỹ",
       title: "Tiếng Anh Giao Tiếp Thực Chiến Tại Bàn Nail",
       shortTitle: "Tiếng Anh Tại Bàn",
       desc: "Tổng hợp các mẫu câu hội thoại thực tế: từ chào hỏi, tư vấn mẫu móng, hỏi ý kiến độ dài/màu sắc đến giải quyết phàn nàn của khách Mỹ.",
@@ -93,6 +115,9 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
       idx: 7,
       badge: "Tính năng 8",
       icon: Bot,
+      iconColor: "text-purple-400",
+      iconBg: "bg-purple-500/20 border-purple-400/50",
+      tag: "Giọng nói & Gõ chữ 24/7",
       title: "Trợ Lý AI Hỏi Đáp Bằng Giọng Nói & Chữ 24/7",
       shortTitle: "Trợ Lý AI Voice",
       desc: "Tra cứu quy định pháp lý, giải đáp thắc mắc nghề nghiệp tức thì bằng giọng nói tiếng Việt hoặc gõ chữ — đồng hành cùng người làm nail 24/7.",
@@ -104,11 +129,12 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
   const isRequested = Boolean(vietnailApp && isAppRequested && isAppRequested(vietnailApp.id));
 
   return (
-    <section id="vietnail-showcase" className="relative overflow-hidden pt-8 pb-14 sm:pt-12 sm:pb-20 border-b border-amber-500/20 bg-gradient-to-b from-[#07111E] via-[#08172E] to-[#07111E]">
+    <section id="vietnail-showcase" className="relative overflow-hidden pt-8 pb-14 sm:pt-12 sm:pb-20 border-b border-amber-500/30 bg-gradient-to-b from-[#07111E] via-[#091A33] to-[#07111E]">
       {/* Background Ambience & Red/Blue/Gold Accents */}
       <div className="absolute inset-0 bg-[radial-gradient(#1e3a5f_1px,transparent_1px)] [background-size:24px_24px] opacity-25 pointer-events-none" />
-      <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-blue-600/15 rounded-full blur-3xl pointer-events-none -z-10" />
-      <div className="absolute bottom-0 right-10 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-r from-blue-600/20 via-amber-500/15 to-red-600/20 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/3 -right-20 w-96 h-96 bg-amber-500/15 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/2 -left-20 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -137,46 +163,70 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
             </div>
           </div>
 
-          {/* Top Industry Badge */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-2xl bg-gradient-to-r from-blue-950 via-indigo-950 to-red-950/80 border border-amber-400/60 shadow-lg shadow-amber-500/10">
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-400"></span>
-            </span>
-            <span className="text-xs font-black uppercase tracking-wider bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-400 bg-clip-text text-transparent">
-              ỨNG DỤNG TIÊU ĐIỂM ĐẦU TRANG • CẨM NANG NGHỀ NAIL TẠI MỸ
-            </span>
+          {/* EYE-CATCHING NEW RELEASE FLASH PILL */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-gradient-to-r from-red-600 via-amber-500 to-yellow-400 text-slate-950 font-black text-xs sm:text-sm shadow-xl shadow-amber-500/25 border-2 border-yellow-200">
+            <Flame className="w-4 h-4 text-slate-950 fill-current animate-bounce" />
+            <span className="uppercase tracking-wider">🔥 PHÁT HÀNH MỚI NHẤT • ĐẦU TRANG</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-slate-950" />
+            <span className="text-[11px] font-mono">LIVE PRODUCTION</span>
           </div>
         </div>
 
-        {/* Section Header */}
-        <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-12 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gradient-to-r from-blue-900/80 via-slate-900/90 to-red-900/80 border border-amber-400/50 text-amber-300 text-xs sm:text-sm font-bold shadow-lg">
-            <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+        {/* SECTION HERO HEADER: ULTRA EYE-CATCHING */}
+        <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-14 space-y-4">
+          
+          {/* Attention Badge with Stars & Flags */}
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-red-950/90 via-slate-900/90 to-blue-950/90 border-2 border-amber-400/70 text-amber-300 text-xs sm:text-sm font-extrabold shadow-xl shadow-amber-500/10">
+            <span className="text-base">💅</span>
             <span className="font-extrabold tracking-wide uppercase">CẨM NANG NGHỀ &amp; KINH DOANH NAIL TẠI MỸ CHO NGƯỜI VIỆT</span>
+            <span className="text-base">🇺🇸</span>
           </div>
 
+          {/* Big Radiant Title */}
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
-            VIETNAIL GUIDE AI — Cẩm Nang Nghề &amp; Quản Trị Tiệm Nail Tại Mỹ
+            <span className="bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-400 bg-clip-text text-transparent drop-shadow-md">
+              VIETNAIL GUIDE AI
+            </span>
+            <span className="block text-xl sm:text-3xl lg:text-4xl text-slate-100 font-black mt-2">
+              Cẩm Nang Nghề &amp; Quản Trị Tiệm Nail Tại Mỹ
+            </span>
           </h1>
 
-          <p className="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            Lộ trình học thi bằng State Board – Chuyển bằng tiểu bang – Mở tiệm &amp; Tối ưu thuế W-2/1099 – Biểu mẫu song ngữ – Trợ lý AI hỏi đáp 24/7.
+          <p className="text-sm sm:text-base text-slate-300 max-w-3xl mx-auto leading-relaxed">
+            Hệ thống cẩm nang số hóa toàn diện: Luyện thi bằng State Board – Chuyển bằng giữa các tiểu bang – Mở tiệm &amp; Tối ưu thuế W-2/1099 – Biểu mẫu song ngữ – Trợ lý AI hỏi đáp 24/7.
           </p>
+
+          {/* Quick Tag Pills with Eye-Catching Icons */}
+          <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-[#0B2447] border border-blue-400/40 text-blue-300 text-xs font-bold">
+              <span>🇺🇸</span>
+              <span>Dành cho thợ &amp; chủ nail tại Mỹ</span>
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-[#081E15] border border-emerald-400/40 text-emerald-300 text-xs font-bold">
+              <Trophy className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Luyện thi State Board</span>
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-[#1E110A] border border-amber-400/40 text-amber-300 text-xs font-bold">
+              <RefreshCw className="w-3.5 h-3.5 text-amber-400" />
+              <span>Chuyển bằng liên bang</span>
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-[#1D0E1E] border border-purple-400/40 text-purple-300 text-xs font-bold">
+              <Bot className="w-3.5 h-3.5 text-purple-400" />
+              <span>Trợ lý AI Voice 24/7</span>
+            </span>
+          </div>
         </div>
 
-        {/* Main Interactive Container */}
-        <div className="max-w-5xl mx-auto p-4 sm:p-7 bg-[#0A192F]/95 border-2 border-amber-400/60 rounded-3xl backdrop-blur-xl shadow-2xl shadow-blue-950/80 relative">
+        {/* MAIN SHOWCASE CONTAINER WITH GLOWING GOLD BORDER */}
+        <div className="max-w-5xl mx-auto p-4 sm:p-7 bg-[#0A192F]/95 border-2 border-amber-400 rounded-3xl backdrop-blur-xl shadow-2xl shadow-blue-950 relative">
           
           {/* Top Bar: Brand, Status Badge & Media Switcher */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-4 border-b border-slate-700/80 mb-5">
             <div className="flex items-center gap-2.5">
-              <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="text-xs sm:text-sm font-black uppercase tracking-wider bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 bg-clip-text text-transparent">
-                TIÊU ĐIỂM DỊCH VỤ &amp; SALON NAIL • HOA KỲ
-              </span>
-              <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-400/40">
-                LIVE PRODUCTION
+              <span className="w-3 h-3 rounded-full bg-emerald-400 animate-pulse shadow-md shadow-emerald-400/50" />
+              <span className="text-xs sm:text-sm font-black uppercase tracking-wider bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 bg-clip-text text-transparent flex items-center gap-1.5">
+                <Flame className="w-4 h-4 text-amber-400 fill-current" />
+                <span>TIÊU ĐIỂM DỊCH VỤ &amp; SALON NAIL • HOA KỲ</span>
               </span>
             </div>
 
@@ -184,7 +234,7 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
             <div className="flex items-center bg-[#07111E] rounded-xl p-1 border border-slate-700 shadow-md">
               <button
                 onClick={() => setActiveTab('video')}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                   activeTab === 'video'
                     ? 'bg-gradient-to-r from-red-600 to-red-500 text-white font-black shadow-md'
                     : 'text-slate-300 hover:text-white'
@@ -197,7 +247,7 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
 
               <button
                 onClick={() => setActiveTab('image')}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                   activeTab === 'image'
                     ? 'bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-950 font-black shadow-md'
                     : 'text-slate-300 hover:text-white'
@@ -210,26 +260,33 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
             </div>
           </div>
 
-          {/* App Header Bar & Direct Launch Actions */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4 bg-slate-950/85 rounded-2xl border border-amber-400/35 mb-5 shadow-lg">
+          {/* APP IDENTITY HEADER & DIRECT ACTION BUTTONS */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4 bg-slate-950/90 rounded-2xl border border-amber-400/40 mb-5 shadow-xl">
             <div className="flex items-center gap-3.5 min-w-0">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#0B2447] border border-amber-400/70 p-1.5 shrink-0 shadow-lg shadow-amber-400/10 flex items-center justify-center">
-                <img 
-                  src="/apps/vietnail/app-logo.svg" 
-                  alt="VietNail Guide AI" 
-                  className="w-full h-full object-contain"
-                />
+              <div className="relative">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#0B2447] border-2 border-amber-400 p-1.5 shrink-0 shadow-lg shadow-amber-400/20 flex items-center justify-center">
+                  <img 
+                    src="/apps/vietnail/app-logo.svg" 
+                    alt="VietNail Guide AI" 
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                {/* Floating "HOT" badge on logo */}
+                <div className="absolute -top-2 -right-2 px-1.5 py-0.5 rounded-md bg-gradient-to-r from-red-600 to-amber-500 text-[9px] font-black text-white shadow-md uppercase">
+                  MỚI
+                </div>
               </div>
+
               <div className="min-w-0 text-left">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <h3 className="text-base sm:text-xl font-black text-white truncate">
+                  <h3 className="text-lg sm:text-2xl font-black text-white truncate">
                     VietNail Guide AI
                   </h3>
-                  <span className="text-[10px] px-2 py-0.5 bg-blue-500/20 text-blue-300 border border-blue-400/40 font-mono font-bold rounded-md">
+                  <span className="text-[10px] px-2 py-0.5 bg-red-600/20 text-red-300 border border-red-500/40 font-mono font-bold rounded-md">
                     Cẩm Nang Nghề Mỹ
                   </span>
                 </div>
-                <p className="text-xs sm:text-sm text-slate-300 truncate mt-0.5">
+                <p className="text-xs sm:text-sm text-amber-400 font-mono truncate mt-0.5 font-bold">
                   https://vietnail.vercel.app
                 </p>
               </div>
@@ -241,10 +298,10 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
                 target={isMobileOrWebview() ? '_self' : '_blank'}
                 rel="noopener noreferrer"
                 onClick={(e) => openExternalApp('https://vietnail.vercel.app', e)}
-                className="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl font-black text-xs sm:text-sm text-slate-950 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-amber-300 hover:to-yellow-400 active:scale-95 shadow-md shadow-amber-400/30 transition-all cursor-pointer group"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-black text-xs sm:text-sm text-slate-950 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-amber-300 hover:to-yellow-400 active:scale-95 shadow-xl shadow-amber-400/30 transition-all cursor-pointer group"
                 title="Mở trực tiếp https://vietnail.vercel.app trong tab mới"
               >
-                <Rocket className="w-4 h-4 text-slate-950" />
+                <Rocket className="w-4 h-4 text-slate-950 animate-pulse" />
                 <span>Mở Web App: vietnail.vercel.app</span>
                 <ExternalLink className="w-3.5 h-3.5 text-slate-950 group-hover:translate-x-0.5 transition-transform" />
               </a>
@@ -252,7 +309,7 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
               {vietnailApp && (
                 <button
                   onClick={() => onSelectApp(vietnailApp, activeTab)}
-                  className="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-slate-200 bg-[#0E223D] hover:bg-[#142F54] border border-slate-700 hover:border-amber-400 transition-all cursor-pointer"
+                  className="inline-flex items-center gap-1.5 px-4 py-3 rounded-xl text-xs sm:text-sm font-bold text-slate-200 bg-[#0E223D] hover:bg-[#142F54] border border-slate-700 hover:border-amber-400 transition-all cursor-pointer"
                   title="Xem toàn bộ mô tả chi tiết và thông số"
                 >
                   <span>Chi tiết</span>
@@ -263,7 +320,7 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
               {vietnailApp && onToggleRequest && (
                 <button
                   onClick={() => onToggleRequest(vietnailApp)}
-                  className={`p-2.5 rounded-xl transition-all cursor-pointer ${
+                  className={`p-3 rounded-xl transition-all cursor-pointer ${
                     isRequested
                       ? 'bg-emerald-600 text-white shadow-md'
                       : 'bg-[#0E223D] hover:bg-amber-400 hover:text-slate-950 text-slate-300 border border-slate-700'
@@ -280,7 +337,7 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
           {/* MEDIA DISPLAY: YOUTUBE EMBED SLOT OR SCREENSHOT GALLERY          */}
           {/* ══════════════════════════════════════════════════════════════════ */}
           {activeTab === 'video' ? (
-            /* YOUTUBE VIDEO SECTION: IF EMBED URL EXISTS, SHOW IFRAME; OTHERWISE, SHOW GORGEOUS PLACEHOLDER SLOT */
+            /* YOUTUBE VIDEO SECTION */
             <div className="space-y-4">
               {vietnailApp && vietnailApp.youtubeUrl ? (
                 /* LIVE YOUTUBE PLAYER EMBED */
@@ -294,39 +351,41 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
                   />
                 </div>
               ) : (
-                /* DEDICATED YOUTUBE PLACEHOLDER SPOT (CHỪA CHỖ ĐỂ CHÈN CLIP QUẢNG CÁO YOUTUBE - SẼ DÁN SAU) */
-                <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden bg-gradient-to-br from-[#081528] via-[#0B1A2F] to-[#07111E] border-2 border-dashed border-red-500/60 p-6 sm:p-10 flex flex-col items-center justify-center text-center shadow-2xl group">
-                  {/* Subtle red glow background */}
-                  <div className="absolute inset-0 bg-red-600/5 group-hover:bg-red-600/10 transition-colors pointer-events-none" />
-                  <div className="absolute -top-10 -right-10 w-48 h-48 bg-red-500/10 rounded-full blur-2xl pointer-events-none" />
+                /* ULTRA EYE-CATCHING YOUTUBE PLACEHOLDER SPOT (CHỪA CHỖ ĐỂ CHÈN CLIP QUẢNG CÁO YOUTUBE) */
+                <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden bg-gradient-to-br from-[#0A1628] via-[#0E1F38] to-[#07111E] border-2 border-dashed border-red-500/80 p-6 sm:p-10 flex flex-col items-center justify-center text-center shadow-2xl group">
+                  {/* Glowing background halo */}
+                  <div className="absolute inset-0 bg-red-600/10 group-hover:bg-red-600/15 transition-colors pointer-events-none" />
+                  <div className="absolute -top-12 -right-12 w-64 h-64 bg-red-500/20 rounded-full blur-3xl pointer-events-none" />
+                  <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-amber-500/15 rounded-full blur-3xl pointer-events-none" />
 
-                  {/* YouTube Icon Badge */}
-                  <div className="relative z-10 w-16 h-16 sm:w-20 sm:h-20 rounded-3xl bg-gradient-to-br from-red-600 to-red-700 text-white mx-auto flex items-center justify-center shadow-xl shadow-red-600/30 group-hover:scale-105 transition-transform">
-                    <svg className="w-9 h-9 sm:w-11 sm:h-11 fill-current" viewBox="0 0 24 24">
+                  {/* Pulsing YouTube Icon with Glowing Radar Rings */}
+                  <div className="relative z-10 w-20 h-20 sm:w-24 sm:h-24 rounded-3xl bg-gradient-to-br from-red-600 via-red-600 to-red-700 text-white mx-auto flex items-center justify-center shadow-2xl shadow-red-600/50 ring-4 ring-red-400/40 group-hover:scale-110 transition-transform">
+                    <svg className="w-11 h-11 sm:w-14 sm:h-14 fill-current drop-shadow-md" viewBox="0 0 24 24">
                       <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                     </svg>
                   </div>
 
-                  {/* Placeholder Content */}
-                  <div className="relative z-10 mt-4 space-y-2 max-w-xl">
-                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-500/20 border border-red-400/40 text-[11px] font-mono font-bold text-red-300">
-                      <span>CHỖ CHÈN CLIP QUẢNG CÁO TRÊN YOUTUBE (SẼ DÁN SAU)</span>
+                  {/* Attention-grabbing Placeholder Heading & Subtitle */}
+                  <div className="relative z-10 mt-5 space-y-2.5 max-w-xl">
+                    <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-red-600/25 border-2 border-red-400/60 text-xs font-mono font-black text-red-200 shadow-md">
+                      <span className="w-2 h-2 rounded-full bg-red-400 animate-ping" />
+                      <span>ĐIỂM CHÈN CLIP QUẢNG CÁO YOUTUBE SẴN SÀNG (SẼ DÁN SAU)</span>
                     </div>
 
-                    <h3 className="text-lg sm:text-2xl font-black text-white tracking-tight">
+                    <h3 className="text-xl sm:text-3xl font-black text-white tracking-tight">
                       Video Giới Thiệu &amp; Quảng Cáo Ứng Dụng Trên YouTube
                     </h3>
 
-                    <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-lg mx-auto">
-                      Vị trí này được cấu hình sẵn sàng chuẩn 16:9 cho clip giới thiệu. Khi có link YouTube, chỉ cần dán URL vào biến <code className="px-1.5 py-0.5 rounded bg-slate-900 text-amber-300 font-mono text-xs border border-amber-400/30">youtubeUrl</code>, video sẽ tự động phát trực tiếp tại đây!
+                    <p className="text-xs sm:text-sm text-slate-200 leading-relaxed max-w-lg mx-auto">
+                      Khung phát video chuẩn 16:9 đã được cấu hình hoàn chỉnh. Khi dán link clip YouTube vào biến <code className="px-1.5 py-0.5 rounded bg-slate-900 text-amber-300 font-mono text-xs border border-amber-400/30">youtubeUrl</code> trong file <code className="text-amber-300 font-mono">apps.ts</code>, clip sẽ <strong className="text-amber-400">tự động phát trực tiếp tại vị trí này</strong>!
                     </p>
                   </div>
 
                   {/* Actions inside placeholder */}
-                  <div className="relative z-10 mt-5 flex flex-wrap items-center justify-center gap-3">
+                  <div className="relative z-10 mt-6 flex flex-wrap items-center justify-center gap-3">
                     <button
                       onClick={() => setActiveTab('image')}
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold text-amber-300 bg-[#0E223D] hover:bg-[#142F54] border border-amber-400/40 hover:border-amber-400 transition-all cursor-pointer shadow-md"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-amber-300 bg-[#0E223D] hover:bg-[#142F54] border border-amber-400/50 hover:border-amber-400 transition-all cursor-pointer shadow-lg"
                     >
                       <ImageIcon className="w-4 h-4 text-amber-400" />
                       <span>Xem trước 7 ảnh tính năng thực tế</span>
@@ -337,10 +396,10 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
                       target={isMobileOrWebview() ? '_self' : '_blank'}
                       rel="noopener noreferrer"
                       onClick={(e) => openExternalApp('https://vietnail.vercel.app', e)}
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-400 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 transition-all cursor-pointer shadow-md"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-black text-slate-950 bg-gradient-to-r from-amber-400 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 transition-all cursor-pointer shadow-xl shadow-amber-400/30"
                     >
                       <span>Trải nghiệm ngay: vietnail.vercel.app</span>
-                      <ExternalLink className="w-3.5 h-3.5" />
+                      <ExternalLink className="w-4 h-4" />
                     </a>
                   </div>
                 </div>
@@ -351,7 +410,7 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
             <div className="space-y-4">
               <div 
                 onClick={() => vietnailApp && onSelectApp(vietnailApp, 'image')}
-                className="group relative aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-950 border border-slate-700 hover:border-amber-400/60 shadow-2xl cursor-pointer select-none"
+                className="group relative aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-950 border-2 border-slate-700 hover:border-amber-400 shadow-2xl cursor-pointer select-none"
                 title="Bấm để phóng to và xem toàn màn hình"
               >
                 <img
@@ -362,29 +421,29 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
                 />
 
                 {/* Bottom Overlay Info */}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent flex items-end p-4 sm:p-6 pointer-events-none">
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/30 to-transparent flex items-end p-4 sm:p-6 pointer-events-none">
                   <div>
-                    <span className="px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-amber-400 text-slate-950">
-                      {currentFeature.badge}
+                    <span className="px-3 py-1 rounded-full text-xs font-black bg-amber-400 text-slate-950 shadow-md">
+                      {currentFeature.badge} • {currentFeature.tag}
                     </span>
-                    <h4 className="text-base sm:text-xl font-black text-white mt-1 drop-shadow-md">
+                    <h4 className="text-lg sm:text-2xl font-black text-white mt-1.5 drop-shadow-md">
                       {currentFeature.title}
                     </h4>
-                    <p className="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2 max-w-2xl">
+                    <p className="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2 max-w-2xl leading-relaxed">
                       {currentFeature.desc}
                     </p>
                   </div>
                 </div>
 
                 {/* Click Hint */}
-                <div className="absolute top-3 right-3 hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/80 border border-amber-400/50 text-amber-300 text-xs font-bold backdrop-blur-md">
+                <div className="absolute top-3 right-3 hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-950/85 border border-amber-400/60 text-amber-300 text-xs font-bold backdrop-blur-md">
                   <span>Phóng to xem chi tiết</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </div>
 
               {/* 8 Feature Selector Tabs */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1">
                 {coreFeatures.map((feat) => {
                   const isCurrent = feat.idx === activeFeatureIdx;
                   const Icon = feat.icon;
@@ -392,18 +451,20 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
                     <button
                       key={feat.idx}
                       onClick={() => setActiveFeatureIdx(feat.idx)}
-                      className={`p-2.5 rounded-xl text-left transition-all cursor-pointer flex items-center gap-2 border ${
+                      className={`p-3 rounded-xl text-left transition-all cursor-pointer flex items-center gap-2.5 border ${
                         isCurrent
-                          ? 'bg-amber-400/15 border-amber-400 text-white shadow-md'
-                          : 'bg-[#081528] border-slate-700/80 text-slate-400 hover:text-white hover:border-slate-500'
+                          ? 'bg-amber-400/20 border-amber-400 text-white shadow-lg'
+                          : 'bg-[#081528] border-slate-700/80 text-slate-300 hover:text-white hover:border-slate-500'
                       }`}
                     >
-                      <Icon className={`w-4 h-4 shrink-0 ${isCurrent ? 'text-amber-400' : 'text-slate-500'}`} />
+                      <div className={`w-7 h-7 rounded-lg ${feat.iconBg} flex items-center justify-center shrink-0 border`}>
+                        <Icon className={`w-4 h-4 ${feat.iconColor}`} />
+                      </div>
                       <div className="min-w-0">
-                        <span className={`text-[10px] font-mono block leading-none ${isCurrent ? 'text-amber-300 font-bold' : 'text-slate-500'}`}>
+                        <span className={`text-[10px] font-mono block leading-none ${isCurrent ? 'text-amber-300 font-bold' : 'text-slate-400'}`}>
                           0{feat.idx + 1}
                         </span>
-                        <span className="text-xs font-bold truncate block mt-0.5">
+                        <span className="text-xs font-extrabold truncate block mt-0.5">
                           {feat.shortTitle}
                         </span>
                       </div>
@@ -415,34 +476,39 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
           )}
 
           {/* ══════════════════════════════════════════════════════════════════ */}
-          {/* CORE FEATURES SUMMARY (GIỚI THIỆU CÁC TÍNH NĂNG NGẮN GỌN)       */}
+          {/* 8 CORE FEATURES GRID: EYE-CATCHING ICONS & CLEAR BULLETS         */}
           {/* ══════════════════════════════════════════════════════════════════ */}
-          <div className="mt-7 pt-6 border-t border-slate-700/80">
-            <div className="flex items-center justify-between mb-4">
-              <span className="text-xs font-mono font-extrabold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
-                <Sparkles className="w-4 h-4 text-amber-400" />
+          <div className="mt-8 pt-7 border-t border-slate-700/80">
+            <div className="flex items-center justify-between mb-5">
+              <span className="text-xs sm:text-sm font-mono font-black text-amber-400 uppercase tracking-wider flex items-center gap-2">
+                <Flame className="w-5 h-5 text-amber-400 fill-current" />
                 <span>8 TÍNH NĂNG CỐT LÕI (GIỚI THIỆU NGẮN GỌN):</span>
               </span>
-              <span className="text-[11px] text-slate-400 hidden sm:inline">
-                Thiết kế may đo cho cộng đồng thợ &amp; chủ nail tại Mỹ
+              <span className="text-[11px] text-slate-400 hidden sm:inline font-semibold">
+                May đo đặc quyền cho cộng đồng người Việt tại Hoa Kỳ
               </span>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
               {coreFeatures.map((feat) => {
                 const Icon = feat.icon;
                 return (
                   <div 
                     key={feat.idx}
-                    className="p-3.5 rounded-2xl bg-[#081528] border border-slate-700/70 hover:border-amber-400/50 transition-all flex items-start gap-3 group"
+                    className="p-4 rounded-2xl bg-[#081528] border border-slate-700/80 hover:border-amber-400 transition-all flex items-start gap-3.5 group hover:bg-[#0B1D36] shadow-md"
                   >
-                    <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-blue-900/60 to-indigo-900/60 border border-blue-400/40 text-amber-300 flex items-center justify-center shrink-0 mt-0.5 group-hover:scale-105 transition-transform">
-                      <Icon className="w-4 h-4 text-amber-400" />
+                    <div className={`w-10 h-10 rounded-2xl ${feat.iconBg} border flex items-center justify-center shrink-0 mt-0.5 shadow-md group-hover:scale-110 transition-transform`}>
+                      <Icon className={`w-5 h-5 ${feat.iconColor}`} />
                     </div>
                     <div className="space-y-1 min-w-0">
-                      <h5 className="text-xs sm:text-sm font-bold text-white group-hover:text-amber-300 transition-colors leading-snug">
-                        {feat.idx + 1}. {feat.title}
-                      </h5>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <h5 className="text-xs sm:text-sm font-black text-white group-hover:text-amber-300 transition-colors leading-snug">
+                          {feat.idx + 1}. {feat.title}
+                        </h5>
+                        <span className="text-[9px] px-2 py-0.5 rounded-full font-bold bg-slate-900 border border-slate-700 text-slate-300">
+                          {feat.tag}
+                        </span>
+                      </div>
                       <p className="text-xs text-slate-300 leading-relaxed">
                         {feat.desc}
                       </p>
@@ -453,11 +519,14 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
             </div>
           </div>
 
-          {/* Bottom Bar: Call to Action */}
-          <div className="mt-6 pt-5 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-300">
+          {/* Bottom Callout Bar */}
+          <div className="mt-7 pt-5 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-300">
             <div className="flex items-center gap-2">
-              <span className="text-amber-400 font-bold">💡 Hướng dẫn dán link:</span>
-              <span>Dán link video YouTube vào trường <code className="px-1.5 py-0.5 rounded bg-slate-900 text-amber-300 font-mono text-[11px] border border-slate-700">youtubeUrl</code> trong <code className="text-slate-200 font-mono">apps.ts</code> để kích hoạt phát clip ngay.</span>
+              <span className="text-amber-400 font-bold flex items-center gap-1">
+                <Zap className="w-3.5 h-3.5 text-amber-400" />
+                <span>Ghi chú dán video:</span>
+              </span>
+              <span>Dán link YouTube vào trường <code className="px-1.5 py-0.5 rounded bg-slate-900 text-amber-300 font-mono text-[11px] border border-slate-700 font-bold">youtubeUrl</code> trong file <code className="text-slate-200 font-mono">apps.ts</code> để kích hoạt phát ngay.</span>
             </div>
 
             <a
@@ -465,7 +534,7 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
               target={isMobileOrWebview() ? '_self' : '_blank'}
               rel="noopener noreferrer"
               onClick={(e) => openExternalApp('https://vietnail.vercel.app', e)}
-              className="inline-flex items-center gap-1.5 text-amber-400 hover:text-amber-300 font-bold underline cursor-pointer"
+              className="inline-flex items-center gap-1.5 text-amber-400 hover:text-amber-300 font-extrabold underline cursor-pointer"
             >
               <span>Truy cập vietnail.vercel.app</span>
               <ExternalLink className="w-3.5 h-3.5" />
@@ -478,23 +547,3 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
     </section>
   );
 };
-
-// Helper icon
-function RefreshCwIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg 
-      viewBox="0 0 24 24" 
-      fill="none" 
-      stroke="currentColor" 
-      strokeWidth="2" 
-      strokeLinecap="round" 
-      strokeLinejoin="round" 
-      {...props}
-    >
-      <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
-      <path d="M21 3v5h-5" />
-      <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
-      <path d="M8 16H3v5" />
-    </svg>
-  );
-}
