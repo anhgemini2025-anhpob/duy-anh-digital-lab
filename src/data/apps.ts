@@ -111,8 +111,8 @@ export const APPS_DATA: AppItem[] = [
     videoDuration: "YouTube",
     videoTagline: "Clip quảng cáo & giới thiệu ứng dụng VietNail Guide AI trên YouTube",
     videoScenes: [],
-    youtubeUrl: "", // DÁN LINK CLIP QUẢNG CÁO YOUTUBE VÀO ĐÂY (VÍ DỤ: "https://www.youtube.com/watch?v=xxxx") LÀ VIDEO TỰ ĐỘNG PHÁT TRÊN TRANG ĐẦU VÀ MODAL
-    statusNote: "Sẵn sàng vị trí chèn clip quảng cáo YouTube (dán link YouTube vào youtubeUrl là hiển thị video ngay). Trải nghiệm trực tiếp tại https://vietnail.vercel.app",
+    youtubeUrl: "https://www.youtube.com/watch?v=rLNUB7JUigU",
+    statusNote: "Clip quảng cáo & giới thiệu ứng dụng VietNail Guide AI trên YouTube. Trải nghiệm trực tiếp tại https://vietnail.vercel.app",
     theme: {
       from: "from-blue-700",
       to: "to-indigo-950",

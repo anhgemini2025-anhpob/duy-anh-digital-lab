@@ -341,14 +341,44 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
             <div className="space-y-4">
               {vietnailApp && vietnailApp.youtubeUrl ? (
                 /* LIVE YOUTUBE PLAYER EMBED */
-                <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden bg-slate-950 border-2 border-amber-400/60 shadow-2xl">
-                  <iframe
-                    src={getYouTubeEmbedUrl(vietnailApp.youtubeUrl)}
-                    title="VietNail Guide AI - Clip Giới Thiệu YouTube"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="w-full h-full border-0"
-                  />
+                <div className="space-y-3">
+                  <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden bg-slate-950 border-2 border-red-500/80 shadow-2xl shadow-red-500/25">
+                    <iframe
+                      src={getYouTubeEmbedUrl(vietnailApp.youtubeUrl)}
+                      title="VietNail Guide AI - Clip Giới Thiệu YouTube"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full border-0"
+                    />
+                  </div>
+
+                  {/* Video Info Strip */}
+                  <div className="p-3.5 rounded-xl bg-slate-950/85 border border-slate-700/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+                    <div className="flex items-center gap-2 text-slate-200">
+                      <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse" />
+                      <span className="font-bold text-amber-300">🎬 Đang phát clip giới thiệu:</span>
+                      <span className="text-slate-300 truncate max-w-xs sm:max-w-md">VietNail Guide AI – Cẩm nang nghề &amp; quản trị tiệm nail tại Mỹ</span>
+                    </div>
+
+                    <div className="flex items-center gap-2">
+                      <a
+                        href={vietnailApp.youtubeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-bold text-red-300 bg-red-600/20 hover:bg-red-600/30 border border-red-500/40 transition-colors"
+                      >
+                        <ExternalLink className="w-3.5 h-3.5" />
+                        <span>Mở trên YouTube</span>
+                      </a>
+                      <button
+                        onClick={() => setActiveTab('image')}
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-bold text-slate-300 bg-[#0E223D] hover:text-white border border-slate-700 transition-colors cursor-pointer"
+                      >
+                        <ImageIcon className="w-3.5 h-3.5 text-amber-400" />
+                        <span>Xem 7 ảnh tính năng</span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               ) : (
                 /* ULTRA EYE-CATCHING YOUTUBE PLACEHOLDER SPOT (CHỪA CHỖ ĐỂ CHÈN CLIP QUẢNG CÁO YOUTUBE) */
