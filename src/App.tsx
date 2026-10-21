@@ -126,20 +126,20 @@ export function App() {
       />
 
       <main>
-        {/* 2. Hero Section: Trợ lý giám đốc ngân hàng 24/7 (Nhóm ngành thứ 9) */}
-        <Hero
-          onExploreClick={() => openCatalog('all')}
-          onSelectApp={handleSelectApp}
-          apps={APPS_DATA}
-          featuredApps={APPS_DATA.filter((a) => a.featured)}
-        />
-
-        {/* Ứng dụng mới: VietNail Guide AI – Cẩm nang nghề & quản trị tiệm nail tại Mỹ */}
+        {/* 1. ĐƯA ỨNG DỤNG VIETNAIL GUIDE AI LÊN ĐẦU TRANG */}
         <VietnailShowcaseSection
           onSelectApp={handleSelectApp}
           apps={APPS_DATA}
           onToggleRequest={toggleRequestApp}
           isAppRequested={isAppRequested}
+        />
+
+        {/* 2. ỨNG DỤNG TRỢ LÝ GIÁM ĐỐC NGÂN HÀNG 24/7 (ĐƯA RA PHÍA SAU) */}
+        <Hero
+          onExploreClick={() => openCatalog('all')}
+          onSelectApp={handleSelectApp}
+          apps={APPS_DATA}
+          featuredApps={APPS_DATA.filter((a) => a.featured)}
         />
 
         {/* 3. Dời nội dung app Dạy tiếng việt cho người nước ngoài xuống dưới Hero */}

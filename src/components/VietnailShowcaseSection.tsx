@@ -104,30 +104,64 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
   const isRequested = Boolean(vietnailApp && isAppRequested && isAppRequested(vietnailApp.id));
 
   return (
-    <section id="vietnail-showcase" className="relative overflow-hidden py-12 sm:py-16 border-b border-amber-500/20 bg-gradient-to-b from-[#07111E] via-[#08172E] to-[#07111E]">
+    <section id="vietnail-showcase" className="relative overflow-hidden pt-8 pb-14 sm:pt-12 sm:pb-20 border-b border-amber-500/20 bg-gradient-to-b from-[#07111E] via-[#08172E] to-[#07111E]">
       {/* Background Ambience & Red/Blue/Gold Accents */}
       <div className="absolute inset-0 bg-[radial-gradient(#1e3a5f_1px,transparent_1px)] [background-size:24px_24px] opacity-25 pointer-events-none" />
-      <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-blue-600/10 rounded-full blur-3xl pointer-events-none -z-10" />
-      <div className="absolute bottom-0 right-10 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-blue-600/15 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute bottom-0 right-10 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-blue-900/80 via-slate-900/90 to-red-900/80 border border-amber-400/50 text-amber-300 text-xs sm:text-sm font-bold mb-3 shadow-lg">
+        {/* Top Brand Banner: Official Portfolio & Category Stats */}
+        <div className="flex flex-wrap items-center justify-between gap-3 mb-8 pb-5 border-b border-slate-800">
+          <div className="flex items-center gap-3">
+            <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-2xl bg-[#0A192F] border border-amber-400/40 shadow-sm">
+              <img 
+                src="/logo.jpg" 
+                alt="Duy Anh Digital Lab" 
+                className="w-7 h-7 rounded-xl object-cover border border-amber-400/50"
+              />
+              <div className="text-left">
+                <div className="flex items-center gap-1.5">
+                  <span className="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span className="text-[10px] sm:text-[11px] font-bold text-amber-300 uppercase tracking-wider">Official Portfolio</span>
+                </div>
+                <div className="text-[10px] text-slate-300 font-mono">Web Apps &amp; AI Systems</div>
+              </div>
+            </div>
+
+            <div className="hidden sm:inline-flex items-center gap-2 px-3 py-1 rounded-xl bg-slate-900/90 border border-slate-700/80 text-xs font-mono text-slate-300">
+              <span className="text-amber-400 font-bold">10 Nhóm Ngành</span>
+              <span>•</span>
+              <span className="text-emerald-400 font-bold">30+ Ứng Dụng</span>
+            </div>
+          </div>
+
+          {/* Top Industry Badge */}
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-2xl bg-gradient-to-r from-blue-950 via-indigo-950 to-red-950/80 border border-amber-400/60 shadow-lg shadow-amber-500/10">
             <span className="relative flex h-2.5 w-2.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-400"></span>
             </span>
-            <span className="font-extrabold tracking-wide uppercase">ỨNG DỤNG MỚI RA MẮT • CẨM NANG NGHỀ NAIL TẠI MỸ</span>
+            <span className="text-xs font-black uppercase tracking-wider bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-400 bg-clip-text text-transparent">
+              ỨNG DỤNG TIÊU ĐIỂM ĐẦU TRANG • CẨM NANG NGHỀ NAIL TẠI MỸ
+            </span>
+          </div>
+        </div>
+
+        {/* Section Header */}
+        <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-12 space-y-3">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gradient-to-r from-blue-900/80 via-slate-900/90 to-red-900/80 border border-amber-400/50 text-amber-300 text-xs sm:text-sm font-bold shadow-lg">
+            <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+            <span className="font-extrabold tracking-wide uppercase">CẨM NANG NGHỀ &amp; KINH DOANH NAIL TẠI MỸ CHO NGƯỜI VIỆT</span>
           </div>
 
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
             VIETNAIL GUIDE AI — Cẩm Nang Nghề &amp; Quản Trị Tiệm Nail Tại Mỹ
-          </h2>
+          </h1>
 
-          <p className="text-sm sm:text-base text-slate-300 mt-3 max-w-2xl mx-auto leading-relaxed">
-            Giải pháp số hóa toàn diện đồng hành cùng cộng đồng người Việt: Luyện thi bằng State Board, chuyển bằng liên bang, quản lý thu chi, thuế W-2/1099, an toàn vệ sinh và trợ lý AI song ngữ 24/7.
+          <p className="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
+            Lộ trình học thi bằng State Board – Chuyển bằng tiểu bang – Mở tiệm &amp; Tối ưu thuế W-2/1099 – Biểu mẫu song ngữ – Trợ lý AI hỏi đáp 24/7.
           </p>
         </div>
 
