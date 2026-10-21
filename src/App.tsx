@@ -4,6 +4,7 @@ import { APPS_DATA, AppItem } from './data/apps';
 import { CATEGORIES } from './data/categories';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { VietnailShowcaseSection } from './components/VietnailShowcaseSection';
 import { VietrealShowcaseSection } from './components/VietrealShowcaseSection';
 import { FeaturedSection } from './components/FeaturedSection';
 import { CategoryVisuals } from './components/CategoryVisuals';
@@ -47,6 +48,7 @@ export function App() {
       if (a.id === 'bao-quan-bun-tuoi' && (lower === 'baoquanbun' || lower === 'bao-quan-bun' || lower === 'bun-tuoi')) return true;
       if (a.id === 'tro-ly-giam-doc-ngan-hang' && (lower === 'trolybank' || lower === 'tro-ly-bank' || lower === 'ngan-hang' || lower === 'trolybank247')) return true;
       if (a.id === 'hom-nay-an-gi' && (lower === 'vietnuti' || lower === 'homnayan-gi' || lower === 'homnayangi' || lower === 'an-gi' || lower === 'hom-nay-an-gi')) return true;
+      if (a.id === 'vietnail-guide' && (lower === 'vietnail' || lower === 'viet-nail' || lower === 'vietnailguide' || lower === 'nail' || lower === 'vietnail-guide')) return true;
       return false;
     }) || null;
   }, [routeAppId]);
@@ -130,6 +132,14 @@ export function App() {
           onSelectApp={handleSelectApp}
           apps={APPS_DATA}
           featuredApps={APPS_DATA.filter((a) => a.featured)}
+        />
+
+        {/* Ứng dụng mới: VietNail Guide AI – Cẩm nang nghề & quản trị tiệm nail tại Mỹ */}
+        <VietnailShowcaseSection
+          onSelectApp={handleSelectApp}
+          apps={APPS_DATA}
+          onToggleRequest={toggleRequestApp}
+          isAppRequested={isAppRequested}
         />
 
         {/* 3. Dời nội dung app Dạy tiếng việt cho người nước ngoài xuống dưới Hero */}

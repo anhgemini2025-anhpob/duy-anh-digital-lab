@@ -69,10 +69,10 @@ const RAW_CATEGORIES: Omit<CategoryItem, 'count'>[] = [
   },
   {
     id: "services-clinic",
-    name: "Vận hành Dịch vụ & Clinic Spa",
-    shortName: "Dịch vụ & Clinic",
+    name: "Vận hành Dịch vụ, Salon Nail & Clinic Spa",
+    shortName: "Dịch vụ & Nail",
     icon: "Building2",
-    description: "Quản trị phòng khám da liễu spa, landing page chuyển đổi cao và phần mềm cộng đồng",
+    description: "Cẩm nang nghề & quản trị tiệm nail tại Mỹ VietNail Guide AI, quản trị phòng khám da liễu spa, landing page chuyển đổi cao và giải pháp số hóa dịch vụ",
     color: "from-rose-500 to-pink-600"
   },
   {

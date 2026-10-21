@@ -65,6 +65,64 @@ export interface AppItem {
 
 export const APPS_DATA: AppItem[] = [
   {
+    logoUrl: "/apps/vietnail/app-logo.svg",
+    id: "vietnail-guide",
+    name: "VietNail Guide AI – Cẩm Nang Nghề & Quản Trị Tiệm Nail Tại Mỹ",
+    url: "https://vietnail.vercel.app",
+    category: "Dịch vụ & Nghề Nail",
+    categoryId: "services-clinic",
+    description: "Cẩm nang nghề và kinh doanh nail tại Mỹ cho người Việt: Lộ trình học và luyện thi bằng State Board, thủ tục chuyển đổi bằng giữa các tiểu bang, mở tiệm salon, quản lý thu chi, phân loại thuế W-2/1099, an toàn vệ sinh và trợ lý AI song ngữ 24/7.",
+    tags: [
+      "Nghề Nail Mỹ",
+      "Luyện Thi Bằng Nail",
+      "Chuyển Bằng Tiểu Bang",
+      "Mở Tiệm Nail",
+      "Thu Chi & Thuế W2/1099",
+      "An Toàn Vệ Sinh Board",
+      "Biểu Mẫu Tiếng Anh",
+      "Trợ Lý AI Voice"
+    ],
+    coverImage: "/apps/vietnail/cover.png",
+    placeholderImage: "/apps/vietnail/cover.png",
+    detailImages: [
+      "/apps/vietnail/feature_01_luyen_thi_bang_nail.png",
+      "/apps/vietnail/feature_02_chuyen_doi_bang_tieu_bang.png",
+      "/apps/vietnail/feature_03_mo_tiem_nail_salon.png",
+      "/apps/vietnail/feature_04_thu_chi_thue_w2_1099.png",
+      "/apps/vietnail/feature_05_an_toan_ve_sinh_state_board.png",
+      "/apps/vietnail/feature_06_bieu_mau_hop_dong_in_san.png",
+      "/apps/vietnail/feature_07_tieng_anh_giao_tiep_tai_ban.png"
+    ],
+    imageAlt: "VietNail Guide AI – Cẩm nang nghề và quản trị tiệm nail tại Mỹ cho người Việt",
+    featured: true,
+    audience: "• Thợ nail, kỹ thuật viên làm móng người Việt tại Mỹ đang làm việc hoặc chuẩn bị thi bằng nghề.\n• Người cần đổi bằng, chuyển bằng giữa các tiểu bang (California, Texas, Florida, New York, Washington...).\n• Chủ tiệm nail (Salon Owners), quản lý tiệm nail và thợ muốn khởi nghiệp mở tiệm riêng tại Hoa Kỳ.",
+    problem: "• Rào cản tiếng Anh và pháp lý phức tạp khi thi bằng, chuyển đổi bằng giữa các tiểu bang (mỗi State Board có quy định giờ học, hồ sơ và đề thi khác nhau).\n• Mập mờ trong cách trả lương và khai thuế: phân biệt thợ nhận W-2 và thợ độc lập 1099, cách quản lý tip và sổ sách đồ nghề dễ bị IRS phạt.\n• Nguy cơ bị phạt nặng hoặc đình chỉ kinh doanh khi State Board, OSHA và EPA kiểm tra đột xuất quy chuẩn an toàn hóa chất, khử trùng.\n• Thiếu mẫu hợp đồng song ngữ (thuê bàn ghế Booth Rental, ăn chia tỷ lệ) và khó khăn giao tiếp tiếng Anh chuyên ngành với khách Mỹ.",
+    solution: "• Ngân hàng câu hỏi luyện thi bằng nail lý thuyết song ngữ Việt - Anh bám sát cấu trúc đề thi State Board thực tế.\n• Hướng dẫn lộ trình cấp phép & chuyển bằng (Reciprocity / Endorsement) chi tiết theo từng tiểu bang, tiết kiệm tối đa thời gian học lại.\n• Bộ cẩm nang mở tiệm nail từ A-Z: thủ tục cấp phép thành phố, chọn mặt bằng, đăng ký kinh doanh và quản trị vận hành.\n• Công cụ tính toán thu chi, bảng phân loại W-2 vs 1099, quản lý tip và biểu mẫu hợp đồng thuê ghế/ăn chia chuẩn mực.\n• Quy chuẩn an toàn lao động, vệ sinh khử trùng và bảng kiểm checklist sẵn sàng trước các đợt thanh tra State Board.\n• Mẫu câu tiếng Anh giao tiếp tại bàn nail theo tình huống thực tế và Trợ lý AI giải đáp thắc mắc 24/7 bằng giọng nói và chữ.",
+    keyFeatures: [
+      "Luyện thi bằng nail State Board: Ngân hàng câu hỏi lý thuyết song ngữ Việt - Anh bám sát cấu trúc đề thi thực tế các tiểu bang.",
+      "Cấp phép & Chuyển bằng (Reciprocity): Hướng dẫn hồ sơ, điều kiện đổi bằng giữa các bang (CA, TX, FL, NY, GA...) không phải học lại từ đầu.",
+      "Mở tiệm & Vận hành Salon: Trọn bộ thủ tục xin giấy phép Salon, đăng ký kinh doanh, chọn địa điểm, ký hợp đồng thuê và quản trị thợ.",
+      "Thu chi & Tối ưu thuế W-2 / 1099: Phân loại thợ, quản lý sổ sách kế toán, ghi nhận tiền tip và chi phí đồ nghề chuẩn IRS tránh bị phạt.",
+      "An toàn & Vệ sinh State Board / OSHA: Quy trình tiệt trùng dụng cụ, thông gió hút bụi, bảo quản hóa chất và checklist trước thanh tra.",
+      "Biểu mẫu song ngữ & Hợp đồng in sẵn: Hợp đồng thuê ghế (Booth Rental), thỏa thuận ăn chia thợ - chủ, phiếu tư vấn khách hàng.",
+      "Tiếng Anh giao tiếp tại bàn nail: Tổng hợp mẫu câu thực chiến từ đón tiếp khách, tư vấn mẫu móng, hỏi ý kiến đến xử lý phàn nàn.",
+      "Trợ lý AI Voice & Chat 24/7: Tra cứu luật, quy định tiểu bang và giải đáp thắc mắc nghề nghiệp tức thì bằng giọng nói & văn bản."
+    ],
+    videoDuration: "YouTube",
+    videoTagline: "Clip quảng cáo & giới thiệu ứng dụng VietNail Guide AI trên YouTube",
+    videoScenes: [],
+    youtubeUrl: "", // DÁN LINK CLIP QUẢNG CÁO YOUTUBE VÀO ĐÂY (VÍ DỤ: "https://www.youtube.com/watch?v=xxxx") LÀ VIDEO TỰ ĐỘNG PHÁT TRÊN TRANG ĐẦU VÀ MODAL
+    statusNote: "Sẵn sàng vị trí chèn clip quảng cáo YouTube (dán link YouTube vào youtubeUrl là hiển thị video ngay). Trải nghiệm trực tiếp tại https://vietnail.vercel.app",
+    theme: {
+      from: "from-blue-700",
+      to: "to-indigo-950",
+      accent: "text-amber-400",
+      badgeBg: "bg-blue-500/15",
+      badgeText: "text-blue-300",
+      badgeBorder: "border-blue-400/30"
+    }
+  },
+  {
     logoUrl: "/apps/trolybank/app-logo.svg",
     id: "tro-ly-giam-doc-ngan-hang",
     name: "Trợ Lý Giám Đốc Ngân Hàng 24/7",

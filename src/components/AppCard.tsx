@@ -52,7 +52,7 @@ export const AppCard: React.FC<AppCardProps> = ({
         </div>
 
         {/* View Mode Switcher: Only render if video is available */}
-        {(app.videoUrl || app.youtubeUrl || (app.videoScenes && app.videoScenes.length > 0)) && (
+        {(app.videoUrl || app.youtubeUrl !== undefined || (app.videoScenes && app.videoScenes.length > 0)) && (
           <div className="absolute top-2.5 right-2.5 z-20 flex items-center bg-[#07111E]/95 backdrop-blur-md rounded-xl p-0.5 border border-slate-700 shadow-md">
             <button
               onClick={(e) => {
@@ -81,7 +81,7 @@ export const AppCard: React.FC<AppCardProps> = ({
               }`}
             >
               <Video className="w-3.5 h-3.5" />
-              <span>{app.youtubeUrl ? 'YouTube' : 'Video Clip'}</span>
+              <span>{app.youtubeUrl !== undefined ? 'YouTube' : 'Video Clip'}</span>
             </button>
           </div>
         )}
