@@ -65,6 +65,56 @@ export interface AppItem {
 
 export const APPS_DATA: AppItem[] = [
   {
+    logoUrl: "/apps/viettutorz/icon-512.png",
+    id: "viettutorz",
+    name: "VietTutorz – Gia Sư AI Đồng Hành Cùng Học Sinh Lớp 1–12",
+    url: "https://vietgiasu.vercel.app",
+    category: "AI & Đào tạo Tri thức",
+    categoryId: "ai-education",
+    description: "Hệ sinh thái gia sư AI đồng hành cùng học sinh từ Lớp 1 đến Lớp 12 theo Chương trình GDPT 2018. Gợi mở tư duy từng bước, bám sát SGK, không cần tạo tài khoản – mở là học ngay.",
+    tags: [
+      "Gia Sư AI Lớp 1–12",
+      "VietTutorz",
+      "12 Khối Lớp Độc Lập",
+      "Chương Trình GDPT 2018",
+      "Gợi Mở Từng Bước",
+      "Tự Học Độc Lập",
+      "Tiểu Học • THCS • THPT",
+      "Không Cần Đăng Nhập"
+    ],
+    coverImage: "/apps/viettutorz/logo.png",
+    placeholderImage: "/apps/viettutorz/logo.png",
+    detailImages: [
+      "/apps/viettutorz/logo.png",
+      "/apps/viettutorz/icon-512.png"
+    ],
+    imageAlt: "VietTutorz – Gia sư AI đồng hành cùng học sinh lớp 1–12",
+    featured: true,
+    audience: "• Học sinh từ Lớp 1 đến Lớp 12 cần trợ lý giải đáp bài tập, củng cố kiến thức và rèn kỹ năng tự học độc lập.\n• Phụ huynh muốn đồng hành cùng con nhẹ nhàng, theo sát chương trình mới mà không bị áp lực.\n• Giáo viên và người hướng dẫn cần công cụ bổ trợ học sinh ôn tập chuẩn theo chương trình GDPT 2018.",
+    problem: "• Học sinh dễ bị lệ thuộc vào lời giải có sẵn trên mạng, thiếu tư duy độc lập khi gặp bài toán mới.\n• Phụ huynh bận rộn hoặc gặp khó khăn khi kèm con theo chương trình đổi mới (GDPT 2018).\n• Chi phí tìm gia sư kèm riêng tốn kém và học sinh thường ngại đặt câu hỏi nhiều lần.",
+    solution: "• 12 ứng dụng gia sư AI chuyên biệt theo từng khối lớp từ 1 đến 12, tối ưu theo năng lực tiếp thu.\n• Phương pháp sư phạm gợi mở: Hướng dẫn học sinh từng bước suy luận, không đưa ngay đáp án.\n• Bám sát chuẩn SGK GDPT 2018: Hỗ trợ Toán, Tiếng Việt/Ngữ Văn, KHTN, Tiếng Anh...\n• Trải nghiệm tức thì, hoàn toàn bảo mật và không yêu cầu đăng ký tài khoản.",
+    keyFeatures: [
+      "12 ứng dụng lớp độc lập: Mỗi khối lớp (Lớp 1 – 12) có một ứng dụng riêng biệt, thiết kế sát năng lực tiếp thu.",
+      "Phương pháp gợi mở từng bước: Định hướng tư duy và suy luận logic, kiên quyết không giải hộ hay chép sẵn.",
+      "Bám sát Chương trình GDPT 2018: Nội dung định hướng chuẩn theo sách giáo khoa và chương trình của Bộ GD&ĐT.",
+      "Phân cấp 3 giai đoạn rõ ràng: Tiểu học (Lớp 1–5), Trung học cơ sở (Lớp 6–9), Trung học phổ thông (Lớp 10–12).",
+      "Bảo mật & Không cần đăng nhập: Học sinh và phụ huynh truy cập là học ngay trên trình duyệt, không lưu dữ liệu cá nhân."
+    ],
+    videoDuration: "YouTube",
+    videoTagline: "Video giới thiệu hệ sinh thái gia sư AI VietTutorz Lớp 1-12",
+    videoScenes: [],
+    youtubeUrl: "", // Chừa sẵn ô để sau này dán YouTube link giới thiệu VietTutorz tại đây
+    statusNote: "Video giới thiệu hệ sinh thái gia sư AI VietTutorz lớp 1-12. Trải nghiệm trực tiếp tại https://vietgiasu.vercel.app",
+    theme: {
+      from: "from-sky-600",
+      to: "to-indigo-950",
+      accent: "text-amber-400",
+      badgeBg: "bg-sky-500/15",
+      badgeText: "text-sky-300",
+      badgeBorder: "border-sky-400/30"
+    }
+  },
+  {
     logoUrl: "/apps/vietnail/app-logo.svg",
     id: "vietnail-guide",
     name: "VietNail Guide AI – Cẩm Nang Nghề & Quản Trị Tiệm Nail Tại Mỹ",
@@ -120,56 +170,6 @@ export const APPS_DATA: AppItem[] = [
       badgeBg: "bg-blue-500/15",
       badgeText: "text-blue-300",
       badgeBorder: "border-blue-400/30"
-    }
-  },
-  {
-    logoUrl: "/apps/viettutorz/icon-512.png",
-    id: "viettutorz",
-    name: "VietTutorz – Gia Sư AI Đồng Hành Cùng Học Sinh Lớp 1–12",
-    url: "https://vietgiasu.vercel.app",
-    category: "AI & Đào tạo Tri thức",
-    categoryId: "ai-education",
-    description: "Hệ sinh thái gia sư AI đồng hành cùng học sinh từ Lớp 1 đến Lớp 12 theo Chương trình GDPT 2018. Gợi mở tư duy từng bước, bám sát SGK, không cần tạo tài khoản – mở là học ngay.",
-    tags: [
-      "Gia Sư AI Lớp 1–12",
-      "VietTutorz",
-      "12 Khối Lớp Độc Lập",
-      "Chương Trình GDPT 2018",
-      "Gợi Mở Từng Bước",
-      "Tự Học Độc Lập",
-      "Tiểu Học • THCS • THPT",
-      "Không Cần Đăng Nhập"
-    ],
-    coverImage: "/apps/viettutorz/logo.png",
-    placeholderImage: "/apps/viettutorz/logo.png",
-    detailImages: [
-      "/apps/viettutorz/logo.png",
-      "/apps/viettutorz/icon-512.png"
-    ],
-    imageAlt: "VietTutorz – Gia sư AI đồng hành cùng học sinh lớp 1–12",
-    featured: true,
-    audience: "• Học sinh từ Lớp 1 đến Lớp 12 cần trợ lý giải đáp bài tập, củng cố kiến thức và rèn kỹ năng tự học độc lập.\n• Phụ huynh muốn đồng hành cùng con nhẹ nhàng, theo sát chương trình mới mà không bị áp lực.\n• Giáo viên và người hướng dẫn cần công cụ bổ trợ học sinh ôn tập chuẩn theo chương trình GDPT 2018.",
-    problem: "• Học sinh dễ bị lệ thuộc vào lời giải có sẵn trên mạng, thiếu tư duy độc lập khi gặp bài toán mới.\n• Phụ huynh bận rộn hoặc gặp khó khăn khi kèm con theo chương trình đổi mới (GDPT 2018).\n• Chi phí tìm gia sư kèm riêng tốn kém và học sinh thường ngại đặt câu hỏi nhiều lần.",
-    solution: "• 12 ứng dụng gia sư AI chuyên biệt theo từng khối lớp từ 1 đến 12, tối ưu theo năng lực tiếp thu.\n• Phương pháp sư phạm gợi mở: Hướng dẫn học sinh từng bước suy luận, không đưa ngay đáp án.\n• Bám sát chuẩn SGK GDPT 2018: Hỗ trợ Toán, Tiếng Việt/Ngữ Văn, KHTN, Tiếng Anh...\n• Trải nghiệm tức thì, hoàn toàn bảo mật và không yêu cầu đăng ký tài khoản.",
-    keyFeatures: [
-      "12 ứng dụng lớp độc lập: Mỗi khối lớp (Lớp 1 – 12) có một ứng dụng riêng biệt, thiết kế sát năng lực tiếp thu.",
-      "Phương pháp gợi mở từng bước: Định hướng tư duy và suy luận logic, kiên quyết không giải hộ hay chép sẵn.",
-      "Bám sát Chương trình GDPT 2018: Nội dung định hướng chuẩn theo sách giáo khoa và chương trình của Bộ GD&ĐT.",
-      "Phân cấp 3 giai đoạn rõ ràng: Tiểu học (Lớp 1–5), Trung học cơ sở (Lớp 6–9), Trung học phổ thông (Lớp 10–12).",
-      "Bảo mật & Không cần đăng nhập: Học sinh và phụ huynh truy cập là học ngay trên trình duyệt, không lưu dữ liệu cá nhân."
-    ],
-    videoDuration: "YouTube",
-    videoTagline: "Video giới thiệu hệ sinh thái gia sư AI VietTutorz Lớp 1-12",
-    videoScenes: [],
-    youtubeUrl: "", // Chừa sẵn ô để sau này dán YouTube link giới thiệu VietTutorz tại đây
-    statusNote: "Video giới thiệu hệ sinh thái gia sư AI VietTutorz lớp 1-12. Trải nghiệm trực tiếp tại https://vietgiasu.vercel.app",
-    theme: {
-      from: "from-sky-600",
-      to: "to-indigo-950",
-      accent: "text-amber-400",
-      badgeBg: "bg-sky-500/15",
-      badgeText: "text-sky-300",
-      badgeBorder: "border-sky-400/30"
     }
   },
   {

@@ -33,7 +33,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
             type="text"
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="Tìm kiếm theo tên app (Thuế HKD, CosmeDerm, Sales, Hợp đồng, R&D...)"
+            placeholder="Tìm kiếm theo tên app (VietTutorz, VietNail, Thuế HKD, Sales, Hợp đồng...)"
             className="w-full pl-12 pr-11 py-3.5 rounded-2xl bg-[#0B1A2F] border border-slate-700 text-base text-white placeholder-slate-400 focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/25 transition-all shadow-md"
           />
           {searchQuery && (

@@ -128,7 +128,13 @@ export function App() {
       />
 
       <main>
-        {/* 1. ĐƯA ỨNG DỤNG VIETNAIL GUIDE AI LÊN ĐẦU TRANG */}
+        {/* 1. ĐƯA ỨNG DỤNG VIETTUTORZ — GIA SƯ AI LỚP 1–12 LÊN ĐẦU TRANG */}
+        <ViettutorzShowcaseSection
+          onSelectApp={handleSelectApp}
+          apps={APPS_DATA}
+        />
+
+        {/* 2. ỨNG DỤNG VIETNAIL GUIDE AI */}
         <VietnailShowcaseSection
           onSelectApp={handleSelectApp}
           apps={APPS_DATA}
@@ -136,7 +142,7 @@ export function App() {
           isAppRequested={isAppRequested}
         />
 
-        {/* 2. ỨNG DỤNG TRỢ LÝ GIÁM ĐỐC NGÂN HÀNG 24/7 (ĐƯA RA PHÍA SAU) */}
+        {/* 3. ỨNG DỤNG TRỢ LÝ GIÁM ĐỐC NGÂN HÀNG 24/7 (ĐƯA RA PHÍA SAU) */}
         <Hero
           onExploreClick={() => openCatalog('all')}
           onSelectApp={handleSelectApp}
@@ -144,14 +150,8 @@ export function App() {
           featuredApps={APPS_DATA.filter((a) => a.featured)}
         />
 
-        {/* 3. Dời nội dung app Dạy tiếng việt cho người nước ngoài xuống dưới Hero */}
+        {/* 4. Dời nội dung app Dạy tiếng việt cho người nước ngoài xuống dưới Hero */}
         <VietrealShowcaseSection
-          onSelectApp={handleSelectApp}
-          apps={APPS_DATA}
-        />
-
-        {/* 4. Ứng dụng VietTutorz - Gia Sư AI Lớp 1-12 */}
-        <ViettutorzShowcaseSection
           onSelectApp={handleSelectApp}
           apps={APPS_DATA}
         />
