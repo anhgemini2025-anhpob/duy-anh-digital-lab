@@ -260,9 +260,10 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
   // Focus view index for Parenting apps: null means compact grid view, 0-3 means single app focus view
   const [activeParentingIdx, setActiveParentingIdx] = useState<number | null>(null);
 
-  // 3. Nền Tảng Công Nghệ & Quản Trị Tiêu Biểu (Flagship apps: VietNail Guide AI, Hôm Nay Ăn Gì?, Foodtech, CosmeDerm, HTX, TaxHKD)
+  // 3. Nền Tảng Công Nghệ & Quản Trị Tiêu Biểu (Flagship apps: VietNail Guide AI, VietTutorz, Hôm Nay Ăn Gì?, Foodtech, CosmeDerm, HTX, TaxHKD)
   const flagshipOrder = [
     'vietnail-guide',
+    'viettutorz',
     'hom-nay-an-gi',
     'foodtech-hub',
     'cosmederm-ai-academy',

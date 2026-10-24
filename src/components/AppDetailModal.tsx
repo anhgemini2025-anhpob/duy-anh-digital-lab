@@ -3,6 +3,7 @@ import { X, ExternalLink, ShieldCheck, Eye, EyeOff, Check, Plus, ArrowLeft, Arro
 import { AppItem } from '../data/apps';
 import { openExternalApp, isMobileOrWebview, downloadPdfFile, getYouTubeEmbedUrl } from '../utils/navigation';
 import { PdfViewerModal } from './PdfViewerModal';
+import { VIETTUTOR_CLASSES } from './ViettutorzShowcaseSection';
 
 // Persistent singleton audio instance (preserves user interaction authorization across apps & scenes)
 let globalVoiceoverAudio: HTMLAudioElement | null = null;
@@ -1563,6 +1564,58 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
               ))}
             </ul>
           </div>
+
+          {/* If VietTutorz: Render 12 classes directly */}
+          {app.id === 'viettutorz' && (
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#091D3A] border-2 border-sky-500/40 space-y-4 shadow-xl">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-sky-500/30">
+                <div className="flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 rounded-full bg-sky-400 animate-pulse" />
+                  <span className="text-sm font-black text-white uppercase tracking-wider">
+                    12 Ứng Dụng Gia Sư AI Độc Lập Theo Từng Khối Lớp (VietTutor 1 – 12):
+                  </span>
+                </div>
+                <span className="text-xs text-sky-300 font-mono">
+                  Lớp 1 – 12 • GDPT 2018
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {VIETTUTOR_CLASSES.map((cls) => (
+                  <div
+                    key={cls.grade}
+                    className="p-3 rounded-xl bg-[#071326] border border-slate-700/80 hover:border-sky-400 transition-all flex flex-col justify-between"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between gap-1 mb-1.5">
+                        <span className="px-2 py-0.5 rounded font-mono font-black text-xs bg-sky-400/10 text-sky-300 border border-sky-400/30">
+                          LỚP {cls.grade}
+                        </span>
+                        <span className="text-[10px] text-slate-400 font-semibold">
+                          {cls.level}
+                        </span>
+                      </div>
+                      <div className="font-bold text-white text-sm">{cls.name}</div>
+                      <p className="text-[11px] text-slate-300 mt-1 line-clamp-2 leading-snug">
+                        {cls.focus}
+                      </p>
+                    </div>
+
+                    <a
+                      href={cls.url}
+                      target={isMobileOrWebview() ? '_self' : '_blank'}
+                      rel="noopener noreferrer"
+                      onClick={(e) => openExternalApp(cls.url, e)}
+                      className="mt-3 py-1.5 px-2.5 rounded-lg text-xs font-bold text-slate-950 bg-gradient-to-r from-sky-400 to-cyan-300 hover:from-sky-300 hover:to-cyan-200 flex items-center justify-center gap-1.5 transition-all cursor-pointer"
+                    >
+                      <span>Mở {cls.name}</span>
+                      <ExternalLink className="w-3 h-3 text-slate-950" />
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2.5">

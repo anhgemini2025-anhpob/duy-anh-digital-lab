@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layers, ShoppingBag, Sparkles, Phone, Mail, Flame } from 'lucide-react';
+import { Layers, ShoppingBag, Sparkles, Phone, Mail, Flame, GraduationCap } from 'lucide-react';
 import { openExternalApp, isMobileOrWebview } from '../utils/navigation';
 
 interface NavbarProps {
@@ -53,6 +53,15 @@ export const Navbar: React.FC<NavbarProps> = ({
               <Flame className="w-3.5 h-3.5 text-slate-950 fill-current" />
               <span>App Mới: VietNail Guide</span>
               <Sparkles className="w-3 h-3 text-slate-950" />
+            </a>
+
+            <a 
+              href="#viettutorz-showcase" 
+              className="hover:text-sky-300 transition-colors flex items-center gap-1.5 font-bold text-sky-400"
+              title="Khám phá hệ sinh thái VietTutorz Lớp 1-12"
+            >
+              <GraduationCap className="w-4 h-4 text-sky-400" />
+              <span>VietTutorz (1–12)</span>
             </a>
 
             <a href="#featured" className="hover:text-amber-300 transition-colors flex items-center gap-1.5">

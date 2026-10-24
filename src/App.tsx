@@ -6,6 +6,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { VietnailShowcaseSection } from './components/VietnailShowcaseSection';
 import { VietrealShowcaseSection } from './components/VietrealShowcaseSection';
+import { ViettutorzShowcaseSection } from './components/ViettutorzShowcaseSection';
 import { FeaturedSection } from './components/FeaturedSection';
 import { CategoryVisuals } from './components/CategoryVisuals';
 import { TechStackSection } from './components/TechStackSection';
@@ -49,6 +50,7 @@ export function App() {
       if (a.id === 'tro-ly-giam-doc-ngan-hang' && (lower === 'trolybank' || lower === 'tro-ly-bank' || lower === 'ngan-hang' || lower === 'trolybank247')) return true;
       if (a.id === 'hom-nay-an-gi' && (lower === 'vietnuti' || lower === 'homnayan-gi' || lower === 'homnayangi' || lower === 'an-gi' || lower === 'hom-nay-an-gi')) return true;
       if (a.id === 'vietnail-guide' && (lower === 'vietnail' || lower === 'viet-nail' || lower === 'vietnailguide' || lower === 'nail' || lower === 'vietnail-guide')) return true;
+      if (a.id === 'viettutorz' && (lower === 'viettutorz' || lower === 'vietgiasu' || lower === 'viettutor' || lower === 'giasu' || lower === 'viet-giasu')) return true;
       return false;
     }) || null;
   }, [routeAppId]);
@@ -144,6 +146,12 @@ export function App() {
 
         {/* 3. Dời nội dung app Dạy tiếng việt cho người nước ngoài xuống dưới Hero */}
         <VietrealShowcaseSection
+          onSelectApp={handleSelectApp}
+          apps={APPS_DATA}
+        />
+
+        {/* 4. Ứng dụng VietTutorz - Gia Sư AI Lớp 1-12 */}
+        <ViettutorzShowcaseSection
           onSelectApp={handleSelectApp}
           apps={APPS_DATA}
         />
