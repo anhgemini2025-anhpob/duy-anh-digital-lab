@@ -239,10 +239,10 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
                     ? 'bg-gradient-to-r from-red-600 to-red-500 text-white font-black shadow-md'
                     : 'text-slate-300 hover:text-white'
                 }`}
-                title="Xem khung video quảng cáo YouTube"
+                title="Xem phim ngắn Bên Này Đại Dương (Bản Full 4K) trên YouTube"
               >
                 <Video className="w-3.5 h-3.5" />
-                <span>Clip Quảng Cáo YouTube</span>
+                <span>Phim Ngắn YouTube (Bản Full)</span>
               </button>
 
               <button
@@ -345,7 +345,7 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
                   <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden bg-slate-950 border-2 border-red-500/80 shadow-2xl shadow-red-500/25">
                     <iframe
                       src={getYouTubeEmbedUrl(vietnailApp.youtubeUrl)}
-                      title="VietNail Guide AI - Clip Giới Thiệu YouTube"
+                      title="BÊN NÀY ĐẠI DƯƠNG | FULL 4K | Hành trình người Việt lập nghiệp nghề nail tại Mỹ - VietNail Guide AI"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                       className="w-full h-full border-0"
@@ -356,8 +356,8 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
                   <div className="p-3.5 rounded-xl bg-slate-950/85 border border-slate-700/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
                     <div className="flex items-center gap-2 text-slate-200">
                       <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse" />
-                      <span className="font-bold text-amber-300">🎬 Đang phát clip giới thiệu:</span>
-                      <span className="text-slate-300 truncate max-w-xs sm:max-w-md">VietNail Guide AI – Cẩm nang nghề &amp; quản trị tiệm nail tại Mỹ</span>
+                      <span className="font-bold text-amber-300">🎬 Đang phát phim ngắn (Bản Full 4K):</span>
+                      <span className="text-slate-300 truncate max-w-xs sm:max-w-md">BÊN NÀY ĐẠI DƯƠNG • Hành trình người Việt lập nghiệp nghề nail tại Mỹ</span>
                     </div>
 
                     <div className="flex items-center gap-2">

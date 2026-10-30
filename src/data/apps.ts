@@ -209,10 +209,10 @@ export const APPS_DATA: AppItem[] = [
       "Trợ lý AI Voice & Chat 24/7: Tra cứu luật, quy định tiểu bang và giải đáp thắc mắc nghề nghiệp tức thì bằng giọng nói & văn bản."
     ],
     videoDuration: "YouTube",
-    videoTagline: "Clip quảng cáo & giới thiệu ứng dụng VietNail Guide AI trên YouTube",
+    videoTagline: "Phim ngắn 'Bên Này Đại Dương' (Bản Full 4K) & giới thiệu ứng dụng VietNail Guide AI trên YouTube",
     videoScenes: [],
-    youtubeUrl: "https://www.youtube.com/watch?v=rLNUB7JUigU",
-    statusNote: "Clip quảng cáo & giới thiệu ứng dụng VietNail Guide AI trên YouTube. Trải nghiệm trực tiếp tại https://vietnail.vercel.app",
+    youtubeUrl: "https://www.youtube.com/watch?v=gPRq_wG4oL8",
+    statusNote: "Phim ngắn 'Bên Này Đại Dương' (Bản Full 4K) & giới thiệu ứng dụng VietNail Guide AI trên YouTube. Trải nghiệm trực tiếp tại https://vietnail.vercel.app",
     theme: {
       from: "from-blue-700",
       to: "to-indigo-950",
