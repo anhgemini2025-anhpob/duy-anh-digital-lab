@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="75%">
+      <stop offset="0" stop-color="#16325A"/>
+      <stop offset="0.55" stop-color="#0A192F"/>
+      <stop offset="1" stop-color="#050B14"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDE68A"/>
+      <stop offset="0.5" stop-color="#FBBF24"/>
+      <stop offset="1" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FCD34D" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FCD34D" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="url(#bg)"/>
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="none" stroke="#FBBF24" stroke-opacity="0.45" stroke-width="6"/>
+  <g transform="translate(0 0) scale(1)">
+    <!-- quầng sáng dưới mái -->
+    <path d="M256 168 L344 244 V376 H168 V244 Z" fill="url(#glow)"/>
+    <!-- thân nhà -->
+    <path d="M168 248 V376 H344 V248" fill="none" stroke="#F1EADB" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- cửa vòm -->
+    <path d="M230 376 V322 A26 26 0 0 1 282 322 V376 Z" fill="url(#gold)"/>
+    <!-- mái hình chữ A -->
+    <path d="M118 268 L256 148 L394 268" fill="none" stroke="url(#gold)" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- ngôi sao AI -->
+    <path d="M384 108 C388 132 396 140 420 144 C396 148 388 156 384 180 C380 156 372 148 348 144 C372 140 380 132 384 108 Z" fill="#FDE68A"/>
+    <circle cx="426" cy="196" r="9" fill="#FDE68A" opacity="0.85"/>
+    <!-- thước đo -->
+    <path d="M136 418 H376" stroke="#F1EADB" stroke-opacity="0.6" stroke-width="8" stroke-linecap="round"/>
+    <g stroke="#F1EADB" stroke-opacity="0.6" stroke-width="6" stroke-linecap="round">
+      <path d="M136 418 V398"/><path d="M196 418 V406"/><path d="M256 418 V398"/><path d="M316 418 V406"/><path d="M376 418 V398"/>
+    </g>
+  </g>
+</svg>

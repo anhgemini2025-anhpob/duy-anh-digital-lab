@@ -44,15 +44,23 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Navigation Links */}
           <nav className="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-300">
-            {/* New App Spotlight Pill: VietTutorz Lớp 1-12 */}
+            {/* New App Spotlight Pill: Viethome AI */}
+            <a 
+              href="#viethome-showcase" 
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 text-slate-950 font-black text-xs shadow-md shadow-amber-400/30 hover:scale-105 active:scale-95 transition-all cursor-pointer animate-pulse"
+              title="Khám phá ứng dụng mới: Viethome AI - Quản lý thi công & Dự toán nhà phố"
+            >
+              <Flame className="w-3.5 h-3.5 text-amber-600 fill-current" />
+              <span>App Mới: Viethome AI</span>
+              <Sparkles className="w-3 h-3 text-slate-950" />
+            </a>
+
             <a 
               href="#viettutorz-showcase" 
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-sky-400 via-cyan-300 to-blue-400 text-slate-950 font-black text-xs shadow-md shadow-sky-400/30 hover:scale-105 active:scale-95 transition-all cursor-pointer animate-pulse"
-              title="Khám phá ứng dụng mới: VietTutorz Gia Sư AI Lớp 1-12"
+              className="hover:text-sky-300 transition-colors flex items-center gap-1.5 font-bold text-sky-400 text-xs"
+              title="Khám phá gia sư AI: VietTutorz Lớp 1-12"
             >
-              <Flame className="w-3.5 h-3.5 text-amber-500 fill-current" />
-              <span>App Mới: VietTutorz (1–12)</span>
-              <Sparkles className="w-3 h-3 text-slate-950" />
+              <span>VietTutorz (1–12)</span>
             </a>
 
             <a 

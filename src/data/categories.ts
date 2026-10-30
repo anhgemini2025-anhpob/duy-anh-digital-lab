@@ -90,6 +90,14 @@ const RAW_CATEGORIES: Omit<CategoryItem, 'count'>[] = [
     icon: "Baby",
     description: "Hệ sinh thái Làm Cha Mẹ toàn diện 0 tháng đến 18 tuổi: Nuôi dưỡng bé 0–60 tháng, Nuôi dạy con 6–11 tuổi, Thấu hiểu thiếu niên 12–15 tuổi và Định hướng thanh niên 16–18 tuổi.",
     color: "from-rose-500 to-amber-500"
+  },
+  {
+    id: "construction",
+    name: "Kiến trúc & Quản trị Xây dựng Nhà phố",
+    shortName: "Xây dựng & Nhà phố",
+    icon: "HardHat",
+    description: "Trợ lý AI Viethome AI dự toán chi phí theo suất vốn Bộ Xây dựng, bóc tách BOQ, đồng bộ Excel 2 chiều, sinh prompt 3D may đo và kiểm soát rủi ro thi công",
+    color: "from-amber-600 via-orange-500 to-amber-900"
   }
 ];
 

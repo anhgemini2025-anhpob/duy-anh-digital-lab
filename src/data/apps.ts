@@ -65,6 +65,56 @@ export interface AppItem {
 
 export const APPS_DATA: AppItem[] = [
   {
+    logoUrl: "/apps/viethome-ai/logo.png",
+    id: "viethome-ai",
+    name: "Viethome AI – Trợ Lý AI Quản Lý Thi Công & Dự Toán Nhà Phố",
+    url: "https://viethomeai.vercel.app",
+    category: "Kiến trúc & Quản trị Xây dựng Nhà phố",
+    categoryId: "construction",
+    description: "Trợ lý AI xây nhà dân dụng & nhà phố minh bạch: Phỏng vấn nhu cầu, tính diện tích quy đổi m², lập dự toán theo suất vốn Bộ Xây dựng (QĐ 425/QĐ-BXD), bóc tách BOQ xuất/nhập Excel 2 chiều, sinh prompt 3D may đo và phòng ngừa rủi ro phát sinh trước khi ký hợp đồng.",
+    tags: [
+      "Viethome AI",
+      "Dự Toán Nhà Phố",
+      "Suất Vốn BXD",
+      "Bóc Tách BOQ",
+      "Nhập Xuất Excel 2 Chiều",
+      "Prompt 3D May Đo",
+      "Luật Xây Dựng 2025",
+      "Minh Bạch Chi Phí"
+    ],
+    coverImage: "/apps/viethome-ai/cover.png",
+    placeholderImage: "/apps/viethome-ai/logo.png",
+    detailImages: [
+      "/apps/viethome-ai/logo.png"
+    ],
+    imageAlt: "Viethome AI – Trợ lý AI Quản lý Thi công & Dự toán Nhà phố",
+    featured: true,
+    audience: "• Gia chủ chuẩn bị xây hoặc sửa chữa nhà phố muốn biết rõ chi phí thực tế và phòng tránh phát sinh.\n• Chủ nhà đang thi công cần bảng BOQ chi tiết, kiểm tra bẫy hợp đồng và giám sát nghiệm thu từng giai đoạn.\n• Kỹ sư, kiến trúc sư và nhà thầu xây dựng cần công cụ lập dự toán nhanh, xuất file Excel chuẩn và tạo prompt 3D.",
+    problem: "• Gia chủ thường mơ hồ về tổng chi phí xây dựng, dễ rơi vào bẫy giá rẻ ban đầu rồi bị phát sinh hàng trăm triệu.\n• Bảng dự toán kỹ thuật phức tạp khó hiểu, không biết đối chiếu với định mức và suất vốn đầu tư nhà nước.\n• Việc chỉnh sửa diện tích hay chủng loại vật liệu làm xáo trộn toàn bộ bảng tính, thiếu sự liên kết đồng bộ.",
+    solution: "• Quy trình 7 bước khép kín: Phỏng vấn nhu cầu, hoàn thiện hồ sơ, tính dự toán, bóc BOQ, nhập file Excel, sinh prompt 3D và xuất báo cáo.\n• Thuật toán xác định (Deterministic Code): Mọi phép tính m² và tiền đều có công thức và đối chiếu suất vốn Bộ Xây dựng, AI không đoán mò.\n• Đồng bộ Excel 2 chiều: Tải về và tải lên bảng báo giá giữ nguyên công thức toán học.\n• Prompt Studio may đo: Tự động tạo câu lệnh mô tả chuẩn xác đúng kích thước công trình để vẽ phối cảnh 3D trực quan.",
+    keyFeatures: [
+      "Khảo sát nhu cầu thông minh: Trả lời vài câu hỏi ngắn, AI gợi ý công năng và diện tích xây dựng quy đổi tối ưu.",
+      "Dự toán minh bạch có nguồn: Áp dụng đơn giá suất vốn đầu tư Bộ Xây dựng (QĐ 425/QĐ-BXD) và Luật Xây dựng 2025.",
+      "Bóc tách BOQ & Đồng bộ Excel 2 chiều: Tự động lập bảng khối lượng chi tiết từng phân đoạn, xuất/nhập file Excel giữ nguyên công thức.",
+      "Smart AI Prompt 3D may đo: Sinh prompt kiến trúc ngoại thất & nội thất chuẩn xác theo đúng kích thước thực tế công trình.",
+      "Căn cứ pháp lý & Cảnh báo phát sinh: Phân tích dự phòng phí, kiểm tra điều khoản rủi ro trong hợp đồng thi công.",
+      "Báo cáo chuyên nghiệp & Tiện ích công trường: Xuất hồ sơ dự toán hoàn chỉnh in ấn và tích hợp tiện ích dự báo thời tiết tránh đổ bê tông ngày mưa."
+    ],
+    videoDuration: "YouTube",
+    videoTagline: "Video giới thiệu nền tảng Viethome AI – Quản lý thi công & Dự toán nhà phố",
+    videoScenes: [],
+    youtubeUrl: "", // Chừa sẵn ô để sau này dán YouTube link giới thiệu Viethome AI tại đây
+    statusNote: "Trợ lý AI quản lý thi công & dự toán nhà phố. Trải nghiệm trực tiếp tại https://viethomeai.vercel.app",
+    theme: {
+      from: "from-amber-600",
+      to: "to-slate-900",
+      accent: "text-amber-400",
+      badgeBg: "bg-amber-500/15",
+      badgeText: "text-amber-300",
+      badgeBorder: "border-amber-400/30"
+    }
+  },
+  {
     logoUrl: "/apps/viettutorz/icon-512.png",
     id: "viettutorz",
     name: "VietTutorz – Gia Sư AI Đồng Hành Cùng Học Sinh Lớp 1–12",

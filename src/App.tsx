@@ -6,6 +6,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { VietnailShowcaseSection } from './components/VietnailShowcaseSection';
 import { VietrealShowcaseSection } from './components/VietrealShowcaseSection';
+import { ViethomeShowcaseSection } from './components/ViethomeShowcaseSection';
 import { ViettutorzShowcaseSection } from './components/ViettutorzShowcaseSection';
 import { FeaturedSection } from './components/FeaturedSection';
 import { CategoryVisuals } from './components/CategoryVisuals';
@@ -50,6 +51,7 @@ export function App() {
       if (a.id === 'tro-ly-giam-doc-ngan-hang' && (lower === 'trolybank' || lower === 'tro-ly-bank' || lower === 'ngan-hang' || lower === 'trolybank247')) return true;
       if (a.id === 'hom-nay-an-gi' && (lower === 'vietnuti' || lower === 'homnayan-gi' || lower === 'homnayangi' || lower === 'an-gi' || lower === 'hom-nay-an-gi')) return true;
       if (a.id === 'vietnail-guide' && (lower === 'vietnail' || lower === 'viet-nail' || lower === 'vietnailguide' || lower === 'nail' || lower === 'vietnail-guide')) return true;
+      if (a.id === 'viethome-ai' && (lower === 'viethome-ai' || lower === 'viethome' || lower === 'viethomeai' || lower === 'xay-nha' || lower === 'xaynha')) return true;
       if (a.id === 'viettutorz' && (lower === 'viettutorz' || lower === 'vietgiasu' || lower === 'viettutor' || lower === 'giasu' || lower === 'viet-giasu')) return true;
       return false;
     }) || null;
@@ -128,7 +130,13 @@ export function App() {
       />
 
       <main>
-        {/* 1. ĐƯA ỨNG DỤNG VIETTUTORZ — GIA SƯ AI LỚP 1–12 LÊN ĐẦU TRANG */}
+        {/* 1. ỨNG DỤNG VIETHOME AI — TRỢ LÝ QUẢN LÝ THI CÔNG & DỰ TOÁN NHÀ PHỐ (VỊ TRÍ ĐẦU TIÊN TRƯỚC VIETTUTORZ) */}
+        <ViethomeShowcaseSection
+          onSelectApp={handleSelectApp}
+          apps={APPS_DATA}
+        />
+
+        {/* 2. ỨNG DỤNG VIETTUTORZ — GIA SƯ AI LỚP 1–12 */}
         <ViettutorzShowcaseSection
           onSelectApp={handleSelectApp}
           apps={APPS_DATA}
