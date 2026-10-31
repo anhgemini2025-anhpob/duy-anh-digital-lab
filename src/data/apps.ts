@@ -103,8 +103,8 @@ export const APPS_DATA: AppItem[] = [
     videoDuration: "YouTube",
     videoTagline: "Video giới thiệu nền tảng Viethome AI – Quản lý thi công & Dự toán nhà phố",
     videoScenes: [],
-    youtubeUrl: "", // Chừa sẵn ô để sau này dán YouTube link giới thiệu Viethome AI tại đây
-    statusNote: "Trợ lý AI quản lý thi công & dự toán nhà phố. Trải nghiệm trực tiếp tại https://viethomeai.vercel.app",
+    youtubeUrl: "https://youtu.be/2mxqCjFARIk",
+    statusNote: "Video giới thiệu nền tảng Viethome AI trên YouTube. Trải nghiệm trực tiếp tại https://viethomeai.vercel.app",
     theme: {
       from: "from-amber-600",
       to: "to-slate-900",

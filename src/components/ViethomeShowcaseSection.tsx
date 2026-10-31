@@ -13,7 +13,7 @@ import { openExternalApp, isMobileOrWebview, getYouTubeEmbedUrl } from '../utils
 // Ví dụ: const VIETHOME_YOUTUBE_URL = "https://www.youtube.com/watch?v=XXXXXXXXXXX";
 // Khi để trống (""), hệ thống sẽ tự động hiển thị khung chờ (placeholder) nhẹ nhàng, trang nhã.
 // =========================================================================
-const VIETHOME_YOUTUBE_URL = "";
+const VIETHOME_YOUTUBE_URL = "https://youtu.be/2mxqCjFARIk";
 
 // 7 Bước vòng đời công trình chuẩn hóa của Viethome AI
 export const VIETHOME_STEPS = [
@@ -243,14 +243,47 @@ export const ViethomeShowcaseSection: React.FC<ViethomeShowcaseSectionProps> = (
 
             {/* Video Player OR Clean Placeholder Box */}
             {activeYoutubeUrl ? (
-              <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden bg-slate-950 shadow-xl border border-slate-800">
-                <iframe
-                  src={getYouTubeEmbedUrl(activeYoutubeUrl)}
-                  title="Viethome AI Video Giới Thiệu"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full border-0"
-                />
+              <div className="space-y-3">
+                <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden bg-slate-950 shadow-2xl border-2 border-amber-500/50 shadow-amber-500/10">
+                  <iframe
+                    src={getYouTubeEmbedUrl(activeYoutubeUrl)}
+                    title="Viethome AI Video Giới Thiệu"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full border-0"
+                  />
+                </div>
+
+                {/* Video Info Strip */}
+                <div className="p-3.5 rounded-xl bg-slate-950/90 border border-slate-700/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+                  <div className="flex items-center gap-2 text-slate-200">
+                    <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse" />
+                    <span className="font-bold text-amber-300">🎬 Đang phát clip giới thiệu:</span>
+                    <span className="text-slate-300 truncate max-w-xs sm:max-w-md">Trải nghiệm Dự toán &amp; Quản lý thi công Viethome AI</span>
+                  </div>
+
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <a
+                      href={activeYoutubeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-bold text-red-300 bg-red-600/20 hover:bg-red-600/30 border border-red-500/40 transition-colors"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      <span>Mở trên YouTube</span>
+                    </a>
+                    <a
+                      href="https://viethomeai.vercel.app"
+                      target={isMobileOrWebview() ? '_self' : '_blank'}
+                      rel="noopener noreferrer"
+                      onClick={(e) => openExternalApp('https://viethomeai.vercel.app', e)}
+                      className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg font-bold text-slate-950 bg-amber-400 hover:bg-amber-300 transition-colors cursor-pointer"
+                    >
+                      <span>Trải Nghiệm Ứng Dụng</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                </div>
               </div>
             ) : (
               /* Awaiting YouTube link - clean, gentle placeholder */
