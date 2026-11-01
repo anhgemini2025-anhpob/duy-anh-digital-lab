@@ -43,16 +43,25 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           {/* Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-300">
-            {/* New App Spotlight Pill: Viethome AI */}
+          <nav className="hidden lg:flex items-center gap-5 text-sm font-semibold text-slate-300">
+            {/* New App Spotlight Pill: VietThrive */}
+            <a 
+              href="#vietthrive-showcase" 
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-teal-400 via-emerald-300 to-cyan-400 text-slate-950 font-black text-xs shadow-md shadow-teal-400/30 hover:scale-105 active:scale-95 transition-all cursor-pointer animate-pulse"
+              title="Khám phá ứng dụng mới: VietThrive — Vào Đời & Phát Triển Sự Nghiệp (18–25 tuổi)"
+            >
+              <Flame className="w-3.5 h-3.5 text-teal-800 fill-current" />
+              <span>App Mới: VietThrive</span>
+              <Sparkles className="w-3 h-3 text-slate-950" />
+            </a>
+
+            {/* Viethome AI */}
             <a 
               href="#viethome-showcase" 
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 text-slate-950 font-black text-xs shadow-md shadow-amber-400/30 hover:scale-105 active:scale-95 transition-all cursor-pointer animate-pulse"
-              title="Khám phá ứng dụng mới: Viethome AI - Quản lý thi công & Dự toán nhà phố"
+              className="hover:text-amber-300 transition-colors flex items-center gap-1.5 font-bold text-amber-400 text-xs"
+              title="Khám phá: Viethome AI - Quản lý thi công & Dự toán nhà phố"
             >
-              <Flame className="w-3.5 h-3.5 text-amber-600 fill-current" />
-              <span>App Mới: Viethome AI</span>
-              <Sparkles className="w-3 h-3 text-slate-950" />
+              <span>Viethome AI</span>
             </a>
 
             <a 

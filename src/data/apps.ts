@@ -65,6 +65,60 @@ export interface AppItem {
 
 export const APPS_DATA: AppItem[] = [
   {
+    logoUrl: "/apps/vietthrive/logo.png",
+    id: "vietthrive",
+    name: "VietThrive – Nền Tảng AI Hướng Nghiệp & Phát Triển Cuộc Sống 18–25 Tuổi (App #5 Làm Cha Mẹ)",
+    url: "https://vietthrive.vercel.app",
+    category: "Đời sống",
+    categoryId: "lifestyle",
+    description: "Ứng dụng thứ 5 tiếp theo trong hệ sinh thái Làm Cha Mẹ toàn diện (0–25 tuổi), đồng hành cùng người trẻ 18–25 tuổi và gia đình: Hiểu mình khoa học (Holland RIASEC, Big Five, Ikigai), chọn đúng nghề nghiệp có số liệu thị trường, AI CV Builder xuất file Word chuẩn JD, luyện phỏng vấn thử, kỹ năng công sở, luật lao động, quản lý tài chính và AI Mentor đồng hành 24/7 không phán xét.",
+    tags: [
+      "VietThrive",
+      "App #5 Làm Cha Mẹ",
+      "18–25 Tuổi",
+      "Vào Đời & Sự Nghiệp",
+      "AI CV Builder",
+      "Holland RIASEC",
+      "Big Five & Ikigai",
+      "Luyện Phỏng Vấn AI",
+      "Luật Lao Động",
+      "Tính Lương Gross Net",
+      "AI Mentor 24/7"
+    ],
+    coverImage: "/apps/vietthrive/cover.png",
+    placeholderImage: "/apps/vietthrive/logo.png",
+    detailImages: [
+      "/apps/vietthrive/cover.png",
+      "/apps/vietthrive/logo.png"
+    ],
+    imageAlt: "VietThrive – Nền tảng AI Hướng nghiệp & Phát triển Cuộc sống 18–25 tuổi",
+    featured: true,
+    audience: "• Người trẻ Việt Nam từ 18–25 tuổi (sinh viên năm 1–4, cử nhân mới tốt nghiệp, người đi làm 1–3 năm) cần định hướng nghề nghiệp, kỹ năng công sở và xây dựng cuộc sống tự chủ.\n• Các bậc cha mẹ có con trong độ tuổi trưởng thành (18–25 tuổi) muốn thấu hiểu tâm lý, đồng hành và trang bị hành trang vào đời cho con mà không áp đặt.\n• Ứng viên chuẩn bị phỏng vấn, cần viết CV chuẩn theo từng mô tả công việc (JD) và tìm hiểu hợp đồng, chế độ bảo hiểm.",
+    problem: "• Người trẻ 18–25 tuổi thường rơi vào khủng hoảng định hướng (Quarter-Life Crisis): học xong không biết làm gì, không rõ thế mạnh bản thân.\n• Viết CV lan man, không khớp với yêu cầu nhà tuyển dụng (JD) và bối rối trước các câu hỏi phỏng vấn hóc búa.\n• Thiếu kiến thức thực tế về môi trường công sở, cách deal lương, hợp đồng lao động, quyền lợi bảo hiểm và quản lý tài chính cá nhân tự lập.\n• Cha mẹ muốn giúp con nhưng khoảng cách thế hệ và thị trường lao động biến đổi nhanh khiến lời khuyên dễ trở nên áp đặt.",
+    solution: "• Hệ sinh thái 6 chặng hành trình khép kín: Hiểu mình (Myself) ➔ Chọn nghề (Career) ➔ CV & Portfolio ➔ Kỹ năng & Phỏng vấn (Skills & Interview) ➔ Pháp lý & Tài chính (Workplace, Law & Finance) ➔ Cố vấn AI (Mentor & Future).\n• AI CV Builder thông minh: Trích xuất hồ sơ, hỏi từng câu, chấm điểm độ khớp % với JD thực tế và xuất file Microsoft Word chuẩn chỉnh.\n• Dữ liệu có nguồn minh bạch: Số liệu lương, thị trường lao động và Luật Lao Động dẫn điều luật cụ thể, không đoán mò.\n• AI Mentor đồng hành 24/7: Lắng nghe không phán xét, bảo mật thiết bị tuyệt đối (Argon2id, thiết bị tin cậy) và nhận diện an toàn khủng hoảng tâm lý.",
+    keyFeatures: [
+      "Đánh giá khoa học Holland RIASEC, Big Five, Ikigai: Định vị tính cách, năng lực và giá trị bản thân rõ ràng.",
+      "Khám phá nghề nghiệp & Bảng lương có nguồn: So sánh ngành nghề, dữ liệu thị trường việc làm và mức lương thực tế.",
+      "AI CV Builder & Tải file Word: Tự động phân tích JD tuyển dụng, đối chiếu độ khớp % và xuất file .docx chuẩn chỉnh.",
+      "Luyện phỏng vấn thử & Lộ trình kỹ năng: Giả lập phỏng vấn AI thông minh, lộ trình phát triển kỹ năng 7/30/60/90 ngày.",
+      "Cẩm nang Luật lao động & Tính lương Gross/Net: Tra cứu quyền lợi người lao động, bảo hiểm, hợp đồng và kỹ năng công sở.",
+      "AI Mentor 24/7 đồng hành không phán xét: Cố vấn định hướng nghề nghiệp, bảo mật thiết bị tin cậy và cảnh báo khủng hoảng an toàn."
+    ],
+    videoDuration: "YouTube",
+    videoTagline: "Video Giới thiệu VietThrive AI – Hệ sinh thái Làm Cha Mẹ (Chặng 18–25 tuổi)",
+    videoScenes: [],
+    youtubeUrl: "",
+    statusNote: "Khung chờ YouTube Video đã sẵn sàng. Trải nghiệm trực tiếp tại https://vietthrive.vercel.app",
+    theme: {
+      from: "from-teal-600",
+      to: "to-cyan-900",
+      accent: "text-teal-400",
+      badgeBg: "bg-teal-500/15",
+      badgeText: "text-teal-300",
+      badgeBorder: "border-teal-400/30"
+    }
+  },
+  {
     logoUrl: "/apps/viethome-ai/logo.png",
     id: "viethome-ai",
     name: "Viethome AI – Trợ Lý AI Quản Lý Thi Công & Dự Toán Nhà Phố",

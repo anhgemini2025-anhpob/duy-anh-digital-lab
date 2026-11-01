@@ -246,12 +246,13 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
   const [tropilabMode, setTropilabMode] = useState<'image' | 'video'>('image');
   const [showTropilabDetail, setShowTropilabDetail] = useState<boolean>(false);
 
-  // 2. Hệ Sinh Thái Đồng Hành Làm Cha Mẹ & Đời Sống Gia Đình (4 app)
+  // 2. Hệ Sinh Thái Đồng Hành Làm Cha Mẹ & Đời Sống Gia Đình (5 app: 0 - 25 tuổi)
   const parentingOrder = [
     'nuoi-duong-be-0-60',
     'nuoi-day-tre-6-11',
     'thau-hieu-thieu-nien-12-15',
-    'dinh-huong-thanh-nien-16-18'
+    'dinh-huong-thanh-nien-16-18',
+    'vietthrive'
   ];
   const parentingApps = parentingOrder
     .map(id => apps.find(a => a.id === id))
@@ -310,10 +311,11 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
     index: number,
     badgeText: string,
     onExpand: () => void,
-    accentColor: 'amber' | 'emerald' | 'sky' | 'rose' = 'amber'
+    accentColor: 'amber' | 'emerald' | 'sky' | 'rose' | 'teal' = 'amber'
   ) => {
     const requested = isAppRequested(app.id);
     const borderHover = 
+      accentColor === 'teal' ? 'hover:border-teal-400 hover:shadow-teal-500/20' :
       accentColor === 'emerald' ? 'hover:border-emerald-400 hover:shadow-emerald-500/20' :
       accentColor === 'sky' ? 'hover:border-sky-400 hover:shadow-sky-500/20' :
       accentColor === 'rose' ? 'hover:border-rose-400 hover:shadow-rose-500/20' :
@@ -1145,52 +1147,53 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
           <div className="relative flex justify-center">
             <span className="px-4 py-1.5 rounded-full bg-[#07111E] border border-amber-500/40 text-xs font-mono font-bold text-amber-400 flex items-center gap-2 shadow-md">
               <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-              <span>HỆ SINH THÁI LÀM CHA MẸ TOÀN DIỆN • 4 GIAI ĐOẠN TRƯỞNG THÀNH (0 – 18 TUỔI)</span>
+              <span>HỆ SINH THÁI LÀM CHA MẸ TOÀN DIỆN • 5 GIAI ĐOẠN TRƯỞNG THÀNH (0 – 25 TUỔI)</span>
             </span>
           </div>
         </div>
 
         {/* ═════════════════════════════════════════════════════════════════════════ */}
-        {/* PHẦN 2: TRỌN BỘ 4 ỨNG DỤNG ĐỒNG HÀNH LÀM CHA MẸ (0 - 18 TUỔI) */}
+        {/* PHẦN 2: TRỌN BỘ 5 ỨNG DỤNG ĐỒNG HÀNH LÀM CHA MẸ (0 - 25 TUỔI) */}
         {/* THU GỌN CHỮ LẠI CHO DỄ NHÌN, TRÁNH RỐI MẮT, CLICK VÀO MỚI RA CHI TIẾT */}
         {/* ═════════════════════════════════════════════════════════════════════════ */}
         <div>
           {/* Header */}
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-8">
             <div>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-rose-500/20 via-amber-500/20 to-indigo-500/20 border border-amber-400/40 text-xs sm:text-sm font-bold text-amber-300 mb-3 shadow-sm">
-                <Sparkles className="w-4 h-4 text-amber-400" />
-                <span>4 CHẶNG ĐƯỜNG TRƯỞNG THÀNH • PWA OFFLINE • KHÔNG LƯU DỮ LIỆU</span>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-rose-500/20 via-amber-500/20 to-teal-500/20 border border-teal-400/40 text-xs sm:text-sm font-bold text-teal-300 mb-3 shadow-sm">
+                <Sparkles className="w-4 h-4 text-teal-400" />
+                <span>5 CHẶNG ĐƯỜNG TRƯỞNG THÀNH • PWA &amp; NỀN TẢNG AI BẢO MẬT</span>
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-                Trọn Bộ 4 Ứng Dụng Đồng Hành Làm Cha Mẹ &amp; Trẻ Em (0 – 18 Tuổi)
+                Trọn Bộ 5 Ứng Dụng Đồng Hành Làm Cha Mẹ &amp; Con Trưởng Thành (0 – 25 Tuổi)
               </h2>
               <p className="text-base sm:text-lg text-slate-200 mt-3 max-w-3xl leading-relaxed">
                 Thiết kế tinh gọn, trực quan: Nhấn vào từng chặng để xem chi tiết nghiệp vụ, video clip tour và trải nghiệm ứng dụng trực tiếp.
               </p>
             </div>
             <div className="mt-4 md:mt-0 text-xs sm:text-sm font-mono text-emerald-400 font-bold bg-[#0A192F] px-4 py-2 rounded-xl border border-emerald-400/30 whitespace-nowrap shadow-sm">
-              [ TRỌN BỘ 4 CHẶNG • LIVE PRODUCTION ]
+              [ TRỌN BỘ 5 CHẶNG • LIVE PRODUCTION ]
             </div>
           </div>
 
           {/* Conditional View: Grid View vs Focus Detail View */}
           {activeParentingIdx === null ? (
             /* COMPACT GRID VIEW (Chỉ hiện hình, logo, tên chặng — không rối mắt) */
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {parentingApps.map((app, index) => {
                 const stages = [
                   'CHẶNG 1: 0–5 TUỔI',
                   'CHẶNG 2: 6–11 TUỔI',
                   'CHẶNG 3: 12–15 TUỔI',
-                  'CHẶNG 4: 16–18 TUỔI'
+                  'CHẶNG 4: 16–18 TUỔI',
+                  'CHẶNG 5: 18–25 TUỔI'
                 ];
                 return renderCompactCard(
                   app,
                   index,
                   stages[index] || `CHẶNG #${index + 1}`,
                   () => setActiveParentingIdx(index),
-                  'amber'
+                  index === 4 ? 'teal' : 'amber'
                 );
               })}
             </div>
@@ -1204,23 +1207,23 @@ export const FeaturedSection: React.FC<FeaturedSectionProps> = ({
               parentingApps,
               () => setActiveParentingIdx(null),
               (newIdx) => setActiveParentingIdx(newIdx),
-              ['1. 0–5 Tuổi (0–60 Tháng)', '2. 6–11 Tuổi (Tiểu Học)', '3. 12–15 Tuổi (Dậy Thì)', '4. 16–18 Tuổi (THPT)']
+              ['1. 0–5 Tuổi (0–60 Tháng)', '2. 6–11 Tuổi (Tiểu Học)', '3. 12–15 Tuổi (Dậy Thì)', '4. 16–18 Tuổi (THPT)', '5. 18–25 Tuổi (VietThrive – Vào Đời)']
             )
           )}
 
           {/* Parenting Ecosystem Summary */}
           {activeParentingIdx === null && (
-            <div className="mt-8 rounded-2xl bg-gradient-to-r from-[#0B1A2F] via-[#0E223D] to-[#122A4E] border border-amber-400/30 p-5 shadow-lg flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="mt-8 rounded-2xl bg-gradient-to-r from-[#0B1A2F] via-[#0E223D] to-[#122A4E] border border-teal-400/30 p-5 shadow-lg flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-amber-400/20 border border-amber-400/50 flex items-center justify-center shrink-0">
-                  <Sparkles className="w-5 h-5 text-amber-300" />
+                <div className="w-10 h-10 rounded-xl bg-teal-400/20 border border-teal-400/50 flex items-center justify-center shrink-0">
+                  <Sparkles className="w-5 h-5 text-teal-300" />
                 </div>
                 <div>
                   <div className="text-sm font-black text-white">
-                    Hệ Sinh Thái Làm Cha Mẹ Khép Kín 4 Chặng (0–18 Tuổi)
+                    Hệ Sinh Thái Làm Cha Mẹ Khép Kín 5 Chặng (0–25 Tuổi)
                   </div>
                   <div className="text-xs text-slate-300 mt-0.5">
-                    0–60 tháng (Chăm sóc vàng) ➔ 6–11 tuổi (Kỷ luật tích cực) ➔ 12–15 tuổi (Thấu hiểu dậy thì) ➔ 16–18 tuổi (Bứt phá THPT &amp; Tự lập)
+                    0–60 tháng (Chăm sóc vàng) ➔ 6–11 tuổi (Kỷ luật tích cực) ➔ 12–15 tuổi (Thấu hiểu dậy thì) ➔ 16–18 tuổi (Bứt phá THPT) ➔ 18–25 tuổi VietThrive (Vào đời, Sự nghiệp &amp; Sống tự chủ)
                   </div>
                 </div>
               </div>

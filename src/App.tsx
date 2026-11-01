@@ -4,6 +4,7 @@ import { APPS_DATA, AppItem } from './data/apps';
 import { CATEGORIES } from './data/categories';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { VietthriveShowcaseSection } from './components/VietthriveShowcaseSection';
 import { VietnailShowcaseSection } from './components/VietnailShowcaseSection';
 import { VietrealShowcaseSection } from './components/VietrealShowcaseSection';
 import { ViethomeShowcaseSection } from './components/ViethomeShowcaseSection';
@@ -51,6 +52,7 @@ export function App() {
       if (a.id === 'tro-ly-giam-doc-ngan-hang' && (lower === 'trolybank' || lower === 'tro-ly-bank' || lower === 'ngan-hang' || lower === 'trolybank247')) return true;
       if (a.id === 'hom-nay-an-gi' && (lower === 'vietnuti' || lower === 'homnayan-gi' || lower === 'homnayangi' || lower === 'an-gi' || lower === 'hom-nay-an-gi')) return true;
       if (a.id === 'vietnail-guide' && (lower === 'vietnail' || lower === 'viet-nail' || lower === 'vietnailguide' || lower === 'nail' || lower === 'vietnail-guide')) return true;
+      if (a.id === 'vietthrive' && (lower === 'vietthrive' || lower === 'viet-thrive' || lower === 'thrive' || lower === 'vao-doi' || lower === 'vaodoi')) return true;
       if (a.id === 'viethome-ai' && (lower === 'viethome-ai' || lower === 'viethome' || lower === 'viethomeai' || lower === 'xay-nha' || lower === 'xaynha')) return true;
       if (a.id === 'viettutorz' && (lower === 'viettutorz' || lower === 'vietgiasu' || lower === 'viettutor' || lower === 'giasu' || lower === 'viet-giasu')) return true;
       return false;
@@ -130,7 +132,13 @@ export function App() {
       />
 
       <main>
-        {/* 1. ỨNG DỤNG VIETHOME AI — TRỢ LÝ QUẢN LÝ THI CÔNG & DỰ TOÁN NHÀ PHỐ (VỊ TRÍ ĐẦU TIÊN TRƯỚC VIETTUTORZ) */}
+        {/* 1. ỨNG DỤNG VIETTHRIVE — NỀN TẢNG AI HƯỚNG NGHIỆP & PHÁT TRIỂN SỰ NGHIỆP 18–25 TUỔI (APP THỨ 5 HỆ SINH THÁI LÀM CHA MẸ) */}
+        <VietthriveShowcaseSection
+          onSelectApp={handleSelectApp}
+          apps={APPS_DATA}
+        />
+
+        {/* 2. ỨNG DỤNG VIETHOME AI — TRỢ LÝ QUẢN LÝ THI CÔNG & DỰ TOÁN NHÀ PHỐ */}
         <ViethomeShowcaseSection
           onSelectApp={handleSelectApp}
           apps={APPS_DATA}

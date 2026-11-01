@@ -88,7 +88,7 @@ const RAW_CATEGORIES: Omit<CategoryItem, 'count'>[] = [
     name: "Đời sống",
     shortName: "Đời sống",
     icon: "Baby",
-    description: "Hệ sinh thái Làm Cha Mẹ toàn diện 0 tháng đến 18 tuổi: Nuôi dưỡng bé 0–60 tháng, Nuôi dạy con 6–11 tuổi, Thấu hiểu thiếu niên 12–15 tuổi và Định hướng thanh niên 16–18 tuổi.",
+    description: "Hệ sinh thái Làm Cha Mẹ toàn diện 0 tháng đến 25 tuổi: Nuôi dưỡng bé 0–60 tháng, Nuôi dạy con 6–11 tuổi, Thấu hiểu thiếu niên 12–15 tuổi, Định hướng thanh niên 16–18 tuổi, và VietThrive (18–25 tuổi) — Bước Vào Đời & Phát Triển Vượt Trội.",
     color: "from-rose-500 to-amber-500"
   },
   {
