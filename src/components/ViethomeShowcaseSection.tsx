@@ -13,7 +13,7 @@ import { openExternalApp, isMobileOrWebview, getYouTubeEmbedUrl } from '../utils
 // Ví dụ: const VIETHOME_YOUTUBE_URL = "https://www.youtube.com/watch?v=XXXXXXXXXXX";
 // Khi để trống (""), hệ thống sẽ tự động hiển thị khung chờ (placeholder) nhẹ nhàng, trang nhã.
 // =========================================================================
-const VIETHOME_YOUTUBE_URL = "https://youtu.be/2mxqCjFARIk";
+const VIETHOME_YOUTUBE_URL = "https://www.youtube.com/watch?v=2mxqCjFARIk";
 
 // 7 Bước vòng đời công trình chuẩn hóa của Viethome AI
 export const VIETHOME_STEPS = [
@@ -247,7 +247,7 @@ export const ViethomeShowcaseSection: React.FC<ViethomeShowcaseSectionProps> = (
                 <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden bg-slate-950 shadow-2xl border-2 border-amber-500/50 shadow-amber-500/10">
                   <iframe
                     src={getYouTubeEmbedUrl(activeYoutubeUrl)}
-                    title="Viethome AI Video Giới Thiệu"
+                    title="MÁI NHÀ TRÊN BẢN NHÁP | Phóng sự: Tổng hợp các nỗi đau khi xây, sửa nhà - Viethome AI"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     className="w-full h-full border-0"
@@ -258,8 +258,8 @@ export const ViethomeShowcaseSection: React.FC<ViethomeShowcaseSectionProps> = (
                 <div className="p-3.5 rounded-xl bg-slate-950/90 border border-slate-700/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
                   <div className="flex items-center gap-2 text-slate-200">
                     <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse" />
-                    <span className="font-bold text-amber-300">🎬 Đang phát clip giới thiệu:</span>
-                    <span className="text-slate-300 truncate max-w-xs sm:max-w-md">Trải nghiệm Dự toán &amp; Quản lý thi công Viethome AI</span>
+                    <span className="font-bold text-amber-300">🎬 Đang phát phóng sự / video giới thiệu:</span>
+                    <span className="text-slate-300 truncate max-w-xs sm:max-w-md">MÁI NHÀ TRÊN BẢN NHÁP • Tổng hợp các nỗi đau khi xây, sửa nhà</span>
                   </div>
 
                   <div className="flex items-center gap-2 flex-wrap">

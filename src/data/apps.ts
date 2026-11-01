@@ -101,10 +101,10 @@ export const APPS_DATA: AppItem[] = [
       "Báo cáo chuyên nghiệp & Tiện ích công trường: Xuất hồ sơ dự toán hoàn chỉnh in ấn và tích hợp tiện ích dự báo thời tiết tránh đổ bê tông ngày mưa."
     ],
     videoDuration: "YouTube",
-    videoTagline: "Video giới thiệu nền tảng Viethome AI – Quản lý thi công & Dự toán nhà phố",
+    videoTagline: "Phóng sự: MÁI NHÀ TRÊN BẢN NHÁP - Tổng hợp các nỗi đau khi xây, sửa nhà & Giới thiệu Viethome AI",
     videoScenes: [],
-    youtubeUrl: "https://youtu.be/2mxqCjFARIk",
-    statusNote: "Video giới thiệu nền tảng Viethome AI trên YouTube. Trải nghiệm trực tiếp tại https://viethomeai.vercel.app",
+    youtubeUrl: "https://www.youtube.com/watch?v=2mxqCjFARIk",
+    statusNote: "Phóng sự 'MÁI NHÀ TRÊN BẢN NHÁP' & Giới thiệu giải pháp Viethome AI trên YouTube. Trải nghiệm trực tiếp tại https://viethomeai.vercel.app",
     theme: {
       from: "from-amber-600",
       to: "to-slate-900",
