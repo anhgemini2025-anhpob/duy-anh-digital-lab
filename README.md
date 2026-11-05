@@ -15,7 +15,7 @@ Mọi chi tiết trên trang được xây dựng để khách truy cập và đ
 
 1. **Digital Product Collage (Hero Section)**:
    - Spotlight ứng dụng mới: **Trợ Lý Giám Đốc Ngân Hàng 24/7** (https://trolybank.vercel.app) với video thực tế, rà soát hợp đồng tín dụng và ma trận cảnh báo đèn giao thông RCSA.
-   - Chỉ số năng lực thực tế: 30+ ứng dụng, 9 nhóm ngành chuyên sâu, 100% Cloud-native.
+   - Chỉ số năng lực thực tế: 50+ ứng dụng, 9 nhóm ngành chuyên sâu, 100% Cloud-native.
 
 2. **Featured Apps Spotlight**:
    - Bố cục 2 cột đặc biệt cho 3 ứng dụng trọng điểm: **CosmeDerm AI Academy**, **Vietnam Food Tech Hub**, và **UTH SCM Navigator**.

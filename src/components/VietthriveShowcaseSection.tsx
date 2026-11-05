@@ -10,11 +10,9 @@ import { openExternalApp, isMobileOrWebview, getYouTubeEmbedUrl } from '../utils
 
 // =========================================================================
 // 🎬 Ô DÁN LINK YOUTUBE GIỚI THIỆU VIETTHRIVE:
-// Sau này có link YouTube, bạn chỉ cần dán URL vào biến dưới đây.
-// Ví dụ: const VIETTHRIVE_YOUTUBE_URL = "https://www.youtube.com/watch?v=XXXXXXXXXXX";
-// Khi để trống (""), hệ thống sẽ tự động hiển thị khung chờ (placeholder) nhẹ nhàng, trang nhã.
+// Đã gắn link YouTube chính thức cho VietThrive AI
 // =========================================================================
-const VIETTHRIVE_YOUTUBE_URL = "";
+const VIETTHRIVE_YOUTUBE_URL = "https://www.youtube.com/watch?v=eRNeuBqnOiA";
 
 // 5 Chặng của Hệ sinh thái Làm Cha Mẹ toàn diện (0 - 25 Tuổi)
 export const PARENTING_5_STAGES = [

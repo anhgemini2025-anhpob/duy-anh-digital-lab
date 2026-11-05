@@ -107,8 +107,8 @@ export const APPS_DATA: AppItem[] = [
     videoDuration: "YouTube",
     videoTagline: "Video Giới thiệu VietThrive AI – Hệ sinh thái Làm Cha Mẹ (Chặng 18–25 tuổi)",
     videoScenes: [],
-    youtubeUrl: "",
-    statusNote: "Khung chờ YouTube Video đã sẵn sàng. Trải nghiệm trực tiếp tại https://vietthrive.vercel.app",
+    youtubeUrl: "https://www.youtube.com/watch?v=eRNeuBqnOiA",
+    statusNote: "Video giới thiệu VietThrive AI trên YouTube. Trải nghiệm trực tiếp tại https://vietthrive.vercel.app",
     theme: {
       from: "from-teal-600",
       to: "to-cyan-900",

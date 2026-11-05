@@ -159,7 +159,7 @@ export const VietnailShowcaseSection: React.FC<VietnailShowcaseSectionProps> = (
             <div className="hidden sm:inline-flex items-center gap-2 px-3 py-1 rounded-xl bg-slate-900/90 border border-slate-700/80 text-xs font-mono text-slate-300">
               <span className="text-amber-400 font-bold">10 Nhóm Ngành</span>
               <span>•</span>
-              <span className="text-emerald-400 font-bold">30+ Ứng Dụng</span>
+              <span className="text-emerald-400 font-bold">50+ Ứng Dụng</span>
             </div>
           </div>
 
