@@ -78,9 +78,8 @@ export const VietgoShowcaseSection: React.FC<VietgoShowcaseSectionProps> = ({
   // Active youtube url: priorities constant first, then app.youtubeUrl if set
   const activeYoutubeUrl = VIETGO_YOUTUBE_URL || vietgoApp?.youtubeUrl;
 
-  // URLs: vietecom.vercel.app as requested in prompt, and vietshiper.vercel.app as native domain
-  const requestedAppUrl = "https://vietecom.vercel.app";
-  const nativeAppUrl = "https://vietshiper.vercel.app";
+  // Đường link chính thức chuẩn xác của VietGo AI
+  const appUrl = "https://vietshiper.vercel.app/";
 
   const handleCopyLink = (url: string, e: React.MouseEvent) => {
     e.stopPropagation();
@@ -141,12 +140,12 @@ export const VietgoShowcaseSection: React.FC<VietgoShowcaseSectionProps> = ({
 
           {/* Action Buttons: Direct Links & Modal */}
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3.5">
-            {/* Primary Link Button: vietecom.vercel.app as requested */}
+            {/* Primary Link Button: https://vietshiper.vercel.app/ */}
             <a
-              href={requestedAppUrl}
+              href={appUrl}
               target={isMobileOrWebview() ? '_self' : '_blank'}
               rel="noopener noreferrer"
-              onClick={(e) => openExternalApp(requestedAppUrl, e)}
+              onClick={(e) => openExternalApp(appUrl, e)}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-2xl font-black text-sm text-slate-950 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-amber-300 hover:to-yellow-300 shadow-xl shadow-amber-500/25 hover:shadow-amber-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
             >
               <Plane className="w-4 h-4 text-slate-950 stroke-[2.5]" />
@@ -154,13 +153,13 @@ export const VietgoShowcaseSection: React.FC<VietgoShowcaseSectionProps> = ({
               <ExternalLink className="w-4 h-4 text-slate-950 stroke-[2.5]" />
             </a>
 
-            {/* Copy Link Pill for vietecom.vercel.app */}
+            {/* Copy Link Pill for vietshiper.vercel.app */}
             <button
-              onClick={(e) => handleCopyLink(requestedAppUrl, e)}
+              onClick={(e) => handleCopyLink(appUrl, e)}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl text-xs sm:text-sm font-bold text-slate-200 bg-[#0E223D] border border-slate-700 hover:border-amber-400/50 hover:bg-[#142C4C] transition-all cursor-pointer shadow-md"
-              title="Sao chép đường link ứng dụng"
+              title="Sao chép đường link ứng dụng VietGo AI"
             >
-              {copiedUrl === requestedAppUrl ? (
+              {copiedUrl ? (
                 <>
                   <Check className="w-4 h-4 text-emerald-400" />
                   <span className="text-emerald-300 font-extrabold">Đã sao chép link!</span>
@@ -168,33 +167,19 @@ export const VietgoShowcaseSection: React.FC<VietgoShowcaseSectionProps> = ({
               ) : (
                 <>
                   <Copy className="w-4 h-4 text-amber-400" />
-                  <span className="font-mono text-amber-300">vietecom.vercel.app</span>
+                  <span className="font-mono text-amber-300">vietshiper.vercel.app</span>
                 </>
               )}
             </button>
-
-            {/* Secondary Native App Domain Pill: vietshiper.vercel.app */}
-            <a
-              href={nativeAppUrl}
-              target={isMobileOrWebview() ? '_self' : '_blank'}
-              rel="noopener noreferrer"
-              onClick={(e) => openExternalApp(nativeAppUrl, e)}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-bold text-sky-300 bg-sky-950/40 border border-sky-500/40 hover:border-sky-400 hover:bg-sky-900/30 transition-all cursor-pointer"
-              title="Mở cổng PWA chuyên dụng: vietshiper.vercel.app"
-            >
-              <Package className="w-4 h-4 text-sky-400" />
-              <span className="font-mono">vietshiper.vercel.app</span>
-              <ExternalLink className="w-3.5 h-3.5 text-sky-400" />
-            </a>
 
             {/* View Full Details Modal Button */}
             {vietgoApp && (
               <button
                 onClick={() => onSelectApp(vietgoApp, 'image')}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl text-xs sm:text-sm font-bold text-slate-300 bg-slate-800/80 border border-slate-700 hover:border-slate-500 hover:bg-slate-800 transition-all cursor-pointer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl text-xs sm:text-sm font-bold text-sky-300 bg-sky-950/40 border border-sky-500/40 hover:border-sky-400 hover:bg-sky-900/30 transition-all cursor-pointer"
               >
-                <span>Xem chi tiết PRD</span>
-                <ChevronRight className="w-4 h-4 text-slate-400" />
+                <span>Xem chi tiết tính năng</span>
+                <ChevronRight className="w-4 h-4 text-sky-400" />
               </button>
             )}
           </div>
@@ -345,27 +330,16 @@ export const VietgoShowcaseSection: React.FC<VietgoShowcaseSectionProps> = ({
                 </p>
               </div>
 
-              <div className="pt-4 flex flex-col gap-2">
+              <div className="pt-4">
                 <a
-                  href={requestedAppUrl}
+                  href={appUrl}
                   target={isMobileOrWebview() ? '_self' : '_blank'}
                   rel="noopener noreferrer"
-                  onClick={(e) => openExternalApp(requestedAppUrl, e)}
+                  onClick={(e) => openExternalApp(appUrl, e)}
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-extrabold text-xs text-slate-950 bg-gradient-to-r from-amber-400 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 shadow-md transition-all cursor-pointer"
                 >
-                  <span>Mở vietecom.vercel.app</span>
+                  <span>Mở vietshiper.vercel.app</span>
                   <ArrowRight className="w-3.5 h-3.5" />
-                </a>
-
-                <a
-                  href={nativeAppUrl}
-                  target={isMobileOrWebview() ? '_self' : '_blank'}
-                  rel="noopener noreferrer"
-                  onClick={(e) => openExternalApp(nativeAppUrl, e)}
-                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-bold text-xs text-sky-300 bg-sky-950/40 border border-sky-500/30 hover:border-sky-400 hover:bg-sky-900/30 transition-all cursor-pointer"
-                >
-                  <span>Cổng PWA: vietshiper.vercel.app</span>
-                  <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
             </div>

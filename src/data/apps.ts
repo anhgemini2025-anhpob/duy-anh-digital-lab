@@ -68,7 +68,7 @@ export const APPS_DATA: AppItem[] = [
     logoUrl: "/apps/vietgo/logo.png",
     id: "vietgo",
     name: "VietGo AI (VietShiper) – Giao Nhận Hàng & Mua Hộ Hai Chiều Việt Nam ⇆ Hoa Kỳ",
-    url: "https://vietecom.vercel.app",
+    url: "https://vietshiper.vercel.app/",
     category: "Logistics Quốc Tế & Giao Nhận Mỹ - Việt",
     categoryId: "logistics",
     description: "Nền tảng AI Cross-border Logistics & Personal Shopping kết nối hai chiều trực tiếp Việt Nam ⇆ Hoa Kỳ: Tính cước thể tích chuẩn xác (chống sốc DIM), kiểm duyệt hải quan FDA/USDA/CBP 5 trạng thái an toàn 100%, tra cứu hành trình toàn trình (End-to-End Tracking), gom hàng - đóng gói - hút chân không tiết kiệm đến 40% cước phí, và mua hộ hàng Mỹ minh bạch.",
@@ -141,7 +141,7 @@ export const APPS_DATA: AppItem[] = [
       }
     ],
     youtubeUrl: "https://www.youtube.com/watch?v=wkHjx7Kb5Bo",
-    statusNote: "Khám phá VietGo AI tại https://vietecom.vercel.app và cổng PWA https://vietshiper.vercel.app. Video YouTube phát trực tiếp tại landing page.",
+    statusNote: "Khám phá VietGo AI trực tiếp tại https://vietshiper.vercel.app/. Video YouTube phát trực tiếp tại landing page.",
     theme: {
       from: "from-blue-600",
       to: "to-indigo-950",
