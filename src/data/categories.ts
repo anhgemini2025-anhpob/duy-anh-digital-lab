@@ -32,7 +32,7 @@ const RAW_CATEGORIES: Omit<CategoryItem, 'count'>[] = [
     name: "Bán hàng B2B & Quản trị Doanh nghiệp",
     shortName: "Sales & B2B",
     icon: "Briefcase",
-    description: "Báo cáo thuế Hộ kinh doanh, quản lý hợp đồng mua bán B2B, huấn luyện sales thực địa và kịch bản chốt đơn Battle Card",
+    description: "AI Commerce & Social Selling VietEcom (Profit Engine, Compliance TikTok/Shopee, Ads Doctor), Báo cáo thuế Hộ kinh doanh, quản lý hợp đồng mua bán B2B và huấn luyện sales thực địa",
     color: "from-blue-600 to-cyan-600"
   },
   {

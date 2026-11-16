@@ -5,6 +5,7 @@
 @layer base {
   body {
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    transition: background-color 0.25s ease, color 0.25s ease;
   }
 }
 
@@ -26,6 +27,163 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #d4af37;
+}
+
+/* =========================================================================
+   LIGHT MODE (CHẾ ĐỘ SÁNG) — SÁNG, DỄ NHÌN, SẮC NÉT, CHUYÊN NGHIỆP
+   ========================================================================= */
+
+html.light,
+html.light body,
+html.light #root,
+html.light .min-h-screen {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* Light mode scrollbar */
+html.light ::-webkit-scrollbar-track {
+  background: #f1f5f9 !important;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1 !important;
+  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #d4af37 !important;
+}
+
+/* Light mode Navbar Header */
+html.light header {
+  background-color: rgba(255, 255, 255, 0.94) !important;
+  border-bottom-color: #e2e8f0 !important;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05) !important;
+}
+
+html.light header .text-white {
+  color: #0f172a !important;
+}
+
+html.light header .text-slate-300,
+html.light header nav a {
+  color: #334155 !important;
+}
+
+html.light header nav a:hover {
+  color: #d97706 !important;
+}
+
+/* Light mode sections background */
+html.light section {
+  background-color: #f8fafc !important;
+  background-image: linear-gradient(to bottom, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%) !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Light mode cards, boxes & drawers: pure crisp white with refined shadow */
+html.light [class*="bg-[#0A192F]"],
+html.light [class*="bg-[#0B1A2F]"],
+html.light [class*="bg-[#0E223D]"],
+html.light [class*="bg-[#0B1A33]"],
+html.light [class*="bg-[#081F2F]"],
+html.light [class*="bg-[#0B1E38]"],
+html.light [class*="bg-[#0B2447]"],
+html.light [class*="bg-[#0F2F49]"],
+html.light [class*="bg-[#142C4C]"] {
+  background-color: #ffffff !important;
+  box-shadow: 0 4px 18px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -2px rgba(15, 23, 42, 0.04) !important;
+}
+
+/* Deep page backgrounds adapt to soft off-white in light mode */
+html.light [class*="bg-[#07111E]"],
+html.light [class*="bg-[#050B14]"],
+html.light [class*="bg-[#060F1E]"],
+html.light [class*="bg-[#05111B]"],
+html.light [class*="bg-[#041E26]"],
+html.light [class*="bg-[#051624]"],
+html.light [class*="bg-[#051724]"],
+html.light [class*="bg-[#061122]"],
+html.light [class*="bg-[#061224]"],
+html.light [class*="bg-[#061427]"],
+html.light [class*="bg-[#061622]"],
+html.light [class*="bg-[#061C24]"],
+html.light [class*="bg-[#071324]"],
+html.light [class*="bg-[#071326]"],
+html.light [class*="bg-[#081321]"],
+html.light [class*="bg-[#081528]"],
+html.light [class*="bg-[#081830]"],
+html.light [class*="bg-[#081B34]"],
+html.light [class*="bg-[#081E15]"],
+html.light [class*="bg-[#081F30]"],
+html.light [class*="bg-[#082032]"],
+html.light [class*="bg-[#091A33]"],
+html.light [class*="bg-[#091B33]"],
+html.light [class*="bg-[#091C35]"],
+html.light [class*="bg-[#091D3A]"],
+html.light [class*="bg-[#092236]"],
+html.light [class*="bg-[#09253B]"] {
+  background-color: #f8fafc !important;
+}
+
+/* Video player containers keep their dark surface for contrast */
+html.light .aspect-video.bg-slate-950,
+html.light .aspect-\[16\/10\].bg-slate-950,
+html.light iframe {
+  background-color: #090d16 !important;
+}
+
+/* Light mode text contrast */
+html.light h1.text-white,
+html.light h2.text-white,
+html.light h3.text-white,
+html.light h4.text-white,
+html.light .text-white {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-100 {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-200 {
+  color: #1e293b !important;
+}
+
+html.light .text-slate-300 {
+  color: #334155 !important;
+}
+
+html.light .text-slate-400 {
+  color: #64748b !important;
+}
+
+/* Subtle borders in light mode */
+html.light [class*="border-slate-800"],
+html.light [class*="border-slate-750"],
+html.light [class*="border-slate-700"] {
+  border-color: #e2e8f0 !important;
+}
+
+/* Modals & Drawers in light mode */
+html.light .fixed.inset-0.bg-black\/80,
+html.light .fixed.inset-0.bg-slate-950\/80,
+html.light [class*="bg-black/"] {
+  background-color: rgba(15, 23, 42, 0.6) !important;
+}
+
+/* Keep dark text on bright amber buttons */
+html.light .text-slate-950,
+html.light [class*="from-amber-400"] * {
+  color: #020617 !important;
+}
+
+/* Clean code tags in light mode */
+html.light code {
+  background-color: #f1f5f9 !important;
+  color: #b45309 !important;
+  border-color: #e2e8f0 !important;
 }
 
 /* Print styles for native print & AirPrint */
@@ -80,4 +238,3 @@
 .animate-chop-tat {
   animation: choptat 0.9s ease-in-out infinite;
 }
-

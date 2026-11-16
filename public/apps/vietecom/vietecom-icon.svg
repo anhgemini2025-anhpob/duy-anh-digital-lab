@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="45%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="primaryGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background tile -->
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="url(#bgGlow)"/>
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="none" stroke="url(#primaryGrad)" stroke-opacity="0.55" stroke-width="6"/>
+
+  <!-- Background decorative tech grid circles -->
+  <circle cx="256" cy="256" r="180" stroke="#334155" stroke-width="2" stroke-dasharray="6 8" opacity="0.4"/>
+  <circle cx="256" cy="256" r="140" stroke="#475569" stroke-width="2" stroke-dasharray="4 6" opacity="0.3"/>
+
+  <!-- Shopping Bag outline -->
+  <path d="M148 200 C148 184 160 172 176 172 H336 C352 172 364 184 364 200 L380 380 C380 402 362 420 340 420 H172 C150 420 132 402 132 380 Z" 
+        fill="#0F172A" stroke="url(#primaryGrad)" stroke-width="16" stroke-linejoin="round"/>
+  
+  <!-- Bag Handle -->
+  <path d="M204 172 V140 C204 112 226 90 256 90 C286 90 308 112 308 140 V172" 
+        fill="none" stroke="url(#goldGrad)" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- Growth Arrow / Profit Curve rising out of bag -->
+  <path d="M176 340 L228 290 L276 324 L336 244" 
+        fill="none" stroke="url(#emeraldGrad)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M296 244 H336 V284" 
+        fill="none" stroke="url(#emeraldGrad)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- AI Sparkle star top-right -->
+  <g transform="translate(360, 110)">
+    <path d="M0 -36 C2 -12 12 -2 36 0 C12 2 2 12 0 36 C-2 12 -12 2 -36 0 C-12 -2 -2 -12 0 -36 Z" 
+          fill="url(#goldGrad)" filter="url(#glow)"/>
+  </g>
+  <circle cx="410" cy="180" r="8" fill="#38BDF8" opacity="0.8"/>
+
+  <!-- Center "V" monogram in gold -->
+  <text x="256" y="278" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="72" 
+        fill="url(#goldGrad)" text-anchor="middle" letter-spacing="-2">VE</text>
+</svg>

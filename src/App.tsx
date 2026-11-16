@@ -4,11 +4,12 @@ import { APPS_DATA, AppItem } from './data/apps';
 import { CATEGORIES } from './data/categories';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { VietecomShowcaseSection } from './components/VietecomShowcaseSection';
 import { VietthriveShowcaseSection } from './components/VietthriveShowcaseSection';
-import { VietnailShowcaseSection } from './components/VietnailShowcaseSection';
-import { VietrealShowcaseSection } from './components/VietrealShowcaseSection';
 import { ViethomeShowcaseSection } from './components/ViethomeShowcaseSection';
+import { VietrealShowcaseSection } from './components/VietrealShowcaseSection';
 import { ViettutorzShowcaseSection } from './components/ViettutorzShowcaseSection';
+import { VietnailShowcaseSection } from './components/VietnailShowcaseSection';
 import { FeaturedSection } from './components/FeaturedSection';
 import { CategoryVisuals } from './components/CategoryVisuals';
 import { TechStackSection } from './components/TechStackSection';
@@ -19,11 +20,23 @@ import { RequestDrawer } from './components/RequestDrawer';
 import { Footer } from './components/Footer';
 import { MessageSquareCode, ArrowRight } from 'lucide-react';
 import { openExternalApp, isMobileOrWebview } from './utils/navigation';
+import { getInitialTheme, applyTheme, ThemeMode } from './utils/theme';
 
 export function App() {
   const navigate = useNavigate();
   const location = useLocation();
   const [searchParams] = useSearchParams();
+
+  // Theme state: defaults to 'light' for bright, clear, readable landing page
+  const [theme, setTheme] = useState<ThemeMode>(() => getInitialTheme());
+
+  useEffect(() => {
+    applyTheme(theme);
+  }, [theme]);
+
+  const handleToggleTheme = () => {
+    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+  };
 
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -42,12 +55,13 @@ export function App() {
     routeAppId = pathSegments[1];
   }
 
-  // Find matching app from APPS_DATA (with alias support for baoquanbun)
+  // Find matching app from APPS_DATA (with alias support for vietecom, baoquanbun, etc.)
   const activeApp = useMemo(() => {
     if (!routeAppId) return null;
     const lower = routeAppId.toLowerCase();
     return APPS_DATA.find((a) => {
       if (a.id.toLowerCase() === lower) return true;
+      if (a.id === 'vietecom' && (lower === 'vietecom' || lower === 'viet-ecom' || lower === 'app-ban-hang-online' || lower === 'ban-hang-online' || lower === 'ecom' || lower === 'ecommerce')) return true;
       if (a.id === 'bao-quan-bun-tuoi' && (lower === 'baoquanbun' || lower === 'bao-quan-bun' || lower === 'bun-tuoi')) return true;
       if (a.id === 'tro-ly-giam-doc-ngan-hang' && (lower === 'trolybank' || lower === 'tro-ly-bank' || lower === 'ngan-hang' || lower === 'trolybank247')) return true;
       if (a.id === 'hom-nay-an-gi' && (lower === 'vietnuti' || lower === 'homnayan-gi' || lower === 'homnayangi' || lower === 'an-gi' || lower === 'hom-nay-an-gi')) return true;
@@ -129,10 +143,18 @@ export function App() {
         requestCount={requestedAppIds.length}
         onRequestClick={() => setIsDrawerOpen(true)}
         onExploreClick={() => openCatalog('all')}
+        theme={theme}
+        onToggleTheme={handleToggleTheme}
       />
 
       <main>
-        {/* 1. ỨNG DỤNG VIETTHRIVE — NỀN TẢNG AI HƯỚNG NGHIỆP & PHÁT TRIỂN SỰ NGHIỆP 18–25 TUỔI (APP THỨ 5 HỆ SINH THÁI LÀM CHA MẸ) */}
+        {/* 1. ỨNG DỤNG VIETECOM — AI BUSINESS COPILOT CHO NGƯỜI BÁN HÀNG ONLINE (AI COMMERCE & SOCIAL SELLING) */}
+        <VietecomShowcaseSection
+          onSelectApp={handleSelectApp}
+          apps={APPS_DATA}
+        />
+
+        {/* 2. ỨNG DỤNG VIETTHRIVE — NỀN TẢNG AI HƯỚNG NGHIỆP & PHÁT TRIỂN SỰ NGHIỆP 18–25 TUỔI (APP THỨ 5 HỆ SINH THÁI LÀM CHA MẸ) */}
         <VietthriveShowcaseSection
           onSelectApp={handleSelectApp}
           apps={APPS_DATA}

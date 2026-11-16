@@ -65,6 +65,65 @@ export interface AppItem {
 
 export const APPS_DATA: AppItem[] = [
   {
+    logoUrl: "/apps/vietecom/logo.png",
+    id: "vietecom",
+    name: "VietEcom – AI Business Copilot Cho Người Bán Hàng Online (AI Commerce & Social Selling)",
+    url: "https://vietecom.vercel.app",
+    category: "Bán hàng B2B & Quản trị Doanh nghiệp",
+    categoryId: "sales-business",
+    description: "AI Business Copilot toàn diện cho người bán hàng online tại Việt Nam: Tính ngược lợi nhuận bằng Profit Engine (từ mục tiêu lãi ra số đơn, phí sàn & ngân sách Ads), chuỗi giải quyết nỗi đau bán hàng (Keyword ➔ Framework ➔ Prompt ➔ KPI), kiểm duyệt rủi ro chính sách TikTok Shop/Shopee/Meta có dẫn luật, chẩn đoán chiến dịch Ads Doctor, CRM RFM và vận hành đa kênh tự động.",
+    tags: [
+      "VietEcom",
+      "AI Commerce",
+      "Social Selling",
+      "Profit Engine",
+      "Bán Hàng Online",
+      "TikTok Shop",
+      "Shopee",
+      "Meta Ads",
+      "Compliance Center",
+      "Ads Doctor",
+      "CRM RFM",
+      "Vận Hành Đa Kênh"
+    ],
+    coverImage: "/apps/vietecom/cover.png",
+    placeholderImage: "/apps/vietecom/logo.png",
+    detailImages: [
+      "/apps/vietecom/cover.png",
+      "/apps/vietecom/feature_01_profit_engine.png",
+      "/apps/vietecom/feature_02_ai_solve_painpoint.png",
+      "/apps/vietecom/feature_03_compliance_checker.png",
+      "/apps/vietecom/feature_04_omnichannel_crm.png",
+      "/apps/vietecom/logo.png"
+    ],
+    imageAlt: "VietEcom – AI Business Copilot Cho Người Bán Hàng Online Việt Nam",
+    featured: true,
+    audience: "• Người bán hàng online cá nhân, chủ shop TikTok Shop, Shopee, Facebook Reels, Zalo muốn có lợi nhuận thực tế và quản lý chi phí chặt chẽ.\n• Doanh nghiệp bán lẻ, chủ thương hiệu D2C và agency cần tối ưu chiến dịch quảng cáo, tự động hóa quy trình phê duyệt và chăm sóc khách hàng đa kênh.\n• Người mới bắt đầu khởi nghiệp kinh doanh online (Beginner L1) cần lộ trình từng bước rõ ràng để có đơn đầu tiên mà không lỗ vốn.",
+    problem: "• Bán được nhiều đơn nhưng cuối tháng không thấy tiền đâu do chi phí ẩn (phí sàn 8-14%, phí hoàn hủy, hao hụt bao bì, thuế TNCN/GTGT) không được tính toán từ đầu.\n• Thiếu kỹ năng làm nội dung, kịch bản Livestream bán hàng và chạy quảng cáo dẫn đến lãng phí ngân sách hoặc cắn tiền nhưng không ra đơn.\n• Thường xuyên vi phạm chính sách của TikTok Shop, Shopee, Facebook dẫn đến bị bóp tương tác, khóa tài khoản quảng cáo hoặc sập gian hàng.\n• Quản lý đơn hàng, khách hàng, tồn kho và tin nhắn phân tán rời rạc, dễ sót đơn và đứt hàng.",
+    solution: "• Profit Engine tính ngược: Nhập mục tiêu lợi nhuận ròng ➔ AI tự động tính toán số đơn cần đạt, chi phí ẩn, điểm hòa vốn (BEP) và trần ngân sách quảng cáo.\n• Chuỗi giải quyết nỗi đau chuẩn hóa: Keyword ➔ Nguyên nhân ➔ Framework ➔ Prompt ➔ Công cụ ➔ KPI theo từng ngành hàng thực chiến.\n• Compliance Center an toàn 100%: Quét và làm sạch từ khóa vi phạm chính sách trước khi đăng/chạy ads, kèm trích dẫn Nghị định 38/2021 & chính sách sàn.\n• Ads Doctor & CRM RFM: Bắt bệnh chỉ số ROAS/POAS theo thời gian thực, phân loại khách hàng và cảnh báo điểm đặt hàng lại (ROP) chống đứt hàng.\n• Vận hành đa kênh & Phê duyệt: Hộp thư hợp nhất, lịch nội dung tự động, kiểm soát và phê duyệt mọi thao tác ra ngoài một cách an toàn.",
+    keyFeatures: [
+      "Profit Engine (Tính ngược lợi nhuận): Nhập mục tiêu lãi ròng ➔ Tính số đơn, doanh thu, phí sàn, chi phí ẩn và ngân sách Ads tối đa.",
+      "AI Copilot & Giải quyết nỗi đau: Chuỗi logic Keyword ➔ Framework ➔ Prompt ➔ KPI theo ngách sản phẩm may đo cho thị trường Việt.",
+      "Compliance Center (Kiểm duyệt chính sách): Quét từ ngữ cấm TikTok Shop, Shopee, Meta Ads & Luật Quảng cáo VN trước khi đăng.",
+      "Ads Doctor & Chỉ số POAS: Chẩn đoán sức khỏe chiến dịch quảng cáo (CTR, CPC, CVR, ROAS/POAS) và đề xuất tối ưu ngân sách.",
+      "CRM RFM & Hộp thư đa kênh: Quản lý khách hàng theo hành vi mua, quản lý đồng ý Opt-in/Opt-out và hộp thư chăm sóc khách hàng tập trung.",
+      "Quản lý kho & Dự báo ROP: Tính toán điểm đặt hàng lại an toàn, dự báo nhu cầu thị trường chống đọng vốn hoặc cháy kho."
+    ],
+    videoDuration: "YouTube",
+    videoTagline: "Video Giới thiệu VietEcom – AI Commerce & Social Selling Việt Nam",
+    videoScenes: [],
+    youtubeUrl: "", // Chỗ gắn link YouTube giới thiệu VietEcom tại đây (Ví dụ: "https://www.youtube.com/watch?v=...")
+    statusNote: "Khám phá VietEcom trực tiếp tại https://vietecom.vercel.app. Dán link YouTube vào biến youtubeUrl để phát video.",
+    theme: {
+      from: "from-indigo-600",
+      to: "to-blue-900",
+      accent: "text-indigo-400",
+      badgeBg: "bg-indigo-500/15",
+      badgeText: "text-indigo-300",
+      badgeBorder: "border-indigo-400/30"
+    }
+  },
+  {
     logoUrl: "/apps/vietthrive/logo.png",
     id: "vietthrive",
     name: "VietThrive – Nền Tảng AI Hướng Nghiệp & Phát Triển Cuộc Sống 18–25 Tuổi (App #5 Làm Cha Mẹ)",
