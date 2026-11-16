@@ -36,6 +36,14 @@ const RAW_CATEGORIES: Omit<CategoryItem, 'count'>[] = [
     color: "from-blue-600 to-cyan-600"
   },
   {
+    id: "logistics",
+    name: "Logistics Quốc Tế & Giao Nhận Mỹ - Việt",
+    shortName: "Logistics Mỹ - Việt",
+    icon: "Plane",
+    description: "Nền tảng AI Cross-border Logistics & Personal Shopping Việt Nam ⇆ Hoa Kỳ (VietGo AI / VietShiper), tính cước thể tích DIM, kiểm định FDA/CBP và tracking toàn trình",
+    color: "from-blue-600 via-sky-500 to-amber-500"
+  },
+  {
     id: "ai-education",
     name: "AI & Đào tạo Tri thức",
     shortName: "AI & Đào tạo",

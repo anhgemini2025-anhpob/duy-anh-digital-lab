@@ -65,6 +65,93 @@ export interface AppItem {
 
 export const APPS_DATA: AppItem[] = [
   {
+    logoUrl: "/apps/vietgo/logo.png",
+    id: "vietgo",
+    name: "VietGo AI (VietShiper) – Giao Nhận Hàng & Mua Hộ Hai Chiều Việt Nam ⇆ Hoa Kỳ",
+    url: "https://vietecom.vercel.app",
+    category: "Logistics Quốc Tế & Giao Nhận Mỹ - Việt",
+    categoryId: "logistics",
+    description: "Nền tảng AI Cross-border Logistics & Personal Shopping kết nối hai chiều trực tiếp Việt Nam ⇆ Hoa Kỳ: Tính cước thể tích chuẩn xác (chống sốc DIM), kiểm duyệt hải quan FDA/USDA/CBP 5 trạng thái an toàn 100%, tra cứu hành trình toàn trình (End-to-End Tracking), gom hàng - đóng gói - hút chân không tiết kiệm đến 40% cước phí, và mua hộ hàng Mỹ minh bạch.",
+    tags: [
+      "VietGo AI",
+      "VietShiper",
+      "Giao Nhận Hàng Mỹ - Việt",
+      "Gửi Hàng Đi Mỹ",
+      "Mua Hộ Hàng Mỹ",
+      "Logistics Xuyên Biên Giới",
+      "6 Ký 2 Yêu Thương",
+      "Tính Cước Thể Tích DIM",
+      "Compliance FDA CBP",
+      "Tracking Toàn Trình",
+      "Kho Oregon California",
+      "Personal Shopper"
+    ],
+    coverImage: "/apps/vietgo/cover.jpg",
+    placeholderImage: "/apps/vietgo/logo.png",
+    detailImages: [
+      "/apps/vietgo/cover.jpg",
+      "/apps/vietgo/story_thumbnail.jpg",
+      "/apps/vietgo/logo.png"
+    ],
+    imageAlt: "VietGo AI – Giao Nhận Hàng & Mua Hộ Hai Chiều Việt Nam ⇆ Hoa Kỳ",
+    featured: true,
+    audience: "• Kiều bào Việt Nam tại Mỹ (California, Texas, Oregon, Washington...) có nhu cầu gửi hàng, chuyển quà về Việt Nam hoặc nhờ mua hộ hàng nội địa.\n• Cá nhân, gia đình tại Việt Nam muốn gửi quà Tết, thực phẩm khô, bánh mứt, quần áo, hồ sơ sang cho con em du học sinh và người thân tại Hoa Kỳ.\n• Người kinh doanh hàng xách tay, chủ shop bán hàng TMĐT xuyên biên giới (Etsy, Amazon, eBay) cần giải pháp vận chuyển ổn định và thông quan chuẩn chỉ.\n• Đại lý gom hàng tuyến tỉnh, điểm giao nhận và chành xe địa phương muốn liên kết mở rộng tuyến logistics quốc tế.",
+    problem: "• Sốc cước phí do quy đổi thể tích (DIM weight): Hàng cồng kềnh nhưng nhẹ (gấu bông, đồ khô, quà biếu) bị tính cước gấp 2–3 lần cân nặng thực tế mà không được cảnh báo từ đầu.\n• Nguy cơ giữ hàng, phạt tiền và tịch thu tại Hải quan Mỹ (US CBP / FDA / USDA) do vô tình gửi mặt hàng cấm (thịt gia súc/gia cầm, trứng, sữa, thuốc men không nhãn mác, hàng nhái).\n• Thiếu minh bạch trong báo giá, phát sinh nhiều chi phí ẩn (phụ phí nhiên liệu, phí vùng sâu vùng xa, phí nâng hạ kho bãi).\n• Thất lạc kiện hàng, móp méo bể vỡ, thiếu hệ thống tra cứu lộ trình rõ ràng giữa chặng bay quốc tế và chặng giao tận nhà.",
+    solution: "• DIM Pricing Engine: Tự động so sánh cước trọng lượng thực vs thể tích quy đổi (/5000, /6000), gợi ý giải pháp hút chân không và đóng thùng tối ưu tiết kiệm 35–40% cước phí.\n• Compliance Engine 5 Cấp Độ: AI & quy tắc phân loại mặt hàng (Được phép, Hạn chế, Cấm, Cần FDA, Nghi ngờ), trích dẫn điều luật CBP/FDA minh bạch chống rủi ro giữ hàng.\n• Tra Cứu Toàn Trình (End-to-End Tracking): Theo dõi thời gian thực từ lúc nhận tại kho Việt Nam/Mỹ, kiểm đếm chụp ảnh, cấp vận đơn HAWB/MAWB, đến khi shipper giao tận tay.\n• Mua Hộ Hàng Mỹ 2 Chiều: Tỷ giá công khai, kiểm tra link Amazon/eBay/Costco, lưu vết purchase records và đối soát sổ cái Ledger bất biến 100%.",
+    keyFeatures: [
+      "DIM Pricing Engine: Tính cước song song trọng lượng thực và thể tích quy đổi, đề xuất đóng gói hút chân không chống sốc giá.",
+      "Compliance Engine: 5 trạng thái kiểm duyệt hàng hóa chuẩn FDA, USDA và Hải quan Mỹ CBP chống rủi ro giữ hàng.",
+      "Mua Hộ Hàng Mỹ 2 Chiều: Tự động kiểm tra link sản phẩm (Amazon, eBay, BestBuy, Costco), ghi nhận lịch sử mua và đối soát tỷ giá.",
+      "Quản Lý Kho Hai Đầu: Quản lý vị trí, cân đo, chụp ảnh kiện hàng lúc nhận tại kho Oregon/California và kho tổng SGN/HAN.",
+      "Tracking Trực Tuyến & HAWB/MAWB: Cập nhật lộ trình từng chặng, tích hợp mã chuyển phát nội địa hai nước (USPS, FedEx, GHTK, Viettel Post).",
+      "Sổ Cái Bất Biến & Hoàn Tiền 4 Mắt: Bảo vệ tài chính người gửi và người mua, minh bạch chi phí, không phụ phí ẩn."
+    ],
+    videoDuration: "11:25",
+    videoTagline: "6 Ký 2 Yêu Thương · Phim hoạt hình & Giới thiệu ứng dụng VietGo AI",
+    videoScenes: [
+      {
+        time: "00:00",
+        title: "Mở đầu · 6 Ký 2 Yêu Thương",
+        description: "Bơ — cô mèo tam thể 6,2 ký tại Sài Gòn đón anh Việt kiều về quê ăn Tết, mở ra câu chuyện tình cảm hài hước hai bờ Thái Bình Dương."
+      },
+      {
+        time: "00:43",
+        title: "Little Saigon & Kiều Bào Tại Mỹ",
+        description: "Nỗi nhớ quê hương và nhu cầu gửi quà Tết, đặc sản gia đình từ Việt Nam sang các tiểu bang Hoa Kỳ."
+      },
+      {
+        time: "02:59",
+        title: "Mô Hình Gom Hàng Tuyến Tỉnh",
+        description: "Mạng lưới kết nối chành xe địa phương, tối ưu hóa điểm nhận hàng trên toàn quốc."
+      },
+      {
+        time: "07:56",
+        title: "Thùng Hàng Qua Thái Bình Dương",
+        description: "Hành trình bay thẳng, tối ưu thể tích đóng gói và thủ tục thông quan hàng không nhanh chóng."
+      },
+      {
+        time: "10:00",
+        title: "Giới Thiệu Ứng Dụng VIETGO AI",
+        description: "Trực quan hóa tính cước thể tích DIM, kiểm định FDA/CBP tự động và hệ thống tracking đơn hàng thời gian thực."
+      },
+      {
+        time: "11:08",
+        title: "Trải Nghiệm Nền Tảng Trực Tiếp",
+        description: "Truy cập ứng dụng tại vietshiper.vercel.app và hệ sinh thái 50+ ứng dụng tại ungdung.vercel.app."
+      }
+    ],
+    youtubeUrl: "https://www.youtube.com/watch?v=wkHjx7Kb5Bo",
+    statusNote: "Khám phá VietGo AI tại https://vietecom.vercel.app và cổng PWA https://vietshiper.vercel.app. Video YouTube phát trực tiếp tại landing page.",
+    theme: {
+      from: "from-blue-600",
+      to: "to-indigo-950",
+      accent: "text-amber-400",
+      badgeBg: "bg-blue-500/15",
+      badgeText: "text-blue-300",
+      badgeBorder: "border-blue-400/30"
+    }
+  },
+  {
     logoUrl: "/apps/vietecom/logo.png",
     id: "vietecom",
     name: "VietEcom – AI Business Copilot Cho Người Bán Hàng Online (AI Commerce & Social Selling)",

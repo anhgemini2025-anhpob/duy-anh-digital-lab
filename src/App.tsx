@@ -4,6 +4,7 @@ import { APPS_DATA, AppItem } from './data/apps';
 import { CATEGORIES } from './data/categories';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { VietgoShowcaseSection } from './components/VietgoShowcaseSection';
 import { VietecomShowcaseSection } from './components/VietecomShowcaseSection';
 import { VietthriveShowcaseSection } from './components/VietthriveShowcaseSection';
 import { ViethomeShowcaseSection } from './components/ViethomeShowcaseSection';
@@ -61,6 +62,7 @@ export function App() {
     const lower = routeAppId.toLowerCase();
     return APPS_DATA.find((a) => {
       if (a.id.toLowerCase() === lower) return true;
+      if (a.id === 'vietgo' && (lower === 'vietgo' || lower === 'viet-go' || lower === 'vietshiper' || lower === 'viet-shiper' || lower === 'giao-nhan-hang-my-viet' || lower === 'my-viet' || lower === 'vietmy' || lower === '6ky2' || lower === 'logistics')) return true;
       if (a.id === 'vietecom' && (lower === 'vietecom' || lower === 'viet-ecom' || lower === 'app-ban-hang-online' || lower === 'ban-hang-online' || lower === 'ecom' || lower === 'ecommerce')) return true;
       if (a.id === 'bao-quan-bun-tuoi' && (lower === 'baoquanbun' || lower === 'bao-quan-bun' || lower === 'bun-tuoi')) return true;
       if (a.id === 'tro-ly-giam-doc-ngan-hang' && (lower === 'trolybank' || lower === 'tro-ly-bank' || lower === 'ngan-hang' || lower === 'trolybank247')) return true;
@@ -148,7 +150,13 @@ export function App() {
       />
 
       <main>
-        {/* 1. ỨNG DỤNG VIETECOM — AI BUSINESS COPILOT CHO NGƯỜI BÁN HÀNG ONLINE (AI COMMERCE & SOCIAL SELLING) */}
+        {/* 1. ỨNG DỤNG VIETGO AI (VIETSHIPER) — GIAO NHẬN HÀNG & MUA HỘ HAI CHIỀU VIỆT NAM ⇆ HOA KỲ */}
+        <VietgoShowcaseSection
+          onSelectApp={handleSelectApp}
+          apps={APPS_DATA}
+        />
+
+        {/* 2. ỨNG DỤNG VIETECOM — AI BUSINESS COPILOT CHO NGƯỜI BÁN HÀNG ONLINE (AI COMMERCE & SOCIAL SELLING) */}
         <VietecomShowcaseSection
           onSelectApp={handleSelectApp}
           apps={APPS_DATA}

@@ -47,19 +47,28 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           {/* Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-4 text-sm font-semibold text-slate-300">
-            {/* 1. New App Spotlight Pill: VietEcom */}
+          <nav className="hidden lg:flex items-center gap-3.5 text-sm font-semibold text-slate-300">
+            {/* 1. Newest App Spotlight Pill: VietGo AI */}
             <a 
-              href="#vietecom-showcase" 
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 text-slate-950 font-black text-xs shadow-md shadow-amber-400/30 hover:scale-105 active:scale-95 transition-all cursor-pointer animate-pulse"
-              title="Khám phá ứng dụng mới: VietEcom — AI Business Copilot Cho Người Bán Hàng Online"
+              href="#vietgo-showcase" 
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-sky-400 via-amber-400 to-yellow-400 text-slate-950 font-black text-xs shadow-md shadow-sky-400/30 hover:scale-105 active:scale-95 transition-all cursor-pointer animate-pulse"
+              title="Khám phá ứng dụng mới: VietGo AI — Giao Nhận Hàng & Mua Hộ Hai Chiều Việt – Mỹ"
             >
-              <Flame className="w-3.5 h-3.5 text-amber-950 fill-current" />
-              <span>App Mới: VietEcom</span>
+              <Flame className="w-3.5 h-3.5 text-slate-950 fill-current" />
+              <span>App Mới: VietGo AI</span>
               <Sparkles className="w-3 h-3 text-slate-950" />
             </a>
 
-            {/* 2. Spotlight: VietThrive */}
+            {/* 2. App Spotlight: VietEcom */}
+            <a 
+              href="#vietecom-showcase" 
+              className="hover:text-amber-300 transition-colors flex items-center gap-1 font-bold text-amber-400 text-xs"
+              title="Khám phá ứng dụng: VietEcom — AI Business Copilot Cho Người Bán Hàng Online"
+            >
+              <span>VietEcom</span>
+            </a>
+
+            {/* 3. Spotlight: VietThrive */}
             <a 
               href="#vietthrive-showcase" 
               className="hover:text-teal-300 transition-colors flex items-center gap-1 font-bold text-teal-400 text-xs"
